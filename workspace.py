@@ -24,6 +24,10 @@ list_dir = workspace_dir / 'lists'
 # Directory to submission file
 submission_dir = workspace_dir / 'submissions'
 
+# kfold list dir
+kfold_list_dir = list_dir / 'kfold'
+kfold_cv5_list_dir = kfold_list_dir / 'cv5'
+
 # Training-Validation set
 #holdout_train_csv = list_dir / 'holdout_train.csv'
 #holdout_val_csv = list_dir / 'holdout_val.csv'
@@ -38,3 +42,4 @@ def setup():
 
     model_dir.mkdir(parents=True, exist_ok=True)
     list_dir.mkdir(parents=True, exist_ok=True)
+    kfold_cv5_list_dir.mkdir(parents=True, exist_ok=True)

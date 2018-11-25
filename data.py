@@ -1,16 +1,27 @@
 import cv2
+import tqdm
 import numpy as np
 import pandas as pd
 from PIL import Image
+from sklearn.model_selection import train_test_split, KFold
 
 try:
     from workspace import *
+    on_colab = False
     print('workspace: local')
 except ImportError:
     from workspace_colab import *
+    on_colab = True
     print('workspace: colab')
 
 
+progress_bar = tqdm.tqdm if on_colab else tqdm.tqdm_notebook
+
+
+# Green filter for the target protein structure of interest
+# Blue landmark filter for the nucleus
+# Red landmark filter for microtubules
+# Yellow landmark filter for the endoplasmatic reticulum
 colors = ['red','green','blue','yellow']
 name_label_dict = {
     0:  'Nucleoplasm',
@@ -59,6 +70,33 @@ def get_train_df():
 def get_test_df():
     df = pd.read_csv(test_csv)
     return df
+
+
+def get_train_val_df_fold(k):
+    train_listfile = str(kfold_cv5_list_dir / f'train_cv{k}.csv')
+    val_listfile = str(kfold_cv5_list_dir / f'val_cv{k}.csv')
+    train_df = pd.read_csv(str(train_listfile))
+    val_df = pd.read_csv(str(val_listfile))
+    return train_df, val_df
+
+
+def _kfold_dfs(k=5):
+    df = get_train_df()
+    kf = KFold(n_splits=k, shuffle=True, random_state=1234)
+    for train_index, val_index in kf.split(df.index.values):
+        fold_train_df = df.iloc[train_index]
+        fold_val_df = df.iloc[val_index]
+        yield fold_train_df, fold_val_df
+
+
+def generate_kfold_cv5_list():
+    for i, (train_df, val_df) in enumerate(_kfold_dfs(k=5)):
+        train_listfile = str(kfold_cv5_list_dir / f'train_cv{i}.csv')
+        val_listfile = str(kfold_cv5_list_dir / f'val_cv{i}.csv')
+        train_df.to_csv(train_listfile, index=False)
+        val_df.to_csv(val_listfile, index=False)
+        print(f'Generated: {train_listfile}')
+        print(f'Generated: {val_listfile}')
 
 
 def load_4ch_image(base_path, id):

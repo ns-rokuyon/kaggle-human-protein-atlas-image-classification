@@ -49,11 +49,20 @@ class ResNet34(nn.Module):
         super().__init__()
         self.backbone = make_backbone_resnet34(pretrained=pretrained,
                                                **kwargs)
-        self.gap = GAP()
+        self.gap = GAP(flatten=True)
         self.fc = nn.Linear(512, n_class)
 
     def forward(self, x):
-        x = self.backbone(x)
-        x = sefl.gap(x)
+        x = self.backbone.conv1(x)
+        x = self.backbone.bn1(x)
+        x = self.backbone.relu(x)
+        x = self.backbone.maxpool(x)
+
+        x = self.backbone.layer1(x)
+        x = self.backbone.layer2(x)
+        x = self.backbone.layer3(x)
+        x = self.backbone.layer4(x)
+
+        x = self.gap(x)
         logit = self.fc(x)
         return logit
