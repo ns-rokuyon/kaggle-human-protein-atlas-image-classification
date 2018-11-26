@@ -1,5 +1,7 @@
 import cv2
 import tqdm
+import torch
+import h5py
 import numpy as np
 import pandas as pd
 from PIL import Image
@@ -60,6 +62,33 @@ n_class = len(name_label_dict)
 class Stats:
     mean = np.array([0.08069, 0.05258, 0.05487, 0.08282])
     std = np.array([0.13704, 0.10145, 0.15313, 0.13814])
+
+
+def gen_images_h5_file(df, group='train'):
+    with h5py.File(str(images_h5_file), 'a') as fp:
+        for i in progress_bar(range(df.shape[0])):
+            image_id = df.iloc[i]['Id']
+            if group == 'train':
+                im = load_4ch_image_train(image_id)
+            elif group == 'test':
+                im = load_4ch_image_test(image_id)
+
+            im = np.array(im)
+
+            key = '{}/{}'.format(group, str(image_id))
+            fp.create_dataset(key, data=im)
+
+
+def open_images_h5_file():
+    return h5py.File(str(images_h5_file), 'r')
+
+
+def save_model(model, keyname):
+    dict_filename = f'{keyname}_dict.model'
+    torch.save(model.state_dict(), str(model_dir / dict_filename))
+    
+    filename = f'{keyname}.model'
+    torch.save(model, str(model_dir / filename))
 
 
 def get_train_df():

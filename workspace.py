@@ -33,7 +33,7 @@ kfold_cv5_list_dir = kfold_list_dir / 'cv5'
 #holdout_val_csv = list_dir / 'holdout_val.csv'
 
 # hdf5 file
-#images_h5_file = list_dir / 'images.h5'
+images_h5_file = list_dir / 'images.h5'
 
 
 def setup():

@@ -1,6 +1,11 @@
 import tqdm
+import torch
+import gc
+import datetime
 import torch.nn.functional as F
-from data import progress_bar
+
+import infer
+from data import progress_bar, save_model
 
 
 training_log_format = '[{}] Train Epoch: {} [{}/{} ({:.0f}%)]\tAverage loss: {:.6f}'
@@ -16,7 +21,6 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
           logging_interval=50,
           epoch_break_at=None,
           model_keyname='model',
-          threshold=0.0,
           criterion='bce'):
     best_score = 0.0
     n_stay = 0
@@ -69,17 +73,8 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
         torch.cuda.empty_cache()
 
         # Evaluation
-        model.eval()
-        with torch.no_grad():
-            for x, t in progress_bar(val_iter):
-                x = x.to(device)
-                logit = model(x)
-                _, predicted = torch.max(logit.cpu(), 1)
-                total += t.size(0)
-                correct += (predicted == t).sum().item()
-
-        score = 100.0 * (correct / total)
-        print('[{}] Train Epoch: {}\Accuracy: {:.6f} %'.format(
+        score = infer.evaluate(model, val_iter, device=device)
+        print('[{}] Train Epoch: {}, F1: {:.6f} %'.format(
             now, epoch, score
         ))
 

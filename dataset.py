@@ -1,5 +1,6 @@
 import torch
 import numpy as np
+from PIL import Image
 from torch.utils.data import Dataset
 from torchvision import transforms
 
@@ -17,11 +18,13 @@ from data import (
 
 class HPADataset(Dataset):
     def __init__(self, df, size=(256, 256),
-                 use_transform=True, use_augmentation=True):
+                 use_transform=True, use_augmentation=True,
+                 image_db=None):
         self.df = df
         self.size = size
         self.use_transform = True
         self.use_augmentation = use_augmentation
+        self.image_db = image_db
 
         if self.use_augmentation:
             print('Augmentation is enabled')
@@ -47,7 +50,12 @@ class HPADataset(Dataset):
         labels = np.eye(n_class, dtype=np.float32)[labels].sum(axis=0)
 
         image_id = self.df.iloc[i]['Id']
-        im = load_4ch_image_train(image_id)
+        if self.image_db:
+            im = self.image_db[f'train/{image_id}'].value
+            im = Image.fromarray(im)
+        else:
+            im = load_4ch_image_train(image_id)
+
         if self.use_transform:
             im = self.transformer(im)
 
