@@ -65,6 +65,10 @@ class Stats:
 
 
 def gen_images_h5_file(df, group='train'):
+    if images_h5_file.exists():
+        print(f'Found: {images_h5_file}')
+        return
+
     with h5py.File(str(images_h5_file), 'a') as fp:
         for i in progress_bar(range(df.shape[0])):
             image_id = df.iloc[i]['Id']
