@@ -64,7 +64,7 @@ class Stats:
     std = np.array([0.13704, 0.10145, 0.15313, 0.13814])
 
 
-def gen_images_h5_file(df, group='train'):
+def gen_images_h5_file(df):
     if images_h5_file.exists():
         print(f'Found: {images_h5_file}')
         return
@@ -72,19 +72,36 @@ def gen_images_h5_file(df, group='train'):
     with h5py.File(str(images_h5_file), 'a') as fp:
         for i in progress_bar(range(df.shape[0])):
             image_id = df.iloc[i]['Id']
-            if group == 'train':
-                im = load_4ch_image_train(image_id)
-            elif group == 'test':
-                im = load_4ch_image_test(image_id)
+            im = load_4ch_image_train(image_id)
 
             im = np.array(im)
 
-            key = '{}/{}'.format(group, str(image_id))
+            key = 'train/{}'.format(str(image_id))
+            fp.create_dataset(key, data=im)
+
+
+def gen_test_images_h5_file(df):
+    if test_images_h5_file.exists():
+        print(f'Found: {test_images_h5_file}')
+        return
+
+    with h5py.File(str(test_images_h5_file), 'a') as fp:
+        for i in progress_bar(range(df.shape[0])):
+            image_id = df.iloc[i]['Id']
+            im = load_4ch_image_test(image_id)
+
+            im = np.array(im)
+
+            key = 'test/{}'.format(str(image_id))
             fp.create_dataset(key, data=im)
 
 
 def open_images_h5_file():
     return h5py.File(str(images_h5_file), 'r')
+
+
+def open_test_images_h5_file():
+    return h5py.File(str(test_images_h5_file), 'r')
 
 
 def save_model(model, keyname):

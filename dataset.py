@@ -63,10 +63,11 @@ class HPADataset(Dataset):
 
 
 class HPATestDataset(Dataset):
-    def __init__(self, df, size=(256, 256)):
+    def __init__(self, df, size=(256, 256), image_db=None):
         self.df = df
         self.size = size
         self.use_transform = True
+        self.image_db = image_db
 
         self.transformer = transforms.Compose([
             transforms.Resize(self.size),
@@ -79,7 +80,11 @@ class HPATestDataset(Dataset):
 
     def __getitem__(self, i):
         image_id = self.df.iloc[i]['Id']
-        im = load_4ch_image_test(image_id)
+        if self.image_db:
+            im = self.image_db[f'test/{image_id}'].value
+            im = Image.fromarray(im)
+        else:
+            im = load_4ch_image_test(image_id)
         if self.use_transform:
             im = self.transformer(im)
 
