@@ -34,6 +34,7 @@ kfold_cv5_list_dir = kfold_list_dir / 'cv5'
 
 # hdf5 file
 images_h5_file = list_dir / 'images.h5'
+test_images_h5_file = list_dir / 'test_images.h5'
 
 
 def setup():
