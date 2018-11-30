@@ -50,7 +50,9 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
             if criterion == 'bce':
                 loss = F.binary_cross_entropy_with_logits(logit, t)
             elif criterion == 'bce_weighten':
-                loss = F.binary_cross_entropy_with_logits(logit, t, pos_weight=class_weights)
+                pos_weight = torch.Tensor(class_weights)
+                pos_weight = pos_weight.to(device)
+                loss = F.binary_cross_entropy_with_logits(logit, t, pos_weight=pos_weight)
             elif criterion == 'focal':
                 loss = loss_func(logit, t)
             elif criterion == 'f1':
