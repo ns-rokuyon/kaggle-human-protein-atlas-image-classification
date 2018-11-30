@@ -21,6 +21,7 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
           min_lr=0.000001,
           logging_interval=50,
           epoch_break_at=None,
+          class_weights=None,
           model_keyname='model',
           criterion='bce'):
     best_score = 0.0
@@ -48,6 +49,8 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
 
             if criterion == 'bce':
                 loss = F.binary_cross_entropy_with_logits(logit, t)
+            elif criterion == 'bce_weighten':
+                loss = F.binary_cross_entropy_with_logits(logit, t, pos_weight=class_weights)
             elif criterion == 'focal':
                 loss = loss_func(logit, t)
             elif criterion == 'f1':

@@ -1,4 +1,5 @@
 import cv2
+import math
 import tqdm
 import torch
 import h5py
@@ -185,3 +186,19 @@ def open_rgby_train(id):
 
 def open_rgby_test(id):
     return open_rgby(test_image_dir, id)
+
+
+def get_class_weights(df, max_value=100):
+    pos = [0 for c in range(n_class)]
+    neg = [0 for c in range(n_class)]
+    for i in progress_bar(range(df.shape[0])):
+        labels = [int(label) for label in df.iloc[i]['Target'].split(' ')]
+        for c in range(n_class):
+            if c in labels:
+                pos[c] += 1
+            else:
+                neg[c] += 1
+    weights = [n / p for p, n in zip(pos, neg)]
+    if max_value is not None:
+        weights = [w if w < max_value else max_value for w in weights]
+    return weights

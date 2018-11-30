@@ -56,6 +56,12 @@ def predict(model, x, device=None,
     if threshold is None:
         return pred.cpu().numpy().astype(np.float32)
 
+    if isinstance(threshold, list):
+        # Multiple thresholds
+        pred = pred.cpu().numpy()
+        pred = (pred > threshold).astype(np.float32)
+        return pred
+
     pred = (pred > threshold).cpu().numpy()
     return pred
 
