@@ -22,3 +22,21 @@ class FocalLoss(nn.Module):
         loss = (invprobs * self.gamma).exp() * loss
         
         return loss.sum(dim=1).mean()
+
+
+def f1_loss(logits, labels):
+    """Differentiable F1 loss with logits
+    """
+    eps = 1e-6
+    beta = 1
+    batch_size = logits.size()[0]
+    p = F.sigmoid(logits)
+    l = labels
+    num_pos = torch.sum(p, 1) + eps
+    num_pos_hat = torch.sum(l, 1) + eps
+    tp = torch.sum(l * p, 1)
+    precise = tp / num_pos
+    recall = tp / num_pos_hat
+    fs = (1 + beta * beta) * precise * recall / (beta * beta * precise + recall + eps)
+    loss = fs.sum() / batch_size
+    return (1 - loss)

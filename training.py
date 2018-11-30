@@ -6,7 +6,7 @@ import torch.nn.functional as F
 
 import infer
 from data import progress_bar, save_model
-from loss import FocalLoss
+from loss import FocalLoss, f1_loss
 
 
 training_log_format = '[{}] Train Epoch: {} [{}/{} ({:.0f}%)]\tAverage loss: {:.6f}'
@@ -50,6 +50,8 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
                 loss = F.binary_cross_entropy_with_logits(logit, t)
             elif criterion == 'focal':
                 loss = loss_func(logit, t)
+            elif criterion == 'f1':
+                loss = f1_loss(logit, t)
             else:
                 raise ValueError(criterion)
 
