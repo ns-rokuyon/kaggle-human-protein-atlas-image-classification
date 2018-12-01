@@ -54,7 +54,7 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
                 pos_weight = pos_weight.to(device)
                 loss = F.binary_cross_entropy_with_logits(logit, t, pos_weight=pos_weight)
             elif criterion == 'focal':
-                loss = loss_func(logit, t)
+                loss = focal_loss_func(logit, t)
             elif criterion == 'f1':
                 loss = f1_loss(logit, t)
             elif criterion == 'focal_and_f1':
