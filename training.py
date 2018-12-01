@@ -28,8 +28,8 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
     n_stay = 0
     current_lr = base_lr
 
-    if criterion == 'focal':
-        loss_func = FocalLoss()
+    if criterion in ('focal', 'focal_and_f1'):
+        focal_loss_func = FocalLoss()
 
     for epoch in range(n_epoch):
         model.train()
@@ -57,6 +57,8 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
                 loss = loss_func(logit, t)
             elif criterion == 'f1':
                 loss = f1_loss(logit, t)
+            elif criterion == 'focal_and_f1':
+                loss = focal_loss_func(logit, t) + f1_loss(logit, t)
             else:
                 raise ValueError(criterion)
 

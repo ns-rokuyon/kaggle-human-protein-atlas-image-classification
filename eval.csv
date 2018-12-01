@@ -1,3 +1,4 @@
-name,f1_macro
-baseline_resnet34_focalloss,0.505606
-baseline_resnet34_focalloss_phase2,0.534947
+name,epoch,f1_macro
+baseline_resnet34_focalloss,20,0.505606
+baseline_resnet34_focalloss_phase2,24,0.534947
+baseline_resnet34_weighted_bce_loss,12,0.201647
