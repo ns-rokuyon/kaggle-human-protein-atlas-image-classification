@@ -1,4 +1,8 @@
-name,epoch,f1_macro
-baseline_resnet34_focalloss,20,0.505606
-baseline_resnet34_focalloss_phase2,24,0.534947
-baseline_resnet34_weighted_bce_loss,12,0.201647
+name,epoch,f1_macro,memo
+baseline_resnet34_focalloss,20,0.505606,
+baseline_resnet34_focalloss_phase2,24,0.534947,
+baseline_resnet34_weighted_bce_loss,12,0.201647,
+baseline_resnet34_focalloss_bs48,29,0.590732,Reduce lr at 27 to 0.0005
+baseline_resnet34_focal_f1,19,0.536320,
+baseline_resnet34_focal_f1_sgd,6,0.140744,
+baseline_resnet34_focal_f1_phase2,16,0.592485,

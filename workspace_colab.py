@@ -31,6 +31,9 @@ list_dir = workspace_dir / 'lists'
 # Directory to submission file
 submission_dir = project_dir / 'submissions'
 
+# Directory to save log file
+log_dir = project_dir / 'logs'
+
 # kfold list dir
 kfold_list_dir = list_dir / 'kfold'
 kfold_cv5_list_dir = kfold_list_dir / 'cv5'
@@ -46,3 +49,4 @@ images_h5_file = data_root_dir / 'images.h5'
 def setup():
     model_dir.mkdir(parents=True, exist_ok=True)
     submission_dir.mkdir(parents=True, exist_ok=True)
+    log_dir.mkdir(parents=True, exist_ok=True)

@@ -105,13 +105,14 @@ def open_test_images_h5_file():
     return h5py.File(str(test_images_h5_file), 'r')
 
 
-def save_model(model, keyname):
+def save_model(model, keyname, optimizer=None):
     dict_filename = f'{keyname}_dict.model'
     torch.save(model.state_dict(), str(model_dir / dict_filename))
-    
-    filename = f'{keyname}.model'
-    torch.save(model, str(model_dir / filename))
 
+    if optimizer:
+        optim_filename = f'{keyname}_dict.optim'
+        torch.save(optimizer.state_dict(), str(model_dir / optim_filename))
+    
 
 def get_train_df():
     df = pd.read_csv(train_csv)
@@ -202,3 +203,9 @@ def get_class_weights(df, max_value=100):
     if max_value is not None:
         weights = [w if w < max_value else max_value for w in weights]
     return weights
+
+
+def write_log(message, keyname):
+    print(message)
+    with open(str(log_dir / f'{keyname}.txt'), 'a') as fp:
+        print(message, file=fp)

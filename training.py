@@ -5,7 +5,7 @@ import datetime
 import torch.nn.functional as F
 
 import infer
-from data import progress_bar, save_model
+from data import progress_bar, save_model, write_log
 from loss import FocalLoss, f1_loss
 
 
@@ -17,7 +17,6 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
           early_stopping_limit=100,
           reduce_limit=10,
           reduce_step=0.5,
-          base_lr=0.01,
           min_lr=0.000001,
           logging_interval=50,
           epoch_break_at=None,
@@ -26,6 +25,11 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
           criterion='bce'):
     best_score = 0.0
     n_stay = 0
+
+    for g in optimizer.param_groups:
+        base_lr = g['lr']
+        print(f'Base LR: {base_lr}')
+
     current_lr = base_lr
 
     if criterion in ('focal', 'focal_and_f1'):
@@ -89,24 +93,23 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
 
         # Evaluation
         score = infer.evaluate(model, val_iter, device=device)
-        print('[{}] Train Epoch: {}, F1: {:.6f} %'.format(
-            now, epoch, score
-        ))
+        eval_message = '[{}] Train Epoch: {}, F1: {:.6f} %'.format(now, epoch, score)
+        write_log(eval_message, keyname=model_keyname)
 
         if best_score < score:
             best_score = score
-            save_model(model, model_keyname)
-            print('Saved model at {} (Best Score: {:.6f})'.format(
-                epoch, best_score
-            ))
+            save_model(model, model_keyname, optimizer=optimizer)
+
+            message = 'Saved model at {} (Best Score: {:.6f})'.format(epoch, best_score)
+            write_log(message, keyname=model_keyname)
             n_stay = 0
         else:
             n_stay += 1
 
         if n_stay >= early_stopping_limit:
-            print('Early stopping at {} (Best Score: {:.6f})'.format(
+            write_log('Early stopping at {} (Best Score: {:.6f})'.format(
                 epoch, best_score
-            ))
+            ), keyname=model_keyname)
             break
 
         if current_lr > min_lr and n_stay >= reduce_limit:
@@ -114,6 +117,6 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
             for g in optimizer.param_groups:
                 g['lr'] = current_lr
             n_stay = 0
-            print('Reduce lr at {} (to: {})'.format(epoch, current_lr))
+            write_log('Reduce lr at {} (to: {})'.format(epoch, current_lr), keyname=model_keyname)
 
     return model, best_score, current_lr

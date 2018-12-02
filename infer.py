@@ -66,7 +66,7 @@ def predict(model, x, device=None,
     return pred
 
 
-def compute_best_thresholds(model, loader, **kwargs):
+def compute_best_thresholds(model, loader, average='macro', **kwargs):
     """
     """
     gc.collect()
@@ -96,7 +96,7 @@ def compute_best_thresholds(model, loader, **kwargs):
             score = f1_score(
                 y_true[:, class_index],
                 (y_pred[:, class_index] > th).astype(np.float32),
-                average='macro')
+                average=average)
             print(f'Class: {class_index}, th: {th}, score: {score}')
             if best_score < score:
                 best_score = score
