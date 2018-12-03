@@ -6,3 +6,4 @@ baseline_resnet34_focalloss_bs48,29,0.590732,Reduce lr at 27 to 0.0005
 baseline_resnet34_focal_f1,19,0.536320,
 baseline_resnet34_focal_f1_sgd,6,0.140744,
 baseline_resnet34_focal_f1_phase2,16,0.592485,
+baseline_resnet34_focal_f1_bs48,31,0.578638,

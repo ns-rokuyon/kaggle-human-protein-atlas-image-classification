@@ -44,6 +44,16 @@ class GAP(nn.Module):
         return x
 
 
+class GAMP(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.gap = nn.AdaptiveAvgPool2d(1)
+        self.gmp = nn.AdaptiveMaxPool2d(1)
+
+    def forward(self, x):
+        return torch.cat([self.gap(x), self.gmp(x)], 1).view(x.size(0), -1)
+
+
 class ResNet34(nn.Module):
     def __init__(self, pretrained=True, **kwargs):
         super().__init__()
@@ -64,5 +74,34 @@ class ResNet34(nn.Module):
         x = self.backbone.layer4(x)
 
         x = self.gap(x)
+        logit = self.fc(x)
+        return logit
+
+
+class ResNet34v2(nn.Module):
+    def __init__(self, pretrained=True, **kwargs):
+        super().__init__()
+        self.backbone = make_backbone_resnet34(pretrained=pretrained,
+                                               **kwargs)
+        self.gamp = GAMP()
+        self.bn = nn.BatchNorm1d(1024)
+        self.dropout = nn.Dropout(0.5)
+        self.fc = nn.Linear(1024, n_class)
+
+    def forward(self, x):
+        x = self.backbone.conv1(x)
+        x = self.backbone.bn1(x)
+        x = self.backbone.relu(x)
+        x = self.backbone.maxpool(x)
+
+        x = self.backbone.layer1(x)
+        x = self.backbone.layer2(x)
+        x = self.backbone.layer3(x)
+        x = self.backbone.layer4(x)
+
+        x = self.gamp(x)
+        x = self.bn(x)
+        x = self.dropout(x)
+
         logit = self.fc(x)
         return logit
