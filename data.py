@@ -3,10 +3,12 @@ import math
 import tqdm
 import torch
 import h5py
+import scipy.sparse as sp
 import numpy as np
 import pandas as pd
 from PIL import Image
 from sklearn.model_selection import train_test_split, KFold
+from skmultilearn.model_selection import IterativeStratification
 
 try:
     from workspace import *
@@ -132,6 +134,14 @@ def get_train_val_df_fold(k):
     return train_df, val_df
 
 
+def get_multilabel_stratified_train_val_df_fold(k):
+    train_listfile = str(multilabel_stratified_kfold_cv3_list_dir / f'train_cv{k}.csv')
+    val_listfile = str(multilabel_stratified_kfold_cv3_list_dir / f'val_cv{k}.csv')
+    train_df = pd.read_csv(str(train_listfile))
+    val_df = pd.read_csv(str(val_listfile))
+    return train_df, val_df
+
+
 def _kfold_dfs(k=5):
     df = get_train_df()
     kf = KFold(n_splits=k, shuffle=True, random_state=1234)
@@ -145,6 +155,27 @@ def generate_kfold_cv5_list():
     for i, (train_df, val_df) in enumerate(_kfold_dfs(k=5)):
         train_listfile = str(kfold_cv5_list_dir / f'train_cv{i}.csv')
         val_listfile = str(kfold_cv5_list_dir / f'val_cv{i}.csv')
+        train_df.to_csv(train_listfile, index=False)
+        val_df.to_csv(val_listfile, index=False)
+        print(f'Generated: {train_listfile}')
+        print(f'Generated: {val_listfile}')
+
+
+def _multilabel_stratified_kfold_dfs():
+    df = get_train_df()
+    label_mat = multilabel_binary_representation(df, sparse=True)
+
+    kf = IterativeStratification(random_state=1234)  # k=3
+    for train_index, val_index in kf.split(df.index.values, label_mat):
+        fold_train_df = df.iloc[train_index]
+        fold_val_df = df.iloc[val_index]
+        yield fold_train_df, fold_val_df
+
+
+def generate_multilabel_stratified_kfold_cv3_list():
+    for i, (train_df, val_df) in enumerate(_multilabel_stratified_kfold_dfs()):
+        train_listfile = str(multilabel_stratified_kfold_cv3_list_dir / f'train_cv{i}.csv')
+        val_listfile = str(multilabel_stratified_kfold_cv3_list_dir / f'val_cv{i}.csv')
         train_df.to_csv(train_listfile, index=False)
         val_df.to_csv(val_listfile, index=False)
         print(f'Generated: {train_listfile}')
@@ -209,3 +240,20 @@ def write_log(message, keyname):
     print(message)
     with open(str(log_dir / f'{keyname}.txt'), 'a') as fp:
         print(message, file=fp)
+
+
+def multilabel_binary_representation(df, sparse=True):
+    mat = []
+    for i in range(df.shape[0]):
+        row = df.iloc[i]
+        target = row['Target']
+        ts = set(map(int, target.split(' ')))
+
+        label_array = [1 if c in ts else 0 for c in range(n_class)]
+        mat.append(label_array)
+
+    mat = np.array(mat)
+    if sparse:
+        return sp.lil_matrix(mat)
+
+    return mat
