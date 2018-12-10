@@ -6,6 +6,7 @@ import h5py
 import scipy.sparse as sp
 import numpy as np
 import pandas as pd
+from collections import defaultdict
 from PIL import Image
 from sklearn.model_selection import train_test_split, KFold
 from skmultilearn.model_selection import IterativeStratification
@@ -107,13 +108,17 @@ def open_test_images_h5_file():
     return h5py.File(str(test_images_h5_file), 'r')
 
 
-def save_model(model, keyname, optimizer=None):
+def save_model(model, keyname, optimizer=None, scheduler=None):
     dict_filename = f'{keyname}_dict.model'
     torch.save(model.state_dict(), str(model_dir / dict_filename))
 
     if optimizer:
         optim_filename = f'{keyname}_dict.optim'
         torch.save(optimizer.state_dict(), str(model_dir / optim_filename))
+
+    if scheduler:
+        scheduler_filename = f'{keyname}_dict.scheduler'
+        torch.save(scheduler.state_dict(), str(model_dir / scheduler_filename))
     
 
 def get_train_df():
@@ -257,3 +262,28 @@ def multilabel_binary_representation(df, sparse=True):
         return sp.lil_matrix(mat)
 
     return mat
+
+
+def create_sampling_log_weights(df, mu=0.5):
+    label_set_count = defaultdict(int)
+    for i in range(df.shape[0]):
+        target = str(df.iloc[i]['Target'])
+        label_set_count[target] += 1
+
+    label_set_weights = {target: math.log(mu * df.shape[0] / count)
+                         for target, count in label_set_count.items()}
+    weights = [label_set_weights[str(df.iloc[i]['Target'])]
+               for i in range(df.shape[0])]
+    return weights, label_set_count
+
+
+def create_weighted_random_sampler(df):
+    weights, _ = create_sampling_log_weights(df)
+    sampler = torch.utils.data.WeightedRandomSampler(weights, len(weights))
+    return sampler
+
+
+def create_lr_scheduler(optimizer, patience=2, factor=0.5):
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, patience=patience, mode='max', factor=factor, verbose=True)
+    return scheduler

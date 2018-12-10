@@ -21,6 +21,7 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
           logging_interval=50,
           epoch_break_at=None,
           class_weights=None,
+          scheduler=None,
           model_keyname='model',
           criterion='bce'):
     best_score = 0.0
@@ -112,11 +113,20 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
             ), keyname=model_keyname)
             break
 
-        if current_lr > min_lr and n_stay >= reduce_limit:
-            current_lr = reduce_step * current_lr
+        if scheduler:
+            scheduler.step(score)
+
+            new_lr = 0
             for g in optimizer.param_groups:
-                g['lr'] = current_lr
-            n_stay = 0
-            write_log('Reduce lr at {} (to: {})'.format(epoch, current_lr), keyname=model_keyname)
+                new_lr = g['lr']
+            write_log(f'Scheduler new lr: {new_lr}',
+                      keyname=model_keyname)
+        else:
+            if current_lr > min_lr and n_stay >= reduce_limit:
+                current_lr = reduce_step * current_lr
+                for g in optimizer.param_groups:
+                    g['lr'] = current_lr
+                n_stay = 0
+                write_log('Reduce lr at {} (to: {})'.format(epoch, current_lr), keyname=model_keyname)
 
     return model, best_score, current_lr
