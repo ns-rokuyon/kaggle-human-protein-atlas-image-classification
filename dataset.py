@@ -54,6 +54,7 @@ class HPADataset(Dataset):
         return self.df.shape[0]
 
     def __getitem__(self, i):
+        i = int(i)
         labels = [int(label) for label in self.df.iloc[i]['Target'].split(' ')]
         labels = np.eye(n_class, dtype=np.float32)[labels].sum(axis=0)
 

@@ -283,7 +283,7 @@ def create_weighted_random_sampler(df):
     return sampler
 
 
-def create_lr_scheduler(optimizer, patience=2, factor=0.5):
+def create_lr_scheduler(optimizer, patience=1, factor=0.5):
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, patience=patience, mode='max', factor=factor, verbose=True)
     return scheduler
