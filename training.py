@@ -5,6 +5,7 @@ import datetime
 import torch.nn.functional as F
 
 import infer
+from model import freeze_backbone, unfreeze
 from data import progress_bar, save_model, write_log
 from loss import FocalLoss, f1_loss
 
@@ -22,6 +23,7 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
           epoch_break_at=None,
           class_weights=None,
           scheduler=None,
+          freeze_epoch=0,
           model_keyname='model',
           criterion='bce'):
     best_score = 0.0
@@ -41,6 +43,14 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
 
         gc.collect()
         torch.cuda.empty_cache()
+
+        if freeze_epoch > 0:
+            if epoch == 0:
+                freeze_backbone(model)
+                write_log(f'Freeze backbone at {epoch}', keyname=model_keyname)
+            elif epoch == freeze_epoch:
+                unfreeze(model)
+                write_log(f'Unfreeze model at {epoch}', keyname=model_keyname)
 
         total_loss = 0
         total_size = 0
@@ -99,7 +109,7 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
 
         if best_score < score:
             best_score = score
-            save_model(model, model_keyname, optimizer=optimizer)
+            save_model(model, model_keyname, optimizer=optimizer, scheduler=scheduler)
 
             message = 'Saved model at {} (Best Score: {:.6f})'.format(epoch, best_score)
             write_log(message, keyname=model_keyname)

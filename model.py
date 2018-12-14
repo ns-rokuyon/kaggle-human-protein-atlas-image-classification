@@ -32,6 +32,21 @@ def make_backbone_resnet34(pretrained=True, **kwargs):
     return backbone
 
 
+def freeze_backbone(model):
+    for name, param in model.named_parameters():
+        if name.startswith('backbone'):
+            param.requires_grad = False
+        else:
+            param.requires_grad = True
+        print(f'{name}: {param.requires_grad}')
+
+
+def unfreeze(model):
+    for name, param in model.named_parameters():
+        param.requires_grad = True
+        print(f'{name}: {param.requires_grad}')
+
+
 class GAP(nn.Module):
     def __init__(self, flatten=False):
         super().__init__()
@@ -104,4 +119,43 @@ class ResNet34v2(nn.Module):
         x = self.dropout(x)
 
         logit = self.fc(x)
+        return logit
+
+
+class ResNet34v3(nn.Module):
+    def __init__(self, pretrained=True, **kwargs):
+        super().__init__()
+        self.backbone = make_backbone_resnet34(pretrained=pretrained,
+                                               **kwargs)
+        self.gamp = GAMP()
+        self.bn1 = nn.BatchNorm1d(1024)
+        self.bn2 = nn.BatchNorm1d(512)
+        self.dropout1 = nn.Dropout(0.5)
+        self.dropout2 = nn.Dropout(0.5)
+        self.relu1 = nn.ReLU(inplace=True)
+        self.fc1 = nn.Linear(1024, 512, bias=True)
+        self.fc2 = nn.Linear(512, n_class, bias=True)
+
+    def forward(self, x):
+        x = self.backbone.conv1(x)
+        x = self.backbone.bn1(x)
+        x = self.backbone.relu(x)
+        x = self.backbone.maxpool(x)
+
+        x = self.backbone.layer1(x)
+        x = self.backbone.layer2(x)
+        x = self.backbone.layer3(x)
+        x = self.backbone.layer4(x)
+
+        x = self.gamp(x)
+
+        x = self.bn1(x)
+        x = self.dropout1(x)
+        x = self.fc1(x)
+        x = self.relu1(x)
+
+        x = self.bn2(x)
+        x = self.dropout2(x)
+        logit = self.fc2(x)
+
         return logit

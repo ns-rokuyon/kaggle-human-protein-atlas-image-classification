@@ -4,6 +4,7 @@ import numpy as np
 from torchvision import transforms
 from sklearn.metrics import f1_score
 from data import *
+from dataset import HPADataset, HPATestDataset
 
 
 def evaluate(model, loader, **kwargs):
@@ -46,12 +47,14 @@ def predict(model, x, device=None,
     x = x.to(device)
     logit = model(x)
 
-    pred = torch.sigmoid(logit) if use_sigmoid else logit
-    
     if with_tta:
-        logit = model(x.flip(3))
-        pred += torch.sigmoid(logit) if use_sigmoid else logit
-        pred = 0.5 * pred
+        logit += model(x.flip(3))
+        logit = 0.5 * logit
+
+    if use_sigmoid:
+        pred = torch.sigmoid(logit)
+    else:
+        pred = logit
 
     if threshold is None:
         return pred.cpu().numpy().astype(np.float32)
@@ -112,3 +115,62 @@ def compute_best_thresholds(model, loader, average='macro', **kwargs):
     print(f'Default F1: {default_f1}')
 
     return best_thresholds
+
+
+def submission_pipeline(model, name, cv=0, device=None, with_tta=False, use_adaptive_thresholds=True):
+    model.eval()
+
+    _, val_df = get_multilabel_stratified_train_val_df_fold(cv)
+    val_image_db = open_images_h5_file()
+    val_dataset = HPADataset(val_df, size=(512, 512), image_db=val_image_db, use_augmentation=False)
+    val_iter = torch.utils.data.DataLoader(val_dataset, batch_size=8, shuffle=False, pin_memory=True)
+
+    df = get_test_df()
+    image_db = open_test_images_h5_file()
+    dataset = HPATestDataset(df, size=(512, 512), image_db=image_db)
+    test_iter = torch.utils.data.DataLoader(dataset, batch_size=8, shuffle=False, pin_memory=True)
+
+    # Get thresholds
+    if use_adaptive_thresholds:
+        thresholds = compute_best_thresholds(model, val_iter, average='binary', device=device,
+                                             use_sigmoid=True, threshold=None, with_tta=with_tta)
+    else:
+        thresholds = 0.5
+    print(f'Thresholds: {thresholds}')
+
+    # Prediction
+    zero_prediction_strategy = 'reduce_threshold'
+    zero_label_count = 0
+    predicted_labels = []
+    with torch.no_grad():
+        for x in progress_bar(test_iter):
+            pred = predict(model, x, device=device, use_sigmoid=True,
+                           threshold=None, with_tta=with_tta)
+            for p in pred:
+                wheres = np.argwhere(p > thresholds)
+                if len(wheres) == 0:
+                    zero_label_count += 1
+
+                    if zero_prediction_strategy == 'max':
+                        max_label = p.argmax()
+                        predicted_labels.append(str(max_label))
+                    elif zero_prediction_strategy == 'reduce_threshold':
+                        reduced_thresholds = thresholds
+                        while len(wheres) == 0:
+                            if isinstance(thresholds, list):
+                                reduced_thresholds = [th / 2.0 for th in reduced_thresholds]
+                            elif isinstance(thresholds, float):
+                                reduced_thresholds = reduced_thresholds / 2.0
+                            wheres = np.argwhere(p > reduced_thresholds)
+                        predicted_labels.append(' '.join(map(str, wheres.flatten())))
+                    else:
+                        raise ValueError(zero_prediction_strategy)
+                else:
+                    predicted_labels.append(' '.join(map(str, wheres.flatten())))
+    print(f'Zero predictions: {zero_label_count}')
+
+    # Save csv
+    df['Predicted'] = predicted_labels
+    filepath = submission_dir / f'{name}.csv'
+    df.to_csv(str(filepath), index=False)
+    print(f'Save: {filepath}')
