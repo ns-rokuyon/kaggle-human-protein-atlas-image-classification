@@ -1,17 +1,6 @@
 import numpy as np
 from data import *
 
-def get_label_counts(df=None):
-    if df is None:
-        df = get_train_df()
-
-    labels = {str(i): 0 for i in range(n_class)}
-    for target in df['Target']:
-        ts = target.split(' ')
-        for t in ts:
-            labels[t] += 1
-
-    return labels
 
 
 def inverted_image_list(df=None):

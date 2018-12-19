@@ -10,6 +10,7 @@ from collections import defaultdict
 from PIL import Image
 from sklearn.model_selection import train_test_split, KFold
 from skmultilearn.model_selection import IterativeStratification
+from iterstrat.ml_stratifiers import MultilabelStratifiedKFold
 
 try:
     from workspace import *
@@ -147,6 +148,14 @@ def get_multilabel_stratified_train_val_df_fold(k):
     return train_df, val_df
 
 
+def get_multilabel_stratified_train_val_df_fold_v2(k):
+    train_listfile = str(multilabel_stratified_kfold_cv5_list_v2_dir / f'train_cv{k}.csv')
+    val_listfile = str(multilabel_stratified_kfold_cv5_list_v2_dir / f'val_cv{k}.csv')
+    train_df = pd.read_csv(str(train_listfile))
+    val_df = pd.read_csv(str(val_listfile))
+    return train_df, val_df
+
+
 def _kfold_dfs(k=5):
     df = get_train_df()
     kf = KFold(n_splits=k, shuffle=True, random_state=1234)
@@ -181,6 +190,27 @@ def generate_multilabel_stratified_kfold_cv3_list():
     for i, (train_df, val_df) in enumerate(_multilabel_stratified_kfold_dfs()):
         train_listfile = str(multilabel_stratified_kfold_cv3_list_dir / f'train_cv{i}.csv')
         val_listfile = str(multilabel_stratified_kfold_cv3_list_dir / f'val_cv{i}.csv')
+        train_df.to_csv(train_listfile, index=False)
+        val_df.to_csv(val_listfile, index=False)
+        print(f'Generated: {train_listfile}')
+        print(f'Generated: {val_listfile}')
+
+
+def _multilabel_stratified_kfold_dfs_v2():
+    df = get_train_df()
+    label_mat = multilabel_binary_representation(df, sparse=False)
+
+    kf = MultilabelStratifiedKFold(n_splits=5, shuffle=True, random_state=0)  # k=3
+    for train_index, val_index in kf.split(df.index.values, label_mat):
+        fold_train_df = df.iloc[train_index]
+        fold_val_df = df.iloc[val_index]
+        yield fold_train_df, fold_val_df
+
+
+def generate_multilabel_stratified_kfold_cv5_list_v2():
+    for i, (train_df, val_df) in enumerate(_multilabel_stratified_kfold_dfs_v2()):
+        train_listfile = str(multilabel_stratified_kfold_cv5_list_v2_dir / f'train_cv{i}.csv')
+        val_listfile = str(multilabel_stratified_kfold_cv5_list_v2_dir / f'val_cv{i}.csv')
         train_df.to_csv(train_listfile, index=False)
         val_df.to_csv(val_listfile, index=False)
         print(f'Generated: {train_listfile}')
@@ -283,7 +313,44 @@ def create_weighted_random_sampler(df):
     return sampler
 
 
+def create_sampling_log_weights_v2(df, mu=0.5):
+    label_counts = get_label_counts(df)
+    label_weights = {}
+    total = np.sum(list(label_counts.values()))
+    print(label_counts)
+    print(total)
+    for label, count in label_counts.items():
+        score = math.log(mu * total / float(count))
+        label_weights[label] = score if score > 1.0 else 1.0
+    weights = []
+    for i in range(df.shape[0]):
+        ts = df.iloc[i]['Target'].split(' ')
+        ws = [label_weights[t] for t in ts]
+        w = max(ws)
+        weights.append(w)
+    return weights, label_weights
+
+
+def create_weighted_random_sampler_v2(df):
+    weights, _ = create_sampling_log_weights_v2(df)
+    sampler = torch.utils.data.WeightedRandomSampler(weights, len(weights))
+    return sampler
+
+
 def create_lr_scheduler(optimizer, patience=1, factor=0.5):
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, patience=patience, mode='max', factor=factor, verbose=True)
     return scheduler
+
+
+def get_label_counts(df=None):
+    if df is None:
+        df = get_train_df()
+
+    labels = {str(i): 0 for i in range(n_class)}
+    for target in df['Target']:
+        ts = target.split(' ')
+        for t in ts:
+            labels[t] += 1
+
+    return labels

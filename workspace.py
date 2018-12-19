@@ -31,6 +31,7 @@ log_dir = workspace_dir / 'logs'
 kfold_list_dir = list_dir / 'kfold'
 kfold_cv5_list_dir = kfold_list_dir / 'cv5'
 multilabel_stratified_kfold_cv3_list_dir = kfold_list_dir / 'mls_cv3'
+multilabel_stratified_kfold_cv5_list_v2_dir = kfold_list_dir / 'mls_cv5_v2'
 
 # Training-Validation set
 #holdout_train_csv = list_dir / 'holdout_train.csv'
@@ -50,3 +51,4 @@ def setup():
     log_dir.mkdir(parents=True, exist_ok=True)
     kfold_cv5_list_dir.mkdir(parents=True, exist_ok=True)
     multilabel_stratified_kfold_cv3_list_dir.mkdir(parents=True, exist_ok=True)
+    multilabel_stratified_kfold_cv5_list_v2_dir.mkdir(parents=True, exist_ok=True)

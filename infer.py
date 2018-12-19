@@ -2,7 +2,7 @@ import torch
 import gc
 import numpy as np
 from torchvision import transforms
-from sklearn.metrics import f1_score
+from sklearn.metrics import f1_score, accuracy_score
 from data import *
 from dataset import HPADataset, HPATestDataset
 
@@ -115,6 +115,46 @@ def compute_best_thresholds(model, loader, average='macro', **kwargs):
     print(f'Default F1: {default_f1}')
 
     return best_thresholds
+
+
+def show_classification_report(model, cv=0, device=None, with_tta=False, use_adaptive_thresholds=True):
+    model.eval()
+
+    _, val_df = get_multilabel_stratified_train_val_df_fold(cv)
+    val_image_db = open_images_h5_file()
+    val_dataset = HPADataset(val_df, size=(512, 512), image_db=val_image_db, use_augmentation=False)
+    val_iter = torch.utils.data.DataLoader(val_dataset, batch_size=8, shuffle=False, pin_memory=True)
+
+    # Get thresholds
+    if use_adaptive_thresholds:
+        thresholds = compute_best_thresholds(model, val_iter, average='binary', device=device,
+                                             use_sigmoid=True, threshold=None, with_tta=with_tta)
+    else:
+        thresholds = 0.5
+    print(f'Thresholds: {thresholds}')
+
+    gc.collect()
+    torch.cuda.empty_cache()
+
+    y_true = []
+    y_pred = []
+    with torch.no_grad():
+        for x, target in progress_bar(val_iter):
+            pred = predict(model, x, device=device, use_sigmoid=True,
+                           threshold=thresholds, with_tta=with_tta)
+
+            y_true.append(target.cpu().numpy())
+            y_pred.append(pred)
+
+    y_true = np.concatenate(y_true)
+    y_pred = np.concatenate(y_pred)
+
+    for index, label in name_label_dict.items():
+        print('-----')
+        print(f'Label[{index}]: {label}')
+        print(f'    - Accuracy: {accuracy_score(y_true[:, index], y_pred[:, index])}')
+        print(f'    - F1: {f1_score(y_true[:, index], y_pred[:, index])}')
+        print('-----')
 
 
 def submission_pipeline(model, name, cv=0, device=None, with_tta=False, use_adaptive_thresholds=True):

@@ -24,6 +24,7 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
           class_weights=None,
           scheduler=None,
           freeze_epoch=0,
+          focal_alpha=1.0,
           model_keyname='model',
           criterion='bce'):
     best_score = 0.0
@@ -35,7 +36,7 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
 
     current_lr = base_lr
 
-    if criterion in ('focal', 'focal_and_f1'):
+    if criterion in ('focal', 'focal_and_f1', 'focal_and_bce'):
         focal_loss_func = FocalLoss()
 
     for epoch in range(n_epoch):
@@ -74,6 +75,8 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
                 loss = f1_loss(logit, t)
             elif criterion == 'focal_and_f1':
                 loss = focal_loss_func(logit, t) + f1_loss(logit, t)
+            elif criterion == 'focal_and_bce':
+                loss = focal_alpha * focal_loss_func(logit, t) + F.binary_cross_entropy_with_logits(logit, t)
             else:
                 raise ValueError(criterion)
 
