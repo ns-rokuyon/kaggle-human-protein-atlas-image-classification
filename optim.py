@@ -209,7 +209,7 @@ class CosineLRWithRestarts(object):
             param_group['weight_decay'] = weight_decay
 
     def state_dict(self):
-        return {key: value for key, value in self.__dict__.items() if key != 'optimizer'}
+        return {key: value for key, value in self.__dict__.items() if key not in ('optimizer', 'batch_increment')}
 
     def load_state_dict(self, state_dict):
         self.__dict__.update(state_dict)

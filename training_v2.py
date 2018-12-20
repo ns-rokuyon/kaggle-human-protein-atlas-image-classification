@@ -29,10 +29,6 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
     best_score = 0.0
     n_stay = 0
 
-    for g in optimizer.param_groups:
-        current_lr = g['lr']
-        print(f'Current LR: {current_lr}')
-
     if criterion in ('focal', 'focal_and_f1', 'focal_and_bce'):
         focal_loss_func = FocalLoss()
 
@@ -44,6 +40,10 @@ def train(model, optimizer, n_epoch, train_iter, val_iter,
 
         scheduler.step()
         print(f'scheduler.step() at start of {epoch}')
+
+        for g in optimizer.param_groups:
+            current_lr = g['lr']
+            print(f'Current LR: {current_lr}')
 
         total_loss = 0
         total_size = 0
