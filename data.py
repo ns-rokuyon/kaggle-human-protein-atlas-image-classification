@@ -12,6 +12,7 @@ from sklearn.model_selection import train_test_split, KFold
 from skmultilearn.model_selection import IterativeStratification
 from iterstrat.ml_stratifiers import MultilabelStratifiedKFold
 
+from optim import CosineLRWithRestarts
 try:
     from workspace import *
     on_colab = False
@@ -110,6 +111,24 @@ def open_test_images_h5_file():
 
 
 def save_model(model, keyname, optimizer=None, scheduler=None):
+    dict_filename = f'{keyname}_dict.model'
+    torch.save(model.state_dict(), str(model_dir / dict_filename))
+
+    if optimizer:
+        optim_filename = f'{keyname}_dict.optim'
+        torch.save(optimizer.state_dict(), str(model_dir / optim_filename))
+
+    if scheduler:
+        scheduler_filename = f'{keyname}_dict.scheduler'
+        torch.save(scheduler.state_dict(), str(model_dir / scheduler_filename))
+
+
+def save_bestmodel(model, keyname):
+    dict_filename = f'{keyname}_dict.bestmodel'
+    torch.save(model.state_dict(), str(model_dir / dict_filename))
+
+
+def save_checkpoint(model, keyname, optimizer=None, scheduler=None):
     dict_filename = f'{keyname}_dict.model'
     torch.save(model.state_dict(), str(model_dir / dict_filename))
 
@@ -317,8 +336,6 @@ def create_sampling_log_weights_v2(df, mu=0.5):
     label_counts = get_label_counts(df)
     label_weights = {}
     total = np.sum(list(label_counts.values()))
-    print(label_counts)
-    print(total)
     for label, count in label_counts.items():
         score = math.log(mu * total / float(count))
         label_weights[label] = score if score > 1.0 else 1.0
@@ -340,6 +357,13 @@ def create_weighted_random_sampler_v2(df):
 def create_lr_scheduler(optimizer, patience=1, factor=0.5):
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, patience=patience, mode='max', factor=factor, verbose=True)
+    return scheduler
+
+
+def create_cosine_annealing_lr_scheduler(optimizer, batch_size, epoch_size,
+                                         restart_period=5, t_mult=1.0):
+    scheduler = CosineLRWithRestarts(optimizer, batch_size, epoch_size,
+                                     restart_period=restart_period, t_mult=t_mult)
     return scheduler
 
 
