@@ -1,13 +1,17 @@
+import sys
 import cv2
 import math
 import tqdm
 import torch
+import random
 import h5py
+import requests
 import scipy.sparse as sp
 import numpy as np
 import pandas as pd
 from collections import defaultdict
 from PIL import Image
+from multiprocessing.pool import Pool
 from sklearn.model_selection import train_test_split, KFold
 from skmultilearn.model_selection import IterativeStratification
 from iterstrat.ml_stratifiers import MultilabelStratifiedKFold
@@ -64,6 +68,9 @@ name_label_dict = {
 
 n_class = len(name_label_dict)
 
+ex_image_base_url = 'http://v18.proteinatlas.org/images/'
+weak_classes = {'8', '9', '10', '15', '17', '20', '24', '26', '27'}
+
 
 class Stats:
     mean = np.array([0.08069, 0.05258, 0.05487, 0.08282])
@@ -86,6 +93,25 @@ def gen_images_h5_file(df):
             fp.create_dataset(key, data=im)
 
 
+def gen_ex_images_h5_file(ex_ids):
+    """
+    >>> ex_ids = get_ex_ids_to_save()
+    >>> gen_ex_images_h5_file(ex_ids)
+    """
+    if ex_images_h5_file.exists():
+        print(f'Found: {ex_images_h5_file}')
+        return
+
+    with h5py.File(str(ex_images_h5_file), 'a') as fp:
+        for image_id in progress_bar(ex_ids):
+            im = load_4ch_image_ex(image_id)
+
+            im = np.array(im)
+
+            key = 'ex/{}'.format(str(image_id))
+            fp.create_dataset(key, data=im)
+
+
 def gen_test_images_h5_file(df):
     if test_images_h5_file.exists():
         print(f'Found: {test_images_h5_file}')
@@ -104,6 +130,10 @@ def gen_test_images_h5_file(df):
 
 def open_images_h5_file():
     return h5py.File(str(images_h5_file), 'r')
+
+
+def open_ex_images_h5_file():
+    return h5py.File(str(ex_images_h5_file), 'r')
 
 
 def open_test_images_h5_file():
@@ -173,6 +203,20 @@ def get_multilabel_stratified_train_val_df_fold_v2(k):
     train_df = pd.read_csv(str(train_listfile))
     val_df = pd.read_csv(str(val_listfile))
     return train_df, val_df
+
+
+def create_binary_classification(train_df, val_df, positive_class):
+    train_df = train_df.copy()
+    val_df = val_df.copy()
+
+    positive_class = str(positive_class)
+
+    def _func(target):
+        ts = target.split(' ')
+        return '1' if positive_class in ts else '0'
+
+    train_df['Target'] = train_df['Target'].apply(_func)
+    val_df['Target'] = val_df['Target'].apply(_func)
 
 
 def _kfold_dfs(k=5):
@@ -251,6 +295,10 @@ def load_4ch_image_train(id):
 
 def load_4ch_image_test(id):
     return load_4ch_image(test_image_dir, id)
+
+
+def load_4ch_image_ex(id):
+    return load_4ch_image(ex_image_dir, id)
 
 
 def open_rgby(base_path, id):
@@ -378,3 +426,181 @@ def get_label_counts(df=None):
             labels[t] += 1
 
     return labels
+
+
+def read_ex_data_source_list():
+    df = pd.read_csv(str(ex_csv))
+    return df
+
+
+def download_image(ex_id, color):
+    """
+    https://www.kaggle.com/c/human-protein-atlas-image-classification/discussion/69984
+    """
+    sp = ex_id.split('_', 1)
+    img_path = f'{sp[0]}/{sp[1]}_{color}.jpg'
+    img_url = ex_image_base_url + img_path
+
+    # Get the raw response from the url
+    r = requests.get(img_url, allow_redirects=True, stream=True)
+    r.raw.decode_content = True
+
+    # Use PIL to resize the image and to convert it to L
+    # (8-bit pixels, black and white)
+    im = Image.open(r.raw)
+    im = im.resize((512, 512), Image.LANCZOS)
+
+    return im
+
+
+def save_ex_image(ex_id):
+    try:
+        for i, color in enumerate(['red', 'green', 'blue', 'yellow']):
+            im = np.array(download_image(ex_id, color))
+            if color == 'yellow':
+                gray_im = (im[:, :, 0] + im[:, :, 1]) / 2
+            else:
+                gray_im = im[:, :, i]
+            gray_im = gray_im.astype(np.uint8)
+            gray_im = Image.fromarray(gray_im)
+            gray_im.save(ex_image_dir / f'{ex_id}_{color}.png', 'PNG')
+    except Exception as e:
+        print(f'Failed: {e}')
+
+
+def save_ex_images(pid, ex_ids):
+    for i, ex_id in enumerate(ex_ids):
+        save_ex_image(ex_id)
+
+
+def get_ex_ids_to_save():
+    ex_ids = []
+    df = read_ex_data_source_list()
+    for i in range(df.shape[0]):
+        row = df.iloc[i]
+        ts = set(row['Target'].split(' '))
+        if ts & weak_classes:
+            ex_ids.append(row['Id'])
+    return ex_ids
+
+
+def download_ex_data(ex_ids):
+    process_num = 2
+    list_len = len(ex_ids)
+
+    pool = Pool(process_num)
+    for i in range(process_num):
+        start = int(i * list_len / process_num)
+        end = int((i + 1) * list_len / process_num)
+        process_ids = ex_ids[start:end]
+        pool.apply_async(save_ex_images, args=(str(i), process_ids))
+
+    print('Waiting ...')
+    pool.close()
+    pool.join()
+    print('Done')
+
+
+def get_enhanced_train_df():
+    df = pd.read_csv(enhanced_train_csv)
+    return df
+
+
+def create_enhanced_train_csv():
+    train_df = get_train_df()
+
+    ex_df = read_ex_data_source_list()
+    available_ex_ids = get_ex_ids_to_save()
+    available_ex_df = ex_df[ex_df['Id'].isin(available_ex_ids)]
+
+    train_df['Source'] = ['train' for _ in range(train_df.shape[0])]
+    available_ex_df['Source'] = ['ex' for _ in range(available_ex_df.shape[0])]
+
+    enhanced_train_df = pd.concat([train_df, available_ex_df])
+    enhanced_train_df.to_csv(str(enhanced_train_csv), index=False)
+
+    print(f'Save: {enhanced_train_csv}')
+
+
+def inverted_image_list(df):
+    inverted = {str(i): set() for i in range(n_class)}
+    for i in range(df.shape[0]):
+        row = df.iloc[i]
+        target = row['Target']
+        ts = target.split(' ')
+        image_id = row['Id']
+        for t in ts:
+            inverted[t].add(image_id)
+
+    return inverted
+
+
+def create_undersampled_enhanced_train_csv(base_num=1200):
+    enhanced_train_df = get_enhanced_train_df()
+
+    label_counts = get_label_counts(enhanced_train_df)
+    few_order_labels = sorted(label_counts, key=lambda k: label_counts[k])
+
+    inverted_index = inverted_image_list(enhanced_train_df)
+
+    sampled_label_counts = {label: 0 for label in label_counts.keys()}
+    samples = set()
+    for label in progress_bar(few_order_labels):
+        candidates = inverted_index[label]
+
+        if len(candidates) <= base_num:
+            samples = samples | candidates
+            for c in candidates:
+                for lab in [str(i) for i in range(n_class) if c in inverted_index[str(i)]]:
+                    sampled_label_counts[lab] += 1
+            continue
+
+        n_shortage = base_num - sampled_label_counts[label]
+        if n_shortage <= 0:
+            continue
+
+        random.seed(0)
+        subset = set(random.sample(candidates, k=n_shortage))
+        samples = samples | subset
+        for c in subset:
+            for lab in [str(i) for i in range(n_class) if c in inverted_index[str(i)]]:
+                sampled_label_counts[lab] += 1
+
+    undersampled_enhanced_train_df = enhanced_train_df[enhanced_train_df['Id'].isin(samples)]
+    undersampled_enhanced_train_df.to_csv(str(undersampled_enhanced_train_csv), index=False)
+
+    print(f'Save: {undersampled_enhanced_train_csv}')
+
+
+def get_undersampled_enhanced_train_df():
+    df = pd.read_csv(undersampled_enhanced_train_csv)
+    return df
+
+
+def _mls_undersampled_enhanced_kfold_dfs():
+    df = get_undersampled_enhanced_train_df()
+    label_mat = multilabel_binary_representation(df, sparse=False)
+
+    kf = MultilabelStratifiedKFold(n_splits=5, shuffle=True, random_state=0)
+    for train_index, val_index in kf.split(df.index.values, label_mat):
+        fold_train_df = df.iloc[train_index]
+        fold_val_df = df.iloc[val_index]
+        yield fold_train_df, fold_val_df
+
+
+def generate_mls_undersampled_enhanced_kfold_cv5_list():
+    for i, (train_df, val_df) in enumerate(_mls_undersampled_enhanced_kfold_dfs()):
+        train_listfile = str(mls_undersampled_enhanced_kfold_cv5_list_dir / f'train_cv{i}.csv')
+        val_listfile = str(mls_undersampled_enhanced_kfold_cv5_list_dir / f'val_cv{i}.csv')
+        train_df.to_csv(train_listfile, index=False)
+        val_df.to_csv(val_listfile, index=False)
+        print(f'Generated: {train_listfile}')
+        print(f'Generated: {val_listfile}')
+
+
+def get_mls_undersampled_enhanced_train_val_df_fold(k):
+    train_listfile = str(mls_undersampled_enhanced_kfold_cv5_list_dir / f'train_cv{k}.csv')
+    val_listfile = str(mls_undersampled_enhanced_kfold_cv5_list_dir / f'val_cv{k}.csv')
+    train_df = pd.read_csv(str(train_listfile))
+    val_df = pd.read_csv(str(val_listfile))
+    return train_df, val_df

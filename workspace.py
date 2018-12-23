@@ -41,6 +41,17 @@ multilabel_stratified_kfold_cv5_list_v2_dir = kfold_list_dir / 'mls_cv5_v2'
 images_h5_file = list_dir / 'images.h5'
 test_images_h5_file = list_dir / 'test_images.h5'
 
+# Ex data
+ex_image_dir = data_root_dir / 'ex'
+ex_csv = list_dir / 'HPAv18RBGY_wodpl.csv'
+ex_images_h5_file = list_dir / 'ex_images.h5'
+
+# Enhanced dataset
+enhanced_train_csv = list_dir / 'enhanced_train.csv'
+undersampled_enhanced_train_csv = list_dir / 'undersampled_enhanced_train.csv'
+mls_undersampled_enhanced_kfold_cv5_list_dir = kfold_list_dir / 'mls_us_enh_cv5_v2'
+
+
 
 def setup():
     if not workspace_dir.exists():
@@ -52,3 +63,5 @@ def setup():
     kfold_cv5_list_dir.mkdir(parents=True, exist_ok=True)
     multilabel_stratified_kfold_cv3_list_dir.mkdir(parents=True, exist_ok=True)
     multilabel_stratified_kfold_cv5_list_v2_dir.mkdir(parents=True, exist_ok=True)
+    ex_image_dir.mkdir(parents=True, exist_ok=True)
+    mls_undersampled_enhanced_kfold_cv5_list_dir.mkdir(parents=True, exist_ok=True)

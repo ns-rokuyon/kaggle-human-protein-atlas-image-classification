@@ -1,5 +1,6 @@
 import torch
 import numpy as np
+import albumentations as alb
 from PIL import Image
 from torch.utils.data import Dataset
 from torchvision import transforms
@@ -11,10 +12,81 @@ from data import (
     load_4ch_image,
     load_4ch_image_train,
     load_4ch_image_test,
+    load_4ch_image_ex,
     Stats,
     train_image_dir,
     test_image_dir
 )
+
+
+class HPAEnhancedDataset(Dataset):
+    def __init__(self, df, size=(512, 512),
+                 use_augmentation=True,
+                 use_cutout=False, cutout_ratio=0.2,
+                 image_db=None, ex_image_db=None):
+        self.df = df
+        self.size = size
+        self.use_augmentation = use_augmentation
+        self.image_db = image_db
+        self.ex_image_db = ex_image_db
+
+        print(f'Size: {self.size}')
+
+        self.transformer = transforms.Compose([
+            transforms.ToTensor(),
+            transforms.Normalize(Stats.mean, Stats.std)
+        ])
+
+        self.resizer = alb.Resize(self.size[0], self.size[1], p=1)
+
+        if self.use_augmentation:
+            print('Augmentation is enabled')
+            self.augmentor = alb.Compose([
+                alb.HorizontalFlip(p=0.5),
+                alb.VerticalFlip(p=0.5),
+                alb.RandomRotate90(p=0.5),
+                alb.RandomBrightness(p=0.1),
+                alb.RandomContrast(p=0.1)
+            ])
+            if use_cutout:
+                cutout_length = int(cutout_ratio * size[0])
+                self.transformer.transforms.append(Cutout(n_holes=1, length=cutout_length))
+                print(f'Append cutout to transformer (length: {cutout_length})')
+        else:
+            self.augmentor = None
+
+    def __len__(self):
+        return self.df.shape[0]
+
+    def __getitem__(self, i):
+        i = int(i)
+        row = self.df.iloc[i]
+
+        labels = [int(label) for label in row['Target'].split(' ')]
+        labels = np.eye(n_class, dtype=np.float32)[labels].sum(axis=0)
+
+        image_id = row['Id']
+        source = row['Source']
+        if self.image_db:
+            if source == 'train':
+                im = self.image_db[f'train/{image_id}'].value
+            elif source == 'ex':
+                im = self.ex_image_db[f'ex/{image_id}'].value
+        else:
+            if source == 'train':
+                im = load_4ch_image_train(image_id)
+            elif source == 'ex':
+                im = load_4ch_image_ex(image_id)
+            im = Image.fromarray(im)
+
+        if self.use_augmentation:
+            aug = self.augmentor(image=im)
+            im = aug['image']
+
+        im = self.resizer.apply(im)
+        im = self.transformer(im)
+
+        return im, labels
 
 
 class HPADataset(Dataset):

@@ -47,6 +47,16 @@ multilabel_stratified_kfold_cv5_list_v2_dir = kfold_list_dir / 'mls_cv5_v2'
 # hdf5 file
 images_h5_file = data_root_dir / 'images.h5'
 
+# Ex data
+ex_image_dir = data_root_dir / 'ex'     # Unavailable
+ex_csv = list_dir / 'HPAv18RBGY_wodpl.csv' # Unavailable
+ex_images_h5_file = data_root_dir / 'ex_images.h5'
+
+# Enhanced dataset
+enhanced_train_csv = list_dir / 'enhanced_train.csv'    # Unavailable
+undersampled_enhanced_train_csv = list_dir / 'undersampled_enhanced_train.csv'  # Unavailable
+mls_undersampled_enhanced_kfold_cv5_list_dir = kfold_list_dir / 'mls_us_enh_cv5_v2'
+
 
 def setup():
     model_dir.mkdir(parents=True, exist_ok=True)
