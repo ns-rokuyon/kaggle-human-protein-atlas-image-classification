@@ -1,0 +1,3075 @@
+Id,Target,Source
+000a9596-bbc4-11e8-b2bc-ac1f6b6435d0,5,train
+000c99ba-bba4-11e8-b2b9-ac1f6b6435d0,1,train
+001838f8-bbca-11e8-b2bc-ac1f6b6435d0,18,train
+00357b1e-bba9-11e8-b2ba-ac1f6b6435d0,6 2,train
+0042017c-bba4-11e8-b2b9-ac1f6b6435d0,25 11,train
+004f8abc-bbb9-11e8-b2ba-ac1f6b6435d0,12 0,train
+005a103a-bbc4-11e8-b2bc-ac1f6b6435d0,25 13 21,train
+0067a7c0-bbb7-11e8-b2ba-ac1f6b6435d0,1 0,train
+006f5b04-bbb3-11e8-b2ba-ac1f6b6435d0,3,train
+0097150a-bbc1-11e8-b2bb-ac1f6b6435d0,23 0,train
+00ab56c8-bbad-11e8-b2ba-ac1f6b6435d0,7 14 0,train
+00bd4376-bbbf-11e8-b2ba-ac1f6b6435d0,7,train
+00ca1a3a-bbc7-11e8-b2bc-ac1f6b6435d0,23,train
+00cb9586-bbc2-11e8-b2bb-ac1f6b6435d0,3,train
+00eabc0c-bbb5-11e8-b2ba-ac1f6b6435d0,19 0,train
+01028112-bbb4-11e8-b2ba-ac1f6b6435d0,6,train
+011a3b06-bb9e-11e8-b2b9-ac1f6b6435d0,18,train
+011acdc6-bba0-11e8-b2b9-ac1f6b6435d0,7 0,train
+013f0f3a-bbad-11e8-b2ba-ac1f6b6435d0,7 0,train
+0158f3d6-bb9f-11e8-b2b9-ac1f6b6435d0,7 0,train
+017badb4-bbc6-11e8-b2bc-ac1f6b6435d0,16 18 17,train
+01977230-bbb5-11e8-b2ba-ac1f6b6435d0,22 2 0,train
+01ddc40c-bbb9-11e8-b2ba-ac1f6b6435d0,22 0,train
+01f3e0da-bb9f-11e8-b2b9-ac1f6b6435d0,1,train
+02199b60-bbc0-11e8-b2bb-ac1f6b6435d0,1 2,train
+024bce74-bbc4-11e8-b2bc-ac1f6b6435d0,12,train
+024f5654-bbae-11e8-b2ba-ac1f6b6435d0,24 22,train
+0264fdd4-bbb7-11e8-b2ba-ac1f6b6435d0,4,train
+0271c9e4-bbab-11e8-b2ba-ac1f6b6435d0,6,train
+0288e29e-bb9e-11e8-b2b9-ac1f6b6435d0,25 5,train
+029509ba-bbbd-11e8-b2ba-ac1f6b6435d0,11,train
+029f7ac0-bbb9-11e8-b2ba-ac1f6b6435d0,3,train
+02bd4566-bbad-11e8-b2ba-ac1f6b6435d0,7 0,train
+02e685cc-bbc9-11e8-b2bc-ac1f6b6435d0,25 2 0,train
+0312336a-bba7-11e8-b2ba-ac1f6b6435d0,1 4,train
+0324803a-bbaa-11e8-b2ba-ac1f6b6435d0,11,train
+0325d998-bb9c-11e8-b2b9-ac1f6b6435d0,1 2 0,train
+032a7200-bbab-11e8-b2ba-ac1f6b6435d0,14 0,train
+032f0da4-bbc6-11e8-b2bc-ac1f6b6435d0,25 1 0,train
+033c214a-bbb4-11e8-b2ba-ac1f6b6435d0,6,train
+0340decc-bbb1-11e8-b2ba-ac1f6b6435d0,18,train
+0359527c-bbbb-11e8-b2ba-ac1f6b6435d0,3,train
+037aef70-bbb3-11e8-b2ba-ac1f6b6435d0,12,train
+03903282-bbbc-11e8-b2ba-ac1f6b6435d0,25 18 0,train
+039858f6-bbab-11e8-b2ba-ac1f6b6435d0,25 6 2,train
+03ce111c-bbba-11e8-b2ba-ac1f6b6435d0,25 14,train
+03d00c42-bbba-11e8-b2ba-ac1f6b6435d0,4,train
+03d9fb0c-bb9d-11e8-b2b9-ac1f6b6435d0,23 0,train
+03db18c8-bb9a-11e8-b2b9-ac1f6b6435d0,25 14,train
+03f63d86-bbbf-11e8-b2ba-ac1f6b6435d0,14,train
+03fcc436-bbc8-11e8-b2bc-ac1f6b6435d0,25 14,train
+041d6c96-bbb8-11e8-b2ba-ac1f6b6435d0,14,train
+042a6b74-bba6-11e8-b2ba-ac1f6b6435d0,11,train
+042cfe0e-bb9a-11e8-b2b9-ac1f6b6435d0,12 0,train
+0468fef4-bbc7-11e8-b2bc-ac1f6b6435d0,6,train
+046ebcba-bbc5-11e8-b2bc-ac1f6b6435d0,11 0,train
+048af3d0-bbb6-11e8-b2ba-ac1f6b6435d0,7 2 0,train
+04a96654-bbc4-11e8-b2bc-ac1f6b6435d0,5 0,train
+04aa916a-bbc8-11e8-b2bc-ac1f6b6435d0,1 2,train
+04ad6ce0-bbb0-11e8-b2ba-ac1f6b6435d0,6 0,train
+04b385ca-bbbb-11e8-b2ba-ac1f6b6435d0,3,train
+04c88e94-bbbf-11e8-b2ba-ac1f6b6435d0,11,train
+04eec9d0-bb9f-11e8-b2b9-ac1f6b6435d0,16 14,train
+051a5402-bbbc-11e8-b2ba-ac1f6b6435d0,25 6 2,train
+052efb66-bbc4-11e8-b2bc-ac1f6b6435d0,19,train
+054ec024-bba9-11e8-b2ba-ac1f6b6435d0,6,train
+0563b9d0-bb9e-11e8-b2b9-ac1f6b6435d0,12 25,train
+058db2d2-bbba-11e8-b2ba-ac1f6b6435d0,16 7,train
+05c5f690-bba3-11e8-b2b9-ac1f6b6435d0,12 19 25,train
+05caacd4-bbbd-11e8-b2ba-ac1f6b6435d0,14 5,train
+05dfc884-bbaf-11e8-b2ba-ac1f6b6435d0,6,train
+05f1331c-bbb9-11e8-b2ba-ac1f6b6435d0,14,train
+06167ff6-bb9a-11e8-b2b9-ac1f6b6435d0,16 18 17,train
+064ee914-bba8-11e8-b2ba-ac1f6b6435d0,1 0,train
+065dc194-bbc8-11e8-b2bc-ac1f6b6435d0,3,train
+06636376-bbc6-11e8-b2bc-ac1f6b6435d0,6,train
+067818de-bbc6-11e8-b2bc-ac1f6b6435d0,6,train
+0695f624-bbb2-11e8-b2ba-ac1f6b6435d0,22 0,train
+06be3aea-bbc5-11e8-b2bc-ac1f6b6435d0,24,train
+06d0bdba-bba6-11e8-b2ba-ac1f6b6435d0,11,train
+06e763d2-bb9f-11e8-b2b9-ac1f6b6435d0,25 2 0,train
+06ed4f5a-bbc1-11e8-b2bb-ac1f6b6435d0,25 1,train
+07152102-bbc5-11e8-b2bc-ac1f6b6435d0,18,train
+073bfd1e-bb9c-11e8-b2b9-ac1f6b6435d0,4 2,train
+076160b8-bb9c-11e8-b2b9-ac1f6b6435d0,13 18,train
+076c5fe2-bbb3-11e8-b2ba-ac1f6b6435d0,5 0,train
+0773f2a8-bbc6-11e8-b2bc-ac1f6b6435d0,16 3,train
+07a298f8-bba6-11e8-b2ba-ac1f6b6435d0,14 5,train
+07bdec7e-bbca-11e8-b2bc-ac1f6b6435d0,11 0,train
+07ecd22c-bb9e-11e8-b2b9-ac1f6b6435d0,5,train
+07fec9dc-bbad-11e8-b2ba-ac1f6b6435d0,11,train
+081f9878-bba4-11e8-b2b9-ac1f6b6435d0,23,train
+082dae32-bbc6-11e8-b2bc-ac1f6b6435d0,22 23 0,train
+083a984e-bba4-11e8-b2b9-ac1f6b6435d0,7 5,train
+084a9c70-bbc3-11e8-b2bc-ac1f6b6435d0,25 1 21,train
+0870c2bc-bba3-11e8-b2b9-ac1f6b6435d0,23,train
+0877a7da-bba3-11e8-b2b9-ac1f6b6435d0,3,train
+087c859e-bba2-11e8-b2b9-ac1f6b6435d0,23 4,train
+087c9e96-bba0-11e8-b2b9-ac1f6b6435d0,2 0,train
+08844126-bbc0-11e8-b2bb-ac1f6b6435d0,14,train
+088d03d8-bbc0-11e8-b2bb-ac1f6b6435d0,16 14,train
+08b80082-bba8-11e8-b2ba-ac1f6b6435d0,7 1 2 0,train
+092f5d72-bbc5-11e8-b2bc-ac1f6b6435d0,5 0,train
+09378600-bbca-11e8-b2bc-ac1f6b6435d0,12 25 0,train
+093afb76-bbc2-11e8-b2bb-ac1f6b6435d0,25 18 0,train
+094113da-bbc7-11e8-b2bc-ac1f6b6435d0,13 21,train
+09599842-bbc7-11e8-b2bc-ac1f6b6435d0,25 2,train
+09675f40-bbae-11e8-b2ba-ac1f6b6435d0,22 21,train
+097034c0-bba5-11e8-b2ba-ac1f6b6435d0,23 2,train
+097f453a-bba2-11e8-b2b9-ac1f6b6435d0,4,train
+09a24d82-bbb1-11e8-b2ba-ac1f6b6435d0,20,train
+09da4264-bba7-11e8-b2ba-ac1f6b6435d0,14 0,train
+09e7f6c8-bbb3-11e8-b2ba-ac1f6b6435d0,14 2 0,train
+09eb7084-bbb1-11e8-b2ba-ac1f6b6435d0,6,train
+09f01c08-bba0-11e8-b2b9-ac1f6b6435d0,14,train
+09fc38fe-bbc2-11e8-b2bb-ac1f6b6435d0,6 2 0,train
+0a145d4e-bbc7-11e8-b2bc-ac1f6b6435d0,16 21,train
+0a478ea6-bbb0-11e8-b2ba-ac1f6b6435d0,3,train
+0aa47ebc-bba2-11e8-b2b9-ac1f6b6435d0,14,train
+0ad7eada-bbbc-11e8-b2ba-ac1f6b6435d0,16 25 0,train
+0ae1739a-bbab-11e8-b2ba-ac1f6b6435d0,25 1,train
+0aeb18f0-bbba-11e8-b2ba-ac1f6b6435d0,25 20,train
+0af582b0-bbae-11e8-b2ba-ac1f6b6435d0,7,train
+0b72650a-bba4-11e8-b2b9-ac1f6b6435d0,16 7,train
+0b81b97e-bb9f-11e8-b2b9-ac1f6b6435d0,14,train
+0b89204a-bbbf-11e8-b2ba-ac1f6b6435d0,13,train
+0b8bec5a-bbb3-11e8-b2ba-ac1f6b6435d0,25 11 2 0,train
+0bf7bcde-bb9d-11e8-b2b9-ac1f6b6435d0,25 13,train
+0c37e6b6-bbb5-11e8-b2ba-ac1f6b6435d0,6,train
+0c3c5086-bbb8-11e8-b2ba-ac1f6b6435d0,25 7,train
+0c432670-bbc4-11e8-b2bc-ac1f6b6435d0,6,train
+0c4335f8-bbbe-11e8-b2ba-ac1f6b6435d0,4,train
+0c55caf6-bba5-11e8-b2ba-ac1f6b6435d0,19 0,train
+0c587bc6-bba9-11e8-b2ba-ac1f6b6435d0,25 14 2,train
+0c621b52-bbc9-11e8-b2bc-ac1f6b6435d0,25 18,train
+0c660d68-bb9f-11e8-b2b9-ac1f6b6435d0,16 2 0,train
+0c6f99de-bb9d-11e8-b2b9-ac1f6b6435d0,25 14 0,train
+0cb08b76-bbc3-11e8-b2bc-ac1f6b6435d0,1 0,train
+0cd92bf2-bbab-11e8-b2ba-ac1f6b6435d0,14,train
+0d188b6c-bbc9-11e8-b2bc-ac1f6b6435d0,5 0,train
+0d26d80a-bbc1-11e8-b2bb-ac1f6b6435d0,26 0,train
+0d3d7f56-bbb2-11e8-b2ba-ac1f6b6435d0,11,train
+0d43a2e2-bbb1-11e8-b2ba-ac1f6b6435d0,17 5,train
+0d6ea828-bbb3-11e8-b2ba-ac1f6b6435d0,23,train
+0d8129d8-bbba-11e8-b2ba-ac1f6b6435d0,11,train
+0d8ee1d0-bbb1-11e8-b2ba-ac1f6b6435d0,6 7,train
+0d98419a-bbba-11e8-b2ba-ac1f6b6435d0,25 18 0,train
+0db32fb6-bbb3-11e8-b2ba-ac1f6b6435d0,11 5,train
+0dd7ea7a-bbba-11e8-b2ba-ac1f6b6435d0,1 0,train
+0df5fe58-bba5-11e8-b2ba-ac1f6b6435d0,23 0,train
+0dfd56d0-bbc3-11e8-b2bc-ac1f6b6435d0,25 4,train
+0e051cae-bbc2-11e8-b2bb-ac1f6b6435d0,13 0,train
+0e0b78a2-bbc1-11e8-b2bb-ac1f6b6435d0,5,train
+0e2b2eae-bbbc-11e8-b2ba-ac1f6b6435d0,25 3,train
+0e40a38c-bba9-11e8-b2ba-ac1f6b6435d0,1,train
+0e4f82ec-bbb5-11e8-b2ba-ac1f6b6435d0,1,train
+0e6fb1cc-bbb3-11e8-b2ba-ac1f6b6435d0,14,train
+0e8c2582-bba4-11e8-b2b9-ac1f6b6435d0,3,train
+0e993230-bbaf-11e8-b2ba-ac1f6b6435d0,6,train
+0e9963d8-bbbc-11e8-b2ba-ac1f6b6435d0,25 1 21,train
+0ea52674-bbb1-11e8-b2ba-ac1f6b6435d0,18,train
+0eb8703e-bba8-11e8-b2ba-ac1f6b6435d0,22 21,train
+0ebd689e-bbc8-11e8-b2bc-ac1f6b6435d0,16 25 17 0,train
+0ec6a0e0-bba4-11e8-b2b9-ac1f6b6435d0,14 0,train
+0ef97c82-bb9e-11e8-b2b9-ac1f6b6435d0,5,train
+0f260ff4-bbb2-11e8-b2ba-ac1f6b6435d0,3,train
+0f2a63e4-bba6-11e8-b2ba-ac1f6b6435d0,25 6,train
+0f5c1d86-bbc8-11e8-b2bc-ac1f6b6435d0,23 2 0,train
+0f8a9e54-bbbe-11e8-b2ba-ac1f6b6435d0,25 13 21,train
+0fcfde46-bbba-11e8-b2ba-ac1f6b6435d0,19,train
+0fcfebf4-bb9a-11e8-b2b9-ac1f6b6435d0,7,train
+0fd0b8b0-bbac-11e8-b2ba-ac1f6b6435d0,14 0,train
+0fdb24b6-bbb7-11e8-b2ba-ac1f6b6435d0,16 21,train
+0fe94e9c-bba8-11e8-b2ba-ac1f6b6435d0,25 5 0,train
+0ff03686-bbb6-11e8-b2ba-ac1f6b6435d0,14,train
+10290c78-bbc4-11e8-b2bc-ac1f6b6435d0,3,train
+102c2a46-bb9e-11e8-b2b9-ac1f6b6435d0,7 0,train
+102f01ec-bbc8-11e8-b2bc-ac1f6b6435d0,1 0,train
+10541fb8-bbbe-11e8-b2ba-ac1f6b6435d0,14 5,train
+109dcf80-bbc5-11e8-b2bc-ac1f6b6435d0,4,train
+10b37fe0-bb9a-11e8-b2b9-ac1f6b6435d0,25 3,train
+10c1a06c-bba8-11e8-b2ba-ac1f6b6435d0,23 1,train
+10c9c102-bbad-11e8-b2ba-ac1f6b6435d0,1 0,train
+10d0e99e-bbaa-11e8-b2ba-ac1f6b6435d0,0 21,train
+10d60980-bbbc-11e8-b2ba-ac1f6b6435d0,5,train
+11078e34-bba7-11e8-b2ba-ac1f6b6435d0,6,train
+110b4e44-bbb0-11e8-b2ba-ac1f6b6435d0,6 21,train
+111bb546-bba5-11e8-b2ba-ac1f6b6435d0,12,train
+113053ca-bbbe-11e8-b2ba-ac1f6b6435d0,11,train
+11363eec-bbb5-11e8-b2ba-ac1f6b6435d0,6,train
+115c24a8-bbb6-11e8-b2ba-ac1f6b6435d0,14,train
+116dac4e-bbbd-11e8-b2ba-ac1f6b6435d0,23 0,train
+11c1a7e0-bbc7-11e8-b2bc-ac1f6b6435d0,12 25,train
+11c34752-bba0-11e8-b2b9-ac1f6b6435d0,3,train
+11d3803a-bb9c-11e8-b2b9-ac1f6b6435d0,5,train
+11e5b790-bbca-11e8-b2bc-ac1f6b6435d0,25 18 0,train
+120b177c-bb9f-11e8-b2b9-ac1f6b6435d0,25 5,train
+120dc222-bbab-11e8-b2ba-ac1f6b6435d0,25 14 0,train
+12206ccc-bbc1-11e8-b2bb-ac1f6b6435d0,13 0,train
+12212e6e-bbad-11e8-b2ba-ac1f6b6435d0,6,train
+123c178e-bbca-11e8-b2bc-ac1f6b6435d0,4,train
+124c6914-bbb0-11e8-b2ba-ac1f6b6435d0,19 0,train
+125e5b40-bba8-11e8-b2ba-ac1f6b6435d0,25 21,train
+128041f2-bbc5-11e8-b2bc-ac1f6b6435d0,25 7 4,train
+12aadf3a-bb9c-11e8-b2b9-ac1f6b6435d0,3 0,train
+12d33fc6-bb9b-11e8-b2b9-ac1f6b6435d0,6,train
+12dbb2ea-bbbf-11e8-b2ba-ac1f6b6435d0,19 0,train
+12eaa32e-bb9f-11e8-b2b9-ac1f6b6435d0,19 23 0,train
+12f3a25e-bb9e-11e8-b2b9-ac1f6b6435d0,19,train
+12f6cca4-bbb7-11e8-b2ba-ac1f6b6435d0,23,train
+130c1ce8-bb9a-11e8-b2b9-ac1f6b6435d0,14 0,train
+1315b268-bb9e-11e8-b2b9-ac1f6b6435d0,12 1 21,train
+13294734-bba2-11e8-b2b9-ac1f6b6435d0,23,train
+1339271a-bbc2-11e8-b2bb-ac1f6b6435d0,14,train
+135459c8-bb9e-11e8-b2b9-ac1f6b6435d0,23 2,train
+136873e8-bb9b-11e8-b2b9-ac1f6b6435d0,1,train
+138bf0cc-bbb7-11e8-b2ba-ac1f6b6435d0,14,train
+1393fbb6-bbc9-11e8-b2bc-ac1f6b6435d0,25 17,train
+13aaa8ac-bbab-11e8-b2ba-ac1f6b6435d0,4,train
+13c6de3a-bba3-11e8-b2b9-ac1f6b6435d0,7 5 1,train
+13dc8910-bbc1-11e8-b2bb-ac1f6b6435d0,23,train
+13e56c9c-bbc1-11e8-b2bb-ac1f6b6435d0,24 25,train
+13f7055a-bb9a-11e8-b2b9-ac1f6b6435d0,14,train
+14137000-bbc7-11e8-b2bc-ac1f6b6435d0,3,train
+1420292a-bbc3-11e8-b2bc-ac1f6b6435d0,22 0,train
+142c9d96-bbae-11e8-b2ba-ac1f6b6435d0,14,train
+1462071c-bbb6-11e8-b2ba-ac1f6b6435d0,11,train
+14b772f2-bbb5-11e8-b2ba-ac1f6b6435d0,4,train
+14c59f16-bbbb-11e8-b2ba-ac1f6b6435d0,5,train
+14c9a968-bb9c-11e8-b2b9-ac1f6b6435d0,25 5 21,train
+14ea83ec-bb9a-11e8-b2b9-ac1f6b6435d0,4 3,train
+14f10b2c-bbae-11e8-b2ba-ac1f6b6435d0,22 3,train
+150381ee-bbb3-11e8-b2ba-ac1f6b6435d0,24,train
+1506357e-bbb3-11e8-b2ba-ac1f6b6435d0,1 4 3,train
+15075b62-bbbc-11e8-b2ba-ac1f6b6435d0,12 0,train
+15883afa-bba0-11e8-b2b9-ac1f6b6435d0,18,train
+159cf62e-bbab-11e8-b2ba-ac1f6b6435d0,23,train
+15e3718c-bba9-11e8-b2ba-ac1f6b6435d0,25 18,train
+15f4dfb8-bbad-11e8-b2ba-ac1f6b6435d0,14,train
+15f8c6b4-bbb7-11e8-b2ba-ac1f6b6435d0,23,train
+15fa641c-bba6-11e8-b2ba-ac1f6b6435d0,22,train
+161ad560-bbb2-11e8-b2ba-ac1f6b6435d0,5 0,train
+164246d0-bbbd-11e8-b2ba-ac1f6b6435d0,7,train
+16959bc2-bb9b-11e8-b2b9-ac1f6b6435d0,22,train
+16a066c4-bbb4-11e8-b2ba-ac1f6b6435d0,7 0,train
+17352134-bbae-11e8-b2ba-ac1f6b6435d0,14 0 21,train
+173ca58c-bbc5-11e8-b2bc-ac1f6b6435d0,24 5,train
+174760f2-bbbc-11e8-b2ba-ac1f6b6435d0,22 0,train
+17523ce4-bb9d-11e8-b2b9-ac1f6b6435d0,16 25 0,train
+177f9d58-bbbe-11e8-b2ba-ac1f6b6435d0,5,train
+178877dc-bbca-11e8-b2bc-ac1f6b6435d0,6,train
+17adeee6-bba1-11e8-b2b9-ac1f6b6435d0,18,train
+17c30e92-bbb6-11e8-b2ba-ac1f6b6435d0,5,train
+17cb4352-bba5-11e8-b2ba-ac1f6b6435d0,13,train
+17cb689a-bbab-11e8-b2ba-ac1f6b6435d0,3,train
+17f433f0-bbbb-11e8-b2ba-ac1f6b6435d0,3 0,train
+17fdcb16-bbb8-11e8-b2ba-ac1f6b6435d0,7 0 21,train
+180572aa-bbc0-11e8-b2bb-ac1f6b6435d0,24 0,train
+180b408c-bbb0-11e8-b2ba-ac1f6b6435d0,11,train
+182c922a-bbc2-11e8-b2bb-ac1f6b6435d0,22 21,train
+184e8f8e-bbc6-11e8-b2bc-ac1f6b6435d0,13 0,train
+18618f3a-bba3-11e8-b2b9-ac1f6b6435d0,23,train
+186f933e-bbb0-11e8-b2ba-ac1f6b6435d0,3,train
+18aaffdc-bbba-11e8-b2ba-ac1f6b6435d0,7,train
+190333e0-bb9d-11e8-b2b9-ac1f6b6435d0,11,train
+19461f1c-bba1-11e8-b2b9-ac1f6b6435d0,19 25 2,train
+1968ae20-bba5-11e8-b2ba-ac1f6b6435d0,1,train
+1977e662-bbb7-11e8-b2ba-ac1f6b6435d0,16 0,train
+19aff6ae-bbaa-11e8-b2ba-ac1f6b6435d0,6,train
+19de3ac2-bbc9-11e8-b2bc-ac1f6b6435d0,16 18 17,train
+1a0f59c8-bba0-11e8-b2b9-ac1f6b6435d0,22 0,train
+1a30f5f4-bbb1-11e8-b2ba-ac1f6b6435d0,25 14,train
+1a6bd32a-bbc2-11e8-b2bb-ac1f6b6435d0,13,train
+1a94ed16-bbc5-11e8-b2bc-ac1f6b6435d0,25 7,train
+1aadcb5a-bbbc-11e8-b2ba-ac1f6b6435d0,25 4,train
+1acab3ca-bbbf-11e8-b2ba-ac1f6b6435d0,6,train
+1ad11a96-bbb3-11e8-b2ba-ac1f6b6435d0,5,train
+1ad9ba32-bbc4-11e8-b2bc-ac1f6b6435d0,25 11 0,train
+1ae7492c-bba6-11e8-b2ba-ac1f6b6435d0,25 4,train
+1aec33e6-bbb1-11e8-b2ba-ac1f6b6435d0,6,train
+1af15a06-bba7-11e8-b2ba-ac1f6b6435d0,25 14 0,train
+1b034336-bbb8-11e8-b2ba-ac1f6b6435d0,18 5,train
+1b202db2-bbad-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+1b48ba30-bb9d-11e8-b2b9-ac1f6b6435d0,23 0,train
+1b515bac-bbb3-11e8-b2ba-ac1f6b6435d0,22,train
+1b86601a-bbb6-11e8-b2ba-ac1f6b6435d0,11,train
+1b8812da-bbab-11e8-b2ba-ac1f6b6435d0,1 0,train
+1b99c128-bb9d-11e8-b2b9-ac1f6b6435d0,4,train
+1b9a8c16-bbbb-11e8-b2ba-ac1f6b6435d0,4,train
+1bb7ce28-bbc2-11e8-b2bb-ac1f6b6435d0,11 0,train
+1bda714e-bbb8-11e8-b2ba-ac1f6b6435d0,22 16,train
+1bff7588-bbc8-11e8-b2bc-ac1f6b6435d0,14 3,train
+1c309a52-bbb2-11e8-b2ba-ac1f6b6435d0,25 4,train
+1c3e00f8-bba7-11e8-b2ba-ac1f6b6435d0,4,train
+1c4834ba-bbca-11e8-b2bc-ac1f6b6435d0,6,train
+1c62ffb6-bb9d-11e8-b2b9-ac1f6b6435d0,24,train
+1c7a3d82-bbc7-11e8-b2bc-ac1f6b6435d0,6,train
+1c7b1132-bbb6-11e8-b2ba-ac1f6b6435d0,12,train
+1c8d6e42-bbc8-11e8-b2bc-ac1f6b6435d0,3,train
+1c916d60-bbc0-11e8-b2bb-ac1f6b6435d0,19,train
+1cf74826-bbaa-11e8-b2ba-ac1f6b6435d0,4,train
+1d06ad4a-bba8-11e8-b2ba-ac1f6b6435d0,23,train
+1d0a6f72-bbc4-11e8-b2bc-ac1f6b6435d0,1 0,train
+1d126a66-bbbe-11e8-b2ba-ac1f6b6435d0,3 0,train
+1d1fb8dc-bbc4-11e8-b2bc-ac1f6b6435d0,25 3,train
+1d382a22-bba4-11e8-b2b9-ac1f6b6435d0,24 25,train
+1d4366ee-bba9-11e8-b2ba-ac1f6b6435d0,6,train
+1d4d963e-bbc5-11e8-b2bc-ac1f6b6435d0,5 0,train
+1d61b1fe-bbad-11e8-b2ba-ac1f6b6435d0,19 0,train
+1d66f902-bbad-11e8-b2ba-ac1f6b6435d0,24 5,train
+1d834b28-bbbe-11e8-b2ba-ac1f6b6435d0,6,train
+1da85198-bbc8-11e8-b2bc-ac1f6b6435d0,5,train
+1dbfe762-bba6-11e8-b2ba-ac1f6b6435d0,26 0,train
+1de91898-bba7-11e8-b2ba-ac1f6b6435d0,25 7,train
+1dfe38f6-bbaa-11e8-b2ba-ac1f6b6435d0,6,train
+1e088386-bbbb-11e8-b2ba-ac1f6b6435d0,1 0,train
+1e197e42-bb9e-11e8-b2b9-ac1f6b6435d0,1 2,train
+1e3b83ea-bbba-11e8-b2ba-ac1f6b6435d0,25 3,train
+1e3f925e-bbb1-11e8-b2ba-ac1f6b6435d0,1,train
+1e480a64-bbb7-11e8-b2ba-ac1f6b6435d0,16 0,train
+1e5451d0-bbac-11e8-b2ba-ac1f6b6435d0,4 0,train
+1e5defc0-bbb5-11e8-b2ba-ac1f6b6435d0,13,train
+1e9683ee-bb9c-11e8-b2b9-ac1f6b6435d0,11,train
+1ee2418a-bbc4-11e8-b2bc-ac1f6b6435d0,5,train
+1ee64c10-bbb7-11e8-b2ba-ac1f6b6435d0,7 3,train
+1eedbf8e-bbb4-11e8-b2ba-ac1f6b6435d0,7,train
+1ef839d6-bbc9-11e8-b2bc-ac1f6b6435d0,25 1,train
+1f10f862-bbbb-11e8-b2ba-ac1f6b6435d0,22,train
+1f213e06-bbad-11e8-b2ba-ac1f6b6435d0,14,train
+1f2ac78e-bb9c-11e8-b2b9-ac1f6b6435d0,12 0 21,train
+1f347262-bba5-11e8-b2ba-ac1f6b6435d0,11,train
+1f443dda-bbb1-11e8-b2ba-ac1f6b6435d0,24 0,train
+1f479ffc-bba7-11e8-b2ba-ac1f6b6435d0,5,train
+1f533cbe-bbba-11e8-b2ba-ac1f6b6435d0,6 14,train
+1fae846e-bba3-11e8-b2b9-ac1f6b6435d0,4,train
+1fb6c56e-bbb9-11e8-b2ba-ac1f6b6435d0,11,train
+1fd9e038-bbb1-11e8-b2ba-ac1f6b6435d0,1,train
+1fe3da0a-bbc2-11e8-b2bb-ac1f6b6435d0,4,train
+200bf156-bbc3-11e8-b2bc-ac1f6b6435d0,22 0,train
+201c2922-bba0-11e8-b2b9-ac1f6b6435d0,17 21,train
+205291a4-bba2-11e8-b2b9-ac1f6b6435d0,4 0,train
+2056a79e-bbb1-11e8-b2ba-ac1f6b6435d0,11 0,train
+20654582-bbc6-11e8-b2bc-ac1f6b6435d0,24 22,train
+20871ff8-bbc2-11e8-b2bb-ac1f6b6435d0,18 2,train
+2091dd20-bbc3-11e8-b2bc-ac1f6b6435d0,11,train
+20a740da-bbae-11e8-b2ba-ac1f6b6435d0,18,train
+210afa30-bb9a-11e8-b2b9-ac1f6b6435d0,25 17 0,train
+21356f38-bbb6-11e8-b2ba-ac1f6b6435d0,25 3 0,train
+2153ca1a-bbb5-11e8-b2ba-ac1f6b6435d0,5,train
+21639eaa-bbbe-11e8-b2ba-ac1f6b6435d0,5 2 0,train
+216c4af6-bbb3-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+21ac2094-bbb4-11e8-b2ba-ac1f6b6435d0,25 13 0,train
+21c11ffa-bb9e-11e8-b2b9-ac1f6b6435d0,25 6 2,train
+21ca8da8-bbba-11e8-b2ba-ac1f6b6435d0,22 19,train
+21d1d3ea-bbad-11e8-b2ba-ac1f6b6435d0,12 25,train
+2201b6b6-bb9c-11e8-b2b9-ac1f6b6435d0,7 0,train
+2216c7ca-bbad-11e8-b2ba-ac1f6b6435d0,23 5 3,train
+2220d944-bbb8-11e8-b2ba-ac1f6b6435d0,12 23 0,train
+222300f0-bbab-11e8-b2ba-ac1f6b6435d0,4,train
+22807c72-bba5-11e8-b2ba-ac1f6b6435d0,14,train
+2294df0c-bbbc-11e8-b2ba-ac1f6b6435d0,3 0,train
+2295c908-bba3-11e8-b2b9-ac1f6b6435d0,16 25,train
+22f8a470-bbb1-11e8-b2ba-ac1f6b6435d0,4,train
+22ff1eea-bba7-11e8-b2ba-ac1f6b6435d0,12,train
+23016bbe-bbac-11e8-b2ba-ac1f6b6435d0,6,train
+2304f58e-bba9-11e8-b2ba-ac1f6b6435d0,18,train
+230b581e-bba6-11e8-b2ba-ac1f6b6435d0,19 0,train
+230f059c-bbc2-11e8-b2bb-ac1f6b6435d0,14,train
+2313573a-bbab-11e8-b2ba-ac1f6b6435d0,4,train
+23177d44-bbc2-11e8-b2bb-ac1f6b6435d0,3,train
+2328f570-bbbc-11e8-b2ba-ac1f6b6435d0,25 13 0,train
+2331a1c6-bb9d-11e8-b2b9-ac1f6b6435d0,19,train
+233a0498-bbc9-11e8-b2bc-ac1f6b6435d0,14,train
+233fc090-bbb0-11e8-b2ba-ac1f6b6435d0,5,train
+234cf714-bba2-11e8-b2b9-ac1f6b6435d0,19 0,train
+2363a9b0-bbb0-11e8-b2ba-ac1f6b6435d0,13,train
+23722a9e-bbab-11e8-b2ba-ac1f6b6435d0,19 14,train
+237554c2-bbb9-11e8-b2ba-ac1f6b6435d0,26 0,train
+23854174-bbc9-11e8-b2bc-ac1f6b6435d0,4,train
+239d75da-bbbc-11e8-b2ba-ac1f6b6435d0,25 14,train
+23ae968a-bba3-11e8-b2b9-ac1f6b6435d0,1,train
+23b17826-bbc8-11e8-b2bc-ac1f6b6435d0,5 0,train
+23b63af4-bba6-11e8-b2ba-ac1f6b6435d0,14,train
+23b87bd2-bbc6-11e8-b2bc-ac1f6b6435d0,6,train
+23c42a96-bbb6-11e8-b2ba-ac1f6b6435d0,7,train
+23c65b04-bbc5-11e8-b2bc-ac1f6b6435d0,7,train
+23e76e20-bbc5-11e8-b2bc-ac1f6b6435d0,19 0,train
+23fa6c9a-bb9e-11e8-b2b9-ac1f6b6435d0,13 0 21,train
+242f201e-bbbe-11e8-b2ba-ac1f6b6435d0,7,train
+2432003e-bbca-11e8-b2bc-ac1f6b6435d0,25 1 0,train
+2441f040-bbbe-11e8-b2ba-ac1f6b6435d0,17 0,train
+245e533c-bbb1-11e8-b2ba-ac1f6b6435d0,7 2 0,train
+24710942-bb9c-11e8-b2b9-ac1f6b6435d0,12,train
+24b51dbc-bbb0-11e8-b2ba-ac1f6b6435d0,11,train
+24b9090e-bb9c-11e8-b2b9-ac1f6b6435d0,5,train
+24bce7c4-bbb8-11e8-b2ba-ac1f6b6435d0,5,train
+24e5d9ea-bba4-11e8-b2b9-ac1f6b6435d0,13,train
+2545a5c6-bbbf-11e8-b2ba-ac1f6b6435d0,23,train
+254934b0-bbb6-11e8-b2ba-ac1f6b6435d0,12 25,train
+254c0872-bbc8-11e8-b2bc-ac1f6b6435d0,1 0,train
+25510358-bb9c-11e8-b2b9-ac1f6b6435d0,18 5,train
+2570ad40-bb9f-11e8-b2b9-ac1f6b6435d0,5,train
+25771584-bb9c-11e8-b2b9-ac1f6b6435d0,14,train
+2586f456-bbb8-11e8-b2ba-ac1f6b6435d0,14,train
+25953a56-bba0-11e8-b2b9-ac1f6b6435d0,3,train
+25a945d4-bbc1-11e8-b2bb-ac1f6b6435d0,7,train
+25cc5a94-bbb0-11e8-b2ba-ac1f6b6435d0,19,train
+25e25744-bbb6-11e8-b2ba-ac1f6b6435d0,3,train
+260937d8-bbb1-11e8-b2ba-ac1f6b6435d0,20 0,train
+26165ede-bba9-11e8-b2ba-ac1f6b6435d0,5 0,train
+261e9f50-bbc6-11e8-b2bc-ac1f6b6435d0,4 0,train
+2628fa0a-bbca-11e8-b2bc-ac1f6b6435d0,23,train
+264bf066-bbaa-11e8-b2ba-ac1f6b6435d0,7 1 0,train
+265c5f90-bba1-11e8-b2b9-ac1f6b6435d0,12,train
+2664d9c8-bba5-11e8-b2ba-ac1f6b6435d0,25 2 0,train
+267d8b9a-bbae-11e8-b2ba-ac1f6b6435d0,3,train
+269025e2-bbaf-11e8-b2ba-ac1f6b6435d0,4,train
+26b5c852-bbbd-11e8-b2ba-ac1f6b6435d0,16 0,train
+26c47c0a-bba7-11e8-b2ba-ac1f6b6435d0,22 0,train
+26c8c94c-bb9b-11e8-b2b9-ac1f6b6435d0,19 25,train
+26f8ffa6-bbad-11e8-b2ba-ac1f6b6435d0,26 16 2,train
+2705493c-bbbc-11e8-b2ba-ac1f6b6435d0,12 2,train
+2712f02a-bbbf-11e8-b2ba-ac1f6b6435d0,18 23 0 21,train
+274b7156-bbc0-11e8-b2bb-ac1f6b6435d0,6,train
+2762cf32-bbab-11e8-b2ba-ac1f6b6435d0,13 18,train
+2765dc5c-bbbc-11e8-b2ba-ac1f6b6435d0,1 4,train
+2772740e-bbac-11e8-b2ba-ac1f6b6435d0,25 7 2,train
+27819d02-bbb7-11e8-b2ba-ac1f6b6435d0,13,train
+2788b370-bba4-11e8-b2b9-ac1f6b6435d0,25 2 21,train
+27a0884c-bbb3-11e8-b2ba-ac1f6b6435d0,4,train
+27b92880-bbbc-11e8-b2ba-ac1f6b6435d0,23 0,train
+27cb5cd6-bba7-11e8-b2ba-ac1f6b6435d0,25 3,train
+28001ba4-bba4-11e8-b2b9-ac1f6b6435d0,1 0,train
+281899b4-bbb2-11e8-b2ba-ac1f6b6435d0,18 5,train
+28281c0a-bb9d-11e8-b2b9-ac1f6b6435d0,25 1,train
+28afdc6a-bbb3-11e8-b2ba-ac1f6b6435d0,11 0,train
+28db4566-bbaa-11e8-b2ba-ac1f6b6435d0,9,train
+290780cc-bbb4-11e8-b2ba-ac1f6b6435d0,22 0,train
+290a491c-bb9e-11e8-b2b9-ac1f6b6435d0,25 1,train
+291226ba-bbbb-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+2916fcaa-bb9b-11e8-b2b9-ac1f6b6435d0,4,train
+2924911a-bbb6-11e8-b2ba-ac1f6b6435d0,23 0,train
+2924a24e-bbc6-11e8-b2bc-ac1f6b6435d0,22,train
+2929d3be-bba7-11e8-b2ba-ac1f6b6435d0,14,train
+292b3822-bbb5-11e8-b2ba-ac1f6b6435d0,19,train
+293684b8-bb9f-11e8-b2b9-ac1f6b6435d0,16 25 14 0,train
+293f7fa4-bbb9-11e8-b2ba-ac1f6b6435d0,19,train
+29447b66-bba1-11e8-b2b9-ac1f6b6435d0,23,train
+2953de56-bba8-11e8-b2ba-ac1f6b6435d0,23 3 0,train
+296ae2ea-bbad-11e8-b2ba-ac1f6b6435d0,3,train
+296c6146-bbc7-11e8-b2bc-ac1f6b6435d0,5,train
+2971b464-bba6-11e8-b2ba-ac1f6b6435d0,22 0,train
+2972cd1c-bbb6-11e8-b2ba-ac1f6b6435d0,18,train
+29811fe4-bbab-11e8-b2ba-ac1f6b6435d0,25 13,train
+298be4e4-bbc7-11e8-b2bc-ac1f6b6435d0,19 0,train
+29fe8420-bbc4-11e8-b2bc-ac1f6b6435d0,20,train
+2a1f3ce4-bba9-11e8-b2ba-ac1f6b6435d0,3,train
+2a37412e-bbc5-11e8-b2bc-ac1f6b6435d0,4,train
+2a423c5a-bba7-11e8-b2ba-ac1f6b6435d0,11,train
+2a891b70-bbb1-11e8-b2ba-ac1f6b6435d0,25 6 0,train
+2aac08cc-bba9-11e8-b2ba-ac1f6b6435d0,14,train
+2ac1d1a4-bbb6-11e8-b2ba-ac1f6b6435d0,14,train
+2acbee30-bb9a-11e8-b2b9-ac1f6b6435d0,12,train
+2ad963e0-bb9e-11e8-b2b9-ac1f6b6435d0,6,train
+2adbadaa-bbba-11e8-b2ba-ac1f6b6435d0,16 14 17,train
+2af1838a-bba8-11e8-b2ba-ac1f6b6435d0,6,train
+2b0edb28-bba4-11e8-b2b9-ac1f6b6435d0,23,train
+2b4bed0c-bbb2-11e8-b2ba-ac1f6b6435d0,4,train
+2b69eb06-bba1-11e8-b2b9-ac1f6b6435d0,3 0,train
+2b8ddd08-bbb1-11e8-b2ba-ac1f6b6435d0,20,train
+2bb710f6-bbac-11e8-b2ba-ac1f6b6435d0,13 21,train
+2bbfc332-bb9c-11e8-b2b9-ac1f6b6435d0,23,train
+2bd37b5c-bbc4-11e8-b2bc-ac1f6b6435d0,7,train
+2bf2d2c4-bbbd-11e8-b2ba-ac1f6b6435d0,13 7,train
+2bf44f30-bba1-11e8-b2b9-ac1f6b6435d0,11,train
+2c3c20cc-bbb9-11e8-b2ba-ac1f6b6435d0,25 6,train
+2c523024-bbaf-11e8-b2ba-ac1f6b6435d0,25 1,train
+2c58ecc0-bbb4-11e8-b2ba-ac1f6b6435d0,11,train
+2c94110a-bb9c-11e8-b2b9-ac1f6b6435d0,7,train
+2c9c097c-bbac-11e8-b2ba-ac1f6b6435d0,11,train
+2c9d5192-bbb1-11e8-b2ba-ac1f6b6435d0,11,train
+2ca4e612-bb9f-11e8-b2b9-ac1f6b6435d0,22 25 7,train
+2cb89494-bbab-11e8-b2ba-ac1f6b6435d0,25 21,train
+2ccf1cf4-bbbb-11e8-b2ba-ac1f6b6435d0,5 0,train
+2cd26eec-bbc8-11e8-b2bc-ac1f6b6435d0,22 14,train
+2cda1060-bbab-11e8-b2ba-ac1f6b6435d0,14,train
+2cdeafc8-bbb8-11e8-b2ba-ac1f6b6435d0,25 3 0,train
+2d14918c-bba5-11e8-b2ba-ac1f6b6435d0,4,train
+2d1a9ab6-bbc1-11e8-b2bb-ac1f6b6435d0,12 5,train
+2d3a9894-bba7-11e8-b2ba-ac1f6b6435d0,25 11,train
+2d435dfe-bbc9-11e8-b2bc-ac1f6b6435d0,6 14 2,train
+2d491298-bbca-11e8-b2bc-ac1f6b6435d0,12,train
+2d6f7e9a-bbc2-11e8-b2bb-ac1f6b6435d0,23 0,train
+2dab7d44-bbab-11e8-b2ba-ac1f6b6435d0,1 0,train
+2db6667e-bb9b-11e8-b2b9-ac1f6b6435d0,19 25,train
+2dd37170-bbb3-11e8-b2ba-ac1f6b6435d0,13 2 0,train
+2ded4a66-bbb6-11e8-b2ba-ac1f6b6435d0,18 0,train
+2df78754-bbb8-11e8-b2ba-ac1f6b6435d0,6,train
+2e12df76-bb9b-11e8-b2b9-ac1f6b6435d0,6 1,train
+2e520340-bbc8-11e8-b2bc-ac1f6b6435d0,4,train
+2e6d82be-bba5-11e8-b2ba-ac1f6b6435d0,13,train
+2e7797fc-bba7-11e8-b2ba-ac1f6b6435d0,23,train
+2e88d8e2-bba6-11e8-b2ba-ac1f6b6435d0,2 0,train
+2e939988-bbb2-11e8-b2ba-ac1f6b6435d0,25 1,train
+2eaefd72-bbc6-11e8-b2bc-ac1f6b6435d0,23,train
+2ebf658c-bba7-11e8-b2ba-ac1f6b6435d0,14,train
+2ec0cfbe-bbb9-11e8-b2ba-ac1f6b6435d0,24,train
+2f343b58-bbc2-11e8-b2bb-ac1f6b6435d0,25 11 2 0,train
+2f39d760-bbc3-11e8-b2bc-ac1f6b6435d0,1 4 2 0,train
+2f3a3334-bbbb-11e8-b2ba-ac1f6b6435d0,1 2 0,train
+2f5d09d2-bbb5-11e8-b2ba-ac1f6b6435d0,16,train
+2f5ea052-bbb6-11e8-b2ba-ac1f6b6435d0,23 4,train
+2f74c814-bbca-11e8-b2bc-ac1f6b6435d0,4,train
+2f75852c-bbae-11e8-b2ba-ac1f6b6435d0,25 1 4,train
+2fd9d35c-bbbc-11e8-b2ba-ac1f6b6435d0,25 3 0,train
+2ff7682c-bba8-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+30060ffe-bba7-11e8-b2ba-ac1f6b6435d0,1,train
+30344198-bbad-11e8-b2ba-ac1f6b6435d0,23,train
+304b1830-bba0-11e8-b2b9-ac1f6b6435d0,16 0,train
+3054593e-bba2-11e8-b2b9-ac1f6b6435d0,11 0,train
+306b0ed4-bb9f-11e8-b2b9-ac1f6b6435d0,19 0,train
+3084f2a2-bbc9-11e8-b2bc-ac1f6b6435d0,7 3,train
+30992a94-bbb3-11e8-b2ba-ac1f6b6435d0,4,train
+30c93b10-bbb5-11e8-b2ba-ac1f6b6435d0,7 0,train
+30fd4030-bbc0-11e8-b2bb-ac1f6b6435d0,4,train
+311ae720-bbbb-11e8-b2ba-ac1f6b6435d0,19 25 21,train
+3128c6b6-bbc4-11e8-b2bc-ac1f6b6435d0,25 5 0,train
+312d3e32-bb9a-11e8-b2b9-ac1f6b6435d0,25 14,train
+314463be-bbb3-11e8-b2ba-ac1f6b6435d0,12 25,train
+317ea1f4-bbaa-11e8-b2ba-ac1f6b6435d0,6,train
+31bb4dc8-bbca-11e8-b2bc-ac1f6b6435d0,19 21,train
+31bf6dba-bbaa-11e8-b2ba-ac1f6b6435d0,16 25 0,train
+31e853c8-bba1-11e8-b2b9-ac1f6b6435d0,1,train
+3202385a-bbca-11e8-b2bc-ac1f6b6435d0,4,train
+32244c88-bbbb-11e8-b2ba-ac1f6b6435d0,7,train
+322ac152-bbbc-11e8-b2ba-ac1f6b6435d0,11,train
+322dfc3c-bba3-11e8-b2b9-ac1f6b6435d0,14 21,train
+323c2d28-bba5-11e8-b2ba-ac1f6b6435d0,25 1,train
+3268abf6-bbc7-11e8-b2bc-ac1f6b6435d0,25 1,train
+3278daa0-bbb1-11e8-b2ba-ac1f6b6435d0,7,train
+328b04e0-bbad-11e8-b2ba-ac1f6b6435d0,11,train
+328f5a2a-bb9b-11e8-b2b9-ac1f6b6435d0,25 14,train
+32a68762-bb9c-11e8-b2b9-ac1f6b6435d0,9 10,train
+32b238f8-bb9e-11e8-b2b9-ac1f6b6435d0,23,train
+32c0c56a-bba5-11e8-b2ba-ac1f6b6435d0,7,train
+32c3c678-bba2-11e8-b2b9-ac1f6b6435d0,11,train
+32c49f56-bbae-11e8-b2ba-ac1f6b6435d0,22 21,train
+32fcec9a-bbc6-11e8-b2bc-ac1f6b6435d0,19,train
+334aa47a-bba4-11e8-b2b9-ac1f6b6435d0,23,train
+3365924c-bba1-11e8-b2b9-ac1f6b6435d0,23,train
+33cbab9c-bb9a-11e8-b2b9-ac1f6b6435d0,4,train
+33dafae0-bba2-11e8-b2b9-ac1f6b6435d0,11,train
+34186a34-bbab-11e8-b2ba-ac1f6b6435d0,23,train
+34340b64-bbaf-11e8-b2ba-ac1f6b6435d0,25 11 0,train
+344ba91e-bbbd-11e8-b2ba-ac1f6b6435d0,3,train
+3476f196-bbc7-11e8-b2bc-ac1f6b6435d0,2 0,train
+347e4c9e-bb9e-11e8-b2b9-ac1f6b6435d0,22 5,train
+34a3289c-bbc7-11e8-b2bc-ac1f6b6435d0,14,train
+34af637a-bbca-11e8-b2bc-ac1f6b6435d0,16 14,train
+34bbec78-bbb9-11e8-b2ba-ac1f6b6435d0,11 5,train
+34fa7330-bbb4-11e8-b2ba-ac1f6b6435d0,23 0,train
+34ff1f74-bbb0-11e8-b2ba-ac1f6b6435d0,21,train
+351361dc-bbbf-11e8-b2ba-ac1f6b6435d0,23,train
+3517d0de-bbae-11e8-b2ba-ac1f6b6435d0,19,train
+351d1b0e-bbbb-11e8-b2ba-ac1f6b6435d0,18,train
+3524ca74-bbc1-11e8-b2bb-ac1f6b6435d0,7,train
+3531e0f6-bbad-11e8-b2ba-ac1f6b6435d0,21,train
+3537a394-bbab-11e8-b2ba-ac1f6b6435d0,14,train
+3549b806-bbb8-11e8-b2ba-ac1f6b6435d0,14 0,train
+355f9ea4-bb9b-11e8-b2b9-ac1f6b6435d0,12 14,train
+357d3c8c-bbb1-11e8-b2ba-ac1f6b6435d0,23,train
+358301da-bba2-11e8-b2b9-ac1f6b6435d0,16 25 17,train
+35cd6a44-bbc6-11e8-b2bc-ac1f6b6435d0,22 2 0,train
+35dd716c-bba5-11e8-b2ba-ac1f6b6435d0,1 0,train
+35e0d81e-bbb1-11e8-b2ba-ac1f6b6435d0,2,train
+35e7feac-bbb4-11e8-b2ba-ac1f6b6435d0,14,train
+35fb9e7a-bb9c-11e8-b2b9-ac1f6b6435d0,11,train
+36073156-bb9a-11e8-b2b9-ac1f6b6435d0,11 5,train
+360e2afa-bbaf-11e8-b2ba-ac1f6b6435d0,23,train
+36307bfe-bbbf-11e8-b2ba-ac1f6b6435d0,12 0,train
+363c0cd0-bbc4-11e8-b2bc-ac1f6b6435d0,25 1,train
+363cbc54-bbae-11e8-b2ba-ac1f6b6435d0,4,train
+3646172e-bba7-11e8-b2ba-ac1f6b6435d0,19 3,train
+36842528-bbac-11e8-b2ba-ac1f6b6435d0,20 23 0,train
+36b25538-bbac-11e8-b2ba-ac1f6b6435d0,25 5 0,train
+36be54cc-bba8-11e8-b2ba-ac1f6b6435d0,6,train
+36bf8788-bbc7-11e8-b2bc-ac1f6b6435d0,3 0,train
+36d58d5e-bbb2-11e8-b2ba-ac1f6b6435d0,1 0,train
+371114de-bbba-11e8-b2ba-ac1f6b6435d0,25 18,train
+371e5db0-bbba-11e8-b2ba-ac1f6b6435d0,12 25 0,train
+37312b3e-bbb5-11e8-b2ba-ac1f6b6435d0,3,train
+373716f8-bb9b-11e8-b2b9-ac1f6b6435d0,6 18,train
+3745fe78-bbc0-11e8-b2bb-ac1f6b6435d0,19 0,train
+3753f098-bbc8-11e8-b2bc-ac1f6b6435d0,19 14,train
+37631b80-bb9c-11e8-b2b9-ac1f6b6435d0,26 25,train
+3774b00a-bbb2-11e8-b2ba-ac1f6b6435d0,1 2,train
+37b644d0-bbbb-11e8-b2ba-ac1f6b6435d0,12 23 0,train
+37d564dc-bba2-11e8-b2b9-ac1f6b6435d0,23 0,train
+37df064e-bbc6-11e8-b2bc-ac1f6b6435d0,23,train
+37e45548-bbaa-11e8-b2ba-ac1f6b6435d0,11,train
+37eac442-bba9-11e8-b2ba-ac1f6b6435d0,11 0,train
+381e477c-bb9a-11e8-b2b9-ac1f6b6435d0,15 5 0,train
+38293f5c-bbbc-11e8-b2ba-ac1f6b6435d0,22 0,train
+38327d44-bba6-11e8-b2ba-ac1f6b6435d0,25 5,train
+38363636-bbca-11e8-b2bc-ac1f6b6435d0,3,train
+3846865a-bbaf-11e8-b2ba-ac1f6b6435d0,12,train
+38475ece-bbb2-11e8-b2ba-ac1f6b6435d0,5 0,train
+3852dab4-bbb3-11e8-b2ba-ac1f6b6435d0,6 0,train
+3865ad24-bba4-11e8-b2b9-ac1f6b6435d0,16 14 17,train
+386798bc-bbb5-11e8-b2ba-ac1f6b6435d0,4,train
+386e5c4c-bb9c-11e8-b2b9-ac1f6b6435d0,1 21,train
+38745942-bbb2-11e8-b2ba-ac1f6b6435d0,11 0,train
+3879901e-bbbd-11e8-b2ba-ac1f6b6435d0,19 0 21,train
+3879eeae-bbab-11e8-b2ba-ac1f6b6435d0,25 11,train
+3892c1a0-bb9b-11e8-b2b9-ac1f6b6435d0,24 4,train
+389c488c-bb9c-11e8-b2b9-ac1f6b6435d0,6 0,train
+38b57580-bba8-11e8-b2ba-ac1f6b6435d0,25 5 0,train
+38b630a4-bbc8-11e8-b2bc-ac1f6b6435d0,12 1 21,train
+38c35038-bb9e-11e8-b2b9-ac1f6b6435d0,22 0,train
+38d0569e-bba7-11e8-b2ba-ac1f6b6435d0,24,train
+38d360fe-bba3-11e8-b2b9-ac1f6b6435d0,22 21,train
+390d705c-bbbf-11e8-b2ba-ac1f6b6435d0,3,train
+3952515c-bba8-11e8-b2ba-ac1f6b6435d0,1 0,train
+39531166-bba6-11e8-b2ba-ac1f6b6435d0,4 0,train
+395a0548-bba1-11e8-b2b9-ac1f6b6435d0,14 21,train
+396d820a-bbbd-11e8-b2ba-ac1f6b6435d0,12,train
+39710b50-bb9a-11e8-b2b9-ac1f6b6435d0,26 0,train
+3996ba24-bba6-11e8-b2ba-ac1f6b6435d0,24 0,train
+39a19fbc-bba5-11e8-b2ba-ac1f6b6435d0,11 0,train
+39c61ede-bbbc-11e8-b2ba-ac1f6b6435d0,18 0,train
+39c89a8e-bbb6-11e8-b2ba-ac1f6b6435d0,9 10,train
+39cf4f1c-bbb3-11e8-b2ba-ac1f6b6435d0,19,train
+39e89150-bbbf-11e8-b2ba-ac1f6b6435d0,12 21,train
+3a02ccee-bbc1-11e8-b2bb-ac1f6b6435d0,11,train
+3a1a7f44-bbb0-11e8-b2ba-ac1f6b6435d0,4,train
+3a298cc8-bbab-11e8-b2ba-ac1f6b6435d0,11,train
+3a3457ae-bb9a-11e8-b2b9-ac1f6b6435d0,11 2,train
+3a7ac702-bbc7-11e8-b2bc-ac1f6b6435d0,25 18,train
+3ab16090-bba5-11e8-b2ba-ac1f6b6435d0,25 3,train
+3af2d890-bbc3-11e8-b2bc-ac1f6b6435d0,13 5 0,train
+3b33b7e0-bb9e-11e8-b2b9-ac1f6b6435d0,25 7 1,train
+3b56f79c-bbac-11e8-b2ba-ac1f6b6435d0,1 0,train
+3b69c584-bb9d-11e8-b2b9-ac1f6b6435d0,18,train
+3b7b3a58-bbb6-11e8-b2ba-ac1f6b6435d0,25 3,train
+3b8f287c-bbbd-11e8-b2ba-ac1f6b6435d0,19 0,train
+3bb73028-bbc3-11e8-b2bc-ac1f6b6435d0,24,train
+3bfec874-bbb5-11e8-b2ba-ac1f6b6435d0,25 14,train
+3c059f54-bba7-11e8-b2ba-ac1f6b6435d0,25 6 0,train
+3c07ad1c-bbca-11e8-b2bc-ac1f6b6435d0,25 3,train
+3c2c7786-bbc1-11e8-b2bb-ac1f6b6435d0,5,train
+3c32e9ca-bba5-11e8-b2ba-ac1f6b6435d0,7 0 21,train
+3c33f686-bbae-11e8-b2ba-ac1f6b6435d0,19,train
+3c4e2bb6-bbbb-11e8-b2ba-ac1f6b6435d0,16 0,train
+3c9a0f86-bbb6-11e8-b2ba-ac1f6b6435d0,25 18,train
+3cc7fc1e-bbb8-11e8-b2ba-ac1f6b6435d0,13,train
+3ccb2d54-bb9e-11e8-b2b9-ac1f6b6435d0,12 19 25 0,train
+3cf799aa-bbaf-11e8-b2ba-ac1f6b6435d0,23 0,train
+3d1fe300-bba1-11e8-b2b9-ac1f6b6435d0,25 18,train
+3d444e5c-bbba-11e8-b2ba-ac1f6b6435d0,23,train
+3d4ec2d6-bba3-11e8-b2b9-ac1f6b6435d0,6,train
+3d6f5b3e-bbb4-11e8-b2ba-ac1f6b6435d0,7,train
+3d7d6b58-bbc7-11e8-b2bc-ac1f6b6435d0,26 0,train
+3d84c14a-bbaa-11e8-b2ba-ac1f6b6435d0,11,train
+3de4800a-bba3-11e8-b2b9-ac1f6b6435d0,22,train
+3e12aeb4-bbc4-11e8-b2bc-ac1f6b6435d0,23,train
+3e1d10dc-bba3-11e8-b2b9-ac1f6b6435d0,16 0,train
+3e294952-bbac-11e8-b2ba-ac1f6b6435d0,22,train
+3e2f685a-bba2-11e8-b2b9-ac1f6b6435d0,14,train
+3e43651c-bbb1-11e8-b2ba-ac1f6b6435d0,23 4,train
+3e58709e-bba0-11e8-b2b9-ac1f6b6435d0,19 25,train
+3e7bfbd6-bbb9-11e8-b2ba-ac1f6b6435d0,23,train
+3e873d18-bbbc-11e8-b2ba-ac1f6b6435d0,18 0,train
+3e942422-bbaf-11e8-b2ba-ac1f6b6435d0,19 2 0 21,train
+3ea0739e-bba5-11e8-b2ba-ac1f6b6435d0,6,train
+3ec3b854-bbc3-11e8-b2bc-ac1f6b6435d0,25 5,train
+3ecb800e-bbc1-11e8-b2bb-ac1f6b6435d0,25 6,train
+3f36762a-bbb2-11e8-b2ba-ac1f6b6435d0,22,train
+3f6246d4-bbb6-11e8-b2ba-ac1f6b6435d0,23 0,train
+3f9b5af0-bbac-11e8-b2ba-ac1f6b6435d0,18 0,train
+3fd74e3e-bbc0-11e8-b2bb-ac1f6b6435d0,12 5,train
+3fe5204c-bbc8-11e8-b2bc-ac1f6b6435d0,11,train
+3fe924d2-bba3-11e8-b2b9-ac1f6b6435d0,3,train
+4006bd0a-bbc4-11e8-b2bc-ac1f6b6435d0,12,train
+4008c77c-bbc8-11e8-b2bc-ac1f6b6435d0,22,train
+4019c340-bbbb-11e8-b2ba-ac1f6b6435d0,7,train
+403de12c-bba1-11e8-b2b9-ac1f6b6435d0,12 25,train
+40645c18-bba0-11e8-b2b9-ac1f6b6435d0,25 18 0,train
+40958f1e-bbc7-11e8-b2bc-ac1f6b6435d0,12,train
+40a7d6ce-bba9-11e8-b2ba-ac1f6b6435d0,22 21,train
+40d5ae02-bba2-11e8-b2b9-ac1f6b6435d0,1 0,train
+40e868cc-bba6-11e8-b2ba-ac1f6b6435d0,2 0,train
+410f27aa-bbbf-11e8-b2ba-ac1f6b6435d0,25 18,train
+41485ea4-bbb9-11e8-b2ba-ac1f6b6435d0,5 21,train
+414d7796-bbae-11e8-b2ba-ac1f6b6435d0,25 11 0,train
+41602058-bb9f-11e8-b2b9-ac1f6b6435d0,5 0 21,train
+41670190-bbbb-11e8-b2ba-ac1f6b6435d0,3,train
+41682592-bbb2-11e8-b2ba-ac1f6b6435d0,23,train
+416cd1bc-bba5-11e8-b2ba-ac1f6b6435d0,12 25 4,train
+418a1dda-bbb9-11e8-b2ba-ac1f6b6435d0,1 2,train
+418be926-bb9b-11e8-b2b9-ac1f6b6435d0,3 21,train
+41ad5640-bbbb-11e8-b2ba-ac1f6b6435d0,26 0,train
+41b0d84c-bbc5-11e8-b2bc-ac1f6b6435d0,19 2 0 21,train
+41c31bc8-bbc6-11e8-b2bc-ac1f6b6435d0,19 13 0,train
+41cffd08-bbbb-11e8-b2ba-ac1f6b6435d0,12 18 4 3,train
+41ea4166-bb9a-11e8-b2b9-ac1f6b6435d0,20,train
+42061ae4-bbae-11e8-b2ba-ac1f6b6435d0,14 0,train
+4207f49e-bba5-11e8-b2ba-ac1f6b6435d0,22 21,train
+4217c32c-bbbb-11e8-b2ba-ac1f6b6435d0,6,train
+42707e1e-bba1-11e8-b2b9-ac1f6b6435d0,24 0,train
+4272508a-bbc5-11e8-b2bc-ac1f6b6435d0,18 0,train
+42795af2-bb9c-11e8-b2b9-ac1f6b6435d0,6,train
+42837978-bbac-11e8-b2ba-ac1f6b6435d0,19,train
+429870dc-bba0-11e8-b2b9-ac1f6b6435d0,12,train
+42a47e90-bb9b-11e8-b2b9-ac1f6b6435d0,25 1 0,train
+42c3ac2e-bba6-11e8-b2ba-ac1f6b6435d0,4 21,train
+42d00dd8-bb9d-11e8-b2b9-ac1f6b6435d0,5 0,train
+42e1b300-bbc3-11e8-b2bc-ac1f6b6435d0,11,train
+42f5cf2a-bbb4-11e8-b2ba-ac1f6b6435d0,25 18 0,train
+430902d8-bbc9-11e8-b2bc-ac1f6b6435d0,12 19 25,train
+4327436c-bba4-11e8-b2b9-ac1f6b6435d0,7 0,train
+4342233a-bbb3-11e8-b2ba-ac1f6b6435d0,23,train
+43480eba-bba6-11e8-b2ba-ac1f6b6435d0,22 21,train
+434b57fa-bba6-11e8-b2ba-ac1f6b6435d0,11 0,train
+437fd786-bbc0-11e8-b2bb-ac1f6b6435d0,7 11,train
+438ac964-bb9f-11e8-b2b9-ac1f6b6435d0,4,train
+43a494d6-bbbb-11e8-b2ba-ac1f6b6435d0,25 6,train
+43a8c8f4-bbb0-11e8-b2ba-ac1f6b6435d0,25 4,train
+43b96b0a-bbab-11e8-b2ba-ac1f6b6435d0,1,train
+43bb6eb0-bbc3-11e8-b2bc-ac1f6b6435d0,25 7 1 0,train
+43e1211a-bba9-11e8-b2ba-ac1f6b6435d0,3,train
+440356c6-bbaf-11e8-b2ba-ac1f6b6435d0,11,train
+440d831a-bba2-11e8-b2b9-ac1f6b6435d0,7 0,train
+441729a0-bbbc-11e8-b2ba-ac1f6b6435d0,11,train
+441bd54a-bbb7-11e8-b2ba-ac1f6b6435d0,23,train
+442711d2-bbba-11e8-b2ba-ac1f6b6435d0,13 11,train
+44397d8e-bbad-11e8-b2ba-ac1f6b6435d0,22 25,train
+444f7120-bbc1-11e8-b2bb-ac1f6b6435d0,23,train
+447d175a-bb9a-11e8-b2b9-ac1f6b6435d0,3 0,train
+449d4c8a-bbab-11e8-b2ba-ac1f6b6435d0,1,train
+44d70272-bbc9-11e8-b2bc-ac1f6b6435d0,3,train
+44d8b8e0-bbad-11e8-b2ba-ac1f6b6435d0,22 21,train
+44e2007a-bba4-11e8-b2b9-ac1f6b6435d0,3,train
+45125548-bba1-11e8-b2b9-ac1f6b6435d0,19 0,train
+451597b8-bbb4-11e8-b2ba-ac1f6b6435d0,7 0,train
+454d7472-bbc2-11e8-b2bb-ac1f6b6435d0,6,train
+455beaca-bba4-11e8-b2b9-ac1f6b6435d0,6,train
+4579233c-bba5-11e8-b2ba-ac1f6b6435d0,14 0,train
+45816cee-bba6-11e8-b2ba-ac1f6b6435d0,16 25,train
+459f7146-bb9a-11e8-b2b9-ac1f6b6435d0,7,train
+45a6eb56-bbc7-11e8-b2bc-ac1f6b6435d0,11,train
+45d38d90-bbc3-11e8-b2bc-ac1f6b6435d0,1,train
+45fcbb18-bba8-11e8-b2ba-ac1f6b6435d0,1,train
+461661ac-bba4-11e8-b2b9-ac1f6b6435d0,11,train
+463b390e-bbc3-11e8-b2bc-ac1f6b6435d0,7,train
+46656222-bbca-11e8-b2bc-ac1f6b6435d0,1 21,train
+466b8370-bbc3-11e8-b2bc-ac1f6b6435d0,2 0,train
+467f1816-bbac-11e8-b2ba-ac1f6b6435d0,6,train
+469b4e6c-bbb8-11e8-b2ba-ac1f6b6435d0,13 3,train
+46d3a012-bbc9-11e8-b2bc-ac1f6b6435d0,19,train
+47068262-bbc8-11e8-b2bc-ac1f6b6435d0,5,train
+474f16de-bb9c-11e8-b2b9-ac1f6b6435d0,19 25 0,train
+47543490-bbae-11e8-b2ba-ac1f6b6435d0,7 2,train
+475a059a-bbb9-11e8-b2ba-ac1f6b6435d0,12 1,train
+47a81c72-bbbd-11e8-b2ba-ac1f6b6435d0,18,train
+47bd29da-bb9c-11e8-b2b9-ac1f6b6435d0,3,train
+47ce6b92-bbc8-11e8-b2bc-ac1f6b6435d0,13 0,train
+47d58bec-bbb5-11e8-b2ba-ac1f6b6435d0,23,train
+47e2de0a-bba6-11e8-b2ba-ac1f6b6435d0,11,train
+481c6b7c-bbb8-11e8-b2ba-ac1f6b6435d0,13,train
+48268d8a-bba1-11e8-b2b9-ac1f6b6435d0,22 0,train
+48759e56-bba2-11e8-b2b9-ac1f6b6435d0,23,train
+4876bcc0-bbb4-11e8-b2ba-ac1f6b6435d0,1,train
+4882db02-bbb1-11e8-b2ba-ac1f6b6435d0,13,train
+48a1f2c2-bba6-11e8-b2ba-ac1f6b6435d0,12,train
+48a66d9c-bba7-11e8-b2ba-ac1f6b6435d0,23 0,train
+48c6145e-bba6-11e8-b2ba-ac1f6b6435d0,18,train
+48d1a41a-bb9a-11e8-b2b9-ac1f6b6435d0,23 2,train
+48d760d4-bbbe-11e8-b2ba-ac1f6b6435d0,18,train
+48de5494-bbb3-11e8-b2ba-ac1f6b6435d0,3 0,train
+48f73fa2-bbc4-11e8-b2bc-ac1f6b6435d0,6,train
+49238bfc-bbb0-11e8-b2ba-ac1f6b6435d0,7 0,train
+492984e4-bbb5-11e8-b2ba-ac1f6b6435d0,7 0,train
+492c0c12-bbad-11e8-b2ba-ac1f6b6435d0,5,train
+493258e0-bbb4-11e8-b2ba-ac1f6b6435d0,19 0,train
+49486c92-bbc4-11e8-b2bc-ac1f6b6435d0,7 4,train
+495d2922-bba4-11e8-b2b9-ac1f6b6435d0,23,train
+49600130-bbc0-11e8-b2bb-ac1f6b6435d0,4 0,train
+49dce35e-bbb0-11e8-b2ba-ac1f6b6435d0,3,train
+49eaec0c-bbbe-11e8-b2ba-ac1f6b6435d0,25 4,train
+49fd132c-bbba-11e8-b2ba-ac1f6b6435d0,23 0,train
+4a0dd392-bbba-11e8-b2ba-ac1f6b6435d0,18,train
+4a2c88e4-bba8-11e8-b2ba-ac1f6b6435d0,23,train
+4a434802-bbc8-11e8-b2bc-ac1f6b6435d0,24 21,train
+4a8b0944-bbbe-11e8-b2ba-ac1f6b6435d0,7 2 0,train
+4afc5c48-bbbe-11e8-b2ba-ac1f6b6435d0,6,train
+4b00d8de-bbb6-11e8-b2ba-ac1f6b6435d0,25 18 0,train
+4b0d7acc-bbb5-11e8-b2ba-ac1f6b6435d0,7,train
+4b0fe352-bbbf-11e8-b2ba-ac1f6b6435d0,23,train
+4b1eeece-bb9c-11e8-b2b9-ac1f6b6435d0,7,train
+4b28c6f4-bb9e-11e8-b2b9-ac1f6b6435d0,1 2,train
+4b35b9a8-bb9f-11e8-b2b9-ac1f6b6435d0,4,train
+4b38ef28-bb9b-11e8-b2b9-ac1f6b6435d0,18 0,train
+4b3a7030-bb9d-11e8-b2b9-ac1f6b6435d0,25 23 0,train
+4b47158e-bbc9-11e8-b2bc-ac1f6b6435d0,18,train
+4b4fd632-bbc5-11e8-b2bc-ac1f6b6435d0,1,train
+4bc2064e-bbb1-11e8-b2ba-ac1f6b6435d0,12,train
+4bc6eae4-bbc8-11e8-b2bc-ac1f6b6435d0,19 0,train
+4be4b382-bbc6-11e8-b2bc-ac1f6b6435d0,20,train
+4c099748-bbb1-11e8-b2ba-ac1f6b6435d0,14,train
+4c0c6f96-bbab-11e8-b2ba-ac1f6b6435d0,25 6,train
+4c1f8b84-bbb1-11e8-b2ba-ac1f6b6435d0,22 0,train
+4c218cc4-bbaa-11e8-b2ba-ac1f6b6435d0,25 1 21,train
+4c3c4140-bbaa-11e8-b2ba-ac1f6b6435d0,18,train
+4c3f80f4-bba4-11e8-b2b9-ac1f6b6435d0,25 2,train
+4c443618-bb9e-11e8-b2b9-ac1f6b6435d0,7 0,train
+4c5d4618-bbca-11e8-b2bc-ac1f6b6435d0,16 18 17,train
+4c623f16-bbb5-11e8-b2ba-ac1f6b6435d0,4,train
+4c7a5314-bb9a-11e8-b2b9-ac1f6b6435d0,11,train
+4c7b21be-bba8-11e8-b2ba-ac1f6b6435d0,3,train
+4c7f09b6-bba6-11e8-b2ba-ac1f6b6435d0,25 14,train
+4c9f3f34-bbbe-11e8-b2ba-ac1f6b6435d0,14,train
+4cafadca-bba4-11e8-b2b9-ac1f6b6435d0,23,train
+4cd27bea-bbc5-11e8-b2bc-ac1f6b6435d0,13 1 0,train
+4ce4f468-bbc1-11e8-b2bb-ac1f6b6435d0,23,train
+4d048f50-bba6-11e8-b2ba-ac1f6b6435d0,4,train
+4d1917ec-bba4-11e8-b2b9-ac1f6b6435d0,22,train
+4d1b9550-bba7-11e8-b2ba-ac1f6b6435d0,16 0,train
+4d1f613c-bbaf-11e8-b2ba-ac1f6b6435d0,25 13 0,train
+4d672dcc-bba6-11e8-b2ba-ac1f6b6435d0,19,train
+4d7467f2-bba7-11e8-b2ba-ac1f6b6435d0,9 10,train
+4d8e646e-bbb0-11e8-b2ba-ac1f6b6435d0,6,train
+4de1e3d2-bbbf-11e8-b2ba-ac1f6b6435d0,3,train
+4e096690-bb9d-11e8-b2b9-ac1f6b6435d0,25 3 0,train
+4e0c5df8-bb9a-11e8-b2b9-ac1f6b6435d0,19,train
+4e163ea4-bb9a-11e8-b2b9-ac1f6b6435d0,7,train
+4e40fb98-bba5-11e8-b2ba-ac1f6b6435d0,2 0,train
+4e41a4a4-bbae-11e8-b2ba-ac1f6b6435d0,19,train
+4e4302d6-bb9a-11e8-b2b9-ac1f6b6435d0,25 11,train
+4e5c1726-bba9-11e8-b2ba-ac1f6b6435d0,19 0,train
+4e84d71a-bb9f-11e8-b2b9-ac1f6b6435d0,22 21,train
+4ecad5c6-bbb8-11e8-b2ba-ac1f6b6435d0,2 8,train
+4efd6918-bbbe-11e8-b2ba-ac1f6b6435d0,3,train
+4f1db0f4-bbca-11e8-b2bc-ac1f6b6435d0,23,train
+4f1fde54-bb9a-11e8-b2b9-ac1f6b6435d0,7 0,train
+4f262a44-bbb7-11e8-b2ba-ac1f6b6435d0,19,train
+4f4f79ca-bba9-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+4f734e08-bbb9-11e8-b2ba-ac1f6b6435d0,7 0,train
+4f880532-bbbe-11e8-b2ba-ac1f6b6435d0,24,train
+4f969b68-bba2-11e8-b2b9-ac1f6b6435d0,19 0,train
+4fa5fe76-bbb8-11e8-b2ba-ac1f6b6435d0,19 0,train
+4fb50d6e-bbb1-11e8-b2ba-ac1f6b6435d0,22 21,train
+4fcc402e-bbca-11e8-b2bc-ac1f6b6435d0,14,train
+4fd8b252-bbaf-11e8-b2ba-ac1f6b6435d0,1,train
+4fe01ec6-bbb3-11e8-b2ba-ac1f6b6435d0,23 0,train
+50023de4-bbc7-11e8-b2bc-ac1f6b6435d0,3,train
+5027fa08-bbb7-11e8-b2ba-ac1f6b6435d0,25 4,train
+50390726-bbc6-11e8-b2bc-ac1f6b6435d0,14 4,train
+50423f58-bba8-11e8-b2ba-ac1f6b6435d0,25 16 0,train
+5060d5d4-bbbd-11e8-b2ba-ac1f6b6435d0,12,train
+50755000-bbad-11e8-b2ba-ac1f6b6435d0,7 2,train
+50876522-bbb9-11e8-b2ba-ac1f6b6435d0,6 2,train
+508daf8c-bb9f-11e8-b2b9-ac1f6b6435d0,22,train
+50a357dc-bbc3-11e8-b2bc-ac1f6b6435d0,0 21,train
+50a91120-bb9d-11e8-b2b9-ac1f6b6435d0,11,train
+50d08456-bba9-11e8-b2ba-ac1f6b6435d0,4,train
+50d3256a-bbc9-11e8-b2bc-ac1f6b6435d0,1 0,train
+50df5974-bbc0-11e8-b2bb-ac1f6b6435d0,25 18 0,train
+50e05232-bbc2-11e8-b2bb-ac1f6b6435d0,1,train
+50ebb664-bb9e-11e8-b2b9-ac1f6b6435d0,12,train
+50fcfe90-bb9b-11e8-b2b9-ac1f6b6435d0,22 16 0,train
+5156c3f0-bbb7-11e8-b2ba-ac1f6b6435d0,25 11 14,train
+51918752-bbc5-11e8-b2bc-ac1f6b6435d0,25 18,train
+519a75f4-bb9a-11e8-b2b9-ac1f6b6435d0,16 25 0,train
+519b2e9a-bba4-11e8-b2b9-ac1f6b6435d0,23,train
+519bf49a-bbbf-11e8-b2ba-ac1f6b6435d0,6 1,train
+51f07a52-bba5-11e8-b2ba-ac1f6b6435d0,13,train
+525a60fa-bbb1-11e8-b2ba-ac1f6b6435d0,22,train
+528dd5c6-bbc4-11e8-b2bc-ac1f6b6435d0,25 3,train
+5293dab8-bbae-11e8-b2ba-ac1f6b6435d0,24 25,train
+529ba352-bb9e-11e8-b2b9-ac1f6b6435d0,5,train
+52ab7146-bbb8-11e8-b2ba-ac1f6b6435d0,6,train
+52ca74dc-bbaf-11e8-b2ba-ac1f6b6435d0,14,train
+52f3ce4e-bba6-11e8-b2ba-ac1f6b6435d0,19 0,train
+53066dee-bbb8-11e8-b2ba-ac1f6b6435d0,18,train
+532bced0-bbc3-11e8-b2bc-ac1f6b6435d0,2 0,train
+533839a4-bbbe-11e8-b2ba-ac1f6b6435d0,25 2 21,train
+53505d54-bbc8-11e8-b2bc-ac1f6b6435d0,12,train
+535920e2-bbbe-11e8-b2ba-ac1f6b6435d0,23,train
+537f0fba-bbb3-11e8-b2ba-ac1f6b6435d0,22 0,train
+53d384fc-bba2-11e8-b2b9-ac1f6b6435d0,3,train
+53e0980e-bbac-11e8-b2ba-ac1f6b6435d0,1,train
+53e1bd0a-bba8-11e8-b2ba-ac1f6b6435d0,25 18 5,train
+53e5b3c8-bbb8-11e8-b2ba-ac1f6b6435d0,25 18,train
+540d3932-bbb0-11e8-b2ba-ac1f6b6435d0,12,train
+5412924e-bbae-11e8-b2ba-ac1f6b6435d0,6 7,train
+5431ca5a-bbc8-11e8-b2bc-ac1f6b6435d0,13,train
+5434796a-bbca-11e8-b2bc-ac1f6b6435d0,25 11 0,train
+548bf2c2-bbc4-11e8-b2bc-ac1f6b6435d0,25 4 21,train
+54a9a13a-bbb2-11e8-b2ba-ac1f6b6435d0,3 0,train
+54b52120-bba5-11e8-b2ba-ac1f6b6435d0,18 0,train
+54cb26a6-bba4-11e8-b2b9-ac1f6b6435d0,23,train
+54eeee6c-bbb6-11e8-b2ba-ac1f6b6435d0,3,train
+54ff32ea-bba2-11e8-b2b9-ac1f6b6435d0,23 0,train
+55002502-bbba-11e8-b2ba-ac1f6b6435d0,2,train
+550e971c-bbbb-11e8-b2ba-ac1f6b6435d0,4,train
+5554d2e0-bba7-11e8-b2ba-ac1f6b6435d0,3,train
+55675402-bbc4-11e8-b2bc-ac1f6b6435d0,14,train
+5586447a-bbc9-11e8-b2bc-ac1f6b6435d0,19 0,train
+558bedf8-bbab-11e8-b2ba-ac1f6b6435d0,18,train
+559c11b8-bba3-11e8-b2b9-ac1f6b6435d0,19,train
+55afcd7e-bbae-11e8-b2ba-ac1f6b6435d0,25 4,train
+55d3c674-bba0-11e8-b2b9-ac1f6b6435d0,12 7,train
+55e377a6-bba3-11e8-b2b9-ac1f6b6435d0,25 16 0,train
+55f037ac-bbb2-11e8-b2ba-ac1f6b6435d0,14,train
+55f12448-bbb0-11e8-b2ba-ac1f6b6435d0,18,train
+55f95ccc-bbaf-11e8-b2ba-ac1f6b6435d0,11,train
+56078ac4-bbb7-11e8-b2ba-ac1f6b6435d0,19 3,train
+560b97fe-bba8-11e8-b2ba-ac1f6b6435d0,13 14,train
+561044dc-bba5-11e8-b2ba-ac1f6b6435d0,14,train
+566edc5e-bbaa-11e8-b2ba-ac1f6b6435d0,19 5 0,train
+5682515c-bbc9-11e8-b2bc-ac1f6b6435d0,12 25 0,train
+568771aa-bbab-11e8-b2ba-ac1f6b6435d0,19 0,train
+56a3412c-bbca-11e8-b2bc-ac1f6b6435d0,19 25,train
+56fd2d78-bba6-11e8-b2ba-ac1f6b6435d0,25 6,train
+570fb274-bb9f-11e8-b2b9-ac1f6b6435d0,22 3,train
+571f382c-bba2-11e8-b2b9-ac1f6b6435d0,24,train
+5731f4c2-bbba-11e8-b2ba-ac1f6b6435d0,13 21,train
+5767858a-bbc7-11e8-b2bc-ac1f6b6435d0,1 0,train
+5778fd2c-bbab-11e8-b2ba-ac1f6b6435d0,16 18 17,train
+5796e8d0-bbad-11e8-b2ba-ac1f6b6435d0,19 0,train
+57b16d0c-bbc3-11e8-b2bc-ac1f6b6435d0,19,train
+57e0e15e-bbaa-11e8-b2ba-ac1f6b6435d0,19 25,train
+57fe0520-bbbb-11e8-b2ba-ac1f6b6435d0,25 6,train
+5803a884-bbc2-11e8-b2bb-ac1f6b6435d0,19,train
+580dd732-bba4-11e8-b2b9-ac1f6b6435d0,25 4,train
+58154722-bbbf-11e8-b2ba-ac1f6b6435d0,12 4,train
+5842f19a-bba6-11e8-b2ba-ac1f6b6435d0,25 1 2,train
+58648dd8-bbbe-11e8-b2ba-ac1f6b6435d0,24 4,train
+586f4f04-bb9e-11e8-b2b9-ac1f6b6435d0,26 25,train
+5870d946-bbad-11e8-b2ba-ac1f6b6435d0,2 0,train
+589a93cc-bbca-11e8-b2bc-ac1f6b6435d0,25 1,train
+589ce0da-bbbd-11e8-b2ba-ac1f6b6435d0,11,train
+58a7e2f8-bbab-11e8-b2ba-ac1f6b6435d0,3,train
+58c3e7ae-bbac-11e8-b2ba-ac1f6b6435d0,24 0,train
+58d572c0-bbb7-11e8-b2ba-ac1f6b6435d0,4,train
+58daf1b8-bba9-11e8-b2ba-ac1f6b6435d0,23 3,train
+58def316-bbaf-11e8-b2ba-ac1f6b6435d0,12 0,train
+5904e58c-bbbc-11e8-b2ba-ac1f6b6435d0,1 4 2 0,train
+590a0b50-bba0-11e8-b2b9-ac1f6b6435d0,12 25 0 21,train
+5914003c-bbbf-11e8-b2ba-ac1f6b6435d0,19 5 1 0,train
+591536a6-bbc3-11e8-b2bc-ac1f6b6435d0,13 21,train
+592d7658-bbc8-11e8-b2bc-ac1f6b6435d0,25 3,train
+5939e29c-bbc0-11e8-b2bb-ac1f6b6435d0,18 0,train
+596bb724-bbbe-11e8-b2ba-ac1f6b6435d0,6,train
+597091da-bbba-11e8-b2ba-ac1f6b6435d0,25 6,train
+5972ea44-bbc3-11e8-b2bc-ac1f6b6435d0,20,train
+59aac664-bbc1-11e8-b2bb-ac1f6b6435d0,4,train
+5a15dd36-bbc2-11e8-b2bb-ac1f6b6435d0,19,train
+5aa03a48-bbaf-11e8-b2ba-ac1f6b6435d0,25 18,train
+5aaaa276-bbbe-11e8-b2ba-ac1f6b6435d0,25 23,train
+5af6dfba-bba5-11e8-b2ba-ac1f6b6435d0,4,train
+5b073a24-bbb7-11e8-b2ba-ac1f6b6435d0,7 3,train
+5b114a64-bbbc-11e8-b2ba-ac1f6b6435d0,25 18 17,train
+5b22d790-bbb0-11e8-b2ba-ac1f6b6435d0,16 0,train
+5b2ee9a0-bba0-11e8-b2b9-ac1f6b6435d0,1,train
+5b3b27e8-bb9a-11e8-b2b9-ac1f6b6435d0,6,train
+5b3e3d2c-bbac-11e8-b2ba-ac1f6b6435d0,12 21,train
+5b5c83c6-bbbc-11e8-b2ba-ac1f6b6435d0,26,train
+5b67cf00-bbb3-11e8-b2ba-ac1f6b6435d0,16 2 21,train
+5be1bb00-bbac-11e8-b2ba-ac1f6b6435d0,23 0,train
+5be50174-bbc6-11e8-b2bc-ac1f6b6435d0,13 0,train
+5bfe3362-bbb5-11e8-b2ba-ac1f6b6435d0,3,train
+5c2b1578-bbbd-11e8-b2ba-ac1f6b6435d0,25 11 2 0,train
+5c4e37c4-bbc7-11e8-b2bc-ac1f6b6435d0,5,train
+5c6147e6-bbaf-11e8-b2ba-ac1f6b6435d0,3 0,train
+5c653208-bbb8-11e8-b2ba-ac1f6b6435d0,14,train
+5c6784bc-bbb4-11e8-b2ba-ac1f6b6435d0,25 18,train
+5c8b86dc-bbaa-11e8-b2ba-ac1f6b6435d0,22,train
+5c8d2792-bbb6-11e8-b2ba-ac1f6b6435d0,18 0,train
+5cb87e92-bbca-11e8-b2bc-ac1f6b6435d0,4,train
+5cba5938-bbca-11e8-b2bc-ac1f6b6435d0,3 0,train
+5cbb9716-bbb7-11e8-b2ba-ac1f6b6435d0,16,train
+5cbe862e-bbbc-11e8-b2ba-ac1f6b6435d0,23 0,train
+5cc23946-bba7-11e8-b2ba-ac1f6b6435d0,1,train
+5cd06f2e-bba8-11e8-b2ba-ac1f6b6435d0,7 0,train
+5cd60d72-bbca-11e8-b2bc-ac1f6b6435d0,16 7 17,train
+5d50ea4c-bbb6-11e8-b2ba-ac1f6b6435d0,12 0,train
+5d5ffee6-bbc1-11e8-b2bb-ac1f6b6435d0,1 0 21,train
+5d74c982-bbc8-11e8-b2bc-ac1f6b6435d0,24 5,train
+5d91a9d0-bbc3-11e8-b2bc-ac1f6b6435d0,22 0,train
+5de64ee8-bbc5-11e8-b2bc-ac1f6b6435d0,2 0,train
+5e24b672-bbae-11e8-b2ba-ac1f6b6435d0,24 16 0,train
+5e3c60ec-bb9a-11e8-b2b9-ac1f6b6435d0,22,train
+5e41a83e-bb9c-11e8-b2b9-ac1f6b6435d0,9,train
+5e424bf0-bbaa-11e8-b2ba-ac1f6b6435d0,14 0,train
+5e6526a2-bba0-11e8-b2b9-ac1f6b6435d0,6 2,train
+5eb731e0-bba0-11e8-b2b9-ac1f6b6435d0,25 4,train
+5ebaaca8-bbc3-11e8-b2bc-ac1f6b6435d0,18 17,train
+5ec8cdf4-bbb6-11e8-b2ba-ac1f6b6435d0,11 1,train
+5ecbc5a0-bbc9-11e8-b2bc-ac1f6b6435d0,20,train
+5ed0a114-bb9d-11e8-b2b9-ac1f6b6435d0,16 25 0,train
+5ed9def0-bbc0-11e8-b2bb-ac1f6b6435d0,19 2,train
+5f091546-bbb4-11e8-b2ba-ac1f6b6435d0,23,train
+5f122668-bbc8-11e8-b2bc-ac1f6b6435d0,7,train
+5f209740-bbb2-11e8-b2ba-ac1f6b6435d0,12,train
+5f6083a8-bb9b-11e8-b2b9-ac1f6b6435d0,12,train
+5f96ad4e-bba4-11e8-b2b9-ac1f6b6435d0,22 2 0,train
+5fa83c26-bba4-11e8-b2b9-ac1f6b6435d0,14 0,train
+5faa908e-bb9f-11e8-b2b9-ac1f6b6435d0,21,train
+5fbbc03c-bba6-11e8-b2ba-ac1f6b6435d0,11,train
+5fc69950-bba9-11e8-b2ba-ac1f6b6435d0,14 2,train
+5fe26f64-bbb7-11e8-b2ba-ac1f6b6435d0,4,train
+5ffaea8a-bb99-11e8-b2b9-ac1f6b6435d0,7 2,train
+60023038-bbb2-11e8-b2ba-ac1f6b6435d0,6 14,train
+6005091c-bbbb-11e8-b2ba-ac1f6b6435d0,25 18,train
+60143d5c-bbb5-11e8-b2ba-ac1f6b6435d0,1 2,train
+601c2148-bbb5-11e8-b2ba-ac1f6b6435d0,11,train
+6026ecd4-bba8-11e8-b2ba-ac1f6b6435d0,26 25,train
+6046c64a-bbb1-11e8-b2ba-ac1f6b6435d0,5,train
+605627ac-bba2-11e8-b2b9-ac1f6b6435d0,6 3,train
+6058e678-bba1-11e8-b2b9-ac1f6b6435d0,13,train
+605a3ffe-bbb1-11e8-b2ba-ac1f6b6435d0,22 0,train
+60669cf6-bb9b-11e8-b2b9-ac1f6b6435d0,1 0,train
+60883bc6-bbb0-11e8-b2ba-ac1f6b6435d0,16 0 21,train
+609d4a96-bb9e-11e8-b2b9-ac1f6b6435d0,24 4,train
+60ad9264-bbc8-11e8-b2bc-ac1f6b6435d0,25 5 0,train
+60d3d5e6-bbaf-11e8-b2ba-ac1f6b6435d0,18 0,train
+60dafaae-bbac-11e8-b2ba-ac1f6b6435d0,7 21,train
+60f148d4-bbc2-11e8-b2bb-ac1f6b6435d0,19 0,train
+611791fa-bba0-11e8-b2b9-ac1f6b6435d0,6,train
+611f734e-bba4-11e8-b2b9-ac1f6b6435d0,22 0,train
+61382bcc-bbaf-11e8-b2ba-ac1f6b6435d0,14,train
+6164eb70-bba6-11e8-b2ba-ac1f6b6435d0,7 5 0,train
+6173ecd8-bbc9-11e8-b2bc-ac1f6b6435d0,6 0,train
+61d179d2-bbb2-11e8-b2ba-ac1f6b6435d0,23 3,train
+6264650c-bba9-11e8-b2ba-ac1f6b6435d0,11,train
+62875c48-bbbc-11e8-b2ba-ac1f6b6435d0,2,train
+62a30714-bbbb-11e8-b2ba-ac1f6b6435d0,5,train
+62a4447e-bbb3-11e8-b2ba-ac1f6b6435d0,4,train
+62d5f248-bba5-11e8-b2ba-ac1f6b6435d0,16 25 17 0,train
+63051324-bbc4-11e8-b2bc-ac1f6b6435d0,14,train
+6329d5a8-bbb3-11e8-b2ba-ac1f6b6435d0,12,train
+632c9256-bba5-11e8-b2ba-ac1f6b6435d0,26 25,train
+632f959a-bbb0-11e8-b2ba-ac1f6b6435d0,12 22 21,train
+636bc518-bba3-11e8-b2b9-ac1f6b6435d0,1,train
+63abcc8a-bbc6-11e8-b2bc-ac1f6b6435d0,11,train
+63c2c850-bbc0-11e8-b2bb-ac1f6b6435d0,20 0,train
+63df94ae-bbc4-11e8-b2bc-ac1f6b6435d0,22 25 13 21,train
+63e197d2-bbb4-11e8-b2ba-ac1f6b6435d0,6 14,train
+640223c2-bba9-11e8-b2ba-ac1f6b6435d0,6,train
+641015f8-bbc3-11e8-b2bc-ac1f6b6435d0,5,train
+641adf32-bba1-11e8-b2b9-ac1f6b6435d0,13 0,train
+6427b0aa-bbc3-11e8-b2bc-ac1f6b6435d0,11 2,train
+6435133a-bbc3-11e8-b2bc-ac1f6b6435d0,6,train
+64461b0a-bbb7-11e8-b2ba-ac1f6b6435d0,6,train
+646124e4-bbbd-11e8-b2ba-ac1f6b6435d0,7 0,train
+6464d200-bbbe-11e8-b2ba-ac1f6b6435d0,11,train
+6466bc68-bbbf-11e8-b2ba-ac1f6b6435d0,24 25,train
+64671e6e-bba7-11e8-b2ba-ac1f6b6435d0,4,train
+6476eaa4-bbb8-11e8-b2ba-ac1f6b6435d0,25 13 7 0,train
+64a0e29a-bbbe-11e8-b2ba-ac1f6b6435d0,23,train
+64a43d9a-bbc4-11e8-b2bc-ac1f6b6435d0,23 1,train
+64e9cdac-bba5-11e8-b2ba-ac1f6b6435d0,1,train
+65343f02-bbac-11e8-b2ba-ac1f6b6435d0,6,train
+65349176-bbb8-11e8-b2ba-ac1f6b6435d0,3,train
+6542fc50-bbbf-11e8-b2ba-ac1f6b6435d0,11,train
+654e7dc0-bbb8-11e8-b2ba-ac1f6b6435d0,19 25 13,train
+6572a6fe-bbb4-11e8-b2ba-ac1f6b6435d0,14,train
+657d52c0-bb9b-11e8-b2b9-ac1f6b6435d0,3,train
+6590d5b6-bbc8-11e8-b2bc-ac1f6b6435d0,18,train
+659d06ee-bba8-11e8-b2ba-ac1f6b6435d0,11,train
+65bc6ba0-bb9a-11e8-b2b9-ac1f6b6435d0,7 18,train
+65cffae2-bbab-11e8-b2ba-ac1f6b6435d0,7 18,train
+65d86a1a-bbc4-11e8-b2bc-ac1f6b6435d0,25 3,train
+65e71b7e-bbc3-11e8-b2bc-ac1f6b6435d0,3,train
+65f02f26-bb9a-11e8-b2b9-ac1f6b6435d0,14,train
+660bce08-bbc6-11e8-b2bc-ac1f6b6435d0,22 4,train
+6610b1e2-bba9-11e8-b2ba-ac1f6b6435d0,6,train
+66128c48-bbb7-11e8-b2ba-ac1f6b6435d0,20,train
+662bb81c-bbb2-11e8-b2ba-ac1f6b6435d0,4,train
+664ca3d6-bba5-11e8-b2ba-ac1f6b6435d0,12 25 0,train
+6668a518-bbaf-11e8-b2ba-ac1f6b6435d0,24 2 0,train
+6676157a-bba7-11e8-b2ba-ac1f6b6435d0,1,train
+667baaf2-bbb7-11e8-b2ba-ac1f6b6435d0,5 0 21,train
+6683dabc-bbab-11e8-b2ba-ac1f6b6435d0,25 4,train
+66885612-bbc1-11e8-b2bb-ac1f6b6435d0,22 16 25 18,train
+66a9da50-bbc9-11e8-b2bc-ac1f6b6435d0,6,train
+66be564e-bbbd-11e8-b2ba-ac1f6b6435d0,23,train
+66cc503e-bba2-11e8-b2b9-ac1f6b6435d0,25 14,train
+66d62408-bbbe-11e8-b2ba-ac1f6b6435d0,2,train
+66dbd4ec-bbab-11e8-b2ba-ac1f6b6435d0,1,train
+66f25992-bbab-11e8-b2ba-ac1f6b6435d0,24 25 0,train
+672174e2-bbbb-11e8-b2ba-ac1f6b6435d0,4,train
+6731852e-bb9f-11e8-b2b9-ac1f6b6435d0,2,train
+67346e4e-bbc5-11e8-b2bc-ac1f6b6435d0,6,train
+6736641e-bba3-11e8-b2b9-ac1f6b6435d0,4,train
+6744bb14-bba2-11e8-b2b9-ac1f6b6435d0,26 0,train
+67522894-bba2-11e8-b2b9-ac1f6b6435d0,3,train
+676df4a0-bbae-11e8-b2ba-ac1f6b6435d0,7,train
+676ed1f2-bb9c-11e8-b2b9-ac1f6b6435d0,19 25 0,train
+67941ab0-bbca-11e8-b2bc-ac1f6b6435d0,26,train
+6795f08c-bb99-11e8-b2b9-ac1f6b6435d0,1,train
+679e2ef2-bba6-11e8-b2ba-ac1f6b6435d0,5 0,train
+67a84b8e-bbc0-11e8-b2bb-ac1f6b6435d0,25 2 0,train
+67cc1576-bbbd-11e8-b2ba-ac1f6b6435d0,20,train
+67cccbae-bbb5-11e8-b2ba-ac1f6b6435d0,11 2,train
+67dfa8dc-bbc9-11e8-b2bc-ac1f6b6435d0,16 14 17,train
+6828960c-bb9f-11e8-b2b9-ac1f6b6435d0,6,train
+6843322e-bb99-11e8-b2b9-ac1f6b6435d0,12 0,train
+68654a76-bba3-11e8-b2b9-ac1f6b6435d0,6 20,train
+689b4908-bbb9-11e8-b2ba-ac1f6b6435d0,7,train
+689e669c-bbaf-11e8-b2ba-ac1f6b6435d0,5,train
+689f4c72-bbc5-11e8-b2bc-ac1f6b6435d0,1 0,train
+68ad8444-bb99-11e8-b2b9-ac1f6b6435d0,3,train
+68af001a-bbb9-11e8-b2ba-ac1f6b6435d0,16,train
+68b112ca-bba4-11e8-b2b9-ac1f6b6435d0,7 0,train
+68b4a7dc-bb9a-11e8-b2b9-ac1f6b6435d0,25 4,train
+68d28952-bba7-11e8-b2ba-ac1f6b6435d0,4,train
+691862f0-bbad-11e8-b2ba-ac1f6b6435d0,25 23 21,train
+693a829e-bb9a-11e8-b2b9-ac1f6b6435d0,11,train
+694eb644-bbc5-11e8-b2bc-ac1f6b6435d0,14 17,train
+698d31be-bba0-11e8-b2b9-ac1f6b6435d0,1 0,train
+69ad20f6-bbae-11e8-b2ba-ac1f6b6435d0,3,train
+69f429be-bbb4-11e8-b2ba-ac1f6b6435d0,12,train
+6a481394-bbaa-11e8-b2ba-ac1f6b6435d0,3,train
+6a5d50c6-bbad-11e8-b2ba-ac1f6b6435d0,9,train
+6a82276e-bbc8-11e8-b2bc-ac1f6b6435d0,25 5 0 21,train
+6a82da18-bbc5-11e8-b2bc-ac1f6b6435d0,1,train
+6a924d6e-bbb5-11e8-b2ba-ac1f6b6435d0,6,train
+6ab3eb2c-bbb0-11e8-b2ba-ac1f6b6435d0,14 0,train
+6ab88dc0-bbb6-11e8-b2ba-ac1f6b6435d0,14 0,train
+6ade739c-bbba-11e8-b2ba-ac1f6b6435d0,23,train
+6af05128-bbb2-11e8-b2ba-ac1f6b6435d0,25 1,train
+6b09436c-bbbd-11e8-b2ba-ac1f6b6435d0,5 1 0,train
+6b230b3e-bba5-11e8-b2ba-ac1f6b6435d0,14,train
+6b328266-bbbf-11e8-b2ba-ac1f6b6435d0,11,train
+6b428a4e-bbab-11e8-b2ba-ac1f6b6435d0,7,train
+6ba8edf8-bbb9-11e8-b2ba-ac1f6b6435d0,18,train
+6baefc72-bba3-11e8-b2b9-ac1f6b6435d0,6,train
+6bfd5bc2-bbaf-11e8-b2ba-ac1f6b6435d0,19,train
+6c13787a-bbbf-11e8-b2ba-ac1f6b6435d0,23 0,train
+6c23067a-bbbd-11e8-b2ba-ac1f6b6435d0,11 0,train
+6c2ba464-bbbe-11e8-b2ba-ac1f6b6435d0,1,train
+6c39919e-bbb1-11e8-b2ba-ac1f6b6435d0,22,train
+6c3e1762-bbae-11e8-b2ba-ac1f6b6435d0,5,train
+6c55d152-bbb5-11e8-b2ba-ac1f6b6435d0,25 18,train
+6c5aa58c-bbc5-11e8-b2bc-ac1f6b6435d0,3,train
+6c76e464-bb9c-11e8-b2b9-ac1f6b6435d0,6 7,train
+6ca1a47c-bba3-11e8-b2b9-ac1f6b6435d0,13 3,train
+6cb72de2-bbb7-11e8-b2ba-ac1f6b6435d0,7,train
+6ceb08fc-bbc5-11e8-b2bc-ac1f6b6435d0,11,train
+6d06f228-bba8-11e8-b2ba-ac1f6b6435d0,5,train
+6d0b86c4-bbb4-11e8-b2ba-ac1f6b6435d0,25 18 0,train
+6d0e4d32-bbb9-11e8-b2ba-ac1f6b6435d0,14,train
+6d511c00-bbca-11e8-b2bc-ac1f6b6435d0,25 7,train
+6d83f5d8-bb9a-11e8-b2b9-ac1f6b6435d0,6,train
+6d9dfd88-bba5-11e8-b2ba-ac1f6b6435d0,4,train
+6db2b60a-bbab-11e8-b2ba-ac1f6b6435d0,7,train
+6db9048a-bbb8-11e8-b2ba-ac1f6b6435d0,24,train
+6db93a68-bbc7-11e8-b2bc-ac1f6b6435d0,5,train
+6dba56bc-bbba-11e8-b2ba-ac1f6b6435d0,25 6,train
+6dbed726-bbb2-11e8-b2ba-ac1f6b6435d0,4 0,train
+6dc893d4-bbac-11e8-b2ba-ac1f6b6435d0,22 0,train
+6dcd394a-bbaa-11e8-b2ba-ac1f6b6435d0,6,train
+6dce76ea-bbad-11e8-b2ba-ac1f6b6435d0,22 0,train
+6dec3112-bba3-11e8-b2b9-ac1f6b6435d0,19 0,train
+6e1c6420-bbc3-11e8-b2bc-ac1f6b6435d0,11,train
+6e1d0c54-bbc3-11e8-b2bc-ac1f6b6435d0,6,train
+6e3b3c00-bbc4-11e8-b2bc-ac1f6b6435d0,1 0,train
+6e3ece90-bbad-11e8-b2ba-ac1f6b6435d0,21,train
+6e7214b6-bbbd-11e8-b2ba-ac1f6b6435d0,12,train
+6e86ecda-bbca-11e8-b2bc-ac1f6b6435d0,16 6,train
+6e9b4b8c-bbaf-11e8-b2ba-ac1f6b6435d0,1 0,train
+6ed673d8-bb9b-11e8-b2b9-ac1f6b6435d0,25 18,train
+6f2690b8-bb99-11e8-b2b9-ac1f6b6435d0,14,train
+6f357480-bba2-11e8-b2b9-ac1f6b6435d0,23,train
+6f6071ca-bbb2-11e8-b2ba-ac1f6b6435d0,7 2,train
+6f6eea48-bb9e-11e8-b2b9-ac1f6b6435d0,13 21,train
+6f71418a-bbb2-11e8-b2ba-ac1f6b6435d0,16 0,train
+6fa7f7b0-bbb8-11e8-b2ba-ac1f6b6435d0,18 0,train
+6fa9bed8-bbc2-11e8-b2bb-ac1f6b6435d0,24,train
+6fb02a5e-bbca-11e8-b2bc-ac1f6b6435d0,12 14,train
+6fcbc606-bb9d-11e8-b2b9-ac1f6b6435d0,7 0,train
+6fdb6b0e-bbae-11e8-b2ba-ac1f6b6435d0,24 7,train
+7020cab8-bba0-11e8-b2b9-ac1f6b6435d0,25 6,train
+702143de-bbab-11e8-b2ba-ac1f6b6435d0,14 0 21,train
+7032aee2-bbc1-11e8-b2bb-ac1f6b6435d0,26 0,train
+703c8082-bba0-11e8-b2b9-ac1f6b6435d0,22 1,train
+704523ba-bbbc-11e8-b2ba-ac1f6b6435d0,11,train
+7046790a-bbb1-11e8-b2ba-ac1f6b6435d0,25 18,train
+70a09fb4-bbae-11e8-b2ba-ac1f6b6435d0,16 14,train
+70a0b82e-bbc6-11e8-b2bc-ac1f6b6435d0,22 21,train
+70a7b12a-bbc5-11e8-b2bc-ac1f6b6435d0,18,train
+70b97ed2-bbac-11e8-b2ba-ac1f6b6435d0,0 27,train
+70bc1874-bbaa-11e8-b2ba-ac1f6b6435d0,3,train
+70c00eb4-bbb6-11e8-b2ba-ac1f6b6435d0,4,train
+70c91522-bb9d-11e8-b2b9-ac1f6b6435d0,3 0,train
+70d8abc0-bbb8-11e8-b2ba-ac1f6b6435d0,5,train
+70dbaaf4-bbc3-11e8-b2bc-ac1f6b6435d0,7 2 0,train
+7101be1e-bba1-11e8-b2b9-ac1f6b6435d0,12,train
+71106c52-bbab-11e8-b2ba-ac1f6b6435d0,26 2 0,train
+7110a9ba-bbab-11e8-b2ba-ac1f6b6435d0,20,train
+7113294e-bbc2-11e8-b2bb-ac1f6b6435d0,13,train
+7144387a-bba1-11e8-b2b9-ac1f6b6435d0,11,train
+7147fb7c-bbba-11e8-b2ba-ac1f6b6435d0,26,train
+716e3916-bbad-11e8-b2ba-ac1f6b6435d0,4,train
+7188ecda-bb9d-11e8-b2b9-ac1f6b6435d0,18 2,train
+71954f90-bbb4-11e8-b2ba-ac1f6b6435d0,5 2 0,train
+719af620-bbb4-11e8-b2ba-ac1f6b6435d0,25 11,train
+71b52994-bbc5-11e8-b2bc-ac1f6b6435d0,25 5,train
+71e68ac6-bb9c-11e8-b2b9-ac1f6b6435d0,11 5,train
+723ea336-bbbb-11e8-b2ba-ac1f6b6435d0,23,train
+72643208-bbc1-11e8-b2bb-ac1f6b6435d0,11,train
+726ec292-bbb0-11e8-b2ba-ac1f6b6435d0,24 5 0,train
+7272fd44-bbab-11e8-b2ba-ac1f6b6435d0,22 0,train
+72a62fc0-bb9c-11e8-b2b9-ac1f6b6435d0,3,train
+72b4d576-bbc3-11e8-b2bc-ac1f6b6435d0,23,train
+72c77202-bba1-11e8-b2b9-ac1f6b6435d0,23 2,train
+72c961c6-bbc3-11e8-b2bc-ac1f6b6435d0,1 0,train
+72edfbce-bbc5-11e8-b2bc-ac1f6b6435d0,12,train
+7300f852-bba5-11e8-b2ba-ac1f6b6435d0,22 25 21,train
+7309fd30-bbc8-11e8-b2bc-ac1f6b6435d0,25 18,train
+732f4cd2-bba7-11e8-b2ba-ac1f6b6435d0,18,train
+7332f5c4-bbae-11e8-b2ba-ac1f6b6435d0,19 0,train
+73357eca-bba9-11e8-b2ba-ac1f6b6435d0,5,train
+733b5bde-bbb7-11e8-b2ba-ac1f6b6435d0,25 23 0,train
+734568d4-bb9b-11e8-b2b9-ac1f6b6435d0,18,train
+734720ec-bbc9-11e8-b2bc-ac1f6b6435d0,19 1,train
+73618af2-bbb7-11e8-b2ba-ac1f6b6435d0,25 1,train
+738cf44c-bbbe-11e8-b2ba-ac1f6b6435d0,1 2,train
+739120b8-bbb3-11e8-b2ba-ac1f6b6435d0,13,train
+739be34a-bbb3-11e8-b2ba-ac1f6b6435d0,14 3 0,train
+73a1716a-bb9b-11e8-b2b9-ac1f6b6435d0,11,train
+73db8ec4-bbad-11e8-b2ba-ac1f6b6435d0,6,train
+73f96b1e-bb9a-11e8-b2b9-ac1f6b6435d0,25 18,train
+7402f420-bbb5-11e8-b2ba-ac1f6b6435d0,3 0,train
+74045f68-bba6-11e8-b2ba-ac1f6b6435d0,3,train
+74148a20-bbbd-11e8-b2ba-ac1f6b6435d0,23,train
+7452a448-bba6-11e8-b2ba-ac1f6b6435d0,19,train
+74581c74-bba2-11e8-b2b9-ac1f6b6435d0,2 0,train
+74610822-bbaf-11e8-b2ba-ac1f6b6435d0,12 13 0 21,train
+747af6ae-bb9d-11e8-b2b9-ac1f6b6435d0,23 4,train
+748699d8-bbb0-11e8-b2ba-ac1f6b6435d0,4,train
+74a78590-bbbe-11e8-b2ba-ac1f6b6435d0,7,train
+74ac3346-bbb5-11e8-b2ba-ac1f6b6435d0,1 0,train
+74ce6b66-bbb8-11e8-b2ba-ac1f6b6435d0,22 21,train
+74e4713c-bbbc-11e8-b2ba-ac1f6b6435d0,12 5 0,train
+74e7f148-bbaa-11e8-b2ba-ac1f6b6435d0,14 2,train
+74fa344c-bbc4-11e8-b2bc-ac1f6b6435d0,25 7,train
+74fe45b6-bbb3-11e8-b2ba-ac1f6b6435d0,23,train
+7515f3d6-bbaf-11e8-b2ba-ac1f6b6435d0,25 14,train
+7543163e-bbb1-11e8-b2ba-ac1f6b6435d0,16 0,train
+754f30b6-bb9f-11e8-b2b9-ac1f6b6435d0,9 10,train
+755e2e5e-bba9-11e8-b2ba-ac1f6b6435d0,25 11 2 0,train
+756dc062-bb9a-11e8-b2b9-ac1f6b6435d0,16 0 21,train
+7572d8ea-bbbd-11e8-b2ba-ac1f6b6435d0,19 0,train
+7585e172-bb9c-11e8-b2b9-ac1f6b6435d0,25 3 0,train
+75bfb99e-bba4-11e8-b2b9-ac1f6b6435d0,6,train
+766b8f22-bbb7-11e8-b2ba-ac1f6b6435d0,11 4,train
+766ef0d8-bbb0-11e8-b2ba-ac1f6b6435d0,22,train
+76866eba-bbb6-11e8-b2ba-ac1f6b6435d0,6 18,train
+7695598e-bbac-11e8-b2ba-ac1f6b6435d0,7 3,train
+76a595c8-bbb2-11e8-b2ba-ac1f6b6435d0,6,train
+76ab45ac-bbc3-11e8-b2bc-ac1f6b6435d0,25 3 0,train
+76c5c636-bba3-11e8-b2b9-ac1f6b6435d0,12 0,train
+76e5b8be-bbc7-11e8-b2bc-ac1f6b6435d0,25 13,train
+76e9c66c-bbb7-11e8-b2ba-ac1f6b6435d0,11 0,train
+76f5e26c-bbbc-11e8-b2ba-ac1f6b6435d0,25 14,train
+770693cc-bb9a-11e8-b2b9-ac1f6b6435d0,3,train
+77125154-bbc6-11e8-b2bc-ac1f6b6435d0,8,train
+772ae61a-bbbc-11e8-b2ba-ac1f6b6435d0,22 0,train
+77567d56-bbb8-11e8-b2ba-ac1f6b6435d0,2 0,train
+775a5662-bba7-11e8-b2ba-ac1f6b6435d0,25 1,train
+77729ab2-bbaf-11e8-b2ba-ac1f6b6435d0,9 10,train
+77776ae8-bb9a-11e8-b2b9-ac1f6b6435d0,14 0,train
+77871f6e-bbbe-11e8-b2ba-ac1f6b6435d0,1,train
+7788e8a0-bb99-11e8-b2b9-ac1f6b6435d0,7,train
+7790cb00-bbbd-11e8-b2ba-ac1f6b6435d0,25 5,train
+77a08452-bba7-11e8-b2ba-ac1f6b6435d0,22 0,train
+77b5ae30-bbbc-11e8-b2ba-ac1f6b6435d0,19 25 0,train
+77c0d52c-bbbb-11e8-b2ba-ac1f6b6435d0,4,train
+77d25e24-bbba-11e8-b2ba-ac1f6b6435d0,25 11,train
+77d32280-bbbc-11e8-b2ba-ac1f6b6435d0,22 0,train
+77e63118-bbad-11e8-b2ba-ac1f6b6435d0,1 0,train
+77f73fa0-bbba-11e8-b2ba-ac1f6b6435d0,5 4,train
+77f8616c-bba3-11e8-b2b9-ac1f6b6435d0,1,train
+78049894-bbbf-11e8-b2bb-ac1f6b6435d0,14 2,train
+783963fa-bbb3-11e8-b2ba-ac1f6b6435d0,5,train
+787d85fc-bba0-11e8-b2b9-ac1f6b6435d0,3 0,train
+7884e86e-bb9c-11e8-b2b9-ac1f6b6435d0,3,train
+788e0772-bb9d-11e8-b2b9-ac1f6b6435d0,25 11,train
+7893027a-bb9f-11e8-b2b9-ac1f6b6435d0,25 18 0,train
+78ab0a70-bbb6-11e8-b2ba-ac1f6b6435d0,22,train
+78b00d72-bbc5-11e8-b2bc-ac1f6b6435d0,18,train
+78bf7012-bbc2-11e8-b2bb-ac1f6b6435d0,3,train
+78d45030-bbaf-11e8-b2ba-ac1f6b6435d0,6,train
+78d98d8a-bba4-11e8-b2b9-ac1f6b6435d0,13 0,train
+78f41a22-bbb0-11e8-b2ba-ac1f6b6435d0,12,train
+78f6e878-bb9d-11e8-b2b9-ac1f6b6435d0,1,train
+78fb242a-bbba-11e8-b2ba-ac1f6b6435d0,22 19 25,train
+794aa8e8-bbb4-11e8-b2ba-ac1f6b6435d0,11,train
+7962522a-bb9d-11e8-b2b9-ac1f6b6435d0,11,train
+7969500c-bba2-11e8-b2b9-ac1f6b6435d0,23,train
+797f951e-bb99-11e8-b2b9-ac1f6b6435d0,14,train
+798a2868-bbb6-11e8-b2ba-ac1f6b6435d0,1,train
+7996d8f2-bba1-11e8-b2b9-ac1f6b6435d0,23,train
+79a8eda4-bbc3-11e8-b2bc-ac1f6b6435d0,7,train
+79ae9c70-bba7-11e8-b2ba-ac1f6b6435d0,19,train
+79c644e2-bbb1-11e8-b2ba-ac1f6b6435d0,25 2 21,train
+7a09b6a0-bba2-11e8-b2b9-ac1f6b6435d0,19 0,train
+7a148628-bbc2-11e8-b2bb-ac1f6b6435d0,1 2,train
+7a1da614-bba3-11e8-b2b9-ac1f6b6435d0,25 7 14 5,train
+7a2b0206-bb9d-11e8-b2b9-ac1f6b6435d0,26 3,train
+7a387b4e-bbb0-11e8-b2ba-ac1f6b6435d0,7,train
+7a63f42a-bbbc-11e8-b2ba-ac1f6b6435d0,13 0 21,train
+7a6d33de-bb9c-11e8-b2b9-ac1f6b6435d0,6,train
+7a7fed98-bba2-11e8-b2b9-ac1f6b6435d0,3 0,train
+7a8a4908-bba9-11e8-b2ba-ac1f6b6435d0,14,train
+7aa20c94-bbc4-11e8-b2bc-ac1f6b6435d0,19,train
+7aa9e9ea-bbb6-11e8-b2ba-ac1f6b6435d0,19 0,train
+7ab2cece-bba8-11e8-b2ba-ac1f6b6435d0,25 23 0,train
+7abaca88-bba9-11e8-b2ba-ac1f6b6435d0,25 6 2,train
+7ad2758a-bbb2-11e8-b2ba-ac1f6b6435d0,6,train
+7ae5ba64-bb9e-11e8-b2b9-ac1f6b6435d0,16 14 0,train
+7b2176aa-bba6-11e8-b2ba-ac1f6b6435d0,25 1,train
+7b296bfc-bba7-11e8-b2ba-ac1f6b6435d0,3,train
+7b2af646-bbb8-11e8-b2ba-ac1f6b6435d0,23,train
+7b30ac92-bb9c-11e8-b2b9-ac1f6b6435d0,3,train
+7b4f65b8-bbc6-11e8-b2bc-ac1f6b6435d0,1,train
+7b538dd8-bb9d-11e8-b2b9-ac1f6b6435d0,24,train
+7b54aa10-bbac-11e8-b2ba-ac1f6b6435d0,2 0,train
+7b60b9f6-bbaa-11e8-b2ba-ac1f6b6435d0,18 0,train
+7b814fd6-bba0-11e8-b2b9-ac1f6b6435d0,5 0,train
+7b98413e-bbb7-11e8-b2ba-ac1f6b6435d0,7 0,train
+7be97a6e-bbac-11e8-b2ba-ac1f6b6435d0,16 0,train
+7bf3396a-bbab-11e8-b2ba-ac1f6b6435d0,25 5 0,train
+7c1c6498-bbbf-11e8-b2bb-ac1f6b6435d0,5 2,train
+7c366792-bbb7-11e8-b2ba-ac1f6b6435d0,12,train
+7c483afc-bba9-11e8-b2ba-ac1f6b6435d0,1 0,train
+7c686cac-bba7-11e8-b2ba-ac1f6b6435d0,4,train
+7c6e6392-bbab-11e8-b2ba-ac1f6b6435d0,19 11,train
+7c7abc7c-bbbb-11e8-b2ba-ac1f6b6435d0,22 25,train
+7c97a63c-bbb3-11e8-b2ba-ac1f6b6435d0,2 0,train
+7cbfb80e-bbb6-11e8-b2ba-ac1f6b6435d0,23 2,train
+7cc7ce68-bbbb-11e8-b2ba-ac1f6b6435d0,7 0,train
+7cf9a39a-bba5-11e8-b2ba-ac1f6b6435d0,1 0,train
+7d01337a-bbab-11e8-b2ba-ac1f6b6435d0,5 1,train
+7d015b36-bba4-11e8-b2b9-ac1f6b6435d0,23,train
+7d166458-bbc8-11e8-b2bc-ac1f6b6435d0,3,train
+7d308fca-bbb1-11e8-b2ba-ac1f6b6435d0,14 0,train
+7d461f74-bb9e-11e8-b2b9-ac1f6b6435d0,24,train
+7d5f6328-bbab-11e8-b2ba-ac1f6b6435d0,12 0,train
+7d65f6a4-bbbd-11e8-b2ba-ac1f6b6435d0,22 18 0,train
+7d6664d4-bbc4-11e8-b2bc-ac1f6b6435d0,25 20,train
+7d6fa6d0-bbb4-11e8-b2ba-ac1f6b6435d0,22,train
+7d8f1676-bbac-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+7da651fc-bbbf-11e8-b2bb-ac1f6b6435d0,18,train
+7db30708-bb9c-11e8-b2b9-ac1f6b6435d0,25 4,train
+7dbd7ffc-bbc5-11e8-b2bc-ac1f6b6435d0,5 0,train
+7dddd966-bbc3-11e8-b2bc-ac1f6b6435d0,4,train
+7dfcb88e-bbb1-11e8-b2ba-ac1f6b6435d0,6,train
+7e44c69a-bbb3-11e8-b2ba-ac1f6b6435d0,23 21,train
+7e6ae4ee-bba7-11e8-b2ba-ac1f6b6435d0,1,train
+7e7569b2-bbae-11e8-b2ba-ac1f6b6435d0,3 0,train
+7e7c83d0-bbbf-11e8-b2bb-ac1f6b6435d0,19 0,train
+7ea3f814-bbbc-11e8-b2ba-ac1f6b6435d0,23,train
+7ebf9886-bb9d-11e8-b2b9-ac1f6b6435d0,16 14 0,train
+7ecc5520-bbb2-11e8-b2ba-ac1f6b6435d0,25 13 21,train
+7f3d8186-bb9a-11e8-b2b9-ac1f6b6435d0,22 21,train
+7f5c7458-bbbb-11e8-b2ba-ac1f6b6435d0,19 0,train
+7f5dc2d0-bbc6-11e8-b2bc-ac1f6b6435d0,14,train
+7f5dc8a4-bb9c-11e8-b2b9-ac1f6b6435d0,12,train
+7f7b76b8-bbb2-11e8-b2ba-ac1f6b6435d0,20,train
+7fa8e8c0-bbb0-11e8-b2ba-ac1f6b6435d0,25 5,train
+7fbc1234-bbb4-11e8-b2ba-ac1f6b6435d0,1,train
+7ff74400-bbc1-11e8-b2bb-ac1f6b6435d0,3 0,train
+800d79be-bbc6-11e8-b2bc-ac1f6b6435d0,22 25,train
+8024a744-bbab-11e8-b2ba-ac1f6b6435d0,16 25 3,train
+802998d4-bbbb-11e8-b2ba-ac1f6b6435d0,23 27,train
+806b2ee4-bbc9-11e8-b2bc-ac1f6b6435d0,16 25 0,train
+806c115c-bbaa-11e8-b2ba-ac1f6b6435d0,4,train
+8094d5ce-bbc3-11e8-b2bc-ac1f6b6435d0,12 7 0,train
+80ba54fa-bbb1-11e8-b2ba-ac1f6b6435d0,22,train
+80d57a16-bbaa-11e8-b2ba-ac1f6b6435d0,7,train
+80dd8144-bba4-11e8-b2b9-ac1f6b6435d0,19 5 0,train
+80de70c6-bbbe-11e8-b2ba-ac1f6b6435d0,20,train
+80f4e348-bbae-11e8-b2ba-ac1f6b6435d0,12 25 2,train
+8139bfd0-bbaf-11e8-b2ba-ac1f6b6435d0,11,train
+8144e442-bbb8-11e8-b2ba-ac1f6b6435d0,13 21,train
+814fa3fa-bbc7-11e8-b2bc-ac1f6b6435d0,3,train
+8191829e-bbad-11e8-b2ba-ac1f6b6435d0,25 6 0,train
+81b5bfa2-bbb6-11e8-b2ba-ac1f6b6435d0,11,train
+81ff445a-bb99-11e8-b2b9-ac1f6b6435d0,3 0,train
+820e0178-bbaf-11e8-b2ba-ac1f6b6435d0,25 13 2 0,train
+820e77a4-bbad-11e8-b2ba-ac1f6b6435d0,13 0,train
+824ba324-bbba-11e8-b2ba-ac1f6b6435d0,6 0,train
+824e48ac-bbc1-11e8-b2bb-ac1f6b6435d0,16 0,train
+825c8d7a-bbb9-11e8-b2ba-ac1f6b6435d0,16 18 17 0,train
+82896388-bbc6-11e8-b2bc-ac1f6b6435d0,25 5,train
+829b5244-bbaf-11e8-b2ba-ac1f6b6435d0,2 21,train
+82b9bb60-bbbb-11e8-b2ba-ac1f6b6435d0,11 4 0,train
+82e03ca2-bbc2-11e8-b2bb-ac1f6b6435d0,19 2,train
+82e6947e-bbc9-11e8-b2bc-ac1f6b6435d0,3 0,train
+82ec2c28-bbaa-11e8-b2ba-ac1f6b6435d0,25 4 2,train
+830d6e4c-bbaf-11e8-b2ba-ac1f6b6435d0,1 2,train
+83102b0e-bba1-11e8-b2b9-ac1f6b6435d0,23,train
+833af3e6-bba3-11e8-b2b9-ac1f6b6435d0,26 0,train
+838ce7a4-bbc2-11e8-b2bb-ac1f6b6435d0,19 7,train
+838d473c-bbbb-11e8-b2ba-ac1f6b6435d0,25 13 0,train
+839051e2-bbad-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+83adc858-bb9e-11e8-b2b9-ac1f6b6435d0,11 0,train
+83b23172-bbad-11e8-b2ba-ac1f6b6435d0,25 11 0,train
+83d2b028-bbc6-11e8-b2bc-ac1f6b6435d0,6,train
+83f24534-bbc9-11e8-b2bc-ac1f6b6435d0,12,train
+83f99ace-bba5-11e8-b2ba-ac1f6b6435d0,3,train
+840a912a-bbc9-11e8-b2bc-ac1f6b6435d0,18 0,train
+841d832c-bba9-11e8-b2ba-ac1f6b6435d0,19 11,train
+84263cfe-bbc9-11e8-b2bc-ac1f6b6435d0,4,train
+845aabbc-bbc7-11e8-b2bc-ac1f6b6435d0,23,train
+847670f2-bb9c-11e8-b2b9-ac1f6b6435d0,13 21,train
+8492a678-bbc4-11e8-b2bc-ac1f6b6435d0,16 14 17 0,train
+84994188-bbc7-11e8-b2bc-ac1f6b6435d0,6,train
+84cb6012-bbbf-11e8-b2bb-ac1f6b6435d0,11 5 0,train
+852d277a-bbab-11e8-b2ba-ac1f6b6435d0,11,train
+857642c8-bb99-11e8-b2b9-ac1f6b6435d0,16 0,train
+8582c36c-bba9-11e8-b2ba-ac1f6b6435d0,1 2 0,train
+859bbac8-bba6-11e8-b2ba-ac1f6b6435d0,12 25 0,train
+85b16e4e-bb9d-11e8-b2b9-ac1f6b6435d0,19,train
+85b836e8-bbc5-11e8-b2bc-ac1f6b6435d0,19 25,train
+85b9e6e8-bbc3-11e8-b2bc-ac1f6b6435d0,6,train
+85ecfad0-bbb2-11e8-b2ba-ac1f6b6435d0,5,train
+85f481fc-bba7-11e8-b2ba-ac1f6b6435d0,23 5,train
+85fd511a-bbca-11e8-b2bc-ac1f6b6435d0,26 25 21,train
+85ffab0c-bbb3-11e8-b2ba-ac1f6b6435d0,12,train
+86030b06-bbba-11e8-b2ba-ac1f6b6435d0,11 2,train
+861850f2-bba5-11e8-b2ba-ac1f6b6435d0,14 0,train
+861b351c-bba3-11e8-b2b9-ac1f6b6435d0,23,train
+861cd99e-bbc1-11e8-b2bb-ac1f6b6435d0,2,train
+86248006-bbab-11e8-b2ba-ac1f6b6435d0,4,train
+8646d548-bba1-11e8-b2b9-ac1f6b6435d0,12 21,train
+8654c184-bbb1-11e8-b2ba-ac1f6b6435d0,16 25 17 0,train
+867f00ee-bbab-11e8-b2ba-ac1f6b6435d0,11,train
+868a308a-bbbb-11e8-b2ba-ac1f6b6435d0,19 25,train
+86a89b50-bb9e-11e8-b2b9-ac1f6b6435d0,16 6 0,train
+86fe04bc-bbbe-11e8-b2ba-ac1f6b6435d0,25 3,train
+8720a988-bbc6-11e8-b2bc-ac1f6b6435d0,19,train
+87589176-bb9f-11e8-b2b9-ac1f6b6435d0,12,train
+877fcc62-bba6-11e8-b2ba-ac1f6b6435d0,19,train
+8784d4e4-bbb7-11e8-b2ba-ac1f6b6435d0,25 17,train
+87873d30-bbb5-11e8-b2ba-ac1f6b6435d0,19 25,train
+87a5bc18-bbbc-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+87c78c2c-bbc5-11e8-b2bc-ac1f6b6435d0,4,train
+87d2d7f6-bba4-11e8-b2b9-ac1f6b6435d0,2,train
+8810d718-bb9a-11e8-b2b9-ac1f6b6435d0,22 19 25,train
+8814af42-bb99-11e8-b2b9-ac1f6b6435d0,25 4,train
+88230b76-bba5-11e8-b2ba-ac1f6b6435d0,6,train
+8827171a-bb9c-11e8-b2b9-ac1f6b6435d0,2,train
+8838b92e-bba2-11e8-b2b9-ac1f6b6435d0,24 25,train
+887f27dc-bb9e-11e8-b2b9-ac1f6b6435d0,19,train
+88c624fc-bba8-11e8-b2ba-ac1f6b6435d0,23 0,train
+88e3fcd2-bba5-11e8-b2ba-ac1f6b6435d0,25 2,train
+890de702-bbc0-11e8-b2bb-ac1f6b6435d0,24 21,train
+891236ba-bbb9-11e8-b2ba-ac1f6b6435d0,1,train
+892420d2-bbc3-11e8-b2bc-ac1f6b6435d0,23,train
+8931e808-bb9a-11e8-b2b9-ac1f6b6435d0,6,train
+8944e6c6-bbb6-11e8-b2ba-ac1f6b6435d0,25 3 0,train
+8981f020-bba7-11e8-b2ba-ac1f6b6435d0,11,train
+899a9612-bbbf-11e8-b2bb-ac1f6b6435d0,22 0,train
+89ab4546-bbc6-11e8-b2bc-ac1f6b6435d0,4,train
+89def880-bbb9-11e8-b2ba-ac1f6b6435d0,23 0,train
+8a127980-bbb4-11e8-b2ba-ac1f6b6435d0,25 11 0,train
+8a2f6e4e-bbc5-11e8-b2bc-ac1f6b6435d0,19,train
+8a31cce8-bbb1-11e8-b2ba-ac1f6b6435d0,4,train
+8a3e3b1e-bbba-11e8-b2ba-ac1f6b6435d0,23 0 21,train
+8a3e832e-bbb7-11e8-b2ba-ac1f6b6435d0,16 14,train
+8a441258-bbb2-11e8-b2ba-ac1f6b6435d0,12 5 2,train
+8a5ef75a-bbba-11e8-b2ba-ac1f6b6435d0,14 5,train
+8ad0a8ee-bbc6-11e8-b2bc-ac1f6b6435d0,19 5 0,train
+8aedb5fe-bba0-11e8-b2b9-ac1f6b6435d0,14 0,train
+8af8b2bc-bbb2-11e8-b2ba-ac1f6b6435d0,20,train
+8b2608d2-bbaf-11e8-b2ba-ac1f6b6435d0,11,train
+8b470a7c-bb9c-11e8-b2b9-ac1f6b6435d0,17 5,train
+8b50e206-bbae-11e8-b2ba-ac1f6b6435d0,26,train
+8b65cb84-bbb4-11e8-b2ba-ac1f6b6435d0,12 25,train
+8b7fb88c-bbb4-11e8-b2ba-ac1f6b6435d0,11,train
+8b81c878-bbbb-11e8-b2ba-ac1f6b6435d0,2,train
+8b85a510-bbb6-11e8-b2ba-ac1f6b6435d0,2,train
+8b89d4fc-bba5-11e8-b2ba-ac1f6b6435d0,7 0,train
+8b90c6a4-bbaf-11e8-b2ba-ac1f6b6435d0,23 0,train
+8c21e290-bbc0-11e8-b2bb-ac1f6b6435d0,2,train
+8c23aec6-bbad-11e8-b2ba-ac1f6b6435d0,11,train
+8c27971e-bbaf-11e8-b2ba-ac1f6b6435d0,7,train
+8c2e6984-bba7-11e8-b2ba-ac1f6b6435d0,6,train
+8c4d2d94-bba5-11e8-b2ba-ac1f6b6435d0,6 3,train
+8c558622-bba7-11e8-b2ba-ac1f6b6435d0,25 7 1 0,train
+8c5f61fa-bba3-11e8-b2b9-ac1f6b6435d0,3,train
+8c683d82-bbaa-11e8-b2ba-ac1f6b6435d0,25 6 2,train
+8ca82bfc-bbca-11e8-b2bc-ac1f6b6435d0,1,train
+8cbea5ca-bbc6-11e8-b2bc-ac1f6b6435d0,18,train
+8cccdb20-bbb9-11e8-b2ba-ac1f6b6435d0,4,train
+8cd821be-bba1-11e8-b2b9-ac1f6b6435d0,5 2 0,train
+8cd84a42-bbae-11e8-b2ba-ac1f6b6435d0,25 11 14,train
+8ceab21a-bbc0-11e8-b2bb-ac1f6b6435d0,22 25 0,train
+8cf45180-bbb6-11e8-b2ba-ac1f6b6435d0,16 14 0,train
+8d1823dc-bbc8-11e8-b2bc-ac1f6b6435d0,25 18,train
+8d3d35da-bbbb-11e8-b2ba-ac1f6b6435d0,3,train
+8daac542-bba6-11e8-b2ba-ac1f6b6435d0,23,train
+8db350c8-bbc8-11e8-b2bc-ac1f6b6435d0,13 0 21,train
+8dc4e71e-bbca-11e8-b2bc-ac1f6b6435d0,11,train
+8dd7ef28-bba5-11e8-b2ba-ac1f6b6435d0,25 18 21,train
+8e258b20-bbc8-11e8-b2bc-ac1f6b6435d0,16 14 17 0,train
+8e2e6778-bbae-11e8-b2ba-ac1f6b6435d0,19,train
+8e53cbe8-bbbe-11e8-b2ba-ac1f6b6435d0,11 2,train
+8e82e8da-bb9e-11e8-b2b9-ac1f6b6435d0,21,train
+8e92162e-bbc7-11e8-b2bc-ac1f6b6435d0,3 0,train
+8e9797e2-bbc3-11e8-b2bc-ac1f6b6435d0,23,train
+8ec4cfd8-bbbd-11e8-b2ba-ac1f6b6435d0,6,train
+8ec52120-bb9c-11e8-b2b9-ac1f6b6435d0,25 4,train
+8eccc74a-bbc4-11e8-b2bc-ac1f6b6435d0,2,train
+8ecf93ae-bbb9-11e8-b2ba-ac1f6b6435d0,16 14,train
+8ee71e2e-bbb0-11e8-b2ba-ac1f6b6435d0,7,train
+8f2dd5e2-bbb2-11e8-b2ba-ac1f6b6435d0,18,train
+8f2f6606-bbac-11e8-b2ba-ac1f6b6435d0,26 0,train
+8f31b37a-bbb1-11e8-b2ba-ac1f6b6435d0,12 13 0 21,train
+8f331f1e-bba0-11e8-b2b9-ac1f6b6435d0,7 0,train
+8f35b04e-bb9b-11e8-b2b9-ac1f6b6435d0,24,train
+8f37932a-bb99-11e8-b2b9-ac1f6b6435d0,7 0,train
+8f3ab604-bbad-11e8-b2ba-ac1f6b6435d0,6 1,train
+8f51ab0e-bbab-11e8-b2ba-ac1f6b6435d0,25 5,train
+8f5536c2-bb9f-11e8-b2b9-ac1f6b6435d0,11 2,train
+8f617a72-bba9-11e8-b2ba-ac1f6b6435d0,23 0,train
+8f6b9a74-bbaf-11e8-b2ba-ac1f6b6435d0,5,train
+8fdacbce-bbc8-11e8-b2bc-ac1f6b6435d0,11,train
+8ffe9d86-bbc0-11e8-b2bb-ac1f6b6435d0,4,train
+900aa6f6-bb9a-11e8-b2b9-ac1f6b6435d0,13,train
+9015588c-bbc0-11e8-b2bb-ac1f6b6435d0,12 0,train
+901a0268-bbbd-11e8-b2ba-ac1f6b6435d0,4,train
+9035335e-bbc6-11e8-b2bc-ac1f6b6435d0,4,train
+90445454-bbb4-11e8-b2ba-ac1f6b6435d0,25 7 21,train
+904fb37a-bba6-11e8-b2ba-ac1f6b6435d0,25 3,train
+905ff7a8-bbb0-11e8-b2ba-ac1f6b6435d0,14 0,train
+907e2a16-bb9c-11e8-b2b9-ac1f6b6435d0,3,train
+908a6f34-bbb4-11e8-b2ba-ac1f6b6435d0,25 14 0,train
+908d3332-bbb3-11e8-b2ba-ac1f6b6435d0,14 2,train
+90a7d050-bbc4-11e8-b2bc-ac1f6b6435d0,1 0,train
+90b3f22c-bbab-11e8-b2ba-ac1f6b6435d0,7 0,train
+90b50b76-bbb0-11e8-b2ba-ac1f6b6435d0,25 18,train
+90dcaa8e-bbc2-11e8-b2bb-ac1f6b6435d0,22 21,train
+91004368-bbb3-11e8-b2ba-ac1f6b6435d0,12 19 0,train
+9157627a-bb9e-11e8-b2b9-ac1f6b6435d0,19,train
+916fc382-bbbd-11e8-b2ba-ac1f6b6435d0,20 0,train
+9178eb1a-bbc2-11e8-b2bb-ac1f6b6435d0,11,train
+9186e334-bbc5-11e8-b2bc-ac1f6b6435d0,18 0,train
+918dee56-bb9b-11e8-b2b9-ac1f6b6435d0,12 25 0,train
+9195c12c-bbae-11e8-b2ba-ac1f6b6435d0,18 0,train
+9221de94-bba1-11e8-b2b9-ac1f6b6435d0,19 25,train
+92309296-bbaf-11e8-b2ba-ac1f6b6435d0,25 3,train
+923347c0-bbc3-11e8-b2bc-ac1f6b6435d0,5,train
+9233dcc6-bbb9-11e8-b2ba-ac1f6b6435d0,5 0,train
+925b3c84-bbc9-11e8-b2bc-ac1f6b6435d0,19,train
+92a45b98-bbbb-11e8-b2ba-ac1f6b6435d0,14,train
+92a5a0ec-bbc6-11e8-b2bc-ac1f6b6435d0,22 25 2,train
+92b37eb8-bbc8-11e8-b2bc-ac1f6b6435d0,23 1,train
+92cfca50-bbbe-11e8-b2ba-ac1f6b6435d0,3 0,train
+92e3841e-bbc3-11e8-b2bc-ac1f6b6435d0,16,train
+92f2a3ae-bb9b-11e8-b2b9-ac1f6b6435d0,2,train
+9338700c-bba8-11e8-b2ba-ac1f6b6435d0,11,train
+933c0b5e-bbad-11e8-b2ba-ac1f6b6435d0,25 18,train
+9365e388-bbae-11e8-b2ba-ac1f6b6435d0,16 14 5,train
+9372be70-bbb1-11e8-b2ba-ac1f6b6435d0,23 2 0,train
+9386fbae-bbb8-11e8-b2ba-ac1f6b6435d0,18 14,train
+93cc5f90-bbb9-11e8-b2ba-ac1f6b6435d0,23,train
+93ee802a-bbaf-11e8-b2ba-ac1f6b6435d0,4,train
+93f559f8-bbab-11e8-b2ba-ac1f6b6435d0,3,train
+9407c75c-bbae-11e8-b2ba-ac1f6b6435d0,25 4,train
+940dbd80-bbca-11e8-b2bc-ac1f6b6435d0,6,train
+9411ed4a-bba9-11e8-b2ba-ac1f6b6435d0,22 25 0,train
+9417fccc-bbc1-11e8-b2bb-ac1f6b6435d0,12 4 21,train
+943d597c-bbb7-11e8-b2ba-ac1f6b6435d0,25 18 0,train
+94428bf6-bba1-11e8-b2b9-ac1f6b6435d0,4,train
+944eb154-bbbc-11e8-b2ba-ac1f6b6435d0,19 0,train
+945ce356-bbca-11e8-b2bc-ac1f6b6435d0,12 21,train
+946cff5e-bbaf-11e8-b2ba-ac1f6b6435d0,26 0,train
+94743bc4-bbc9-11e8-b2bc-ac1f6b6435d0,25 1,train
+94a60968-bba8-11e8-b2ba-ac1f6b6435d0,18,train
+94aa52b0-bbc7-11e8-b2bc-ac1f6b6435d0,24 0,train
+94b41236-bbc8-11e8-b2bc-ac1f6b6435d0,11,train
+94c17dca-bbac-11e8-b2ba-ac1f6b6435d0,22 7 0,train
+94c7135e-bbbe-11e8-b2ba-ac1f6b6435d0,3,train
+94e33c64-bb9b-11e8-b2b9-ac1f6b6435d0,12 25 21,train
+94e5d62c-bbb4-11e8-b2ba-ac1f6b6435d0,11,train
+9515e652-bbb7-11e8-b2ba-ac1f6b6435d0,15 0,train
+9519a572-bbc5-11e8-b2bc-ac1f6b6435d0,3,train
+9520e8ee-bbb3-11e8-b2ba-ac1f6b6435d0,11 3,train
+954fb0e8-bbb3-11e8-b2ba-ac1f6b6435d0,5,train
+95586764-bbaa-11e8-b2ba-ac1f6b6435d0,4,train
+955a56ae-bbc9-11e8-b2bc-ac1f6b6435d0,23 0,train
+95887fea-bbae-11e8-b2ba-ac1f6b6435d0,1,train
+95c5771e-bbaa-11e8-b2ba-ac1f6b6435d0,23 4,train
+95ff68f4-bbbc-11e8-b2ba-ac1f6b6435d0,3 0,train
+960bc4de-bba1-11e8-b2b9-ac1f6b6435d0,25 5 0,train
+9618d35e-bbba-11e8-b2ba-ac1f6b6435d0,7 5 0,train
+963909e8-bba2-11e8-b2b9-ac1f6b6435d0,22 2 0,train
+96394f08-bb9c-11e8-b2b9-ac1f6b6435d0,6,train
+96427802-bbac-11e8-b2ba-ac1f6b6435d0,24 25,train
+9654a992-bbc9-11e8-b2bc-ac1f6b6435d0,6 5,train
+967f9cb6-bbaa-11e8-b2ba-ac1f6b6435d0,6,train
+96da3498-bbad-11e8-b2ba-ac1f6b6435d0,19 0,train
+96da5504-bba8-11e8-b2ba-ac1f6b6435d0,7,train
+96db8c22-bba2-11e8-b2b9-ac1f6b6435d0,12,train
+96dee75a-bba2-11e8-b2b9-ac1f6b6435d0,6 0,train
+97457ae2-bbbb-11e8-b2ba-ac1f6b6435d0,22 0,train
+974e9518-bba8-11e8-b2ba-ac1f6b6435d0,11,train
+978aa4ca-bbaf-11e8-b2ba-ac1f6b6435d0,25 4,train
+979b85c0-bba4-11e8-b2b9-ac1f6b6435d0,11,train
+97aa35a8-bbc6-11e8-b2bc-ac1f6b6435d0,26,train
+97d7bc6a-bbbe-11e8-b2ba-ac1f6b6435d0,18,train
+97d81910-bbac-11e8-b2ba-ac1f6b6435d0,18,train
+97ec69ba-bbb6-11e8-b2ba-ac1f6b6435d0,14,train
+981ce0be-bbc4-11e8-b2bc-ac1f6b6435d0,25 3 21,train
+983f7aca-bbab-11e8-b2ba-ac1f6b6435d0,12 25,train
+986b1108-bbc9-11e8-b2bc-ac1f6b6435d0,26,train
+987d7236-bbb9-11e8-b2ba-ac1f6b6435d0,18 0,train
+9882b338-bbb7-11e8-b2ba-ac1f6b6435d0,4,train
+98aa9938-bba4-11e8-b2b9-ac1f6b6435d0,5 2,train
+98baf6a8-bbc1-11e8-b2bb-ac1f6b6435d0,25 14,train
+98c8e1b4-bb99-11e8-b2b9-ac1f6b6435d0,13,train
+98dd9ed8-bbbc-11e8-b2ba-ac1f6b6435d0,7,train
+991ab532-bb9b-11e8-b2b9-ac1f6b6435d0,6,train
+9920a1fa-bba9-11e8-b2ba-ac1f6b6435d0,25 6,train
+99358284-bbb6-11e8-b2ba-ac1f6b6435d0,24 5,train
+994e3826-bbb9-11e8-b2ba-ac1f6b6435d0,12,train
+995e110e-bba2-11e8-b2b9-ac1f6b6435d0,4,train
+9969d9f6-bbb8-11e8-b2ba-ac1f6b6435d0,14 2,train
+999626c2-bbaa-11e8-b2ba-ac1f6b6435d0,25 18,train
+99c3fbb0-bba0-11e8-b2b9-ac1f6b6435d0,14,train
+99c49c6c-bbb6-11e8-b2ba-ac1f6b6435d0,25 18 0,train
+99cba220-bbc3-11e8-b2bc-ac1f6b6435d0,4 0,train
+99ea85e0-bbb5-11e8-b2ba-ac1f6b6435d0,25 3,train
+99eb9ce2-bbaa-11e8-b2ba-ac1f6b6435d0,16 25 0,train
+9a3f918a-bba5-11e8-b2ba-ac1f6b6435d0,23,train
+9a641a74-bbc2-11e8-b2bb-ac1f6b6435d0,13 0,train
+9a646324-bbb5-11e8-b2ba-ac1f6b6435d0,23,train
+9a64e5f0-bbc0-11e8-b2bb-ac1f6b6435d0,4,train
+9a74a038-bb9a-11e8-b2b9-ac1f6b6435d0,23,train
+9a777eca-bbc2-11e8-b2bc-ac1f6b6435d0,26 25,train
+9a846dc8-bbb9-11e8-b2ba-ac1f6b6435d0,19,train
+9a8482f6-bbc6-11e8-b2bc-ac1f6b6435d0,19,train
+9a90df4a-bba0-11e8-b2b9-ac1f6b6435d0,22 0,train
+9a917f04-bbb9-11e8-b2ba-ac1f6b6435d0,12 2 0,train
+9aad68fe-bba5-11e8-b2ba-ac1f6b6435d0,4,train
+9ab8be20-bbbe-11e8-b2ba-ac1f6b6435d0,5,train
+9abe701a-bbc6-11e8-b2bc-ac1f6b6435d0,7 0 21,train
+9aca7fec-bb9c-11e8-b2b9-ac1f6b6435d0,7 1 0 21,train
+9acb5c1a-bbb4-11e8-b2ba-ac1f6b6435d0,1,train
+9aed96f8-bbba-11e8-b2ba-ac1f6b6435d0,16 14,train
+9aef423a-bbbc-11e8-b2ba-ac1f6b6435d0,5 0,train
+9b18c078-bbbd-11e8-b2ba-ac1f6b6435d0,17 0 21,train
+9b1d02ae-bbaf-11e8-b2ba-ac1f6b6435d0,5 1,train
+9b5c7540-bbc5-11e8-b2bc-ac1f6b6435d0,23 0,train
+9b64fc9c-bb9d-11e8-b2b9-ac1f6b6435d0,26,train
+9b7158b2-bb9c-11e8-b2b9-ac1f6b6435d0,25 8 21,train
+9bb46dcc-bba7-11e8-b2ba-ac1f6b6435d0,1 0,train
+9bc257f4-bbbe-11e8-b2ba-ac1f6b6435d0,23 5,train
+9bd65e68-bb99-11e8-b2b9-ac1f6b6435d0,5 0,train
+9bddbfb2-bbaf-11e8-b2ba-ac1f6b6435d0,19 0,train
+9c2544d2-bbbd-11e8-b2ba-ac1f6b6435d0,7 2,train
+9c65d6b0-bbc6-11e8-b2bc-ac1f6b6435d0,19 0,train
+9c7cb59a-bbb9-11e8-b2ba-ac1f6b6435d0,6,train
+9c7d066a-bbb6-11e8-b2ba-ac1f6b6435d0,22 21,train
+9cb1e342-bbbd-11e8-b2ba-ac1f6b6435d0,7 2 0,train
+9cbb6762-bbbf-11e8-b2bb-ac1f6b6435d0,12 25,train
+9cce07dc-bbba-11e8-b2ba-ac1f6b6435d0,5 1 0,train
+9cd0eed6-bbb8-11e8-b2ba-ac1f6b6435d0,22,train
+9ce13122-bbb5-11e8-b2ba-ac1f6b6435d0,23,train
+9ce44b24-bbc3-11e8-b2bc-ac1f6b6435d0,19 0,train
+9cf79f62-bbc8-11e8-b2bc-ac1f6b6435d0,7 4,train
+9d18836e-bb99-11e8-b2b9-ac1f6b6435d0,25 23 0,train
+9d223fd4-bbae-11e8-b2ba-ac1f6b6435d0,3 0,train
+9d37568a-bbb3-11e8-b2ba-ac1f6b6435d0,16 25 0,train
+9d3c25a0-bba6-11e8-b2ba-ac1f6b6435d0,0 21,train
+9d4d040c-bbc8-11e8-b2bc-ac1f6b6435d0,25 18 14,train
+9d6238c0-bbc0-11e8-b2bb-ac1f6b6435d0,23,train
+9d851ac6-bbc9-11e8-b2bc-ac1f6b6435d0,23,train
+9d895c60-bbad-11e8-b2ba-ac1f6b6435d0,12 13 0,train
+9d937546-bbb8-11e8-b2ba-ac1f6b6435d0,23 0,train
+9d950404-bbb5-11e8-b2ba-ac1f6b6435d0,5,train
+9df9ffd8-bb9e-11e8-b2b9-ac1f6b6435d0,11,train
+9e1f1b10-bbc6-11e8-b2bc-ac1f6b6435d0,23,train
+9e46677e-bb9e-11e8-b2b9-ac1f6b6435d0,14,train
+9e7774fe-bbb7-11e8-b2ba-ac1f6b6435d0,5 0,train
+9e84bbbc-bbaa-11e8-b2ba-ac1f6b6435d0,22 11,train
+9ea0bdda-bbbe-11e8-b2ba-ac1f6b6435d0,6,train
+9ebf50dc-bbab-11e8-b2ba-ac1f6b6435d0,18 5,train
+9ec5ade6-bbb6-11e8-b2ba-ac1f6b6435d0,19 25 13,train
+9eda3cd6-bb9b-11e8-b2b9-ac1f6b6435d0,25 18,train
+9f099dda-bba2-11e8-b2b9-ac1f6b6435d0,8,train
+9f0ab1ae-bbb4-11e8-b2ba-ac1f6b6435d0,19,train
+9f2b6d46-bb9f-11e8-b2b9-ac1f6b6435d0,18,train
+9f31c1e4-bbc4-11e8-b2bc-ac1f6b6435d0,25 17,train
+9f3a4c92-bb9c-11e8-b2b9-ac1f6b6435d0,3,train
+9f5a43fc-bba7-11e8-b2ba-ac1f6b6435d0,24,train
+9f5ed094-bbc4-11e8-b2bc-ac1f6b6435d0,25 5,train
+9f64d0ea-bbb3-11e8-b2ba-ac1f6b6435d0,13,train
+9f77cc58-bbaa-11e8-b2ba-ac1f6b6435d0,6,train
+9f860af8-bbb8-11e8-b2ba-ac1f6b6435d0,7,train
+9fdff2f2-bbc2-11e8-b2bc-ac1f6b6435d0,11,train
+a001f07e-bbc6-11e8-b2bc-ac1f6b6435d0,7 1,train
+a0030452-bbc9-11e8-b2bc-ac1f6b6435d0,6,train
+a036e9f8-bba5-11e8-b2ba-ac1f6b6435d0,1 0,train
+a03f2826-bba9-11e8-b2ba-ac1f6b6435d0,18,train
+a049ffc6-bbb8-11e8-b2ba-ac1f6b6435d0,7,train
+a06dccf2-bbb4-11e8-b2ba-ac1f6b6435d0,14,train
+a07035e8-bbb2-11e8-b2ba-ac1f6b6435d0,26 21,train
+a08ed246-bbb7-11e8-b2ba-ac1f6b6435d0,6 5,train
+a0a8cc26-bbbe-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+a0b8ef8e-bbaa-11e8-b2ba-ac1f6b6435d0,22,train
+a0bb7462-bb9f-11e8-b2b9-ac1f6b6435d0,25 6,train
+a0c15338-bb9e-11e8-b2b9-ac1f6b6435d0,3,train
+a0c5c636-bbba-11e8-b2ba-ac1f6b6435d0,19 11,train
+a0ec983a-bbc7-11e8-b2bc-ac1f6b6435d0,12,train
+a0f0c4c0-bbc5-11e8-b2bc-ac1f6b6435d0,25 14,train
+a101fa30-bba5-11e8-b2ba-ac1f6b6435d0,9 10,train
+a1077292-bbbb-11e8-b2ba-ac1f6b6435d0,25 18,train
+a10ab48a-bb9c-11e8-b2b9-ac1f6b6435d0,19 25 0,train
+a10d2d92-bbbe-11e8-b2ba-ac1f6b6435d0,22 21,train
+a1175e84-bbaa-11e8-b2ba-ac1f6b6435d0,1 21,train
+a1532c0c-bbc8-11e8-b2bc-ac1f6b6435d0,19 25 21,train
+a172efba-bbaa-11e8-b2ba-ac1f6b6435d0,5 0,train
+a1809088-bb9c-11e8-b2b9-ac1f6b6435d0,7,train
+a1a63d16-bbaa-11e8-b2ba-ac1f6b6435d0,22 7,train
+a1a8a3f0-bbad-11e8-b2ba-ac1f6b6435d0,26 0,train
+a1c9e6de-bba1-11e8-b2b9-ac1f6b6435d0,7 1 0,train
+a1e7b630-bba3-11e8-b2b9-ac1f6b6435d0,22 21,train
+a212602c-bbb9-11e8-b2ba-ac1f6b6435d0,23,train
+a21ba1cc-bbc4-11e8-b2bc-ac1f6b6435d0,25 7 2 0,train
+a21c4c74-bbbc-11e8-b2ba-ac1f6b6435d0,24 25 0,train
+a2481d26-bb9a-11e8-b2b9-ac1f6b6435d0,19,train
+a2550930-bb9c-11e8-b2b9-ac1f6b6435d0,12 21,train
+a25cca02-bbc0-11e8-b2bb-ac1f6b6435d0,6,train
+a268a1d2-bba8-11e8-b2ba-ac1f6b6435d0,2 8,train
+a27a5212-bba1-11e8-b2b9-ac1f6b6435d0,18,train
+a28479fa-bb9b-11e8-b2b9-ac1f6b6435d0,22,train
+a2958374-bbc5-11e8-b2bc-ac1f6b6435d0,7 5,train
+a29f43e2-bba1-11e8-b2b9-ac1f6b6435d0,25 17 0,train
+a2dbba58-bbaf-11e8-b2ba-ac1f6b6435d0,6,train
+a2e3ca14-bbae-11e8-b2ba-ac1f6b6435d0,25 13,train
+a2ed23c8-bbbf-11e8-b2bb-ac1f6b6435d0,7,train
+a2ed8132-bbac-11e8-b2ba-ac1f6b6435d0,5,train
+a2f6e76c-bbad-11e8-b2ba-ac1f6b6435d0,23,train
+a302234c-bbb8-11e8-b2ba-ac1f6b6435d0,7,train
+a33aa3ee-bbb2-11e8-b2ba-ac1f6b6435d0,23 2 0,train
+a34d8680-bb99-11e8-b2b9-ac1f6b6435d0,24,train
+a3546810-bbc6-11e8-b2bc-ac1f6b6435d0,14,train
+a3824e54-bbb4-11e8-b2ba-ac1f6b6435d0,12 0,train
+a3868b8c-bbb3-11e8-b2ba-ac1f6b6435d0,1,train
+a3ad22ac-bbb7-11e8-b2ba-ac1f6b6435d0,14 0,train
+a3d8d540-bbc7-11e8-b2bc-ac1f6b6435d0,25 14,train
+a3d962c8-bb9d-11e8-b2b9-ac1f6b6435d0,18 21,train
+a3f7637c-bbb1-11e8-b2ba-ac1f6b6435d0,1 0,train
+a400fa96-bbbf-11e8-b2bb-ac1f6b6435d0,23,train
+a4081330-bba6-11e8-b2ba-ac1f6b6435d0,11,train
+a408fb16-bbaf-11e8-b2ba-ac1f6b6435d0,2 0,train
+a40cbf66-bba6-11e8-b2ba-ac1f6b6435d0,19,train
+a41cbe9a-bbbd-11e8-b2ba-ac1f6b6435d0,19,train
+a48a8c26-bbaf-11e8-b2ba-ac1f6b6435d0,11,train
+a48d54be-bb9c-11e8-b2b9-ac1f6b6435d0,7,train
+a495329a-bba3-11e8-b2b9-ac1f6b6435d0,24 2,train
+a4c7b66e-bbc8-11e8-b2bc-ac1f6b6435d0,22 7 0,train
+a4e2cf2e-bbca-11e8-b2bc-ac1f6b6435d0,22 0,train
+a4ed96b4-bbc7-11e8-b2bc-ac1f6b6435d0,22,train
+a5228276-bbb7-11e8-b2ba-ac1f6b6435d0,19 2 0,train
+a536d918-bbaa-11e8-b2ba-ac1f6b6435d0,4,train
+a5450940-bbc1-11e8-b2bb-ac1f6b6435d0,6,train
+a54664c4-bbc2-11e8-b2bc-ac1f6b6435d0,7 0,train
+a56bf186-bba8-11e8-b2ba-ac1f6b6435d0,6,train
+a56da662-bbb6-11e8-b2ba-ac1f6b6435d0,6,train
+a5886c14-bbab-11e8-b2ba-ac1f6b6435d0,24 0,train
+a59f20e0-bba0-11e8-b2b9-ac1f6b6435d0,25 1 21,train
+a5a2565e-bbc1-11e8-b2bb-ac1f6b6435d0,25 5,train
+a5b70d48-bba2-11e8-b2b9-ac1f6b6435d0,19 25 0,train
+a5b78c4c-bb9c-11e8-b2b9-ac1f6b6435d0,1,train
+a5e4284e-bba9-11e8-b2ba-ac1f6b6435d0,23,train
+a5e7165c-bbaa-11e8-b2ba-ac1f6b6435d0,18,train
+a5f3fc46-bbc8-11e8-b2bc-ac1f6b6435d0,14,train
+a60e087a-bbaa-11e8-b2ba-ac1f6b6435d0,16 0,train
+a623e598-bbbc-11e8-b2ba-ac1f6b6435d0,11,train
+a63f5b3e-bbad-11e8-b2ba-ac1f6b6435d0,5,train
+a63fe728-bbb4-11e8-b2ba-ac1f6b6435d0,7 0,train
+a65bab46-bba7-11e8-b2ba-ac1f6b6435d0,11,train
+a666a2bc-bbc5-11e8-b2bc-ac1f6b6435d0,14 17,train
+a66b2c7e-bba7-11e8-b2ba-ac1f6b6435d0,18,train
+a69b3e3e-bbb9-11e8-b2ba-ac1f6b6435d0,14 21,train
+a6a0b49a-bbbe-11e8-b2ba-ac1f6b6435d0,14 2,train
+a6a0b70e-bba7-11e8-b2ba-ac1f6b6435d0,14 2 0,train
+a6adbfc8-bba0-11e8-b2b9-ac1f6b6435d0,23,train
+a6b1dce8-bbc3-11e8-b2bc-ac1f6b6435d0,18 17 21,train
+a6b6635a-bbc1-11e8-b2bb-ac1f6b6435d0,14 1 0,train
+a6bd028a-bba0-11e8-b2b9-ac1f6b6435d0,5,train
+a6c13f3a-bbb4-11e8-b2ba-ac1f6b6435d0,4,train
+a6c547e8-bb9a-11e8-b2b9-ac1f6b6435d0,19,train
+a6d16052-bbb1-11e8-b2ba-ac1f6b6435d0,5,train
+a6d2d616-bbbc-11e8-b2ba-ac1f6b6435d0,14,train
+a6d6d82e-bba8-11e8-b2ba-ac1f6b6435d0,12 22 21,train
+a6e13046-bbba-11e8-b2ba-ac1f6b6435d0,0 21,train
+a6f1e954-bba6-11e8-b2ba-ac1f6b6435d0,5 0,train
+a7026964-bb9c-11e8-b2b9-ac1f6b6435d0,3 0,train
+a70e3d10-bbbb-11e8-b2ba-ac1f6b6435d0,7 0,train
+a71aae5e-bba9-11e8-b2ba-ac1f6b6435d0,25 4,train
+a73275ec-bba0-11e8-b2b9-ac1f6b6435d0,7,train
+a77699c8-bbbb-11e8-b2ba-ac1f6b6435d0,25 13 0,train
+a776e496-bbc5-11e8-b2bc-ac1f6b6435d0,12 14,train
+a781891a-bba6-11e8-b2ba-ac1f6b6435d0,13 7 0,train
+a7869a3e-bba8-11e8-b2ba-ac1f6b6435d0,11,train
+a7ad586e-bba2-11e8-b2b9-ac1f6b6435d0,3,train
+a7bfc3aa-bba2-11e8-b2b9-ac1f6b6435d0,7,train
+a7dbbada-bb9b-11e8-b2b9-ac1f6b6435d0,25 11,train
+a7dcfb92-bba1-11e8-b2b9-ac1f6b6435d0,11,train
+a7e62b66-bb9e-11e8-b2b9-ac1f6b6435d0,1 2,train
+a7f21224-bbc0-11e8-b2bb-ac1f6b6435d0,11 0,train
+a7f69ef6-bbbc-11e8-b2ba-ac1f6b6435d0,1 4,train
+a8197264-bb99-11e8-b2b9-ac1f6b6435d0,14,train
+a8266b1a-bbc4-11e8-b2bc-ac1f6b6435d0,25 18,train
+a85a51ac-bba9-11e8-b2ba-ac1f6b6435d0,19,train
+a8aa5cfe-bbc4-11e8-b2bc-ac1f6b6435d0,19 25 0,train
+a8c2fa30-bba0-11e8-b2b9-ac1f6b6435d0,23 3 0,train
+a8c6dfec-bbbe-11e8-b2ba-ac1f6b6435d0,5,train
+a8db3504-bbc9-11e8-b2bc-ac1f6b6435d0,7,train
+a8e07f60-bbc3-11e8-b2bc-ac1f6b6435d0,18,train
+a8fbf48a-bbc2-11e8-b2bc-ac1f6b6435d0,22 0,train
+a901764a-bbb2-11e8-b2ba-ac1f6b6435d0,19 25 2,train
+a90ad998-bba7-11e8-b2ba-ac1f6b6435d0,12 0,train
+a9125fa6-bbbb-11e8-b2ba-ac1f6b6435d0,5 0,train
+a9198572-bb9f-11e8-b2b9-ac1f6b6435d0,6,train
+a932b36a-bbb0-11e8-b2ba-ac1f6b6435d0,22 25 0,train
+a937116c-bbc9-11e8-b2bc-ac1f6b6435d0,23,train
+a95b7176-bbc2-11e8-b2bc-ac1f6b6435d0,19,train
+a97c50f8-bb9a-11e8-b2b9-ac1f6b6435d0,25 13,train
+a990e45a-bbc2-11e8-b2bc-ac1f6b6435d0,6 0,train
+a9a48188-bbb1-11e8-b2ba-ac1f6b6435d0,23,train
+a9aa89f0-bbc7-11e8-b2bc-ac1f6b6435d0,1 0,train
+a9af694c-bbb4-11e8-b2ba-ac1f6b6435d0,11,train
+a9b7c2b4-bba9-11e8-b2ba-ac1f6b6435d0,5,train
+a9bcb006-bba1-11e8-b2b9-ac1f6b6435d0,11,train
+a9f8f3d0-bbb1-11e8-b2ba-ac1f6b6435d0,26 2 0,train
+a9fba1f0-bbb8-11e8-b2ba-ac1f6b6435d0,25 3,train
+aa133ed6-bba5-11e8-b2ba-ac1f6b6435d0,25 14,train
+aa3f3582-bbb3-11e8-b2ba-ac1f6b6435d0,19 0,train
+aa3fb18c-bb9b-11e8-b2b9-ac1f6b6435d0,23,train
+aa79f864-bbba-11e8-b2ba-ac1f6b6435d0,7 0,train
+aaa5919c-bbae-11e8-b2ba-ac1f6b6435d0,1,train
+aab42392-bbbd-11e8-b2ba-ac1f6b6435d0,25 13 21,train
+aabaa280-bb9a-11e8-b2b9-ac1f6b6435d0,6,train
+aabedb40-bba7-11e8-b2ba-ac1f6b6435d0,18 0,train
+aad1b27e-bbbb-11e8-b2ba-ac1f6b6435d0,11,train
+aaebf440-bbb1-11e8-b2ba-ac1f6b6435d0,7,train
+ab1c28aa-bbc4-11e8-b2bc-ac1f6b6435d0,3,train
+ab20cdc8-bbbb-11e8-b2ba-ac1f6b6435d0,13 0,train
+ab3033e4-bba2-11e8-b2b9-ac1f6b6435d0,12 25 21,train
+ab33dff8-bba7-11e8-b2ba-ac1f6b6435d0,4,train
+ab385b2e-bbba-11e8-b2ba-ac1f6b6435d0,18 2,train
+ab5fac44-bb9f-11e8-b2b9-ac1f6b6435d0,7 14,train
+ab6d1c68-bbad-11e8-b2ba-ac1f6b6435d0,14 2 0,train
+ab79dbb6-bbb6-11e8-b2ba-ac1f6b6435d0,5 0,train
+ab7bee02-bbb5-11e8-b2ba-ac1f6b6435d0,14,train
+abaf8b26-bbb6-11e8-b2ba-ac1f6b6435d0,11,train
+abd2ce88-bb9d-11e8-b2b9-ac1f6b6435d0,14 0,train
+abd61684-bba6-11e8-b2ba-ac1f6b6435d0,11,train
+abe0cf1a-bbbb-11e8-b2ba-ac1f6b6435d0,14 17,train
+abe5e62a-bb9e-11e8-b2b9-ac1f6b6435d0,3,train
+abf658c2-bbba-11e8-b2ba-ac1f6b6435d0,1,train
+abfc1022-bbc5-11e8-b2bc-ac1f6b6435d0,11,train
+abfcb704-bbbe-11e8-b2ba-ac1f6b6435d0,24 25 21,train
+ac02eca8-bb9d-11e8-b2b9-ac1f6b6435d0,6,train
+ac199eac-bbb7-11e8-b2ba-ac1f6b6435d0,16,train
+ac26ff46-bba5-11e8-b2ba-ac1f6b6435d0,11,train
+ac8b206e-bbb1-11e8-b2ba-ac1f6b6435d0,7 0,train
+ac8f2608-bb9a-11e8-b2b9-ac1f6b6435d0,19 25 0,train
+aca4fc56-bbc9-11e8-b2bc-ac1f6b6435d0,12,train
+acd83d26-bb9e-11e8-b2b9-ac1f6b6435d0,13,train
+acf6850e-bbbe-11e8-b2ba-ac1f6b6435d0,25 13 0,train
+acfc07ce-bbbc-11e8-b2ba-ac1f6b6435d0,1,train
+ad041f5c-bbc3-11e8-b2bc-ac1f6b6435d0,4,train
+ad17b4f6-bba8-11e8-b2ba-ac1f6b6435d0,6 9 10,train
+ad1a08b4-bbb2-11e8-b2ba-ac1f6b6435d0,23 5,train
+ad6cbc40-bbc0-11e8-b2bb-ac1f6b6435d0,23,train
+ad7061ea-bbbd-11e8-b2ba-ac1f6b6435d0,12,train
+ad72e594-bbb5-11e8-b2ba-ac1f6b6435d0,11,train
+ad87ff08-bb9a-11e8-b2b9-ac1f6b6435d0,24 11,train
+ada89ab8-bbb0-11e8-b2ba-ac1f6b6435d0,17 0,train
+adaf2f70-bbbc-11e8-b2ba-ac1f6b6435d0,22,train
+adb07764-bb9d-11e8-b2b9-ac1f6b6435d0,6,train
+adb30f98-bb9c-11e8-b2b9-ac1f6b6435d0,4,train
+adbd16fc-bbbd-11e8-b2ba-ac1f6b6435d0,24 2 0,train
+adbf946c-bb9b-11e8-b2b9-ac1f6b6435d0,19,train
+addcd62e-bba7-11e8-b2ba-ac1f6b6435d0,12 21,train
+addde20a-bbb4-11e8-b2ba-ac1f6b6435d0,14,train
+ade732d6-bbca-11e8-b2bc-ac1f6b6435d0,6,train
+ae0ae27c-bbab-11e8-b2ba-ac1f6b6435d0,23 0,train
+ae26ae6e-bbae-11e8-b2ba-ac1f6b6435d0,19 0,train
+ae52ead0-bb9d-11e8-b2b9-ac1f6b6435d0,22 0 21,train
+ae55b81a-bb9c-11e8-b2b9-ac1f6b6435d0,23,train
+ae6f34fa-bbc6-11e8-b2bc-ac1f6b6435d0,24 5,train
+ae798696-bbab-11e8-b2ba-ac1f6b6435d0,24,train
+ae97c5b8-bb9f-11e8-b2b9-ac1f6b6435d0,2,train
+ae9e6a7a-bbc8-11e8-b2bc-ac1f6b6435d0,11,train
+aea0871e-bba6-11e8-b2ba-ac1f6b6435d0,25 21,train
+aeafe736-bbc9-11e8-b2bc-ac1f6b6435d0,19,train
+aebce96e-bba5-11e8-b2ba-ac1f6b6435d0,12,train
+aec8d3ee-bbc5-11e8-b2bc-ac1f6b6435d0,25 4,train
+aeceb8da-bbb7-11e8-b2ba-ac1f6b6435d0,26 0,train
+aed0b5aa-bbb1-11e8-b2ba-ac1f6b6435d0,7,train
+aed1d600-bbad-11e8-b2ba-ac1f6b6435d0,22 0,train
+aee65248-bbc5-11e8-b2bc-ac1f6b6435d0,25 7 1,train
+af0497e2-bbb8-11e8-b2ba-ac1f6b6435d0,5 0,train
+af26bdf4-bbae-11e8-b2ba-ac1f6b6435d0,11,train
+af477ebe-bbb2-11e8-b2ba-ac1f6b6435d0,25 4,train
+af7e3ef2-bbc3-11e8-b2bc-ac1f6b6435d0,25 3,train
+afbbbaf2-bbc8-11e8-b2bc-ac1f6b6435d0,25 3,train
+afce60b8-bbc2-11e8-b2bc-ac1f6b6435d0,25 1,train
+afceee7c-bbc5-11e8-b2bc-ac1f6b6435d0,7 2 8,train
+afe79c2e-bbb1-11e8-b2ba-ac1f6b6435d0,25 14 0,train
+aff7af2c-bb9f-11e8-b2b9-ac1f6b6435d0,22,train
+b006890e-bbc0-11e8-b2bb-ac1f6b6435d0,25 23 0,train
+b0426c74-bb9f-11e8-b2b9-ac1f6b6435d0,25 13,train
+b05cebf2-bba0-11e8-b2b9-ac1f6b6435d0,14 3,train
+b06689ce-bbb8-11e8-b2ba-ac1f6b6435d0,25 18,train
+b07daa4c-bb99-11e8-b2b9-ac1f6b6435d0,5,train
+b09f53f8-bbc7-11e8-b2bc-ac1f6b6435d0,19 25,train
+b0a63cd8-bbb1-11e8-b2ba-ac1f6b6435d0,14,train
+b0bcadd4-bbc4-11e8-b2bc-ac1f6b6435d0,5 0,train
+b0c0ca4c-bba9-11e8-b2ba-ac1f6b6435d0,1 0,train
+b0e32a84-bbad-11e8-b2ba-ac1f6b6435d0,22 0,train
+b13175f6-bbab-11e8-b2ba-ac1f6b6435d0,4,train
+b13a94ae-bbbc-11e8-b2ba-ac1f6b6435d0,22 7 0,train
+b1504cc0-bbc8-11e8-b2bc-ac1f6b6435d0,1 3,train
+b165758e-bbc6-11e8-b2bc-ac1f6b6435d0,19,train
+b177b83a-bba7-11e8-b2ba-ac1f6b6435d0,3,train
+b19754b0-bbb6-11e8-b2ba-ac1f6b6435d0,4,train
+b1cbf75a-bbb2-11e8-b2ba-ac1f6b6435d0,21,train
+b1e2ccc6-bba5-11e8-b2ba-ac1f6b6435d0,13,train
+b1ffa7b8-bbc5-11e8-b2bc-ac1f6b6435d0,3,train
+b202d012-bbb8-11e8-b2ba-ac1f6b6435d0,5,train
+b235ac02-bba0-11e8-b2b9-ac1f6b6435d0,7,train
+b238f594-bb99-11e8-b2b9-ac1f6b6435d0,11,train
+b23bcc42-bba8-11e8-b2ba-ac1f6b6435d0,23,train
+b2655a3a-bbc1-11e8-b2bb-ac1f6b6435d0,24 25,train
+b2673432-bba2-11e8-b2b9-ac1f6b6435d0,18 0,train
+b28634ba-bbaa-11e8-b2ba-ac1f6b6435d0,19 0,train
+b28ea462-bbbc-11e8-b2ba-ac1f6b6435d0,3,train
+b28fa5b8-bba5-11e8-b2ba-ac1f6b6435d0,22,train
+b29e0a4a-bbbe-11e8-b2ba-ac1f6b6435d0,19,train
+b2a44178-bba3-11e8-b2b9-ac1f6b6435d0,25 6 2,train
+b2e5ede2-bbb9-11e8-b2ba-ac1f6b6435d0,6,train
+b30d21bc-bba7-11e8-b2ba-ac1f6b6435d0,1 0 21,train
+b32bf5ee-bba5-11e8-b2ba-ac1f6b6435d0,23 2 21,train
+b3380770-bbb0-11e8-b2ba-ac1f6b6435d0,22 4,train
+b37d0310-bbca-11e8-b2bc-ac1f6b6435d0,23,train
+b3a3c22e-bbc6-11e8-b2bc-ac1f6b6435d0,11,train
+b3a6e510-bbb9-11e8-b2ba-ac1f6b6435d0,16 25,train
+b3cf3ca8-bba1-11e8-b2b9-ac1f6b6435d0,20,train
+b3d2ef64-bbbb-11e8-b2ba-ac1f6b6435d0,18,train
+b3f6abc2-bba5-11e8-b2ba-ac1f6b6435d0,1 0,train
+b3f7b7d8-bb9b-11e8-b2b9-ac1f6b6435d0,12 0,train
+b3fe4f60-bbc5-11e8-b2bc-ac1f6b6435d0,23 0,train
+b4200c8c-bbc4-11e8-b2bc-ac1f6b6435d0,25 5,train
+b42540a8-bb9c-11e8-b2b9-ac1f6b6435d0,25 21,train
+b441cd36-bbba-11e8-b2ba-ac1f6b6435d0,4,train
+b44fbc9c-bbb1-11e8-b2ba-ac1f6b6435d0,14,train
+b4684bb6-bbb8-11e8-b2ba-ac1f6b6435d0,11,train
+b47298ea-bb9b-11e8-b2b9-ac1f6b6435d0,3 21,train
+b48b1d6c-bba9-11e8-b2ba-ac1f6b6435d0,22,train
+b4a5fda4-bbb2-11e8-b2ba-ac1f6b6435d0,6,train
+b4d2d3ce-bbb7-11e8-b2ba-ac1f6b6435d0,14,train
+b4ea603c-bbc3-11e8-b2bc-ac1f6b6435d0,22,train
+b503b920-bbb8-11e8-b2ba-ac1f6b6435d0,23 0,train
+b51eaf30-bb9c-11e8-b2b9-ac1f6b6435d0,11 1 0,train
+b532c3a4-bbb4-11e8-b2ba-ac1f6b6435d0,5,train
+b535fc7e-bba3-11e8-b2b9-ac1f6b6435d0,1 0,train
+b54161be-bbb1-11e8-b2ba-ac1f6b6435d0,1 21,train
+b5633452-bbc4-11e8-b2bc-ac1f6b6435d0,3,train
+b5857e52-bbc6-11e8-b2bc-ac1f6b6435d0,23,train
+b5a98da4-bbb4-11e8-b2ba-ac1f6b6435d0,6,train
+b5be1344-bb9d-11e8-b2b9-ac1f6b6435d0,6,train
+b5d257ee-bbbd-11e8-b2ba-ac1f6b6435d0,22 21,train
+b5f2c1b8-bbb4-11e8-b2ba-ac1f6b6435d0,11,train
+b60e6f2a-bbc9-11e8-b2bc-ac1f6b6435d0,19,train
+b610e47e-bbad-11e8-b2ba-ac1f6b6435d0,11,train
+b62587f8-bba3-11e8-b2b9-ac1f6b6435d0,11,train
+b6376e90-bbb3-11e8-b2ba-ac1f6b6435d0,22 0,train
+b63e5768-bbaf-11e8-b2ba-ac1f6b6435d0,12,train
+b641dc98-bbba-11e8-b2ba-ac1f6b6435d0,6,train
+b65524ce-bbab-11e8-b2ba-ac1f6b6435d0,19,train
+b6a469d8-bbad-11e8-b2ba-ac1f6b6435d0,16 17,train
+b6ae69a0-bbb8-11e8-b2ba-ac1f6b6435d0,3,train
+b6be2366-bbba-11e8-b2ba-ac1f6b6435d0,4,train
+b6cfc3ec-bbbe-11e8-b2ba-ac1f6b6435d0,14,train
+b6e493d2-bbb7-11e8-b2ba-ac1f6b6435d0,19 0,train
+b6fc16e8-bbb6-11e8-b2ba-ac1f6b6435d0,26 0,train
+b70c4970-bbc8-11e8-b2bc-ac1f6b6435d0,2 0 21,train
+b7531184-bbb4-11e8-b2ba-ac1f6b6435d0,1 3,train
+b75dfc2a-bbb4-11e8-b2ba-ac1f6b6435d0,18,train
+b76d328a-bb9b-11e8-b2b9-ac1f6b6435d0,5 0,train
+b7721dd0-bbba-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+b78917b8-bbc1-11e8-b2bb-ac1f6b6435d0,19 25 0,train
+b79d4e36-bb99-11e8-b2b9-ac1f6b6435d0,22 7 21,train
+b79dcbc0-bbbe-11e8-b2ba-ac1f6b6435d0,7 0,train
+b7a108aa-bbad-11e8-b2ba-ac1f6b6435d0,1 0,train
+b7bdade2-bbc2-11e8-b2bc-ac1f6b6435d0,4,train
+b7d40490-bbbb-11e8-b2ba-ac1f6b6435d0,23 0,train
+b7d9d1e0-bbb1-11e8-b2ba-ac1f6b6435d0,6 7,train
+b7e21ce2-bbc5-11e8-b2bc-ac1f6b6435d0,23 2 0,train
+b7fb93b4-bb9f-11e8-b2b9-ac1f6b6435d0,25 7 2 0,train
+b8578bd4-bbb7-11e8-b2ba-ac1f6b6435d0,14 4,train
+b8584c82-bbc5-11e8-b2bc-ac1f6b6435d0,19 25 0,train
+b8621dac-bbb1-11e8-b2ba-ac1f6b6435d0,2 0,train
+b88b4656-bbab-11e8-b2ba-ac1f6b6435d0,23,train
+b8b286fa-bba4-11e8-b2ba-ac1f6b6435d0,2 0,train
+b90cd6dc-bbc7-11e8-b2bc-ac1f6b6435d0,24,train
+b914d2f2-bb99-11e8-b2b9-ac1f6b6435d0,3,train
+b91a5b32-bba3-11e8-b2b9-ac1f6b6435d0,18,train
+b927ef4a-bbb2-11e8-b2ba-ac1f6b6435d0,7,train
+b964f7a2-bba6-11e8-b2ba-ac1f6b6435d0,13,train
+b96ac374-bbc1-11e8-b2bb-ac1f6b6435d0,3,train
+b96b74aa-bbac-11e8-b2ba-ac1f6b6435d0,18,train
+b9736050-bb9a-11e8-b2b9-ac1f6b6435d0,2,train
+b9c1704e-bbbb-11e8-b2ba-ac1f6b6435d0,25 18,train
+b9ef4eaa-bba8-11e8-b2ba-ac1f6b6435d0,25 3,train
+b9f8b9f4-bbc1-11e8-b2bb-ac1f6b6435d0,18,train
+ba10a22e-bbc3-11e8-b2bc-ac1f6b6435d0,7 0,train
+ba47b746-bba5-11e8-b2ba-ac1f6b6435d0,16 25 0,train
+ba54f47c-bbb1-11e8-b2ba-ac1f6b6435d0,3,train
+ba6dfb64-bbc7-11e8-b2bc-ac1f6b6435d0,7,train
+ba802788-bbb5-11e8-b2ba-ac1f6b6435d0,5 0,train
+ba896ce0-bb9b-11e8-b2b9-ac1f6b6435d0,11,train
+ba8a6a90-bbab-11e8-b2ba-ac1f6b6435d0,3 0,train
+ba8b612e-bb9d-11e8-b2b9-ac1f6b6435d0,20 0,train
+baf8dc98-bbbd-11e8-b2ba-ac1f6b6435d0,18,train
+bb0e0e5a-bbc8-11e8-b2bc-ac1f6b6435d0,23,train
+bb32bfcc-bbbc-11e8-b2ba-ac1f6b6435d0,4,train
+bb33b174-bbbd-11e8-b2ba-ac1f6b6435d0,16 25 14,train
+bb4de1d0-bbbc-11e8-b2ba-ac1f6b6435d0,25 6 0,train
+bb72856e-bbab-11e8-b2ba-ac1f6b6435d0,23,train
+bb7a1188-bbbc-11e8-b2ba-ac1f6b6435d0,25 5,train
+bb96bf6e-bbb6-11e8-b2ba-ac1f6b6435d0,25 5,train
+bbade4ee-bbc2-11e8-b2bc-ac1f6b6435d0,23,train
+bbb26468-bbc4-11e8-b2bc-ac1f6b6435d0,1,train
+bc09c9e0-bbad-11e8-b2ba-ac1f6b6435d0,25 4,train
+bc2f6526-bbc9-11e8-b2bc-ac1f6b6435d0,16 25 0,train
+bc35a91e-bbaf-11e8-b2ba-ac1f6b6435d0,19,train
+bc64e57e-bbb1-11e8-b2ba-ac1f6b6435d0,26 3 0 21,train
+bc6748c4-bbbf-11e8-b2bb-ac1f6b6435d0,7,train
+bc92e34c-bbbc-11e8-b2ba-ac1f6b6435d0,19,train
+bcc45fe0-bbc0-11e8-b2bb-ac1f6b6435d0,6,train
+bcda23a4-bba0-11e8-b2b9-ac1f6b6435d0,19 5 0,train
+bcdc493e-bba2-11e8-b2b9-ac1f6b6435d0,16 0,train
+bcf14bb4-bbb0-11e8-b2ba-ac1f6b6435d0,23 2,train
+bd022472-bbc2-11e8-b2bc-ac1f6b6435d0,19 4,train
+bd1fbd64-bba1-11e8-b2b9-ac1f6b6435d0,7,train
+bd282a10-bba3-11e8-b2b9-ac1f6b6435d0,13 0,train
+bd3e3c46-bbae-11e8-b2ba-ac1f6b6435d0,22 5,train
+bd4f9c5e-bba2-11e8-b2b9-ac1f6b6435d0,12 25 4,train
+bd5a9ef0-bb9e-11e8-b2b9-ac1f6b6435d0,18,train
+bd643b36-bbc6-11e8-b2bc-ac1f6b6435d0,11 0,train
+bd6ad43c-bbb7-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+bd9fcaf0-bb9b-11e8-b2b9-ac1f6b6435d0,3,train
+bde7517a-bbca-11e8-b2bc-ac1f6b6435d0,6,train
+bdfa2920-bb99-11e8-b2b9-ac1f6b6435d0,14,train
+be3fd5ce-bb99-11e8-b2b9-ac1f6b6435d0,14 0,train
+be8c571e-bbb2-11e8-b2ba-ac1f6b6435d0,12 25,train
+be8d21fa-bbb5-11e8-b2ba-ac1f6b6435d0,26 25,train
+be9292fe-bbbd-11e8-b2ba-ac1f6b6435d0,23,train
+be94f236-bbab-11e8-b2ba-ac1f6b6435d0,12 7 0,train
+beb23624-bbc5-11e8-b2bc-ac1f6b6435d0,23 1,train
+bf37e5f8-bbb1-11e8-b2ba-ac1f6b6435d0,25 6 0,train
+bf433be8-bbc9-11e8-b2bc-ac1f6b6435d0,14,train
+bf4dcb9e-bba6-11e8-b2ba-ac1f6b6435d0,19 0,train
+bf6ce2b0-bb9f-11e8-b2b9-ac1f6b6435d0,5 0,train
+bf733e2e-bb9c-11e8-b2b9-ac1f6b6435d0,22,train
+bf9ec5fa-bb9f-11e8-b2b9-ac1f6b6435d0,12 21,train
+bfaff2ea-bba8-11e8-b2ba-ac1f6b6435d0,2 0,train
+bfb582fe-bbb3-11e8-b2ba-ac1f6b6435d0,23,train
+bfd7b3b6-bbb2-11e8-b2ba-ac1f6b6435d0,7,train
+bfd857ca-bbc7-11e8-b2bc-ac1f6b6435d0,6,train
+bfe596cc-bba1-11e8-b2b9-ac1f6b6435d0,13 0,train
+bff069ec-bba3-11e8-b2b9-ac1f6b6435d0,24,train
+c00d41c0-bb9e-11e8-b2b9-ac1f6b6435d0,2,train
+c00e083c-bbbf-11e8-b2bb-ac1f6b6435d0,26 0,train
+c011595a-bbac-11e8-b2ba-ac1f6b6435d0,25 14,train
+c062346c-bbb4-11e8-b2ba-ac1f6b6435d0,23,train
+c095e742-bbc0-11e8-b2bb-ac1f6b6435d0,11 0,train
+c0b03c6e-bbac-11e8-b2ba-ac1f6b6435d0,25 5,train
+c0cdc528-bbc9-11e8-b2bc-ac1f6b6435d0,25 7,train
+c12257de-bba4-11e8-b2ba-ac1f6b6435d0,1,train
+c137588a-bba1-11e8-b2b9-ac1f6b6435d0,14 0,train
+c1428a3e-bbb5-11e8-b2ba-ac1f6b6435d0,24 2 0,train
+c16b3f5e-bb9e-11e8-b2b9-ac1f6b6435d0,23,train
+c17326c6-bbb0-11e8-b2ba-ac1f6b6435d0,1 2,train
+c173ff6a-bba6-11e8-b2ba-ac1f6b6435d0,11,train
+c18e9e28-bbac-11e8-b2ba-ac1f6b6435d0,26 2 0,train
+c1bf7b92-bb9d-11e8-b2b9-ac1f6b6435d0,14,train
+c1c283e2-bba1-11e8-b2b9-ac1f6b6435d0,11,train
+c1e5c990-bbad-11e8-b2ba-ac1f6b6435d0,6,train
+c1f41f8c-bba7-11e8-b2ba-ac1f6b6435d0,11,train
+c2341f0c-bbc4-11e8-b2bc-ac1f6b6435d0,1 3 0,train
+c2489bcc-bba0-11e8-b2b9-ac1f6b6435d0,25 1,train
+c28c98b8-bbc3-11e8-b2bc-ac1f6b6435d0,11,train
+c296237e-bbaa-11e8-b2ba-ac1f6b6435d0,25 11,train
+c2be66ea-bbc3-11e8-b2bc-ac1f6b6435d0,24 25,train
+c2c95ba8-bba6-11e8-b2ba-ac1f6b6435d0,12,train
+c2cf0f94-bbc4-11e8-b2bc-ac1f6b6435d0,25 13 7 0,train
+c2d9871a-bba3-11e8-b2b9-ac1f6b6435d0,5,train
+c2e9ff4e-bbaf-11e8-b2ba-ac1f6b6435d0,25 6,train
+c2eccf78-bbc6-11e8-b2bc-ac1f6b6435d0,22 0,train
+c2f6df34-bbc3-11e8-b2bc-ac1f6b6435d0,4,train
+c2fd9230-bbbd-11e8-b2ba-ac1f6b6435d0,23,train
+c30fc824-bb9a-11e8-b2b9-ac1f6b6435d0,11,train
+c3322376-bbc0-11e8-b2bb-ac1f6b6435d0,5,train
+c33a01ca-bb9a-11e8-b2b9-ac1f6b6435d0,22,train
+c33c07d8-bba2-11e8-b2b9-ac1f6b6435d0,22 0,train
+c361f992-bbad-11e8-b2ba-ac1f6b6435d0,16 15 2,train
+c36549c6-bba8-11e8-b2ba-ac1f6b6435d0,18,train
+c36d0d24-bbac-11e8-b2ba-ac1f6b6435d0,25 1,train
+c370b142-bbc8-11e8-b2bc-ac1f6b6435d0,25 3,train
+c3ff65a2-bbc5-11e8-b2bc-ac1f6b6435d0,22 25 0,train
+c431fb70-bba7-11e8-b2ba-ac1f6b6435d0,4 0,train
+c4352e58-bbc5-11e8-b2bc-ac1f6b6435d0,19 0,train
+c4358e12-bba1-11e8-b2b9-ac1f6b6435d0,3,train
+c4857ef2-bbb7-11e8-b2ba-ac1f6b6435d0,12 1 21,train
+c49405d2-bbb5-11e8-b2ba-ac1f6b6435d0,6,train
+c4ac65ac-bbae-11e8-b2ba-ac1f6b6435d0,14 0,train
+c4b15d62-bbbf-11e8-b2bb-ac1f6b6435d0,19 0,train
+c4b7b1ba-bbc6-11e8-b2bc-ac1f6b6435d0,7,train
+c4dc83ba-bbc0-11e8-b2bb-ac1f6b6435d0,14,train
+c50a0c70-bb9a-11e8-b2b9-ac1f6b6435d0,7 1 0,train
+c5250c12-bbb5-11e8-b2ba-ac1f6b6435d0,14 4,train
+c59b60bc-bbb8-11e8-b2ba-ac1f6b6435d0,6,train
+c5b9df7e-bb9f-11e8-b2b9-ac1f6b6435d0,16 25 0,train
+c5c152c0-bbb0-11e8-b2ba-ac1f6b6435d0,4,train
+c5d4f7c2-bbbe-11e8-b2ba-ac1f6b6435d0,23 1,train
+c614bce6-bba4-11e8-b2ba-ac1f6b6435d0,1 0,train
+c61808a0-bb9b-11e8-b2b9-ac1f6b6435d0,23 0,train
+c6180f18-bba9-11e8-b2ba-ac1f6b6435d0,25 5 0,train
+c6343132-bb9c-11e8-b2b9-ac1f6b6435d0,5,train
+c664eeb8-bb9b-11e8-b2b9-ac1f6b6435d0,23 2 21,train
+c66d3d28-bbb6-11e8-b2ba-ac1f6b6435d0,13 21,train
+c69932a0-bb9a-11e8-b2b9-ac1f6b6435d0,25 23 0,train
+c6bb6800-bba6-11e8-b2ba-ac1f6b6435d0,3 0,train
+c6ce1950-bbb0-11e8-b2ba-ac1f6b6435d0,18,train
+c6d2eb64-bb9d-11e8-b2b9-ac1f6b6435d0,2 0,train
+c6e2c336-bba7-11e8-b2ba-ac1f6b6435d0,5,train
+c6e7aad2-bb9c-11e8-b2b9-ac1f6b6435d0,11,train
+c6fbf312-bba5-11e8-b2ba-ac1f6b6435d0,3,train
+c71df0e4-bbc7-11e8-b2bc-ac1f6b6435d0,4,train
+c73488fa-bbbc-11e8-b2ba-ac1f6b6435d0,7 0,train
+c7724316-bb99-11e8-b2b9-ac1f6b6435d0,22 0,train
+c79c8034-bbb9-11e8-b2ba-ac1f6b6435d0,22 4,train
+c7b0a070-bbc6-11e8-b2bc-ac1f6b6435d0,11,train
+c7f8d1b2-bbbf-11e8-b2bb-ac1f6b6435d0,16,train
+c81e6f04-bbb9-11e8-b2ba-ac1f6b6435d0,12 25 0,train
+c877157e-bbb8-11e8-b2ba-ac1f6b6435d0,1 0,train
+c885ea4c-bbbb-11e8-b2ba-ac1f6b6435d0,3,train
+c8a731f8-bbc4-11e8-b2bc-ac1f6b6435d0,18 0,train
+c8d5949c-bbc1-11e8-b2bb-ac1f6b6435d0,20 0,train
+c8e458a2-bbbb-11e8-b2ba-ac1f6b6435d0,18,train
+c91be446-bbae-11e8-b2ba-ac1f6b6435d0,7 0,train
+c9253d92-bbaa-11e8-b2ba-ac1f6b6435d0,2 21,train
+c929e31a-bbb4-11e8-b2ba-ac1f6b6435d0,25 2 0,train
+c9363d7e-bbc1-11e8-b2bb-ac1f6b6435d0,25 3 0,train
+c939a6d6-bb9d-11e8-b2b9-ac1f6b6435d0,5,train
+c955be54-bbaf-11e8-b2ba-ac1f6b6435d0,5,train
+c961f8a0-bbbd-11e8-b2ba-ac1f6b6435d0,16 25 0,train
+c9651192-bbb9-11e8-b2ba-ac1f6b6435d0,19,train
+c9658f76-bbca-11e8-b2bc-ac1f6b6435d0,25 13 0,train
+c9806c74-bbca-11e8-b2bc-ac1f6b6435d0,5 0 27,train
+c985bd3e-bbaf-11e8-b2ba-ac1f6b6435d0,25 23,train
+c985f270-bbbb-11e8-b2ba-ac1f6b6435d0,23,train
+c98fd28c-bbb0-11e8-b2ba-ac1f6b6435d0,18,train
+c99c72d0-bbbf-11e8-b2bb-ac1f6b6435d0,11 23 21,train
+c99f4e62-bb9f-11e8-b2b9-ac1f6b6435d0,19,train
+c9bf21d8-bba4-11e8-b2ba-ac1f6b6435d0,25 5 0,train
+c9cecc50-bbc2-11e8-b2bc-ac1f6b6435d0,7 2,train
+c9e8bba8-bba2-11e8-b2b9-ac1f6b6435d0,25 5 0,train
+c9f9235c-bbb7-11e8-b2ba-ac1f6b6435d0,4 3,train
+ca04ae4a-bbc9-11e8-b2bc-ac1f6b6435d0,7 2,train
+ca07d1ae-bba3-11e8-b2b9-ac1f6b6435d0,7 0,train
+ca15284c-bbb5-11e8-b2ba-ac1f6b6435d0,22 7 0,train
+ca30e6f0-bba0-11e8-b2b9-ac1f6b6435d0,3,train
+ca437242-bbbf-11e8-b2bb-ac1f6b6435d0,25 7 3,train
+ca4b50fa-bbc1-11e8-b2bb-ac1f6b6435d0,15 5 0,train
+ca713990-bbbd-11e8-b2ba-ac1f6b6435d0,1 0,train
+caa14268-bbac-11e8-b2ba-ac1f6b6435d0,25 11,train
+cab2366e-bb9c-11e8-b2b9-ac1f6b6435d0,14,train
+cae81418-bbbb-11e8-b2ba-ac1f6b6435d0,25 7 0,train
+cafba976-bbaa-11e8-b2ba-ac1f6b6435d0,6,train
+cb254dd0-bbc8-11e8-b2bc-ac1f6b6435d0,22 0,train
+cb59be12-bbaa-11e8-b2ba-ac1f6b6435d0,1 2,train
+cb825b48-bbc2-11e8-b2bc-ac1f6b6435d0,4,train
+cb8f3052-bb9a-11e8-b2b9-ac1f6b6435d0,23,train
+cb943190-bbb5-11e8-b2ba-ac1f6b6435d0,18,train
+cb945c42-bba1-11e8-b2b9-ac1f6b6435d0,17 0,train
+cb96e59e-bbb4-11e8-b2ba-ac1f6b6435d0,25 11 0,train
+cba1caaa-bbbd-11e8-b2ba-ac1f6b6435d0,18,train
+cba22d08-bbac-11e8-b2ba-ac1f6b6435d0,25 14 0,train
+cbd3524e-bba6-11e8-b2ba-ac1f6b6435d0,25 14,train
+cbf635bc-bbbe-11e8-b2ba-ac1f6b6435d0,14,train
+cc10c118-bb99-11e8-b2b9-ac1f6b6435d0,12 0,train
+cc11edf0-bbbb-11e8-b2ba-ac1f6b6435d0,3 0,train
+cc1f3980-bbc3-11e8-b2bc-ac1f6b6435d0,11,train
+cc2cba74-bbbe-11e8-b2ba-ac1f6b6435d0,12,train
+cc3c1fee-bbbb-11e8-b2ba-ac1f6b6435d0,23,train
+cc4b4aae-bbad-11e8-b2ba-ac1f6b6435d0,25 5,train
+cc61328a-bb9c-11e8-b2b9-ac1f6b6435d0,6 3,train
+ccbdca8e-bb9e-11e8-b2b9-ac1f6b6435d0,25 13 21,train
+ccc22732-bba8-11e8-b2ba-ac1f6b6435d0,13 0 21,train
+ccd14f10-bbbb-11e8-b2ba-ac1f6b6435d0,2 0,train
+ccd6ea8c-bbc6-11e8-b2bc-ac1f6b6435d0,5,train
+ccfe75b4-bbc8-11e8-b2bc-ac1f6b6435d0,18,train
+cd21ebea-bba8-11e8-b2ba-ac1f6b6435d0,25 11 21,train
+cd564e5a-bbbf-11e8-b2bb-ac1f6b6435d0,18 0,train
+cd6787be-bbb6-11e8-b2ba-ac1f6b6435d0,14,train
+cd7df7ba-bba7-11e8-b2ba-ac1f6b6435d0,7,train
+cd8bd78a-bb99-11e8-b2b9-ac1f6b6435d0,19 4,train
+cde14f60-bbaf-11e8-b2ba-ac1f6b6435d0,14,train
+cdef6814-bbac-11e8-b2ba-ac1f6b6435d0,11,train
+cdefe730-bbc5-11e8-b2bc-ac1f6b6435d0,24 19 23 0,train
+ce155798-bbb3-11e8-b2ba-ac1f6b6435d0,22 0,train
+ce51780a-bb9e-11e8-b2b9-ac1f6b6435d0,11 14 21,train
+ce7f450e-bba9-11e8-b2ba-ac1f6b6435d0,19 23,train
+ce893908-bba2-11e8-b2b9-ac1f6b6435d0,5 4,train
+ce8eecaa-bbab-11e8-b2ba-ac1f6b6435d0,1,train
+ce9448d6-bba5-11e8-b2ba-ac1f6b6435d0,20 0,train
+ceab6a5c-bba0-11e8-b2b9-ac1f6b6435d0,19 23,train
+cead83ec-bb9a-11e8-b2b9-ac1f6b6435d0,7,train
+cec13474-bb9e-11e8-b2b9-ac1f6b6435d0,19 0,train
+cec22752-bbbd-11e8-b2ba-ac1f6b6435d0,25 21,train
+cec89124-bbb2-11e8-b2ba-ac1f6b6435d0,12 25 0,train
+cecc1a52-bbb1-11e8-b2ba-ac1f6b6435d0,16 25 17 0,train
+cede8efa-bbb9-11e8-b2ba-ac1f6b6435d0,16 21,train
+cf13a684-bb9c-11e8-b2b9-ac1f6b6435d0,18,train
+cf2c0bf0-bbc6-11e8-b2bc-ac1f6b6435d0,11 0,train
+cf388386-bbac-11e8-b2ba-ac1f6b6435d0,18,train
+cf3fd112-bba8-11e8-b2ba-ac1f6b6435d0,5 21,train
+cf6c365e-bba2-11e8-b2b9-ac1f6b6435d0,25 2 0,train
+cf87ccbc-bb9c-11e8-b2b9-ac1f6b6435d0,6 1,train
+cf8ef22e-bbb7-11e8-b2ba-ac1f6b6435d0,4,train
+cf9ffeb4-bbbe-11e8-b2ba-ac1f6b6435d0,6,train
+cfd78956-bbaf-11e8-b2ba-ac1f6b6435d0,19,train
+cfd9ea7c-bbb7-11e8-b2ba-ac1f6b6435d0,1,train
+d01751ae-bba4-11e8-b2ba-ac1f6b6435d0,13 0 21,train
+d02e8d72-bb9c-11e8-b2b9-ac1f6b6435d0,25 17,train
+d040e8fe-bbac-11e8-b2ba-ac1f6b6435d0,4,train
+d048c08c-bbb7-11e8-b2ba-ac1f6b6435d0,22 0,train
+d050839c-bbaf-11e8-b2ba-ac1f6b6435d0,18,train
+d08a0460-bbc2-11e8-b2bc-ac1f6b6435d0,2 21,train
+d096447c-bbaa-11e8-b2ba-ac1f6b6435d0,7 18,train
+d0c591e0-bbc4-11e8-b2bc-ac1f6b6435d0,11,train
+d10d8df8-bbb8-11e8-b2ba-ac1f6b6435d0,19 6 0,train
+d10dc360-bb9d-11e8-b2b9-ac1f6b6435d0,16 2 0,train
+d111dee4-bba9-11e8-b2ba-ac1f6b6435d0,11,train
+d1229814-bbaa-11e8-b2ba-ac1f6b6435d0,26 4,train
+d1374972-bbc2-11e8-b2bc-ac1f6b6435d0,5,train
+d1470cba-bbac-11e8-b2ba-ac1f6b6435d0,25 7 0,train
+d17da694-bbb6-11e8-b2ba-ac1f6b6435d0,12,train
+d196d336-bbbf-11e8-b2bb-ac1f6b6435d0,1 0,train
+d19b7086-bbb4-11e8-b2ba-ac1f6b6435d0,24,train
+d19e4bd4-bba6-11e8-b2ba-ac1f6b6435d0,3,train
+d1d8bf3c-bbb3-11e8-b2ba-ac1f6b6435d0,7,train
+d1e5315a-bbb2-11e8-b2ba-ac1f6b6435d0,8,train
+d2049416-bb9c-11e8-b2b9-ac1f6b6435d0,5,train
+d21b8fac-bbbc-11e8-b2ba-ac1f6b6435d0,14,train
+d23ebbda-bba3-11e8-b2b9-ac1f6b6435d0,20 0,train
+d256b588-bbc5-11e8-b2bc-ac1f6b6435d0,14 0,train
+d25886a8-bba5-11e8-b2ba-ac1f6b6435d0,13 0,train
+d286dd90-bba6-11e8-b2ba-ac1f6b6435d0,12 0,train
+d2a14a26-bbac-11e8-b2ba-ac1f6b6435d0,4 0,train
+d2ac5e9a-bbbe-11e8-b2ba-ac1f6b6435d0,1,train
+d2af852c-bbc1-11e8-b2bb-ac1f6b6435d0,5,train
+d2e83bbe-bbae-11e8-b2ba-ac1f6b6435d0,3,train
+d2ea5ffe-bbb1-11e8-b2ba-ac1f6b6435d0,12 25 21,train
+d2eaf8de-bba6-11e8-b2ba-ac1f6b6435d0,7,train
+d304602e-bbc1-11e8-b2bb-ac1f6b6435d0,19 0,train
+d3069052-bbca-11e8-b2bc-ac1f6b6435d0,19,train
+d322d8b6-bba2-11e8-b2b9-ac1f6b6435d0,25 4 3 21,train
+d33d41c2-bbbd-11e8-b2ba-ac1f6b6435d0,25 11 2 0,train
+d36433ac-bbb0-11e8-b2ba-ac1f6b6435d0,16 25 0,train
+d36938b8-bba4-11e8-b2ba-ac1f6b6435d0,7 0,train
+d390151a-bbc1-11e8-b2bb-ac1f6b6435d0,5,train
+d3b252a4-bba0-11e8-b2b9-ac1f6b6435d0,18,train
+d415ced0-bbb2-11e8-b2ba-ac1f6b6435d0,25 1,train
+d4195cdc-bbc9-11e8-b2bc-ac1f6b6435d0,13,train
+d454945c-bbbd-11e8-b2ba-ac1f6b6435d0,12,train
+d46f8d9e-bbb2-11e8-b2ba-ac1f6b6435d0,19 2 0 21,train
+d4bde892-bbab-11e8-b2ba-ac1f6b6435d0,5,train
+d4bf4082-bbb7-11e8-b2ba-ac1f6b6435d0,16 0,train
+d4d09086-bb9d-11e8-b2b9-ac1f6b6435d0,5,train
+d4f08a14-bbb4-11e8-b2ba-ac1f6b6435d0,1 0,train
+d4f0cb4a-bbc9-11e8-b2bc-ac1f6b6435d0,13,train
+d4f39f74-bbbe-11e8-b2ba-ac1f6b6435d0,18,train
+d52b686a-bbb8-11e8-b2ba-ac1f6b6435d0,19,train
+d53f7e70-bba6-11e8-b2ba-ac1f6b6435d0,16 14,train
+d570931e-bbc6-11e8-b2bc-ac1f6b6435d0,5 0,train
+d5a05d14-bbb3-11e8-b2ba-ac1f6b6435d0,20 23 0,train
+d5aacab2-bbc0-11e8-b2bb-ac1f6b6435d0,19 7 0,train
+d5bb3b2a-bb9f-11e8-b2b9-ac1f6b6435d0,3,train
+d5bc8432-bb9d-11e8-b2b9-ac1f6b6435d0,6,train
+d5c347b2-bbc6-11e8-b2bc-ac1f6b6435d0,12 21,train
+d5de7134-bba0-11e8-b2b9-ac1f6b6435d0,25 3 0,train
+d5fccbbe-bbca-11e8-b2bc-ac1f6b6435d0,25 14,train
+d605126c-bbb4-11e8-b2ba-ac1f6b6435d0,14,train
+d634b7aa-bbb5-11e8-b2ba-ac1f6b6435d0,14,train
+d63e8162-bbc0-11e8-b2bb-ac1f6b6435d0,25 6,train
+d63ff15a-bbac-11e8-b2ba-ac1f6b6435d0,12 25,train
+d67beb7a-bbc9-11e8-b2bc-ac1f6b6435d0,13 0,train
+d67df8e6-bbc1-11e8-b2bb-ac1f6b6435d0,26,train
+d68e659e-bba0-11e8-b2b9-ac1f6b6435d0,5,train
+d69c26a8-bbb8-11e8-b2ba-ac1f6b6435d0,11 0,train
+d6a3fcfe-bbca-11e8-b2bc-ac1f6b6435d0,3 0,train
+d6db0ce2-bba9-11e8-b2ba-ac1f6b6435d0,4,train
+d6e42fe4-bbbc-11e8-b2ba-ac1f6b6435d0,17 0,train
+d6ee2bfe-bbc4-11e8-b2bc-ac1f6b6435d0,25 2,train
+d6f12fa8-bbb9-11e8-b2ba-ac1f6b6435d0,19 0,train
+d6f1d082-bba7-11e8-b2ba-ac1f6b6435d0,6 3,train
+d72b8e66-bbbc-11e8-b2ba-ac1f6b6435d0,7 14,train
+d75640a8-bbac-11e8-b2ba-ac1f6b6435d0,26 25,train
+d75a1a22-bbc8-11e8-b2bc-ac1f6b6435d0,5,train
+d76b37a0-bbc1-11e8-b2bb-ac1f6b6435d0,1 0,train
+d76bb8f4-bbbe-11e8-b2ba-ac1f6b6435d0,13 0,train
+d79bb3ee-bbc1-11e8-b2bb-ac1f6b6435d0,19 25 21,train
+d7bcc8da-bbae-11e8-b2ba-ac1f6b6435d0,22 0,train
+d7c79dd4-bbc5-11e8-b2bc-ac1f6b6435d0,6,train
+d7ec942a-bba4-11e8-b2ba-ac1f6b6435d0,5,train
+d804a8bc-bbb3-11e8-b2ba-ac1f6b6435d0,11 2,train
+d812ee1c-bbb9-11e8-b2ba-ac1f6b6435d0,14,train
+d816cf08-bbb1-11e8-b2ba-ac1f6b6435d0,19 3 0,train
+d83ac00e-bbc8-11e8-b2bc-ac1f6b6435d0,6 18,train
+d83cc910-bbac-11e8-b2ba-ac1f6b6435d0,25 7 0 21,train
+d84857a2-bbad-11e8-b2ba-ac1f6b6435d0,25 6,train
+d85ffa00-bba9-11e8-b2ba-ac1f6b6435d0,18 23,train
+d8626ae2-bb9f-11e8-b2b9-ac1f6b6435d0,1 2 0,train
+d863cf36-bbbd-11e8-b2ba-ac1f6b6435d0,12 21,train
+d87c8664-bbc4-11e8-b2bc-ac1f6b6435d0,18 0,train
+d892ec96-bbbb-11e8-b2ba-ac1f6b6435d0,22,train
+d89b5068-bba5-11e8-b2ba-ac1f6b6435d0,7 0 21,train
+d8a5927c-bbb3-11e8-b2ba-ac1f6b6435d0,13 21,train
+d8ca921e-bbb5-11e8-b2ba-ac1f6b6435d0,19,train
+d8ce06fe-bbc6-11e8-b2bc-ac1f6b6435d0,18 0,train
+d8dc627c-bba2-11e8-b2b9-ac1f6b6435d0,19 0,train
+d8e95c3a-bbc9-11e8-b2bc-ac1f6b6435d0,11,train
+d8ffd5c0-bb9a-11e8-b2b9-ac1f6b6435d0,25 18,train
+d9045d20-bbb8-11e8-b2ba-ac1f6b6435d0,12,train
+d91bce78-bba5-11e8-b2ba-ac1f6b6435d0,14 0,train
+d92537b8-bbca-11e8-b2bc-ac1f6b6435d0,11,train
+d9262f9e-bbaf-11e8-b2ba-ac1f6b6435d0,2 0,train
+d929e018-bbb8-11e8-b2ba-ac1f6b6435d0,23,train
+d9362dc0-bbb6-11e8-b2ba-ac1f6b6435d0,13,train
+d94797aa-bbbf-11e8-b2bb-ac1f6b6435d0,23 4,train
+d979443e-bbb1-11e8-b2ba-ac1f6b6435d0,16 25 0,train
+d980556a-bbc2-11e8-b2bc-ac1f6b6435d0,19 0 21,train
+d98f6a9c-bba3-11e8-b2b9-ac1f6b6435d0,19 25 0,train
+d9993bea-bbb1-11e8-b2ba-ac1f6b6435d0,3,train
+d99bb01e-bbc0-11e8-b2bb-ac1f6b6435d0,24,train
+d9d4f948-bba5-11e8-b2ba-ac1f6b6435d0,3,train
+d9eded26-bbb0-11e8-b2ba-ac1f6b6435d0,20,train
+d9f260dc-bbb9-11e8-b2ba-ac1f6b6435d0,19 0,train
+da239822-bbb0-11e8-b2ba-ac1f6b6435d0,4,train
+da31df3c-bba5-11e8-b2ba-ac1f6b6435d0,0 21,train
+da3f6e06-bbb2-11e8-b2ba-ac1f6b6435d0,23,train
+da3fb178-bba7-11e8-b2ba-ac1f6b6435d0,26 0,train
+da50a87e-bbb7-11e8-b2ba-ac1f6b6435d0,14,train
+da7132ea-bbaa-11e8-b2ba-ac1f6b6435d0,7 0,train
+da72db0a-bbb8-11e8-b2ba-ac1f6b6435d0,4,train
+da971fd6-bba6-11e8-b2ba-ac1f6b6435d0,13 5 0,train
+da9c6e6c-bbb7-11e8-b2ba-ac1f6b6435d0,26 0,train
+daa8005c-bbb1-11e8-b2ba-ac1f6b6435d0,24 0,train
+daca4842-bbb1-11e8-b2ba-ac1f6b6435d0,23,train
+dacdae82-bbb2-11e8-b2ba-ac1f6b6435d0,2,train
+dae29d68-bb9b-11e8-b2b9-ac1f6b6435d0,1 0,train
+dae78e48-bba2-11e8-b2b9-ac1f6b6435d0,14,train
+daecaaee-bbb7-11e8-b2ba-ac1f6b6435d0,25 1,train
+daeffe2a-bbac-11e8-b2ba-ac1f6b6435d0,14 0,train
+db0768a4-bbba-11e8-b2ba-ac1f6b6435d0,26 0,train
+db17a764-bba6-11e8-b2ba-ac1f6b6435d0,8,train
+db17eed4-bb9e-11e8-b2b9-ac1f6b6435d0,22 2 0,train
+db224f7e-bbc5-11e8-b2bc-ac1f6b6435d0,7,train
+db238d9e-bbbb-11e8-b2ba-ac1f6b6435d0,26,train
+db2fe464-bba6-11e8-b2ba-ac1f6b6435d0,25 1 0,train
+db307834-bbba-11e8-b2ba-ac1f6b6435d0,6,train
+db347f60-bbba-11e8-b2ba-ac1f6b6435d0,25 5 0,train
+db42e4a4-bba8-11e8-b2ba-ac1f6b6435d0,8,train
+db5b10e4-bb9c-11e8-b2b9-ac1f6b6435d0,24 0,train
+db7798e8-bba3-11e8-b2b9-ac1f6b6435d0,19 25 0,train
+db981136-bbb2-11e8-b2ba-ac1f6b6435d0,22 2 0,train
+dbafe30e-bbaa-11e8-b2ba-ac1f6b6435d0,5,train
+dbc6a03c-bbc6-11e8-b2bc-ac1f6b6435d0,23,train
+dbcfe54c-bb9a-11e8-b2b9-ac1f6b6435d0,25 18 0,train
+dbfaf3a2-bbc9-11e8-b2bc-ac1f6b6435d0,18,train
+dbfb67ea-bbc1-11e8-b2bb-ac1f6b6435d0,25 6 2,train
+dc093186-bbc6-11e8-b2bc-ac1f6b6435d0,19 23 0,train
+dc25050a-bba8-11e8-b2ba-ac1f6b6435d0,3 0,train
+dc2cc856-bbaf-11e8-b2ba-ac1f6b6435d0,13,train
+dc423d2c-bbb3-11e8-b2ba-ac1f6b6435d0,3,train
+dc504df2-bba6-11e8-b2ba-ac1f6b6435d0,25 23,train
+dc733e3a-bbbe-11e8-b2ba-ac1f6b6435d0,24 25,train
+dce71b3c-bbc5-11e8-b2bc-ac1f6b6435d0,4,train
+dcf404a6-bb9c-11e8-b2b9-ac1f6b6435d0,11 21,train
+dcfbd380-bbaa-11e8-b2ba-ac1f6b6435d0,18 0,train
+dd01ac0a-bbab-11e8-b2ba-ac1f6b6435d0,5 0,train
+dd01d016-bba3-11e8-b2b9-ac1f6b6435d0,3 0,train
+dd1f7fb8-bbca-11e8-b2bc-ac1f6b6435d0,3 0,train
+dd750554-bbc6-11e8-b2bc-ac1f6b6435d0,1 0,train
+ddb985b8-bba7-11e8-b2ba-ac1f6b6435d0,7 0,train
+ddc893e8-bbb4-11e8-b2ba-ac1f6b6435d0,19 0,train
+ddd536aa-bb9d-11e8-b2b9-ac1f6b6435d0,6,train
+dde828f6-bb9c-11e8-b2b9-ac1f6b6435d0,6 7,train
+ddfeb4dc-bbbe-11e8-b2ba-ac1f6b6435d0,7 5,train
+de05dc90-bbb3-11e8-b2ba-ac1f6b6435d0,18 0,train
+de1a87c4-bbb0-11e8-b2ba-ac1f6b6435d0,4,train
+de2de70a-bba7-11e8-b2ba-ac1f6b6435d0,1 2 0,train
+de34aa02-bbc2-11e8-b2bc-ac1f6b6435d0,11,train
+de418434-bb9a-11e8-b2b9-ac1f6b6435d0,4,train
+de65b084-bba4-11e8-b2ba-ac1f6b6435d0,1 0,train
+deac5158-bbca-11e8-b2bc-ac1f6b6435d0,24,train
+dec8fc52-bbc7-11e8-b2bc-ac1f6b6435d0,25 18 4,train
+decc396a-bbb0-11e8-b2ba-ac1f6b6435d0,6,train
+df086254-bbc5-11e8-b2bc-ac1f6b6435d0,1 0 21,train
+df39d382-bb9f-11e8-b2b9-ac1f6b6435d0,4,train
+df503242-bbbf-11e8-b2bb-ac1f6b6435d0,18 0,train
+df59aac0-bbb0-11e8-b2ba-ac1f6b6435d0,2 21,train
+df5d713e-bbb3-11e8-b2ba-ac1f6b6435d0,25 7 0,train
+df8ab0cc-bba9-11e8-b2ba-ac1f6b6435d0,25 18,train
+df9ea484-bb9e-11e8-b2b9-ac1f6b6435d0,7,train
+dfb225b2-bb9a-11e8-b2b9-ac1f6b6435d0,19,train
+dfb7e3b2-bbae-11e8-b2ba-ac1f6b6435d0,14 3 0,train
+dfda7d0a-bbbd-11e8-b2ba-ac1f6b6435d0,25 4,train
+dff7472a-bbac-11e8-b2ba-ac1f6b6435d0,23 2,train
+e008561e-bbbb-11e8-b2ba-ac1f6b6435d0,25 18 17,train
+e00a52b0-bbad-11e8-b2ba-ac1f6b6435d0,13,train
+e026aa08-bbbe-11e8-b2ba-ac1f6b6435d0,23,train
+e046c4ea-bbab-11e8-b2ba-ac1f6b6435d0,3,train
+e0ee70e6-bbb0-11e8-b2ba-ac1f6b6435d0,3 0,train
+e0f415e4-bbc6-11e8-b2bc-ac1f6b6435d0,19,train
+e0f8d87a-bbb4-11e8-b2ba-ac1f6b6435d0,1,train
+e1253b64-bbb3-11e8-b2ba-ac1f6b6435d0,6 5,train
+e1499550-bbbc-11e8-b2ba-ac1f6b6435d0,11,train
+e1592fb0-bba8-11e8-b2ba-ac1f6b6435d0,6,train
+e164b8de-bbae-11e8-b2ba-ac1f6b6435d0,24 18,train
+e1696324-bbaa-11e8-b2ba-ac1f6b6435d0,18 0,train
+e19794de-bb9f-11e8-b2b9-ac1f6b6435d0,19,train
+e1a351be-bbc4-11e8-b2bc-ac1f6b6435d0,13 7 0,train
+e1bfbba0-bbb1-11e8-b2ba-ac1f6b6435d0,19 25 7 0,train
+e1c8faf2-bb99-11e8-b2b9-ac1f6b6435d0,19 23 21,train
+e1d8641c-bba1-11e8-b2b9-ac1f6b6435d0,25 7 0,train
+e1e78908-bbc2-11e8-b2bc-ac1f6b6435d0,25 14,train
+e201b054-bb99-11e8-b2b9-ac1f6b6435d0,25 14,train
+e2288ff6-bba5-11e8-b2ba-ac1f6b6435d0,23 0,train
+e22a5180-bbad-11e8-b2ba-ac1f6b6435d0,16 18 17 0,train
+e22deaf6-bbb8-11e8-b2ba-ac1f6b6435d0,14 0,train
+e252d766-bbaa-11e8-b2ba-ac1f6b6435d0,11,train
+e25aac1a-bbba-11e8-b2ba-ac1f6b6435d0,5,train
+e2623914-bbb8-11e8-b2ba-ac1f6b6435d0,20,train
+e26a5ccc-bba7-11e8-b2ba-ac1f6b6435d0,4,train
+e26fe72a-bb9b-11e8-b2b9-ac1f6b6435d0,18,train
+e2785a54-bbaf-11e8-b2ba-ac1f6b6435d0,25 3 0,train
+e2b06598-bbc8-11e8-b2bc-ac1f6b6435d0,22 25 21,train
+e3345e34-bbbe-11e8-b2ba-ac1f6b6435d0,12 25,train
+e339274a-bbc1-11e8-b2bb-ac1f6b6435d0,7,train
+e33a3be8-bba4-11e8-b2ba-ac1f6b6435d0,6,train
+e33fb0b8-bbb4-11e8-b2ba-ac1f6b6435d0,4 21,train
+e3401b8e-bbaf-11e8-b2ba-ac1f6b6435d0,13,train
+e3783dca-bbaa-11e8-b2ba-ac1f6b6435d0,23,train
+e37de5d8-bbad-11e8-b2ba-ac1f6b6435d0,19,train
+e38a5104-bbaa-11e8-b2ba-ac1f6b6435d0,22 0,train
+e3ac8ae0-bb9a-11e8-b2b9-ac1f6b6435d0,5 1 0 21,train
+e3be27f8-bb9c-11e8-b2b9-ac1f6b6435d0,11,train
+e3f43a4a-bbb1-11e8-b2ba-ac1f6b6435d0,11,train
+e3ffb30c-bba2-11e8-b2b9-ac1f6b6435d0,25 4,train
+e403806e-bbbf-11e8-b2bb-ac1f6b6435d0,27,train
+e40836f2-bbbc-11e8-b2ba-ac1f6b6435d0,1 0,train
+e412ede6-bb9d-11e8-b2b9-ac1f6b6435d0,26 25 21,train
+e415dc20-bbb3-11e8-b2ba-ac1f6b6435d0,5,train
+e447d5d4-bbb5-11e8-b2ba-ac1f6b6435d0,19 0,train
+e464ec10-bbaf-11e8-b2ba-ac1f6b6435d0,23,train
+e496994a-bbaf-11e8-b2ba-ac1f6b6435d0,12,train
+e4b990da-bbbe-11e8-b2ba-ac1f6b6435d0,6,train
+e4c0f8ec-bbc9-11e8-b2bc-ac1f6b6435d0,18,train
+e52170f2-bbc2-11e8-b2bc-ac1f6b6435d0,7 23 0,train
+e5396a1e-bbb2-11e8-b2ba-ac1f6b6435d0,7 3 0,train
+e53b59bc-bbaa-11e8-b2ba-ac1f6b6435d0,19,train
+e5573b26-bb9d-11e8-b2b9-ac1f6b6435d0,13,train
+e58f656a-bbba-11e8-b2ba-ac1f6b6435d0,2,train
+e5afb560-bba4-11e8-b2ba-ac1f6b6435d0,25 5,train
+e5b2b236-bbb5-11e8-b2ba-ac1f6b6435d0,3,train
+e5bfa9a2-bbc7-11e8-b2bc-ac1f6b6435d0,18 0,train
+e5db8f06-bbad-11e8-b2ba-ac1f6b6435d0,16,train
+e5ead0de-bbb1-11e8-b2ba-ac1f6b6435d0,2,train
+e608ac4a-bbab-11e8-b2ba-ac1f6b6435d0,24 25,train
+e60d2fd8-bbc2-11e8-b2bc-ac1f6b6435d0,25 23,train
+e6155c4c-bbb5-11e8-b2ba-ac1f6b6435d0,12,train
+e61aad66-bbc7-11e8-b2bc-ac1f6b6435d0,22 5,train
+e636c3ba-bb9b-11e8-b2b9-ac1f6b6435d0,5,train
+e65b5a5a-bbb8-11e8-b2ba-ac1f6b6435d0,4,train
+e674b6da-bbbd-11e8-b2ba-ac1f6b6435d0,18,train
+e6936488-bbc0-11e8-b2bb-ac1f6b6435d0,25 11,train
+e698d45e-bb9d-11e8-b2b9-ac1f6b6435d0,22 0,train
+e6b8582a-bbb0-11e8-b2ba-ac1f6b6435d0,11,train
+e6c9cf7c-bbbc-11e8-b2ba-ac1f6b6435d0,13 21,train
+e6d3a618-bba4-11e8-b2ba-ac1f6b6435d0,18,train
+e6ed1dac-bb9d-11e8-b2b9-ac1f6b6435d0,19 0,train
+e7245438-bbbc-11e8-b2ba-ac1f6b6435d0,6,train
+e789c974-bbaf-11e8-b2ba-ac1f6b6435d0,18 0,train
+e7a75290-bbb0-11e8-b2ba-ac1f6b6435d0,26 0,train
+e7d0b8ac-bbaa-11e8-b2ba-ac1f6b6435d0,8,train
+e7d3e738-bbc4-11e8-b2bc-ac1f6b6435d0,18,train
+e7e72f42-bbb9-11e8-b2ba-ac1f6b6435d0,25 3,train
+e800e0f6-bba3-11e8-b2b9-ac1f6b6435d0,8,train
+e820720c-bba5-11e8-b2ba-ac1f6b6435d0,7,train
+e830e098-bb9a-11e8-b2b9-ac1f6b6435d0,26 25 21,train
+e8312308-bba1-11e8-b2b9-ac1f6b6435d0,22 0,train
+e840980c-bba0-11e8-b2b9-ac1f6b6435d0,11,train
+e85e01b4-bb99-11e8-b2b9-ac1f6b6435d0,7 0,train
+e89248a8-bba2-11e8-b2b9-ac1f6b6435d0,19 0,train
+e8aeca98-bba5-11e8-b2ba-ac1f6b6435d0,26,train
+e8d8414a-bbad-11e8-b2ba-ac1f6b6435d0,11 23,train
+e8fdfccc-bbc7-11e8-b2bc-ac1f6b6435d0,19 25 0,train
+e924bfa0-bbc8-11e8-b2bc-ac1f6b6435d0,16 25 21,train
+e92d9aa0-bbb7-11e8-b2ba-ac1f6b6435d0,26,train
+e94aebba-bbac-11e8-b2ba-ac1f6b6435d0,19 25 0,train
+e967ffd8-bbc6-11e8-b2bc-ac1f6b6435d0,11,train
+e975d67e-bbbe-11e8-b2ba-ac1f6b6435d0,1,train
+e977c170-bb99-11e8-b2b9-ac1f6b6435d0,19 5,train
+e98fc512-bbb8-11e8-b2ba-ac1f6b6435d0,6 2,train
+e99edff8-bbc6-11e8-b2bc-ac1f6b6435d0,18 0,train
+e9b78580-bbc1-11e8-b2bb-ac1f6b6435d0,22 0,train
+e9d553e4-bba3-11e8-b2b9-ac1f6b6435d0,14,train
+e9dccccc-bbbd-11e8-b2ba-ac1f6b6435d0,23,train
+e9ecc4ce-bbbd-11e8-b2ba-ac1f6b6435d0,19 0,train
+ea157368-bbba-11e8-b2ba-ac1f6b6435d0,13 4 21,train
+ea3170f8-bbbb-11e8-b2ba-ac1f6b6435d0,22 0,train
+ea3df5c0-bba8-11e8-b2ba-ac1f6b6435d0,19,train
+ea43dde0-bbae-11e8-b2ba-ac1f6b6435d0,11,train
+ea5380e6-bb9b-11e8-b2b9-ac1f6b6435d0,25 1,train
+ea5a4680-bbb7-11e8-b2ba-ac1f6b6435d0,14,train
+ea5a808e-bbb5-11e8-b2ba-ac1f6b6435d0,11,train
+ea7d06fa-bbaf-11e8-b2ba-ac1f6b6435d0,14 0,train
+ea958780-bbae-11e8-b2ba-ac1f6b6435d0,11,train
+ea973356-bb99-11e8-b2b9-ac1f6b6435d0,6,train
+eaa9bca4-bba5-11e8-b2ba-ac1f6b6435d0,6 21,train
+eade8174-bba4-11e8-b2ba-ac1f6b6435d0,14,train
+eaeab77a-bbb1-11e8-b2ba-ac1f6b6435d0,19 11,train
+eafe28ba-bbab-11e8-b2ba-ac1f6b6435d0,7 0,train
+eb0225b0-bbb4-11e8-b2ba-ac1f6b6435d0,4,train
+eb1140de-bbbb-11e8-b2ba-ac1f6b6435d0,7,train
+eb17459c-bb9d-11e8-b2b9-ac1f6b6435d0,13 1 0,train
+eb2c4a64-bbb6-11e8-b2ba-ac1f6b6435d0,6,train
+eb458188-bbba-11e8-b2ba-ac1f6b6435d0,19 0,train
+eb98622c-bbc4-11e8-b2bc-ac1f6b6435d0,14 2,train
+eb9e3f9e-bbc9-11e8-b2bc-ac1f6b6435d0,5,train
+eba035a8-bbc7-11e8-b2bc-ac1f6b6435d0,16,train
+ebc64226-bb9e-11e8-b2b9-ac1f6b6435d0,6,train
+ebca90ca-bbb1-11e8-b2ba-ac1f6b6435d0,25 11,train
+ebd91408-bbc8-11e8-b2bc-ac1f6b6435d0,14,train
+ec000d18-bbb6-11e8-b2ba-ac1f6b6435d0,25 4,train
+ec05b3ca-bbc1-11e8-b2bb-ac1f6b6435d0,11,train
+ec095502-bbad-11e8-b2ba-ac1f6b6435d0,2,train
+ec10b992-bb9d-11e8-b2b9-ac1f6b6435d0,4,train
+ec1e9604-bbb4-11e8-b2ba-ac1f6b6435d0,4,train
+ec27ce60-bbbc-11e8-b2ba-ac1f6b6435d0,1,train
+ec2e9a14-bb9a-11e8-b2b9-ac1f6b6435d0,5,train
+ec9fef8c-bba6-11e8-b2ba-ac1f6b6435d0,11,train
+eceb08aa-bbba-11e8-b2ba-ac1f6b6435d0,5,train
+eced804c-bbc1-11e8-b2bb-ac1f6b6435d0,14 2 0,train
+ecf7e9b4-bbc2-11e8-b2bc-ac1f6b6435d0,23,train
+ed31e6fe-bbc8-11e8-b2bc-ac1f6b6435d0,11,train
+ed370eb6-bbbb-11e8-b2ba-ac1f6b6435d0,7 2,train
+ed4d7482-bbb4-11e8-b2ba-ac1f6b6435d0,4,train
+ed61ca92-bbc6-11e8-b2bc-ac1f6b6435d0,7,train
+ed71a524-bbb8-11e8-b2ba-ac1f6b6435d0,25 4,train
+ed82d3c4-bbc4-11e8-b2bc-ac1f6b6435d0,23,train
+ed91985c-bbb3-11e8-b2ba-ac1f6b6435d0,25 4,train
+ed9d9154-bbac-11e8-b2ba-ac1f6b6435d0,6,train
+edb86b48-bbbe-11e8-b2ba-ac1f6b6435d0,1 0,train
+edda7850-bbbe-11e8-b2ba-ac1f6b6435d0,11 0,train
+eddbfc7c-bbb2-11e8-b2ba-ac1f6b6435d0,19 25 1 21,train
+edf9c256-bbae-11e8-b2ba-ac1f6b6435d0,6,train
+edfc9f52-bbaa-11e8-b2ba-ac1f6b6435d0,3,train
+edfd4168-bbb5-11e8-b2ba-ac1f6b6435d0,3,train
+edff2678-bba5-11e8-b2ba-ac1f6b6435d0,16 25 0,train
+ee0d9f5a-bbc3-11e8-b2bc-ac1f6b6435d0,23,train
+ee366628-bba1-11e8-b2b9-ac1f6b6435d0,19,train
+ee8c2b3c-bbb8-11e8-b2ba-ac1f6b6435d0,26 0,train
+ee94c60a-bba6-11e8-b2ba-ac1f6b6435d0,5 1,train
+ee9635ca-bbc0-11e8-b2bb-ac1f6b6435d0,3 0,train
+eeb1e506-bbaa-11e8-b2ba-ac1f6b6435d0,20,train
+eeb3aa4a-bbb8-11e8-b2ba-ac1f6b6435d0,2,train
+eec5d29e-bbac-11e8-b2ba-ac1f6b6435d0,25 5,train
+eeca1d86-bbc5-11e8-b2bc-ac1f6b6435d0,12 25,train
+eee0313e-bbc5-11e8-b2bc-ac1f6b6435d0,18 0,train
+ef188724-bbba-11e8-b2ba-ac1f6b6435d0,5 0,train
+ef209e92-bba5-11e8-b2ba-ac1f6b6435d0,4,train
+ef2f357c-bb9d-11e8-b2b9-ac1f6b6435d0,19 25,train
+ef31f9f2-bba6-11e8-b2ba-ac1f6b6435d0,13,train
+ef463618-bb9e-11e8-b2b9-ac1f6b6435d0,19 3 0,train
+ef608852-bbc5-11e8-b2bc-ac1f6b6435d0,25 4,train
+ef76278e-bba7-11e8-b2ba-ac1f6b6435d0,12 0,train
+efae94c4-bbad-11e8-b2ba-ac1f6b6435d0,25 4 21,train
+efd85688-bbc1-11e8-b2bb-ac1f6b6435d0,25 16,train
+efe20480-bb99-11e8-b2b9-ac1f6b6435d0,26,train
+efe7e5b0-bba5-11e8-b2ba-ac1f6b6435d0,19 25 0,train
+efeeb0ae-bba3-11e8-b2b9-ac1f6b6435d0,18 21,train
+f01999b2-bbc7-11e8-b2bc-ac1f6b6435d0,25 14,train
+f01defda-bbb8-11e8-b2ba-ac1f6b6435d0,25 5,train
+f02012e6-bbb4-11e8-b2ba-ac1f6b6435d0,7 0,train
+f034433a-bba8-11e8-b2ba-ac1f6b6435d0,25 18,train
+f04d51ca-bba5-11e8-b2ba-ac1f6b6435d0,7 2,train
+f06a72ce-bbbd-11e8-b2ba-ac1f6b6435d0,16 0,train
+f08643b8-bbaa-11e8-b2ba-ac1f6b6435d0,14,train
+f0acdb08-bb9c-11e8-b2b9-ac1f6b6435d0,19 0,train
+f0f3b55a-bba1-11e8-b2b9-ac1f6b6435d0,13 0 21,train
+f0f71d68-bbb9-11e8-b2ba-ac1f6b6435d0,11,train
+f111adc0-bba7-11e8-b2ba-ac1f6b6435d0,7 0,train
+f116c1b4-bbb3-11e8-b2ba-ac1f6b6435d0,24 0,train
+f137c772-bba6-11e8-b2ba-ac1f6b6435d0,1,train
+f14b74a6-bba2-11e8-b2b9-ac1f6b6435d0,7 2,train
+f1851ca0-bbb2-11e8-b2ba-ac1f6b6435d0,5,train
+f1b0272a-bba7-11e8-b2ba-ac1f6b6435d0,25 11 0,train
+f1e3e16a-bbbf-11e8-b2bb-ac1f6b6435d0,23,train
+f23961ba-bb99-11e8-b2b9-ac1f6b6435d0,13 0,train
+f23c38b0-bbab-11e8-b2ba-ac1f6b6435d0,0 8,train
+f2421812-bbb4-11e8-b2ba-ac1f6b6435d0,23,train
+f26a09e6-bbad-11e8-b2ba-ac1f6b6435d0,11,train
+f2ae558a-bba1-11e8-b2b9-ac1f6b6435d0,23,train
+f2b11656-bb99-11e8-b2b9-ac1f6b6435d0,26,train
+f2bae328-bba0-11e8-b2b9-ac1f6b6435d0,3 0,train
+f2e403ec-bbb0-11e8-b2ba-ac1f6b6435d0,22 0,train
+f2ed351a-bba7-11e8-b2ba-ac1f6b6435d0,7 0,train
+f30c5558-bba7-11e8-b2ba-ac1f6b6435d0,11,train
+f33c0980-bb9b-11e8-b2b9-ac1f6b6435d0,5,train
+f33eff60-bbbd-11e8-b2ba-ac1f6b6435d0,6,train
+f350b8cc-bbae-11e8-b2ba-ac1f6b6435d0,6,train
+f353f38c-bbc4-11e8-b2bc-ac1f6b6435d0,1,train
+f379fa14-bbc4-11e8-b2bc-ac1f6b6435d0,7 0 21,train
+f39ea380-bbc6-11e8-b2bc-ac1f6b6435d0,12,train
+f3ab1db0-bbab-11e8-b2ba-ac1f6b6435d0,14 0,train
+f3ab763c-bba3-11e8-b2b9-ac1f6b6435d0,6,train
+f3baf832-bbb7-11e8-b2ba-ac1f6b6435d0,1,train
+f3df8c3e-bbb1-11e8-b2ba-ac1f6b6435d0,19 0,train
+f3ec487a-bbc0-11e8-b2bb-ac1f6b6435d0,25 23 3,train
+f3fc22c4-bbbe-11e8-b2ba-ac1f6b6435d0,25 11,train
+f421e3cc-bbbb-11e8-b2ba-ac1f6b6435d0,25 14,train
+f445cdba-bba6-11e8-b2ba-ac1f6b6435d0,25 6 2,train
+f4603458-bbaf-11e8-b2ba-ac1f6b6435d0,9,train
+f4893414-bbb6-11e8-b2ba-ac1f6b6435d0,22 25 0,train
+f496bc1e-bb9e-11e8-b2b9-ac1f6b6435d0,22,train
+f4a79a74-bbb8-11e8-b2ba-ac1f6b6435d0,3,train
+f4cbc842-bb9d-11e8-b2b9-ac1f6b6435d0,25 1 0,train
+f4ce9dfc-bbc9-11e8-b2bc-ac1f6b6435d0,11 2 0,train
+f4f79da4-bbc6-11e8-b2bc-ac1f6b6435d0,25 7 0,train
+f50e465c-bbc2-11e8-b2bc-ac1f6b6435d0,5,train
+f51cbf76-bbc1-11e8-b2bb-ac1f6b6435d0,23,train
+f5288b50-bbab-11e8-b2ba-ac1f6b6435d0,24 2 0,train
+f52a61ce-bbaf-11e8-b2ba-ac1f6b6435d0,25 23 2,train
+f53d5ae6-bbc2-11e8-b2bc-ac1f6b6435d0,23,train
+f5453baa-bba2-11e8-b2b9-ac1f6b6435d0,12 25 0,train
+f556434a-bbb7-11e8-b2ba-ac1f6b6435d0,12,train
+f55c9b6e-bb99-11e8-b2b9-ac1f6b6435d0,23,train
+f56b7aac-bba4-11e8-b2ba-ac1f6b6435d0,19 0,train
+f578ffc0-bbb7-11e8-b2ba-ac1f6b6435d0,14,train
+f59201e4-bbb4-11e8-b2ba-ac1f6b6435d0,2,train
+f5b629aa-bbbb-11e8-b2ba-ac1f6b6435d0,8,train
+f5c09c38-bbc4-11e8-b2bc-ac1f6b6435d0,7 0,train
+f5ccb30e-bbc6-11e8-b2bc-ac1f6b6435d0,18 21,train
+f5fee39c-bbc1-11e8-b2bb-ac1f6b6435d0,1 21,train
+f6123226-bbc6-11e8-b2bc-ac1f6b6435d0,5,train
+f640b4d4-bb99-11e8-b2b9-ac1f6b6435d0,19,train
+f65dedea-bba0-11e8-b2b9-ac1f6b6435d0,20 23 0,train
+f6619b52-bbc3-11e8-b2bc-ac1f6b6435d0,4,train
+f6667422-bba7-11e8-b2ba-ac1f6b6435d0,24,train
+f6737566-bbaa-11e8-b2ba-ac1f6b6435d0,3,train
+f6c54a82-bb9e-11e8-b2b9-ac1f6b6435d0,11,train
+f6f2068a-bba3-11e8-b2b9-ac1f6b6435d0,4,train
+f7091a9e-bbb9-11e8-b2ba-ac1f6b6435d0,16 18 17 0,train
+f734f00a-bbc9-11e8-b2bc-ac1f6b6435d0,6,train
+f74068a8-bbb6-11e8-b2ba-ac1f6b6435d0,3 0,train
+f75290a8-bbc2-11e8-b2bc-ac1f6b6435d0,22,train
+f7569b56-bbc9-11e8-b2bc-ac1f6b6435d0,5 3,train
+f7626c2e-bbba-11e8-b2ba-ac1f6b6435d0,6 0,train
+f78cbf44-bbb3-11e8-b2ba-ac1f6b6435d0,1 2 0,train
+f7bf73f0-bb9d-11e8-b2b9-ac1f6b6435d0,22 25,train
+f7d61c6e-bbbf-11e8-b2bb-ac1f6b6435d0,16,train
+f7e03e82-bba2-11e8-b2b9-ac1f6b6435d0,25 5 21,train
+f7e2bf64-bbba-11e8-b2ba-ac1f6b6435d0,12 7 0,train
+f7ea5f80-bbbf-11e8-b2bb-ac1f6b6435d0,22 4 21,train
+f7fd100a-bb9a-11e8-b2b9-ac1f6b6435d0,0 21,train
+f837c010-bba4-11e8-b2ba-ac1f6b6435d0,25 5 0,train
+f83c2d66-bb9b-11e8-b2b9-ac1f6b6435d0,2 0,train
+f8580774-bbbf-11e8-b2bb-ac1f6b6435d0,25 11 2,train
+f85ccc64-bbb5-11e8-b2ba-ac1f6b6435d0,19,train
+f877d230-bbc8-11e8-b2bc-ac1f6b6435d0,3,train
+f87dcdf2-bb9b-11e8-b2b9-ac1f6b6435d0,16 2,train
+f8820d46-bbb3-11e8-b2ba-ac1f6b6435d0,16 0,train
+f88504a0-bbc8-11e8-b2bc-ac1f6b6435d0,14,train
+f8975e2c-bb9e-11e8-b2b9-ac1f6b6435d0,19,train
+f9062e70-bbc5-11e8-b2bc-ac1f6b6435d0,14,train
+f90c68c2-bbba-11e8-b2ba-ac1f6b6435d0,26,train
+f92afe32-bbbe-11e8-b2ba-ac1f6b6435d0,6,train
+f95aa642-bbb8-11e8-b2ba-ac1f6b6435d0,11,train
+f9946a30-bbb8-11e8-b2ba-ac1f6b6435d0,23 0,train
+f9a610b2-bbc4-11e8-b2bc-ac1f6b6435d0,19 25 17 0,train
+f9a76a34-bbb0-11e8-b2ba-ac1f6b6435d0,12,train
+f9b62a86-bb9e-11e8-b2b9-ac1f6b6435d0,19 0,train
+f9c37b78-bbbc-11e8-b2ba-ac1f6b6435d0,25 18 0,train
+f9c5da1e-bbb5-11e8-b2ba-ac1f6b6435d0,16 25 0,train
+fa012944-bbbe-11e8-b2ba-ac1f6b6435d0,19 3 0,train
+fa30e834-bba8-11e8-b2ba-ac1f6b6435d0,22 21,train
+fa5bb092-bbb1-11e8-b2ba-ac1f6b6435d0,7,train
+fa684894-bbbf-11e8-b2bb-ac1f6b6435d0,11,train
+fa7e504a-bbc8-11e8-b2bc-ac1f6b6435d0,18 2 0 21,train
+fa80e530-bbbe-11e8-b2ba-ac1f6b6435d0,25 4,train
+fa81dccc-bba7-11e8-b2ba-ac1f6b6435d0,11 0,train
+fabd1bae-bbc8-11e8-b2bc-ac1f6b6435d0,22,train
+fb582d2e-bbc3-11e8-b2bc-ac1f6b6435d0,22 0 21,train
+fb7e9bae-bbb3-11e8-b2ba-ac1f6b6435d0,19,train
+fb9f5eca-bb9f-11e8-b2b9-ac1f6b6435d0,6,train
+fbc65f5e-bbc5-11e8-b2bc-ac1f6b6435d0,4,train
+fbfc32c6-bbbd-11e8-b2ba-ac1f6b6435d0,23,train
+fc007746-bba9-11e8-b2ba-ac1f6b6435d0,26,train
+fc1006a8-bbad-11e8-b2ba-ac1f6b6435d0,7 0,train
+fc264e56-bb9c-11e8-b2b9-ac1f6b6435d0,1,train
+fc31de6c-bbb3-11e8-b2ba-ac1f6b6435d0,22 0,train
+fc7a16aa-bba9-11e8-b2ba-ac1f6b6435d0,26 21,train
+fc930890-bba9-11e8-b2ba-ac1f6b6435d0,22,train
+fc9ba76e-bb9c-11e8-b2b9-ac1f6b6435d0,4 2,train
+fc9d9192-bb9b-11e8-b2b9-ac1f6b6435d0,12 0,train
+fcbe4fe4-bba6-11e8-b2ba-ac1f6b6435d0,19 11 0,train
+fccf4c70-bba3-11e8-b2b9-ac1f6b6435d0,1 0,train
+fcd1c60a-bbb0-11e8-b2ba-ac1f6b6435d0,11 21,train
+fcdc8ca6-bbb1-11e8-b2ba-ac1f6b6435d0,23,train
+fcf67208-bbb4-11e8-b2ba-ac1f6b6435d0,18,train
+fcff15d8-bbb5-11e8-b2ba-ac1f6b6435d0,19 0,train
+fd20efce-bb9b-11e8-b2b9-ac1f6b6435d0,22 5,train
+fd34ea76-bbb2-11e8-b2ba-ac1f6b6435d0,23,train
+fd56d07c-bb9a-11e8-b2b9-ac1f6b6435d0,16 11 0,train
+fd6a70f0-bbae-11e8-b2ba-ac1f6b6435d0,22 7,train
+fd75786c-bbbb-11e8-b2ba-ac1f6b6435d0,4,train
+fd96b1e4-bbb6-11e8-b2ba-ac1f6b6435d0,25 11 0,train
+fdb29eb0-bbc8-11e8-b2bc-ac1f6b6435d0,4,train
+fdbcad98-bbc7-11e8-b2bc-ac1f6b6435d0,26,train
+fdc54390-bbc7-11e8-b2bc-ac1f6b6435d0,11,train
+fde3c730-bbc6-11e8-b2bc-ac1f6b6435d0,25 3 0,train
+fdfb656c-bbc5-11e8-b2bc-ac1f6b6435d0,25 7,train
+fe0067b4-bbb7-11e8-b2ba-ac1f6b6435d0,24,train
+fe1f4d74-bbbb-11e8-b2ba-ac1f6b6435d0,12 4,train
+fe2d2d16-bbbd-11e8-b2ba-ac1f6b6435d0,6 21,train
+fe5311d4-bbb8-11e8-b2ba-ac1f6b6435d0,1,train
+fe828790-bbb6-11e8-b2ba-ac1f6b6435d0,5,train
+fe92c90a-bbae-11e8-b2ba-ac1f6b6435d0,5,train
+feb36886-bbb8-11e8-b2ba-ac1f6b6435d0,7 2 0,train
+fec21e24-bbb0-11e8-b2ba-ac1f6b6435d0,26,train
+fecf31b6-bbb7-11e8-b2ba-ac1f6b6435d0,18 0,train
+fed251bc-bbc5-11e8-b2bc-ac1f6b6435d0,22 0,train
+fef81242-bbb8-11e8-b2ba-ac1f6b6435d0,16 25 0,train
+ff15e4e6-bbc4-11e8-b2bc-ac1f6b6435d0,3,train
+ff20125c-bbc6-11e8-b2bc-ac1f6b6435d0,25 13 0,train
+ff4043e6-bbae-11e8-b2ba-ac1f6b6435d0,12 4,train
+ff4e19c4-bbbf-11e8-b2bb-ac1f6b6435d0,23,train
+ff500aee-bba2-11e8-b2b9-ac1f6b6435d0,15 2 0,train
+ff56d3c0-bba1-11e8-b2b9-ac1f6b6435d0,13 21,train
+ff8a6ea6-bbba-11e8-b2ba-ac1f6b6435d0,6,train
+ff917b50-bbac-11e8-b2ba-ac1f6b6435d0,13 0 21,train
+ffa65b3c-bba8-11e8-b2ba-ac1f6b6435d0,25 5,train
+ffb610c6-bbb8-11e8-b2ba-ac1f6b6435d0,11 0,train
+ffbebc4e-bb9a-11e8-b2b9-ac1f6b6435d0,4,train
+ffd96262-bbc0-11e8-b2bb-ac1f6b6435d0,4,train
+1400_29_C2_2,25 27,ex
+1400_31_C2_2,25 27,ex
+29179_1168_B11_4,26 21,ex
+31240_1645_E5_33,18 17,ex
+31240_1660_E6_2,18 17,ex
+62474_1286_D4_4,26 0,ex
+62474_1748_C9_1_cr5805e9ffd7a94,26 0,ex
+63683_1156_C1_5,20 0,ex
+63683_si35_H1_12,20 0,ex
+63683_si35_H1_2,20 0,ex
+2024_60_H5_1,24 21,ex
+2024_59_H5_2,24 21,ex
+35086_376_E8_1,25 17 0,ex
+35086_383_E8_4,25 17 0,ex
+63835_1139_D8_5,20,ex
+63835_1231_G10_1,20,ex
+63835_1231_G10_2,20,ex
+63835_1132_D8_3,20,ex
+6050_1252_F5_1,19 25 18 17,ex
+30209_319_H7_2,8,ex
+30211_560_D9_2,8,ex
+18882_1758_F8_4,26,ex
+47373_786_A11_11,9 10,ex
+47373_781_A11_1,9 10,ex
+47373_si15_G1_1,9 10,ex
+47373_si15_G3_2,9 10,ex
+52761_785_C1_1,9 10,ex
+52761_785_C1_4,9 10,ex
+52761_783_C1_2,9 10,ex
+52761_821_A4_1,9 10,ex
+8763_101_A3_1,6 9 10,ex
+28747_508_F4_2,6 9 10,ex
+42830_547_A11_1,0 8,ex
+41164_417_G4_2,26 0,ex
+41164_420_G4_3,26 0,ex
+43038_1639_D10_1,26 0,ex
+72678_1523_A10_7,26 5 0,ex
+7244_19_H7_1,8,ex
+7244_17_H7_2,8,ex
+64687_1331_C9_4,26 0,ex
+64687_1422_C2_3,26 0,ex
+40802_486_F7_1,9 10,ex
+40802_509_F7_1,9 10,ex
+153_207_B2_1,9 10,ex
+28710_1711_B12_1,26 4 2 21,ex
+6964_344_C4_1,10,ex
+1467_28_H9_2,10,ex
+26549_214_A3_2,24 25,ex
+62473_1524_A4_3,20,ex
+62473_1405_E4_2,20,ex
+7891_21_B4_2,6 20,ex
+7891_22_B4_2,6 20,ex
+5487_1772_H1_5,16 18 17 0,ex
+10819_1682_D3_3,20 3,ex
+35831_498_G11_1,16 17 0,ex
+35831_498_G11_2,16 17 0,ex
+50521_1334_H3_2,20,ex
+50521_694_F6_2,20,ex
+60847_1082_E9_2,20,ex
+60847_1082_E9_5,20,ex
+43296_474_B11_2,24 25 0,ex
+48790_794_F11_2,26 4,ex
+38893_836_A9_4,17,ex
+38893_857_C10_3,17,ex
+38893_847_C10_3,17,ex
+38893_847_C10_4,17,ex
+75215_1746_E6_3_cr5804b5837ad3c,17,ex
+50077_823_E10_1,3 8,ex
+12000_94_G9_1,26 4,ex
+3524_33_F11_1,26 25,ex
+67444_1254_F9_1,26 0,ex
+67444_1237_H2_2,26 0,ex
+6427_19_D7_2,25 20,ex
+66538_1247_G10_7,25 20,ex
+66538_1244_G10_2,25 20,ex
+58342_1242_F7_1,9 10,ex
+26685_1729_G1_1,16 14 17,ex
+26685_1729_G1_5,16 14 17,ex
+26685_1645_E1_31,16 14 17,ex
+10161_1001_E9_3,26 25 0,ex
+52108_810_F10_6,26 25 0,ex
+52108_810_F10_7,26 25 0,ex
+11861_90_D7_2,8,ex
+4167_1113_D4_1,9,ex
+4167_1113_D4_2,9,ex
+24201_955_G1_2,26 25,ex
+24201_955_G1_3,26 25,ex
+62757_1715_C3_13_cr57fd1065db749,26 25 18,ex
+62757_1715_C3_28_cr57fd1077b25da,26 25 18,ex
+68859_1360_E7_3,20,ex
+68859_1367_E7_2,20,ex
+57705_1361_E6_5,26 25 21,ex
+57705_1366_E6_6,26 25 21,ex
+65968_1215_E10_4,6 20,ex
+65968_1209_E10_2,6 20,ex
+73828_1412_F12_2,6 20,ex
+73828_1518_G8_2,6 20,ex
+73828_1409_F12_1,6 20,ex
+34808_571_C10_2,9,ex
+63581_1189_D11_1,24 25 0,ex
+21593_190_G2_2,8,ex
+21593_189_G2_1,8,ex
+74409_1462_H3_3,7 17,ex
+74409_1668_E3_1,7 17,ex
+34706_1773_A2_4,25 7 17,ex
+32027_378_A2_1,8,ex
+32027_376_A2_2,8,ex
+27231_1042_C3_3,27,ex
+27231_1161_C8_1,27,ex
+49199_855_G12_1,20,ex
+49199_808_G12_2,20,ex
+49967_805_E9_2,23 27,ex
+50918_686_F1_1,9 10,ex
+57498_980_A10_1,9 10,ex
+57498_976_A10_2,9 10,ex
+71021_1484_C1_1,20 2,ex
+41138_420_D5_2,9,ex
+70765_1778_F2_1,25 18 17,ex
+70765_1778_F2_3,25 18 17,ex
+70765_1323_G5_2,25 18 17,ex
+6625_42_D12_1,20 0,ex
+6625_42_D12_2,20 0,ex
+75436_1585_D10_3,26 0,ex
+65871_1586_E9_3,26 25 0,ex
+49374_747_B5_5,9 10,ex
+49374_714_B5_1,9 10,ex
+49374_713_B5_2,9 10,ex
+26678_1183_F4_2,25 15,ex
+57302_1262_G1_2,23 27,ex
+21302_234_G8_2,8,ex
+21302_235_G8_1,8,ex
+21302_235_G8_2,8,ex
+21302_535_G8_1,8,ex
+21311_235_H8_2,8,ex
+62573_1345_E8_4,17,ex
+10515_108_E1_2,20 0,ex
+10515_1126_E7_4,20 0,ex
+67941_1754_C10_13_cr57f3d57b894f2,26 4,ex
+67941_1237_C10_4,26 4,ex
+1225_169_C10_2,26 25 4,ex
+39734_451_B10_2,22 10 21,ex
+39734_454_B10_1,22 10 21,ex
+6738_69_E5_2,26 0,ex
+6738_91_E5_1,26 0,ex
+62359_1227_C10_1,26 5 3,ex
+62359_1238_H3_3,26 5 3,ex
+10093_1248_G2_3,25 17,ex
+10093_1248_G2_4,25 17,ex
+66313_1244_C12_3,20 23 0,ex
+71716_1478_G11_1,26 0,ex
+71716_1478_G11_2,26 0,ex
+24795_255_B3_2,16 14 17 2,ex
+11571_642_F2_2,25 17,ex
+11571_641_F2_2,25 17,ex
+17155_623_C4_1,25 17,ex
+17155_620_C4_2,25 17,ex
+64306_1132_D12_4,25 10 0,ex
+46104_622_F1_7,3 8,ex
+46104_619_F1_3,3 8,ex
+49231_757_A4_4,3 8,ex
+49231_757_A4_5,3 8,ex
+75363_1541_B6_1,26 4,ex
+75363_1638_E2_1,26 4,ex
+75363_1638_E2_2,26 4,ex
+31582_1789_B8_13_cr59770f7e56d1a,25 18 14 17,ex
+248_24_C1_1,6 20,ex
+248_24_C1_2,6 20,ex
+248_25_C1_2,6 20,ex
+16607_1414_F2_3,20,ex
+16607_1384_H1_3,20,ex
+37578_406_C8_1,25 15 2,ex
+37578_403_C8_1,25 15 2,ex
+37578_408_C8_3,25 15 2,ex
+40946_489_B10_6,20 4,ex
+40946_484_B10_1,20 4,ex
+16316_943_E2_1,26 25,ex
+16316_951_E2_2,26 25,ex
+67008_1527_D7_2,26 25,ex
+67008_1287_E7_1,26 25,ex
+22268_365_E8_4,6 20,ex
+22268_364_E8_2,6 20,ex
+28402_1773_F12_8,15 21,ex
+43443_814_A4_2,15 21,ex
+43443_755_A4_4,15 21,ex
+73448_1378_B6_1,25 17 0,ex
+73477_1403_E6_2,19 17,ex
+73477_1656_F5_2,19 17,ex
+6404_72_A10_1,25 27,ex
+6404_73_A10_1,25 27,ex
+37972_1036_E12_1,20,ex
+37972_737_G12_1,20,ex
+49621_866_F12_2,26 25,ex
+49621_723_F12_1,26 25,ex
+49621_711_F12_1,26 25,ex
+51966_910_A6_1,8,ex
+32053_1591_E8_2,26 0,ex
+32053_599_A12_1,26 0,ex
+67503_1435_F5_1,20,ex
+44880_1042_H11_1,24 25,ex
+24299_240_G8_2,8,ex
+24299_241_G8_1,8,ex
+39030_411_F7_2,26,ex
+44682_529_F5_1,25 20 21,ex
+54657_875_D2_8,25 20 21,ex
+11082_1584_C4_6,16 17 0,ex
+11082_1637_E6_32,16 17 0,ex
+43803_776_A6_1,26 4,ex
+43803_776_A6_2,26 4,ex
+68497_1503_A12_4,26 4,ex
+68497_1250_H10_2,26 4,ex
+70737_1717_G8_34,25 17,ex
+14717_172_C6_1,9 10 0,ex
+50783_764_F11_2,24 22,ex
+50783_716_F11_2,24 22,ex
+50783_719_F11_1,24 22,ex
+41625_1466_F2_4,26,ex
+41625_1466_F2_5,26,ex
+24694_956_C2_3,26,ex
+24694_226_H7_2,26,ex
+57676_1239_C12_4,22 26 0,ex
+57676_1239_C12_5,22 26 0,ex
+57676_1016_C12_3,22 26 0,ex
+42028_489_A10_1,16 14 17,ex
+42028_871_D12_1,16 14 17,ex
+65730_1265_D9_1,24 25,ex
+65730_1277_B7_1,24 25,ex
+52855_844_D2_1,16 14 17,ex
+57325_1011_A6_8,26 0,ex
+26836_1276_B9_3,27,ex
+54110_885_A1_1,27,ex
+55173_878_H4_2,20 0,ex
+62602_1273_H3_5,20 0,ex
+20717_618_H11_3,25 27,ex
+36897_1645_G2_13_cr57bd88ec5b29a,26 0,ex
+36897_1645_G2_17_cr57bd88f3c7a77,26 0,ex
+36897_1761_D5_1,26 0,ex
+54754_906_A9_6,25 20,ex
+23557_180_C10_2,22 0 21 27,ex
+23557_si21_E4_1,22 0 21 27,ex
+23557_si21_E6_2,22 0 21 27,ex
+64312_1272_F10_2,22 0 21 27,ex
+64312_1272_F10_3,22 0 21 27,ex
+64312_1232_B7_1,22 0 21 27,ex
+64312_1232_B7_4,22 0 21 27,ex
+53126_882_D2_2,16 14 17 0,ex
+4872_92_E12_1,25 9 10,ex
+4872_77_E12_2,25 9 10,ex
+7728_174_A4_3,25 9 10,ex
+17434_1293_H3_2,20,ex
+73912_1478_F7_10,26,ex
+54664_881_A4_1,24 25,ex
+54664_881_A4_3,24 25,ex
+16807_134_B2_1,24 7,ex
+16807_134_B2_2,24 7,ex
+40706_1610_H5_1,24,ex
+21248_146_C3_1,18 27,ex
+24516_1251_F4_1,19 17 0,ex
+24516_1396_F9_4,19 17 0,ex
+44469_1731_G2_7_cr57ee2fd55d6e3,19 17 0,ex
+44469_1731_G2_23_cr57ee2fdd8ed98,19 17 0,ex
+22250_1682_G6_1,26 0,ex
+77930_1693_G3_1,26,ex
+77930_1693_G3_2,26,ex
+22904_248_C12_1,8,ex
+17322_138_B12_2,8,ex
+72670_1492_B1_1,26,ex
+72670_1431_A7_1,26,ex
+72670_1431_A7_2,26,ex
+21608_147_A10_1,20,ex
+21608_147_A10_2,20,ex
+30063_1734_B11_4,26 25,ex
+54080_849_F3_3,26 25,ex
+22130_246_G11_1,8,ex
+72651_1519_F12_3,26,ex
+68290_1331_E10_6,20,ex
+68290_1345_E10_2,20,ex
+37400_403_F5_1,9 10,ex
+17750_113_G11_1,27,ex
+17750_112_G11_1,27,ex
+54586_1310_D5_1,20,ex
+69774_1312_C12_1,20,ex
+6518_1601_A3_2,26 25,ex
+6518_1601_A3_3,26 25,ex
+46373_1043_D1_1,0 8 21,ex
+46373_1220_B7_5,0 8 21,ex
+46373_1006_B3_3,0 8 21,ex
+46373_1006_B3_4,0 8 21,ex
+60238_1272_G7_1,24,ex
+61600_1761_A10_5,14 23 17,ex
+75556_1740_H7_13_cr57fcf57784375,26 0,ex
+17961_144_C1_1,26 25,ex
+17961_145_C1_2,26 25,ex
+23654_1772_G7_4,19 17 0,ex
+38584_1731_A2_23_cr57ee21a47cff2,12 16 15 2,ex
+13202_103_F2_2,26,ex
+55190_957_H4_1,26 25 0,ex
+56555_1144_G11_1,26 25 0,ex
+56555_962_B7_1,26 25 0,ex
+56555_962_B7_2,26 25 0,ex
+56555_970_B7_2,26 25 0,ex
