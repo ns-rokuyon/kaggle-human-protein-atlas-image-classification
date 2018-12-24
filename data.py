@@ -20,14 +20,27 @@ from optim import CosineLRWithRestarts
 try:
     from workspace import *
     on_colab = False
+    on_aws = False
     print('workspace: local')
 except ImportError:
-    from workspace_colab import *
-    on_colab = True
-    print('workspace: colab')
+    try:
+        from workspace_colab import *
+        on_colab = True
+        on_aws = False
+        print('workspace: colab')
+    except ImportError:
+        from workspace_aws import *
+        on_colab = False
+        on_aws = True
+        print('workspace: aws')
 
 
-progress_bar = tqdm.tqdm if on_colab else tqdm.tqdm_notebook
+if on_colab:
+    progress_bar = tqdm.tqdm
+elif on_aws:
+    progress_bar = tqdm.tqdm
+else:
+    progress_bar = tqdm.tqdm_notebook
 
 
 # Green filter for the target protein structure of interest
