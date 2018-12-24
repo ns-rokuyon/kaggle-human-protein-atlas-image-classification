@@ -183,7 +183,7 @@ def show_classification_report(model, cv=0, device=None, with_tta=False, use_ada
 
 
 def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
-                        use_adaptive_thresholds=True,
+                        use_adaptive_thresholds=True, fixed_threshold=0.5,
                         use_mls_v2=False):
     if use_mls_v2:
         print('Load val_df MLS v2')
@@ -204,7 +204,7 @@ def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
         thresholds = compute_best_thresholds(model, val_iter, average='binary', device=device,
                                              use_sigmoid=True, threshold=None, with_tta=with_tta)
     else:
-        thresholds = 0.5
+        thresholds = fixed_threshold
     print(f'Thresholds: {thresholds}')
 
     # Prediction
@@ -243,6 +243,7 @@ def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
     filepath = submission_dir / f'{name}.csv'
     df.to_csv(str(filepath), index=False)
     print(f'Save: {filepath}')
+    return df
 
 
 def load_models(model_filenames, device=None):

@@ -150,8 +150,8 @@ class HPATestDataset(Dataset):
         self.use_transform = True
         self.image_db = image_db
 
+        self.resizer = alb.Resize(self.size[0], self.size[1], p=1)
         self.transformer = transforms.Compose([
-            transforms.Resize(self.size),
             transforms.ToTensor(),
             transforms.Normalize(Stats.mean, Stats.std)
         ])
@@ -163,11 +163,12 @@ class HPATestDataset(Dataset):
         image_id = self.df.iloc[i]['Id']
         if self.image_db:
             im = self.image_db[f'test/{image_id}'].value
-            im = Image.fromarray(im)
         else:
             im = load_4ch_image_test(image_id)
-        if self.use_transform:
-            im = self.transformer(im)
+            # TODO: to numpy
+
+        im = self.resizer.apply(im)
+        im = self.transformer(im)
 
         return im
 
