@@ -13,7 +13,8 @@ def main():
     args = parse_args()
 
     if args.gen_h5:
-        gen_images_h5_file()
+        df = get_train_df()
+        gen_images_h5_file(df)
         return
 
 
