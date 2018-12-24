@@ -1,0 +1,4 @@
+#!/bin/sh
+# http://moguno.hatenablog.jp/entry/2016/03/24/010502
+
+echo $* > /dev/stderr
