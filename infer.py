@@ -4,7 +4,7 @@ import numpy as np
 from torchvision import transforms
 from sklearn.metrics import f1_score, accuracy_score
 from data import *
-from dataset import HPADataset, HPATestDataset
+from dataset import HPADataset, HPATestDataset, HPAEnhancedDataset
 import model as M
 
 
@@ -184,19 +184,24 @@ def show_classification_report(model, cv=0, device=None, with_tta=False, use_ada
 
 def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
                         use_adaptive_thresholds=True, fixed_threshold=0.5,
-                        use_mls_v2=False):
+                        use_mls_v2=False, use_mls_us_enh=False):
     if use_mls_v2:
         print('Load val_df MLS v2')
         _, val_df = get_multilabel_stratified_train_val_df_fold_v2(cv)
+    elif use_mls_us_enh:
+        print('Load val_df MLS Undersampled Enhanced')
+        _, val_df = get_mls_undersampled_enhanced_train_val_df_fold(cv)
     else:
         _, val_df = get_multilabel_stratified_train_val_df_fold(cv)
-    val_image_db = open_images_h5_file()
-    val_dataset = HPADataset(val_df, size=(512, 512), image_db=val_image_db, use_augmentation=False)
+
+    image_db = open_images_h5_file()
+    ex_image_db = open_ex_images_h5_file()
+    val_dataset = HPAEnhancedDataset(val_df, size=(512, 512), image_db=image_db, ex_image_db=ex_image_db, use_augmentation=False)
     val_iter = torch.utils.data.DataLoader(val_dataset, batch_size=8, shuffle=False, pin_memory=True)
 
     df = get_test_df()
-    image_db = open_test_images_h5_file()
-    dataset = HPATestDataset(df, size=(512, 512), image_db=image_db)
+    test_image_db = open_test_images_h5_file()
+    dataset = HPATestDataset(df, size=(512, 512), image_db=test_image_db)
     test_iter = torch.utils.data.DataLoader(dataset, batch_size=8, shuffle=False, pin_memory=True)
 
     # Get thresholds
