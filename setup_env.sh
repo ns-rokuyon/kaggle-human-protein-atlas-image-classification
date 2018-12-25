@@ -20,6 +20,7 @@ unzip -q -d train -n train.zip
 unzip -q -d test -n test.zip
 
 pip install scikit-learn tqdm pandas albumentations h5py scikit-multilearn iterative-stratification Pillow
+pip install pretrainedmodels==0.7.4
 
 cp kaggle-$COMPETITION_NAME/*.py $HOME/
 cp kaggle-$COMPETITION_NAME/*.sh $HOME/

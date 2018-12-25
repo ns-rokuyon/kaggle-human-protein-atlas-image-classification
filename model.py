@@ -3,6 +3,7 @@ import numpy as np
 import torch.nn.functional as F
 from torch import nn
 from torchvision.models.resnet import ResNet, BasicBlock, model_urls, model_zoo
+from pretrainedmodels.models import bninception # pretrainedmodels==0.7.4
 
 
 from data import (
@@ -40,6 +41,26 @@ def make_resnet34_binary_classifier(model):
 
     model.fc = nn.Linear(512, 1)
     print('Append new fc for binary output')
+    return model
+
+
+def make_bninception():
+    model = bninception(pretrained='imagenet')
+    print('ImageNet pretrained weights were loaded')
+
+    del model.global_pool
+    del model.last_linear
+    print('Removed last linear')
+
+    conv1_weight = model.conv1_7x7_s2.weight
+
+    model.conv1_7x7_s2 = nn.Conv2d(4, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    print('Reset conv1_7x7_s2')
+
+    model.conv1_7x7_s2.weight = nn.Parameter(torch.cat((conv1_weight, torch.zeros(64, 1, 7, 7)), dim=1))
+    torch.nn.init.kaiming_normal_(model.conv1_7x7_s2.weight[:, 3])
+    print('Set 4 channel input conv1')
+
     return model
 
 
@@ -92,6 +113,26 @@ class ConvBn2d(nn.Module):
 
     def forward(self, x):
         return self.layer(x)
+
+
+class BNInception(nn.Module):
+    def __init__(self, pretrained=True, **kwargs):
+        super().__init__()
+        self.backbone = make_bninception()
+        self.gap = nn.AdaptiveAvgPool2d(1)
+        self.last_linear = nn.Sequential(
+            nn.BatchNorm1d(1024),
+            nn.Dropout(0.5),
+            nn.Linear(1024, n_class)
+        )
+
+    def forward(self, x):
+        x = self.backbone.features(x)
+
+        x = self.gap(x)
+        x = x.view(x.size(0), -1)
+        logit = self.last_linear(x)
+        return logit
 
 
 class ResNet34(nn.Module):
