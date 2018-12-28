@@ -482,13 +482,28 @@ def save_ex_image(ex_id):
             gray_im = gray_im.astype(np.uint8)
             gray_im = Image.fromarray(gray_im)
             gray_im.save(str(save_path), 'PNG')
+        error_message = None
     except Exception as e:
-        print(f'Failed: {e}')
+        error_message = f'Failed: {e}'
+    return error_message
 
 
-def save_ex_images(pid, ex_ids):
+def save_ex_images(pid, ex_ids, enable_logging=False):
+    if enable_logging:
+        fp = open(f'download_{pid}.log', 'w')
+    else:
+        fp = None
+
     for i, ex_id in enumerate(ex_ids):
-        save_ex_image(ex_id)
+        if i % 100 == 0:
+            print(f'[PID({pid})] Progress: {i}', file=True, flush=True)
+
+        error_message = save_ex_image(ex_id)
+        if error_message:
+            print(error_message, file=fp, flush=True)
+
+    if fp is not None:
+        fp.close()
 
 
 def get_ex_ids_to_save(full=False):
@@ -508,8 +523,7 @@ def get_ex_ids_to_save(full=False):
     return ex_ids
 
 
-def download_ex_data(ex_ids):
-    process_num = 2
+def download_ex_data(ex_ids, process_num=2):
     list_len = len(ex_ids)
 
     pool = Pool(process_num)
@@ -517,7 +531,7 @@ def download_ex_data(ex_ids):
         start = int(i * list_len / process_num)
         end = int((i + 1) * list_len / process_num)
         process_ids = ex_ids[start:end]
-        pool.apply_async(save_ex_images, args=(str(i), process_ids))
+        pool.apply_async(save_ex_images, args=(str(i), process_ids, True))
 
     print('Waiting ...')
     pool.close()
