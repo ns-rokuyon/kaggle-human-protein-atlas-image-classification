@@ -469,6 +469,11 @@ def download_image(ex_id, color):
 def save_ex_image(ex_id):
     try:
         for i, color in enumerate(['red', 'green', 'blue', 'yellow']):
+            save_path = ex_image_dir / f'{ex_id}_{color}.png'
+            
+            if save_path.exists():
+                continue
+
             im = np.array(download_image(ex_id, color))
             if color == 'yellow':
                 gray_im = (im[:, :, 0] + im[:, :, 1]) / 2
@@ -476,7 +481,7 @@ def save_ex_image(ex_id):
                 gray_im = im[:, :, i]
             gray_im = gray_im.astype(np.uint8)
             gray_im = Image.fromarray(gray_im)
-            gray_im.save(ex_image_dir / f'{ex_id}_{color}.png', 'PNG')
+            gray_im.save(str(save_path), 'PNG')
     except Exception as e:
         print(f'Failed: {e}')
 
@@ -486,11 +491,17 @@ def save_ex_images(pid, ex_ids):
         save_ex_image(ex_id)
 
 
-def get_ex_ids_to_save():
+def get_ex_ids_to_save(full=False):
+    print(f'get_ex_ids_to_save: full={full}')
     ex_ids = []
     df = read_ex_data_source_list()
     for i in range(df.shape[0]):
         row = df.iloc[i]
+
+        if full:
+            ex_ids.append(row['Id'])
+            continue
+        
         ts = set(row['Target'].split(' '))
         if ts & weak_classes:
             ex_ids.append(row['Id'])
@@ -533,6 +544,20 @@ def create_enhanced_train_csv():
     enhanced_train_df.to_csv(str(enhanced_train_csv), index=False)
 
     print(f'Save: {enhanced_train_csv}')
+
+
+def create_enhanced_full_train_csv():
+    train_df = get_train_df()
+
+    ex_df = read_ex_data_source_list()
+
+    train_df['Source'] = ['train' for _ in range(train_df.shape[0])]
+    ex_df['Source'] = ['ex' for _ in range(ex_df.shape[0])]
+
+    enhanced_full_train_df = pd.concat([train_df, ex_df])
+    enhanced_full_train_df.to_csv(str(enhanced_full_train_csv), index=False)
+
+    print(f'Save: {enhanced_full_train_csv}')
 
 
 def inverted_image_list(df):

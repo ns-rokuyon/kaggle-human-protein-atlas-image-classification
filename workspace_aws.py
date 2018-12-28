@@ -57,8 +57,13 @@ enhanced_train_csv = list_dir / 'enhanced_train.csv'    # Unavailable
 undersampled_enhanced_train_csv = list_dir / 'undersampled_enhanced_train.csv'  # Unavailable
 mls_undersampled_enhanced_kfold_cv5_list_dir = kfold_list_dir / 'mls_us_enh_cv5_v2'
 
+# Enhanced full dataset
+enhanced_full_train_csv = list_dir / 'enhanced_full_train.csv'  # Unavailable
+ex_full_images_h5_file = data_root_dir / 'ex_full_images.h5'
+
 
 def setup():
     model_dir.mkdir(parents=True, exist_ok=True)
     submission_dir.mkdir(parents=True, exist_ok=True)
     log_dir.mkdir(parents=True, exist_ok=True)
+    ex_image_dir.mkdir(parents=True, exist_ok=True)
