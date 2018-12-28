@@ -656,3 +656,51 @@ def get_mls_undersampled_enhanced_train_val_df_fold(k):
     train_df = pd.read_csv(str(train_listfile))
     val_df = pd.read_csv(str(val_listfile))
     return train_df, val_df
+
+
+def _mls_enhanced_kfold_dfs():
+    df = get_enhanced_train_df()
+    label_mat = multilabel_binary_representation(df, sparse=False)
+
+    kf = MultilabelStratifiedKFold(n_splits=5, shuffle=True, random_state=0)
+    for train_index, val_index in kf.split(df.index.values, label_mat):
+        fold_train_df = df.iloc[train_index]
+        fold_val_df = df.iloc[val_index]
+        yield fold_train_df, fold_val_df
+
+
+def generate_mls_enhanced_kfold_cv5_list():
+    for i, (train_df, val_df) in enumerate(_mls_enhanced_kfold_dfs()):
+        train_listfile = str(mls_enhanced_kfold_cv5_list_dir / f'train_cv{i}.csv')
+        val_listfile = str(mls_enhanced_kfold_cv5_list_dir / f'val_cv{i}.csv')
+        train_df.to_csv(train_listfile, index=False)
+        val_df.to_csv(val_listfile, index=False)
+        print(f'Generated: {train_listfile}')
+        print(f'Generated: {val_listfile}')
+
+
+def get_mls_enhanced_train_val_df_fold(k):
+    train_listfile = str(mls_enhanced_kfold_cv5_list_dir / f'train_cv{k}.csv')
+    val_listfile = str(mls_enhanced_kfold_cv5_list_dir / f'val_cv{k}.csv')
+    train_df = pd.read_csv(str(train_listfile))
+    val_df = pd.read_csv(str(val_listfile))
+    return train_df, val_df
+
+
+def oversample_brian_method(train_df):
+    """https://www.kaggle.com/c/human-protein-atlas-image-classification/discussion/75691
+    """
+    train_df_orig = train_df.copy()
+    lows = [15,15,15,8,9,10,8,9,10,8,9,10,17,20,24,26,15,27,15,20,24,17,8,15,27,27,27]
+    for i in lows:
+        target = str(i)
+        indicies = train_df_orig.loc[train_df_orig['Target'] == target].index
+        train_df = pd.concat([train_df,train_df_orig.loc[indicies]], ignore_index=True)
+        indicies = train_df_orig.loc[train_df_orig['Target'].str.startswith(target + ' ')].index
+        train_df = pd.concat([train_df,train_df_orig.loc[indicies]], ignore_index=True)
+        indicies = train_df_orig.loc[train_df_orig['Target'].str.endswith(' ' + target)].index
+        train_df = pd.concat([train_df,train_df_orig.loc[indicies]], ignore_index=True)
+        indicies = train_df_orig.loc[train_df_orig['Target'].str.contains(' ' + target + ' ')].index
+        train_df = pd.concat([train_df,train_df_orig.loc[indicies]], ignore_index=True)
+
+    return train_df

@@ -56,6 +56,7 @@ ex_images_h5_file = data_root_dir / 'ex_images.h5'
 enhanced_train_csv = list_dir / 'enhanced_train.csv'    # Unavailable
 undersampled_enhanced_train_csv = list_dir / 'undersampled_enhanced_train.csv'  # Unavailable
 mls_undersampled_enhanced_kfold_cv5_list_dir = kfold_list_dir / 'mls_us_enh_cv5_v2'
+mls_enhanced_kfold_cv5_list_dir = kfold_list_dir / 'mls_enh_cv5_v2'
 
 # Enhanced full dataset
 enhanced_full_train_csv = list_dir / 'enhanced_full_train.csv'  # Unavailable

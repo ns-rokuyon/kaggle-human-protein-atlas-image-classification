@@ -50,6 +50,7 @@ ex_images_h5_file = list_dir / 'ex_images.h5'
 enhanced_train_csv = list_dir / 'enhanced_train.csv'
 undersampled_enhanced_train_csv = list_dir / 'undersampled_enhanced_train.csv'
 mls_undersampled_enhanced_kfold_cv5_list_dir = kfold_list_dir / 'mls_us_enh_cv5_v2'
+mls_enhanced_kfold_cv5_list_dir = kfold_list_dir / 'mls_enh_cv5_v2'
 
 # Enhanced full dataset
 enhanced_full_train_csv = list_dir / 'enhanced_full_train.csv'
@@ -68,3 +69,4 @@ def setup():
     multilabel_stratified_kfold_cv5_list_v2_dir.mkdir(parents=True, exist_ok=True)
     ex_image_dir.mkdir(parents=True, exist_ok=True)
     mls_undersampled_enhanced_kfold_cv5_list_dir.mkdir(parents=True, exist_ok=True)
+    mls_enhanced_kfold_cv5_list_dir.mkdir(parents=True, exist_ok=True)
