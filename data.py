@@ -492,17 +492,19 @@ def save_ex_images(pid, ex_ids, enable_logging=False):
     if enable_logging:
         fp = open(f'download_{pid}.log', 'w')
     else:
-        fp = None
+        fp = sys.stdout
 
     for i, ex_id in enumerate(ex_ids):
-        if fp and i % 100 == 0:
+        if i % 100 == 0:
             print(f'[PID({pid})] Progress: {i}', file=fp, flush=True)
 
+        print(f'[PID({pid})] {ex_id}', file=fp, flush=True)
+
         error_message = save_ex_image(ex_id)
-        if fp and error_message:
+        if error_message:
             print(error_message, file=fp, flush=True)
 
-    if fp is not None:
+    if enable_logging:
         fp.close()
 
 
