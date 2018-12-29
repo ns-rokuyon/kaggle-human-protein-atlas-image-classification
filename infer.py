@@ -184,13 +184,16 @@ def show_classification_report(model, cv=0, device=None, with_tta=False, use_ada
 
 def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
                         use_adaptive_thresholds=True, fixed_threshold=0.5,
-                        use_mls_v2=False, use_mls_us_enh=False):
+                        use_mls_v2=False, use_mls_us_enh=False, use_mls_enh=False):
     if use_mls_v2:
         print('Load val_df MLS v2')
         _, val_df = get_multilabel_stratified_train_val_df_fold_v2(cv)
     elif use_mls_us_enh:
         print('Load val_df MLS Undersampled Enhanced')
         _, val_df = get_mls_undersampled_enhanced_train_val_df_fold(cv)
+    elif use_mls_enh:
+        print('Load val_df MLS Enhanced')
+        _, val_df = get_mls_enhanced_train_val_df_fold(cv)
     else:
         _, val_df = get_multilabel_stratified_train_val_df_fold(cv)
 
