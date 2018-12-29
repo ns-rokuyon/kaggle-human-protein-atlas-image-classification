@@ -33,6 +33,28 @@ def make_backbone_resnet34(pretrained=True, **kwargs):
     return backbone
 
 
+def make_backbone_resnet18(pretrained=True, **kwargs):
+    backbone = ResNet(BasicBlock, [2, 2, 2, 2], **kwargs)
+    del backbone.fc
+    del backbone.avgpool
+    print('Removed fc and avgpool')
+
+    if pretrained:
+        backbone.load_state_dict(model_zoo.load_url(model_urls['resnet18']),
+                                 strict=False)
+        print('ImageNet pretrained weights were loaded')
+
+    conv1_weight = backbone.conv1.weight
+    del backbone.conv1
+    backbone.conv1 = nn.Conv2d(4, 64, kernel_size=(7, 7),
+                               stride=(2, 2), padding=(3, 3), bias=False)
+    backbone.conv1.weight = nn.Parameter(torch.cat((conv1_weight, torch.zeros(64, 1, 7, 7)), dim=1))
+    torch.nn.init.kaiming_normal_(backbone.conv1.weight[:, 3])
+    print('Set 4 channel input conv1')
+
+    return backbone
+
+
 def make_resnet34_binary_classifier(model):
     assert isinstance(model, ResNet34)
 
@@ -132,6 +154,69 @@ class BNInception(nn.Module):
         x = self.gap(x)
         x = x.view(x.size(0), -1)
         logit = self.last_linear(x)
+        return logit
+
+
+class ResNet18(nn.Module):
+    def __init__(self, pretrained=True, **kwargs):
+        super().__init__()
+        self.backbone = make_backbone_resnet18(pretrained=pretrained,
+                                               **kwargs)
+        self.gap = GAP(flatten=True)
+        self.fc = nn.Linear(512, n_class)
+
+    def forward(self, x):
+        x = self.backbone.conv1(x)
+        x = self.backbone.bn1(x)
+        x = self.backbone.relu(x)
+        x = self.backbone.maxpool(x)
+
+        x = self.backbone.layer1(x)
+        x = self.backbone.layer2(x)
+        x = self.backbone.layer3(x)
+        x = self.backbone.layer4(x)
+
+        x = self.gap(x)
+        logit = self.fc(x)
+        return logit
+
+
+class ResNet18v3(nn.Module):
+    def __init__(self, pretrained=True, **kwargs):
+        super().__init__()
+        self.backbone = make_backbone_resnet18(pretrained=pretrained,
+                                               **kwargs)
+        self.gamp = GAMP()
+        self.bn1 = nn.BatchNorm1d(1024)
+        self.bn2 = nn.BatchNorm1d(512)
+        self.dropout1 = nn.Dropout(0.5)
+        self.dropout2 = nn.Dropout(0.5)
+        self.relu1 = nn.ReLU(inplace=True)
+        self.fc1 = nn.Linear(1024, 512, bias=True)
+        self.fc2 = nn.Linear(512, n_class, bias=True)
+
+    def forward(self, x):
+        x = self.backbone.conv1(x)
+        x = self.backbone.bn1(x)
+        x = self.backbone.relu(x)
+        x = self.backbone.maxpool(x)
+
+        x = self.backbone.layer1(x)
+        x = self.backbone.layer2(x)
+        x = self.backbone.layer3(x)
+        x = self.backbone.layer4(x)
+
+        x = self.gamp(x)
+
+        x = self.bn1(x)
+        x = self.dropout1(x)
+        x = self.fc1(x)
+        x = self.relu1(x)
+
+        x = self.bn2(x)
+        x = self.dropout2(x)
+        logit = self.fc2(x)
+
         return logit
 
 
