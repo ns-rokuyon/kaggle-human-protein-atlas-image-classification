@@ -15,18 +15,25 @@ from optim import CosineLRWithRestarts
 training_log_format = '[{}] Train Epoch: {} [{}/{} ({:.0f}%)]\tAverage loss: {:.6f}'
 
 
-def mixup(x1, t1, x2, t2, alpha=0.4, share_lambda=False):
+def mixup(x1, x2, alpha=0.4, share_lambda=False):
     bs = x1.size()[0]
 
     if share_lambda:
-        _lambda = np.random.beta(alpha, alpha).astype(np.float32)
+        lam = np.random.beta(alpha, alpha).astype(np.float32)
     else:
-        _lambda = np.random.beta(alpha, alpha, size=bs).astype(np.float32)
+        lam = np.random.beta(alpha, alpha, size=bs).astype(np.float32)
 
-    x = _lambda.reshape(bs, 1, 1, 1) * x1 + (1 - _lambda.reshape(bs, 1, 1, 1)) * x2
-    t = _lambda.reshape(bs, 1) * t1 + (1 - _lambda.reshape(bs, 1)) * t2
+    x = lam.reshape(bs, 1, 1, 1) * x1 + (1 - lam.reshape(bs, 1, 1, 1)) * x2
 
-    return x, t
+    return x, lam
+
+
+def mixup_criterion(criterion, logit, t1, t2, lam, device=None):
+    bs = logit.size()[0]
+    loss = torch.Tensor(lam.reshape(bs, 1)).to(device) * criterion(logit, t1) +\
+           torch.Tensor(1 - lam.reshape(bs, 1)).to(device) * criterion(logit, t2)
+    loss = loss.mean()
+    return loss
 
 
 def train(model, optimizer, n_epoch, train_iters, val_iter,
@@ -62,15 +69,14 @@ def train(model, optimizer, n_epoch, train_iters, val_iter,
         total_size = 0
 
         for batch_idx, ((x1, t1), (x2, t2)) in enumerate(zip(*train_iters)):
-            x, t = mixup(x1, t1, x2, t2, alpha=alpha, share_lambda=share_lambda)
+            x, lam = mixup(x1, x2, alpha=alpha, share_lambda=share_lambda)
 
-            x, t = x.to(device), t.to(device)
+            x, t1, t2 = x.to(device), t1.to(device), t2.to(device)
             optimizer.zero_grad()
 
             # Forward
             logit = model(x)
-
-            loss = naive_cross_entropy_loss(logit, t)
+            loss = mixup_criterion(F.binary_cross_entropy_with_logits, logit, t1, t2, lam, device=device)
 
             total_loss += loss.item()
             total_size += x.size(0)
@@ -86,8 +92,8 @@ def train(model, optimizer, n_epoch, train_iters, val_iter,
                 print(training_log_format.format(
                     now, epoch,
                     batch_idx * len(x),
-                    len(train_iter.dataset),
-                    100.0 * batch_idx / len(train_iter),
+                    len(train_iters[0].dataset),
+                    100.0 * batch_idx / len(train_iters[0]),
                     total_loss / total_size
                 ))
 
