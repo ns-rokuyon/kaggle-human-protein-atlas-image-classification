@@ -428,12 +428,12 @@ def create_cosine_annealing_lr_scheduler(optimizer, batch_size, epoch_size,
     return scheduler
 
 
-def get_label_counts(df=None):
+def get_label_counts(df=None, key='Target'):
     if df is None:
         df = get_train_df()
 
     labels = {str(i): 0 for i in range(n_class)}
-    for target in df['Target']:
+    for target in df[key]:
         ts = target.split(' ')
         for t in ts:
             labels[t] += 1

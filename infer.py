@@ -96,18 +96,84 @@ def predict(model, x, device=None,
     return pred
 
 
+def role_predict(role_models, x, device=None,
+                 use_sigmoid=True, threshold=0.5,
+                 with_tta=False):
+    """
+    Args
+    ----
+    role_models : dict
+        {tuple[int]: model}
+
+    Returns
+    -------
+    nd.array
+        {0, 1} array of prediction
+    """
+    if x.ndimension() == 3:
+        x = x.expand(1, *x.shape)
+
+    ys = np.zeros((x.shape[0], n_class))
+    for role_labels, model in role_models.items():
+        model.eval()
+
+        x = x.to(device)
+        logit = model(x)
+
+        if use_sigmoid:
+            y = torch.sigmoid(logit)
+        else:
+            y = logit
+
+        y = y.cpu().numpy().astype(np.float32)
+
+        if with_tta:
+            logit = model(x.flip(3))
+
+            if use_sigmoid:
+                y_tta = torch.sigmoid(logit)
+            else:
+                y_tta = logit
+
+            y += y_tta.cpu().numpy().astype(np.float32)
+            y = 0.5 * y
+        
+        ys[:, role_labels] = y[:, role_labels]
+
+    prob = ys
+
+    if threshold is None:
+        # Return probability instead of {0, 1}
+        return prob
+
+    if isinstance(threshold, list):
+        # Multiple thresholds
+        pred = (prob > threshold).astype(np.float32)
+        return pred
+
+    pred = (prob > threshold).astype(np.float32)
+    return pred
+
+
 def compute_best_thresholds(model, loader, average='macro', **kwargs):
     """
     """
     gc.collect()
     torch.cuda.empty_cache()
 
+    use_role_prediction = isinstance(model, dict)
+    print(f'Use role prediction: {use_role_prediction}')
+
     y_true = []
     y_pred = []
     with torch.no_grad():
         for data, target in progress_bar(loader):
             kwargs['threshold'] = None
-            pred = predict(model, data, **kwargs)
+
+            if use_role_prediction:
+                pred = role_predict(model, data, **kwargs)
+            else:
+                pred = predict(model, data, **kwargs)
 
             y_true.append(target.cpu().numpy())
             y_pred.append(pred)
@@ -185,6 +251,9 @@ def show_classification_report(model, cv=0, device=None, with_tta=False, use_ada
 def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
                         use_adaptive_thresholds=True, fixed_threshold=0.5,
                         use_mls_v2=False, use_mls_us_enh=False, use_mls_enh=False):
+    use_role_prediction = isinstance(model, dict)
+    print(f'Use role prediction: {use_role_prediction}')
+
     if use_mls_v2:
         print('Load val_df MLS v2')
         _, val_df = get_multilabel_stratified_train_val_df_fold_v2(cv)
@@ -221,8 +290,13 @@ def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
     predicted_labels = []
     with torch.no_grad():
         for x in progress_bar(test_iter):
-            pred = predict(model, x, device=device, use_sigmoid=True,
-                           threshold=None, with_tta=with_tta)
+            if use_role_prediction:
+                pred = role_predict(model, x, device=device, use_sigmoid=True,
+                                    threshold=None, with_tta=with_tta)
+            else:
+                pred = predict(model, x, device=device, use_sigmoid=True,
+                            threshold=None, with_tta=with_tta)
+
             for p in pred:
                 wheres = np.argwhere(p > thresholds)
                 if len(wheres) == 0:
@@ -269,112 +343,3 @@ def load_models(model_filenames, device=None):
         print(f'Loaded: {modelfile}')
     return models
 
-
-def submission_pipeline_ensemble(model_filenames, name, cv=0, device=None, with_tta=False,
-                        use_adaptive_thresholds=True,
-                        use_mls_v2=False):
-    df = get_test_df()
-    image_db = open_test_images_h5_file()
-    dataset = HPATestDataset(df, size=(512, 512), image_db=image_db)
-    test_iter = torch.utils.data.DataLoader(dataset, batch_size=8, shuffle=False, pin_memory=True)
-
-    models = []
-    for filename in model_filenames:
-        model = M.ResNet34()
-
-        modelfile = str(model_dir / filename)
-        weight = torch.load(modelfile)
-        model.load_state_dict(weight)
-        model.to(device)
-        model.eval()
-
-        models.append(model)
-        print(f'Loaded: {modelfile}')
-
-    zero_prediction_strategy = 'reduce_threshold'
-    zero_label_count = 0
-    predicted_labels = []
-
-    with torch.no_grad():
-        for x in progress_bar(test_iter):
-            batch_size = x.shape[0]
-            probs = np.zeros((batch_size, n_class))
-            for model in models:
-                probs += predict(model, x, device=device, use_sigmoid=True,
-                                 threshold=None, with_tta=False)
-            probs = probs / len(models)
-
-            for p in probs:
-                wheres = np.argwhere(p > thresholds)
-                if len(wheres) == 0:
-                    zero_label_count += 1
-
-                    if zero_prediction_strategy == 'max':
-                        max_label = p.argmax()
-                        predicted_labels.append(str(max_label))
-                    elif zero_prediction_strategy == 'reduce_threshold':
-                        reduced_thresholds = thresholds
-                        while len(wheres) == 0:
-                            if isinstance(thresholds, list):
-                                reduced_thresholds = [th / 2.0 for th in reduced_thresholds]
-                            elif isinstance(thresholds, float):
-                                reduced_thresholds = reduced_thresholds / 2.0
-                            wheres = np.argwhere(p > reduced_thresholds)
-                        predicted_labels.append(' '.join(map(str, wheres.flatten())))
-                    else:
-                        raise ValueError(zero_prediction_strategy)
-                else:
-                    predicted_labels.append(' '.join(map(str, wheres.flatten())))
-
-
-    if use_mls_v2:
-        print('Load val_df MLS v2')
-        _, val_df = get_multilabel_stratified_train_val_df_fold_v2(cv)
-    else:
-        _, val_df = get_multilabel_stratified_train_val_df_fold(cv)
-    val_image_db = open_images_h5_file()
-    val_dataset = HPADataset(val_df, size=(512, 512), image_db=val_image_db, use_augmentation=False)
-    val_iter = torch.utils.data.DataLoader(val_dataset, batch_size=8, shuffle=False, pin_memory=True)
-
-
-    # Get thresholds
-    if use_adaptive_thresholds:
-        thresholds = compute_best_thresholds(model, val_iter, average='binary', device=device,
-                                             use_sigmoid=True, threshold=None, with_tta=with_tta)
-    else:
-        thresholds = 0.5
-    print(f'Thresholds: {thresholds}')
-
-    # Prediction
-    with torch.no_grad():
-        for x in progress_bar(test_iter):
-            pred = predict(model, x, device=device, use_sigmoid=True,
-                           threshold=None, with_tta=with_tta)
-            for p in pred:
-                wheres = np.argwhere(p > thresholds)
-                if len(wheres) == 0:
-                    zero_label_count += 1
-
-                    if zero_prediction_strategy == 'max':
-                        max_label = p.argmax()
-                        predicted_labels.append(str(max_label))
-                    elif zero_prediction_strategy == 'reduce_threshold':
-                        reduced_thresholds = thresholds
-                        while len(wheres) == 0:
-                            if isinstance(thresholds, list):
-                                reduced_thresholds = [th / 2.0 for th in reduced_thresholds]
-                            elif isinstance(thresholds, float):
-                                reduced_thresholds = reduced_thresholds / 2.0
-                            wheres = np.argwhere(p > reduced_thresholds)
-                        predicted_labels.append(' '.join(map(str, wheres.flatten())))
-                    else:
-                        raise ValueError(zero_prediction_strategy)
-                else:
-                    predicted_labels.append(' '.join(map(str, wheres.flatten())))
-    print(f'Zero predictions: {zero_label_count}')
-
-    # Save csv
-    df['Predicted'] = predicted_labels
-    filepath = submission_dir / f'{name}.csv'
-    df.to_csv(str(filepath), index=False)
-    print(f'Save: {filepath}')
