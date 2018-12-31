@@ -713,6 +713,14 @@ def get_enhanced_full_train_df():
     return df
 
 
+def get_ex_image_full_db_supports():
+    supports = set()
+    with open(ex_images_full_db_support_file, 'r') as fp:
+        for line in fp:
+            supports.add(line.rstrip())
+    return supports
+
+
 def _mls_enhanced_full_kfold_dfs():
     df = get_enhanced_full_train_df()
     label_mat = multilabel_binary_representation(df, sparse=False)

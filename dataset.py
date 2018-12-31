@@ -15,7 +15,8 @@ from data import (
     load_4ch_image_ex,
     Stats,
     train_image_dir,
-    test_image_dir
+    test_image_dir,
+    get_ex_image_full_db_supports
 )
 
 
@@ -23,12 +24,15 @@ class HPAEnhancedDataset(Dataset):
     def __init__(self, df, size=(512, 512),
                  use_augmentation=True,
                  use_cutout=False, cutout_ratio=0.2,
-                 image_db=None, ex_image_db=None):
+                 image_db=None, ex_image_db=None, ex_image_full_db=None):
         self.df = df
         self.size = size
         self.use_augmentation = use_augmentation
         self.image_db = image_db
         self.ex_image_db = ex_image_db
+        self.ex_image_full_db = ex_image_full_db
+
+        self.ex_image_full_db_ids = get_ex_image_full_db_supports() if ex_image_db is not None else set()
 
         print(f'Size: {self.size}')
 
@@ -71,7 +75,10 @@ class HPAEnhancedDataset(Dataset):
             if source == 'train':
                 im = self.image_db[f'train/{image_id}'].value
             elif source == 'ex':
-                im = self.ex_image_db[f'ex/{image_id}'].value
+                if image_id in self.ex_image_full_db_ids:
+                    im = self.ex_image_full_db[f'ex/{image_id}'].value
+                else:
+                    im = self.ex_image_db[f'ex/{image_id}'].value
         else:
             if source == 'train':
                 im = load_4ch_image_train(image_id)
