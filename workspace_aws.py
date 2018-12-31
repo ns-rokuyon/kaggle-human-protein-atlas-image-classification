@@ -23,7 +23,8 @@ project_dir = drive_kaggle_dir / COMPETITION_NAME
 workspace_dir = Path('/home/ubuntu/kaggle-human-protein-atlas-image-classification')
 
 # Directory to save models
-model_dir = project_dir / 'models'
+#model_dir = project_dir / 'models'
+model_dir = data_root_dir / 'models'
 
 # Directory to save pre-splited set
 list_dir = workspace_dir / 'lists'
