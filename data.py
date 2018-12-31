@@ -149,6 +149,10 @@ def open_ex_images_h5_file():
     return h5py.File(str(ex_images_h5_file), 'r')
 
 
+def open_ex_images_full_h5_file():
+    return h5py.File(str(ex_full_images_h5_file), 'r')
+
+
 def open_test_images_h5_file():
     return h5py.File(str(test_images_h5_file), 'r')
 
