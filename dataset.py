@@ -34,6 +34,9 @@ class HPAEnhancedDataset(Dataset):
 
         self.ex_image_full_db_ids = get_ex_image_full_db_supports() if ex_image_db is not None else set()
 
+        if self.ex_image_full_db_ids:
+            print('Use ex_image_full_db')
+
         print(f'Size: {self.size}')
 
         self.transformer = transforms.Compose([
@@ -52,6 +55,24 @@ class HPAEnhancedDataset(Dataset):
                 alb.RandomBrightness(p=0.1),
                 alb.RandomContrast(p=0.1)
             ])
+
+            self.hard_augmentor = alb.Compose([
+                alb.HorizontalFlip(p=0.5),
+                alb.VerticalFlip(p=0.5),
+                alb.RandomRotate90(p=0.5),
+                alb.OneOf([
+                    alb.IAAAdditiveGaussianNoise(p=0.5),
+                    alb.GaussNoise(p=0.5)
+                ], p=0.5),
+                alb.ShiftScaleRotate(shift_limit=0.0625, scale_limit=0.2, rotate_limit=45, p=0.5),
+                alb.OneOf([
+                    alb.OpticalDistortion(p=1),
+                    alb.GridDistortion(p=1),
+                ], p=0.5),
+                alb.RandomBrightness(p=0.5),
+                alb.RandomContrast(p=0.5)
+            ])
+
             if use_cutout:
                 cutout_length = int(cutout_ratio * size[0])
                 self.transformer.transforms.append(Cutout(n_holes=1, length=cutout_length))
@@ -87,7 +108,10 @@ class HPAEnhancedDataset(Dataset):
             im = Image.fromarray(im)
 
         if self.use_augmentation:
-            aug = self.augmentor(image=im)
+            if source == 'ex':
+                aug = self.hard_augmentor(image=im)
+            else:
+                aug = self.augmentor(image=im)
             im = aug['image']
 
         im = self.resizer.apply(im)

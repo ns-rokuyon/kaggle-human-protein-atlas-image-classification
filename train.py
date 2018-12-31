@@ -38,24 +38,27 @@ def train(model_keyname, cv, batch_size=24, epoch_break_at=None):
     device = torch.device('cuda')
     print(f'device: {device}')
 
-    train_df, val_df = get_mls_undersampled_enhanced_train_val_df_fold(cv)
+    train_df, val_df = get_mls_enhanced_full_train_val_df_fold(cv)
+    train_df = oversample_brian_method(train_df)
+
     image_db = open_images_h5_file()
     ex_image_db = open_ex_images_h5_file()
+    ex_image_full_db = open_ex_images_full_h5_file()
 
-    train_dataset = HPAEnhancedDataset(train_df, size=(512, 512), use_cutout=True, cutout_ratio=0.2, use_augmentation=True,
-                                    image_db=image_db, ex_image_db=ex_image_db)
+    train_dataset = HPAEnhancedDataset(train_df, size=(512, 512), use_cutout=True, cutout_ratio=0.2,
+                                       use_augmentation=True, image_db=image_db,
+                                       ex_image_db=ex_image_db, ex_image_full_db=ex_image_full_db)
     val_dataset = HPAEnhancedDataset(val_df, size=(512, 512), use_augmentation=False,
-                                    image_db=image_db, ex_image_db=ex_image_db)
+                                     image_db=image_db, ex_image_db=ex_image_db, ex_image_full_db=ex_image_full_db)
 
-    sampler = create_weighted_random_sampler_v2(train_df)
-
-    model = M.ResNet34v3()
+    model = M.ResNet18v3()
     model = model.to(device)
 
-    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, sampler=sampler, pin_memory=True, drop_last=True)
+    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True,
+                                               pin_memory=True, drop_last=True)
     val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=24, shuffle=False, pin_memory=True)
 
-    optimizer = AdamW(model.parameters(), lr=0.0001, weight_decay=3e-05, amsgrad=True)
+    optimizer = AdamW(model.parameters(), lr=0.0001, weight_decay=1e-04, amsgrad=True)
 
     # Train fc only
     M.freeze_backbone(model)
@@ -67,8 +70,9 @@ def train(model_keyname, cv, batch_size=24, epoch_break_at=None):
     
     # Train full model
     M.unfreeze(model)
-    scheduler = create_cosine_annealing_lr_scheduler(optimizer, batch_size, epoch_size=len(train_dataset), restart_period=5, t_mult=1.0)
-    model, best_score = training_v2.train(model, optimizer, 40, train_loader, val_loader, scheduler,
+    scheduler = create_cosine_annealing_lr_scheduler(optimizer, batch_size, epoch_size=len(train_dataset),
+                                                     restart_period=7, t_mult=1.0)
+    model, best_score = training_v2.train(model, optimizer, 60, train_loader, val_loader, scheduler,
                                           device=device,
                                           model_keyname=model_keyname,
                                           epoch_break_at=epoch_break_at,
