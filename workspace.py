@@ -53,8 +53,9 @@ mls_undersampled_enhanced_kfold_cv5_list_dir = kfold_list_dir / 'mls_us_enh_cv5_
 mls_enhanced_kfold_cv5_list_dir = kfold_list_dir / 'mls_enh_cv5_v2'
 
 # Enhanced full dataset
-enhanced_full_train_csv = list_dir / 'enhanced_full_train.csv'
-ex_full_images_h5_file = list_dir / 'ex_full_images.h5'
+enhanced_full_train_csv = list_dir / 'enhanced_full_0_train.csv'
+ex_full_images_h5_file = list_dir / 'ex_full_images_0.h5'
+mls_enhanced_full_kfold_cv5_list_dir = kfold_list_dir / 'mls_enh_full_cv5_v2'
 
 
 def setup():
@@ -70,3 +71,4 @@ def setup():
     ex_image_dir.mkdir(parents=True, exist_ok=True)
     mls_undersampled_enhanced_kfold_cv5_list_dir.mkdir(parents=True, exist_ok=True)
     mls_enhanced_kfold_cv5_list_dir.mkdir(parents=True, exist_ok=True)
+    mls_enhanced_full_kfold_cv5_list_dir.mkdir(parents=True, exist_ok=True)
