@@ -33,7 +33,8 @@ list_dir = workspace_dir / 'lists'
 submission_dir = project_dir / 'submissions'
 
 # Directory to save log file
-log_dir = project_dir / 'logs'
+#log_dir = project_dir / 'logs'
+log_dir = data_root_dir / 'logs'
 
 # kfold list dir
 kfold_list_dir = list_dir / 'kfold'
