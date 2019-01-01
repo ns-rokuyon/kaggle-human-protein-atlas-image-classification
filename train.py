@@ -56,9 +56,9 @@ def train(model_keyname, cv, batch_size=24, epoch_break_at=None):
     model.load_state_dict(weight)
     model = model.to(device)
 
-    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=4,
+    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True,
                                                pin_memory=True, drop_last=True)
-    val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=24, shuffle=False, num_workers=2, pin_memory=True)
+    val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=24, shuffle=False, pin_memory=True)
 
     optimizer = AdamW(model.parameters(), lr=0.0001, weight_decay=1e-04, amsgrad=True)
     optim_snap = torch.load(str(model_dir / 'resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_cv0_dict.optim'))
