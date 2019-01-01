@@ -41,12 +41,15 @@ def train(model_keyname, cv, batch_size=24, epoch_break_at=None):
     train_df, val_df = get_mls_enhanced_full_train_val_df_fold(cv)
     train_df = oversample_brian_method(train_df)
 
-    #image_db = open_images_h5_file()
-    #ex_image_db = open_ex_images_h5_file()
-    #ex_image_full_db = open_ex_images_full_h5_file()
+    image_db = open_images_h5_file()
+    ex_image_db = open_ex_images_h5_file()
+    ex_image_full_db = open_ex_images_full_h5_file()
 
-    train_dataset = HPAEnhancedDatasetMP(train_df, size=(512, 512), use_cutout=True, cutout_ratio=0.2, use_augmentation=True)
-    val_dataset = HPAEnhancedDatasetMP(val_df, size=(512, 512), use_augmentation=False)
+    train_dataset = HPAEnhancedDataset(train_df, size=(512, 512), use_cutout=True, cutout_ratio=0.2,
+                                       use_augmentation=True, image_db=image_db,
+                                       ex_image_db=ex_image_db, ex_image_full_db=ex_image_full_db)
+    val_dataset = HPAEnhancedDataset(val_df, size=(512, 512), use_augmentation=False,
+                                     image_db=image_db, ex_image_db=ex_image_db, ex_image_full_db=ex_image_full_db)
 
     model = M.ResNet18v3()
     weight = torch.load(str(model_dir / 'resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_cv0_dict.model'))
