@@ -250,7 +250,8 @@ def show_classification_report(model, cv=0, device=None, with_tta=False, use_ada
 
 def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
                         use_adaptive_thresholds=True, fixed_threshold=0.5,
-                        use_mls_v2=False, use_mls_us_enh=False, use_mls_enh=False):
+                        use_mls_v2=False, use_mls_us_enh=False,
+                        use_mls_enh=False, use_mls_enh_full=False):
     use_role_prediction = isinstance(model, dict)
     print(f'Use role prediction: {use_role_prediction}')
 
@@ -263,12 +264,17 @@ def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
     elif use_mls_enh:
         print('Load val_df MLS Enhanced')
         _, val_df = get_mls_enhanced_train_val_df_fold(cv)
+    elif use_mls_enh_full:
+        print('Load val_df MLS Enhanced full')
+        _, val_df = get_mls_enhanced_full_train_val_df_fold(cv)
     else:
         _, val_df = get_multilabel_stratified_train_val_df_fold(cv)
 
     image_db = open_images_h5_file()
     ex_image_db = open_ex_images_h5_file()
-    val_dataset = HPAEnhancedDataset(val_df, size=(512, 512), image_db=image_db, ex_image_db=ex_image_db, use_augmentation=False)
+    ex_image_full_db = open_ex_images_full_h5_file()
+    val_dataset = HPAEnhancedDataset(val_df, size=(512, 512), image_db=image_db, ex_image_db=ex_image_db,
+                                     ex_image_full_db=ex_image_full_db, use_augmentation=False)
     val_iter = torch.utils.data.DataLoader(val_dataset, batch_size=8, shuffle=False, pin_memory=True)
 
     df = get_test_df()
