@@ -41,16 +41,12 @@ def train(model_keyname, cv, batch_size=24, epoch_break_at=None):
     train_df, val_df = get_mls_enhanced_full_train_val_df_fold(cv)
     train_df = oversample_brian_method(train_df)
 
-    #image_db = open_images_h5_file()
-    #ex_image_db = open_ex_images_h5_file()
-    #ex_image_full_db = open_ex_images_full_h5_file()
-
     train_dataset = HPAEnhancedDatasetMP(train_df, size=(512, 512), use_cutout=True, cutout_ratio=0.2, use_augmentation=True)
     val_dataset = HPAEnhancedDatasetMP(val_df, size=(512, 512), use_augmentation=False)
 
-    model = M.ResNet18v3()
-    weight = torch.load(str(model_dir / 'resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_cv0_dict.model'))
-    model.load_state_dict(weight)
+    model = M.ResNet18v4()
+    #weight = torch.load(str(model_dir / 'resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_cv0_dict.model'))
+    #model.load_state_dict(weight)
     model = model.to(device)
 
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True,
@@ -58,23 +54,23 @@ def train(model_keyname, cv, batch_size=24, epoch_break_at=None):
     val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=24, shuffle=False, pin_memory=True, num_workers=8)
 
     optimizer = AdamW(model.parameters(), lr=0.0001, weight_decay=1e-04, amsgrad=True)
-    optim_snap = torch.load(str(model_dir / 'resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_cv0_dict.optim'))
-    optimizer.load_state_dict(optim_snap)
+    #optim_snap = torch.load(str(model_dir / 'resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_cv0_dict.optim'))
+    #optimizer.load_state_dict(optim_snap)
 
     # Train fc only
-    #M.freeze_backbone(model)
-    #model, best_score, current_lr = training.train(model, optimizer, 1, train_loader, val_loader,
-    #                                               device=device,
-    #                                               epoch_break_at=epoch_break_at,
-    #                                               model_keyname=model_keyname,
-    #                                               criterion='bce')
+    M.freeze_backbone(model)
+    model, best_score, current_lr = training.train(model, optimizer, 1, train_loader, val_loader,
+                                                   device=device,
+                                                   epoch_break_at=epoch_break_at,
+                                                   model_keyname=model_keyname,
+                                                   criterion='bce')
     
     # Train full model
     M.unfreeze(model)
     scheduler = create_cosine_annealing_lr_scheduler(optimizer, batch_size, epoch_size=len(train_dataset),
                                                      restart_period=7, t_mult=1.0)
-    scheduler_snap = torch.load(str(model_dir / 'resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_cv0_dict.scheduler'))
-    scheduler.load_state_dict(scheduler_snap)
+    #scheduler_snap = torch.load(str(model_dir / 'resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_cv0_dict.scheduler'))
+    #scheduler.load_state_dict(scheduler_snap)
     model, best_score = training_v2.train(model, optimizer, 60, train_loader, val_loader, scheduler,
                                           device=device,
                                           model_keyname=model_keyname,

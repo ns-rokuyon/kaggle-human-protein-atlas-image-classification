@@ -33,7 +33,7 @@ def make_backbone_resnet34(pretrained=True, **kwargs):
     return backbone
 
 
-def make_backbone_resnet18(pretrained=True, **kwargs):
+def make_backbone_resnet18(pretrained=True, change_maxpool=False, **kwargs):
     backbone = ResNet(BasicBlock, [2, 2, 2, 2], **kwargs)
     del backbone.fc
     del backbone.avgpool
@@ -51,6 +51,11 @@ def make_backbone_resnet18(pretrained=True, **kwargs):
     backbone.conv1.weight = nn.Parameter(torch.cat((conv1_weight, torch.zeros(64, 1, 7, 7)), dim=1))
     torch.nn.init.kaiming_normal_(backbone.conv1.weight[:, 3])
     print('Set 4 channel input conv1')
+
+    if change_maxpool:
+        del backbone.maxpool
+        backbone.maxpool = nn.MaxPool2d(kernel_size=3, stride=1, padding=1)
+        print('Change maxpool stride to 1')
 
     return backbone
 
@@ -185,6 +190,46 @@ class ResNet18v3(nn.Module):
     def __init__(self, pretrained=True, **kwargs):
         super().__init__()
         self.backbone = make_backbone_resnet18(pretrained=pretrained,
+                                               **kwargs)
+        self.gamp = GAMP()
+        self.bn1 = nn.BatchNorm1d(1024)
+        self.bn2 = nn.BatchNorm1d(512)
+        self.dropout1 = nn.Dropout(0.5)
+        self.dropout2 = nn.Dropout(0.5)
+        self.relu1 = nn.ReLU(inplace=True)
+        self.fc1 = nn.Linear(1024, 512, bias=True)
+        self.fc2 = nn.Linear(512, n_class, bias=True)
+
+    def forward(self, x):
+        x = self.backbone.conv1(x)
+        x = self.backbone.bn1(x)
+        x = self.backbone.relu(x)
+        x = self.backbone.maxpool(x)
+
+        x = self.backbone.layer1(x)
+        x = self.backbone.layer2(x)
+        x = self.backbone.layer3(x)
+        x = self.backbone.layer4(x)
+
+        x = self.gamp(x)
+
+        x = self.bn1(x)
+        x = self.dropout1(x)
+        x = self.fc1(x)
+        x = self.relu1(x)
+
+        x = self.bn2(x)
+        x = self.dropout2(x)
+        logit = self.fc2(x)
+
+        return logit
+
+
+class ResNet18v4(nn.Module):
+    def __init__(self, pretrained=True, **kwargs):
+        super().__init__()
+        self.backbone = make_backbone_resnet18(pretrained=pretrained,
+                                               change_maxpool=True,
                                                **kwargs)
         self.gamp = GAMP()
         self.bn1 = nn.BatchNorm1d(1024)
