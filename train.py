@@ -71,7 +71,7 @@ def train(model_keyname, cv, batch_size=24, epoch_break_at=None):
                                                      restart_period=7, t_mult=1.0)
     #scheduler_snap = torch.load(str(model_dir / 'resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_cv0_dict.scheduler'))
     #scheduler.load_state_dict(scheduler_snap)
-    model, best_score = training_v2.train(model, optimizer, 60, train_loader, val_loader, scheduler,
+    model, best_score = training_v2.train(model, optimizer, 30, train_loader, val_loader, scheduler,
                                           device=device,
                                           model_keyname=model_keyname,
                                           epoch_break_at=epoch_break_at,
