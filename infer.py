@@ -349,3 +349,75 @@ def load_models(model_filenames, device=None):
         print(f'Loaded: {modelfile}')
     return models
 
+
+def submission_pipeline_ensemble(models, name, cvs, device=None, with_tta=False,
+                                 use_mls_enh_full=False):
+
+    assert use_mls_enh_full
+
+    image_db = open_images_h5_file()
+    ex_image_db = open_ex_images_h5_file()
+    ex_image_full_db = open_ex_images_full_h5_file()
+
+    accumurated_best_thresholds = [0.0 for _ in range(n_class)]
+    for cv, model in zip(cvs, models):
+        print(f'Load val_df MLS Enhanced full CV={cv}')
+        _, val_df = get_mls_enhanced_full_train_val_df_fold(cv)
+
+        val_dataset = HPAEnhancedDataset(val_df, size=(512, 512), image_db=image_db, ex_image_db=ex_image_db,
+                                         ex_image_full_db=ex_image_full_db, use_augmentation=False)
+        val_iter = torch.utils.data.DataLoader(val_dataset, batch_size=8, shuffle=False, pin_memory=True)
+
+        print(f'Compute threshold for CV={cv} ...')
+        thresholds = compute_best_thresholds(model, val_iter, average='binary', device=device,
+                                             use_sigmoid=True, threshold=None, with_tta=with_tta)
+        print(f'Best thresholds(CV={cv}): {thresholds}')
+        
+        accumurated_best_thresholds = [at + t for at, t in zip(accumurated_best_thresholds, thresholds)]
+
+    best_ensemble_thresholds = [t / len(cvs) for t in accumurated_best_thresholds]
+    print(f'Best ensemble thresholds: {best_ensemble_thresholds}')
+
+    df = get_test_df()
+    test_image_db = open_test_images_h5_file()
+    dataset = HPATestDataset(df, size=(512, 512), image_db=test_image_db)
+    test_iter = torch.utils.data.DataLoader(dataset, batch_size=8, shuffle=False, pin_memory=True)
+
+    # Prediction
+    zero_prediction_strategy = 'reduce_threshold'
+    zero_label_count = 0
+    predicted_labels = []
+    with torch.no_grad():
+        for x in progress_bar(test_iter):
+            pred = predict(models, x, device=device, use_sigmoid=True,
+                           threshold=None, with_tta=with_tta)
+
+            for p in pred:
+                wheres = np.argwhere(p > thresholds)
+                if len(wheres) == 0:
+                    zero_label_count += 1
+
+                    if zero_prediction_strategy == 'max':
+                        max_label = p.argmax()
+                        predicted_labels.append(str(max_label))
+                    elif zero_prediction_strategy == 'reduce_threshold':
+                        reduced_thresholds = thresholds
+                        while len(wheres) == 0:
+                            if isinstance(thresholds, list):
+                                reduced_thresholds = [th / 2.0 for th in reduced_thresholds]
+                            elif isinstance(thresholds, float):
+                                reduced_thresholds = reduced_thresholds / 2.0
+                            wheres = np.argwhere(p > reduced_thresholds)
+                        predicted_labels.append(' '.join(map(str, wheres.flatten())))
+                    else:
+                        raise ValueError(zero_prediction_strategy)
+                else:
+                    predicted_labels.append(' '.join(map(str, wheres.flatten())))
+    print(f'Zero predictions: {zero_label_count}')
+
+    # Save csv
+    df['Predicted'] = predicted_labels
+    filepath = submission_dir / f'{name}.csv'
+    df.to_csv(str(filepath), index=False)
+    print(f'Save: {filepath}')
+    return df
