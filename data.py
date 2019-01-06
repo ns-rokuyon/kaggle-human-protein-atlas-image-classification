@@ -85,6 +85,15 @@ ex_image_base_url = 'http://v18.proteinatlas.org/images/'
 weak_classes = {'8', '9', '10', '15', '17', '20', '24', '26', '27'}
 
 
+public_lb_scores = [
+    0.548,      # resnet18v4_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_th02_cv0
+    0.551,      # resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_th02_phase2_cv0_1 (only cv1)
+    0.573,      # resnet18v4_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_th02_cv2
+    0.555,      # resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_th02_cv3
+    0.554       # resnet18v4_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_th02_cv4
+]
+
+
 class Stats:
     mean = np.array([0.08069, 0.05258, 0.05487, 0.08282])
     std = np.array([0.13704, 0.10145, 0.15313, 0.13814])
