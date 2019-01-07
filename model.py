@@ -186,6 +186,33 @@ class ResNet18(nn.Module):
         return logit
 
 
+class ResNet18v2(nn.Module):
+    def __init__(self, pretrained=True, **kwargs):
+        super().__init__()
+        self.backbone = make_backbone_resnet18(pretrained=pretrained,
+                                               **kwargs)
+        self.gap = nn.AdaptiveAvgPool2d(1)
+        self.bn = nn.BatchNorm1d(512)
+        self.fc = nn.Linear(512, n_class)
+
+    def forward(self, x):
+        x = self.backbone.conv1(x)
+        x = self.backbone.bn1(x)
+        x = self.backbone.relu(x)
+        x = self.backbone.maxpool(x)
+
+        x = self.backbone.layer1(x)
+        x = self.backbone.layer2(x)
+        x = self.backbone.layer3(x)
+        x = self.backbone.layer4(x)
+
+        x = self.gap(x).view(x.size(0), -1)
+        x = self.bn(x)
+        logit = self.fc(x)
+
+        return logit
+
+
 class ResNet18v3(nn.Module):
     def __init__(self, pretrained=True, **kwargs):
         super().__init__()
