@@ -8,6 +8,7 @@ import infer
 import model as M
 import training
 import training_v2
+import training_exp
 from data import *
 from dataset import *
 from optim import AdamW
@@ -25,7 +26,56 @@ def parse_args():
     parser.add_argument('--model-keyname', default='test__')
     parser.add_argument('--epoch-break-at', type=int, default=0,
                         help='Break epoch at N iteration for debug')
+    parser.add_argument('--experimental', action='store_true',
+                        help='Use experimental settings')
     return parser.parse_args()
+
+
+def train_experimental(model_keyname, cv, batch_size=128, epoch_break_at=None):
+    print('*** train_experimental ***')
+    print(f'Train start: model_keyname={model_keyname}, cv={cv}, '
+          f'batch_size={batch_size}, epoch_break_at={epoch_break_at}')
+    
+    setup()
+
+    torch.cuda.is_available()
+    device = torch.device('cuda')
+    print(f'device: {device}')
+
+    train_df, val_df = get_mls_enhanced_full_train_val_df_fold(cv)
+    train_df = oversample_brian_method(train_df)
+
+    train_dataset = HPAEnhancedDatasetMP(train_df, size=(512, 512), use_cutout=True, cutout_ratio=0.2, use_augmentation=True)
+    val_dataset = HPAEnhancedDatasetMP(val_df, size=(512, 512), use_augmentation=False)
+
+    model = M.ResNet18v2()
+    model = model.to(device)
+
+    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True,
+                                               pin_memory=True, drop_last=True, num_workers=8)
+    val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=24, shuffle=False, pin_memory=True, num_workers=8)
+
+    optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9, nesterov=True)
+
+    # Train fc only
+    M.freeze_backbone(model)
+    model, best_score, current_lr = training.train(model, optimizer, 1, train_loader, val_loader,
+                                                   device=device,
+                                                   epoch_break_at=epoch_break_at,
+                                                   model_keyname=model_keyname,
+                                                   criterion='bce')
+
+    # Train full model
+    M.unfreeze(model)
+    scheduler = create_lr_scheduler(optimizer, patience=4, factor=0.1)
+
+    model, best_score = training_exp.train(model, optimizer, 30, train_loader, val_loader, scheduler,
+                                           device=device,
+                                           model_keyname=model_keyname,
+                                           epoch_break_at=epoch_break_at,
+                                           criterion='bce')
+    
+    print(f'Done: bestscore={best_score}')
 
 
 def train(model_keyname, cv, batch_size=24, epoch_break_at=None):
@@ -90,10 +140,18 @@ def main():
 
     if args.train:
         epoch_break_at = args.epoch_break_at if args.epoch_break_at > 0 else None
-        train(model_keyname=args.model_keyname,
-              cv=args.cv,
-              batch_size=args.batch_size,
-              epoch_break_at=epoch_break_at)
+
+        if args.experimental:
+            train_experimental(model_keyname=args.model_keyname,
+                               cv=args.cv,
+                               batch_size=args.batch_size,
+                               epoch_break_at=epoch_break_at)
+
+        else:
+            train(model_keyname=args.model_keyname,
+                  cv=args.cv,
+                  batch_size=args.batch_size,
+                  epoch_break_at=epoch_break_at)
 
 
 if __name__ == '__main__':
