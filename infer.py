@@ -273,6 +273,67 @@ def compute_best_thresholds_ensemble(models, cvs, **kwargs):
     return best_thresholds
 
 
+def compute_best_thresholds_ensemble_v2(models, cvs, **kwargs):
+    """
+    """
+    gc.collect()
+    torch.cuda.empty_cache()
+
+    image_db = open_images_h5_file()
+    ex_image_db = open_ex_images_h5_file()
+    ex_image_full_db = open_ex_images_full_h5_file()
+
+    y_true = []
+    y_pred = []
+
+    for cv, model in zip(cvs, models):
+        print(f'Load val_df MLS Enhanced full CV={cv}')
+        _, val_df = get_mls_enhanced_full_train_val_df_fold(cv)
+
+        val_dataset = HPAEnhancedDataset(val_df, size=(512, 512), image_db=image_db, ex_image_db=ex_image_db,
+                                         ex_image_full_db=ex_image_full_db, use_augmentation=False)
+        val_iter = torch.utils.data.DataLoader(val_dataset, batch_size=8, shuffle=False, pin_memory=True)
+
+        with torch.no_grad():
+            for data, target in progress_bar(val_iter):
+                kwargs['threshold'] = None
+                pred = predict(model, data, **kwargs)
+
+                y_true.append(target.cpu().numpy())
+                y_pred.append(pred)
+
+    y_true = np.concatenate(y_true)
+    y_pred = np.concatenate(y_pred)
+
+    ths = list(np.arange(0.01, 1.0, 0.01).astype(np.float32))
+    best_thresholds = [0.5 for _ in range(n_class)] # Default 0.5
+    for class_index in range(n_class):
+        best_score = 0.0
+        best_threshold_for_class = 0.0
+
+        for th in ths:
+            thresholds = [th if i == class_index else best_thresholds[i]
+                          for i in range(n_class)]
+            score = f1_score(y_true, (y_pred > thresholds).astype(np.float32), average='macro')
+            if best_score < score:
+                best_score = score
+                best_threshold_for_class = th
+
+        best_thresholds[class_index] = best_threshold_for_class
+
+        print(f'Class: {class_index}, Best threshold for class: {best_threshold_for_class}, '
+              f'Best F1 score: {best_score}, Best threshold: {best_thresholds}')
+        print('-----')
+
+    best_f1 = f1_score(y_true, (y_pred > best_thresholds).astype(np.float32), average='macro')
+    default_f1 = f1_score(y_true, (y_pred > 0.5).astype(np.float32), average='macro')
+
+    print(f'Best F1: {best_f1}')
+    print(f'Default F1: {default_f1}')
+
+    return best_thresholds
+
+
 def show_classification_report(model, cv=0, device=None, with_tta=False, use_adaptive_thresholds=True):
     model.eval()
 
@@ -493,13 +554,19 @@ def submission_pipeline_ensemble(models, name, cvs, device=None, with_tta=False,
 
 
 def submission_pipeline_ensemble_v2(models, name, cvs, device=None, with_tta=False,
-                                    use_mls_enh_full=False):
+                                    use_mls_enh_full=False, threshold_computing_v2=False):
     assert use_mls_enh_full
 
-    print(f'Compute threshold ...')
-    best_ensemble_thresholds = compute_best_thresholds_ensemble(models, cvs, device=device,
-                                                                use_sigmoid=True, threshold=None,
-                                                                with_tta=with_tta)
+    if threshold_computing_v2:
+        print('Compute threshold (v2) ...')
+        best_ensemble_thresholds = compute_best_thresholds_ensemble_v2(models, cvs, device=device,
+                                                                       use_sigmoid=True, threshold=None,
+                                                                       with_tta=with_tta)
+    else:
+        print(f'Compute threshold ...')
+        best_ensemble_thresholds = compute_best_thresholds_ensemble(models, cvs, device=device,
+                                                                    use_sigmoid=True, threshold=None,
+                                                                    with_tta=with_tta)
     print(f'Best ensemble thresholds: {best_ensemble_thresholds}')
 
     df = get_test_df()
