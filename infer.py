@@ -273,7 +273,7 @@ def compute_best_thresholds_ensemble(models, cvs, **kwargs):
     return best_thresholds
 
 
-def compute_best_thresholds_ensemble_v2(models, cvs, **kwargs):
+def compute_best_thresholds_ensemble_v3(models, cvs, **kwargs):
     """
     """
     gc.collect()
@@ -554,12 +554,12 @@ def submission_pipeline_ensemble(models, name, cvs, device=None, with_tta=False,
 
 
 def submission_pipeline_ensemble_v2(models, name, cvs, device=None, with_tta=False,
-                                    use_mls_enh_full=False, threshold_computing_v2=False):
+                                    use_mls_enh_full=False, threshold_computing_v3=False):
     assert use_mls_enh_full
 
-    if threshold_computing_v2:
-        print('Compute threshold (v2) ...')
-        best_ensemble_thresholds = compute_best_thresholds_ensemble_v2(models, cvs, device=device,
+    if threshold_computing_v3:
+        print('Compute threshold (v3) ...')
+        best_ensemble_thresholds = compute_best_thresholds_ensemble_v3(models, cvs, device=device,
                                                                        use_sigmoid=True, threshold=None,
                                                                        with_tta=with_tta)
     else:
