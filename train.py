@@ -75,7 +75,7 @@ def train_experimental(model_keyname, cv, batch_size=128, epoch_break_at=None):
     scheduler_snap = torch.load(str(model_dir / 'resnet18v2_experimental_bs128_cv0_dict.scheduler'))
     scheduler.load_state_dict(scheduler_snap)
 
-    model, best_score = training_exp.train(model, optimizer, 30, train_loader, val_loader, scheduler,
+    model, best_score = training_exp.train(model, optimizer, 60, train_loader, val_loader, scheduler,
                                            device=device,
                                            model_keyname=model_keyname,
                                            epoch_break_at=epoch_break_at,
