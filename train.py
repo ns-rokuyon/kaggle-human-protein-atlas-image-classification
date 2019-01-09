@@ -49,6 +49,8 @@ def train_experimental(model_keyname, cv, batch_size=128, epoch_break_at=None):
     val_dataset = HPAEnhancedDatasetMP(val_df, size=(512, 512), use_augmentation=False)
 
     model = M.ResNet18v2()
+    weight = torch.load(str(model_dir / 'resnet18v2_experimental_bs128_cv0_dict.model'))
+    model.load_state_dict(weight)
     model = model.to(device)
 
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True,
@@ -56,18 +58,22 @@ def train_experimental(model_keyname, cv, batch_size=128, epoch_break_at=None):
     val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=24, shuffle=False, pin_memory=True, num_workers=8)
 
     optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9, nesterov=True)
+    optim_snap = torch.load(str(model_dir / 'resnet18v2_experimental_bs128_cv0_dict.optim'))
+    optimizer.load_state_dict(optim_snap)
 
     # Train fc only
-    M.freeze_backbone(model)
-    model, best_score, current_lr = training.train(model, optimizer, 1, train_loader, val_loader,
-                                                   device=device,
-                                                   epoch_break_at=epoch_break_at,
-                                                   model_keyname=model_keyname,
-                                                   criterion='bce')
+    #M.freeze_backbone(model)
+    #model, best_score, current_lr = training.train(model, optimizer, 1, train_loader, val_loader,
+    #                                               device=device,
+    #                                               epoch_break_at=epoch_break_at,
+    #                                               model_keyname=model_keyname,
+    #                                               criterion='bce')
 
     # Train full model
     M.unfreeze(model)
     scheduler = create_lr_scheduler(optimizer, patience=4, factor=0.1)
+    scheduler_snap = torch.load(str(model_dir / 'resnet18v2_experimental_bs128_cv0_dict.scheduler'))
+    scheduler.load_state_dict(scheduler_snap)
 
     model, best_score = training_exp.train(model, optimizer, 30, train_loader, val_loader, scheduler,
                                            device=device,
