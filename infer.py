@@ -35,7 +35,8 @@ def evaluate(model, loader, **kwargs):
 
 def predict(model, x, device=None,
             use_sigmoid=True, threshold=0.5,
-            with_tta=False, prob_weights=None):
+            with_tta=False, prob_weights=None,
+            heavy_tta=False):
     """
     Returns
     -------
@@ -65,15 +66,39 @@ def predict(model, x, device=None,
         y = y.cpu().numpy().astype(np.float32)
 
         if with_tta:
-            logit = model(x.flip(3))
+            if heavy_tta:
+                logit = model(x.flip(3))
+                if use_sigmoid:
+                    y_tta = torch.sigmoid(logit)
+                else:
+                    y_tta = logit
+                y += y_tta.cpu().numpy().astype(np.float32)
 
-            if use_sigmoid:
-                y_tta = torch.sigmoid(logit)
+                logit = model(x.flip(2))
+                if use_sigmoid:
+                    y_tta = torch.sigmoid(logit)
+                else:
+                    y_tta = logit
+                y += y_tta.cpu().numpy().astype(np.float32)
+
+                logit = model(x.flip(2).flip(3))
+                if use_sigmoid:
+                    y_tta = torch.sigmoid(logit)
+                else:
+                    y_tta = logit
+                y += y_tta.cpu().numpy().astype(np.float32)
+
+                y = 0.25 * y
             else:
-                y_tta = logit
+                logit = model(x.flip(3))
 
-            y += y_tta.cpu().numpy().astype(np.float32)
-            y = 0.5 * y
+                if use_sigmoid:
+                    y_tta = torch.sigmoid(logit)
+                else:
+                    y_tta = logit
+
+                y += y_tta.cpu().numpy().astype(np.float32)
+                y = 0.5 * y
         
         # Accumurate to ensemble
         if prob_weights is None:
@@ -378,12 +403,17 @@ def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
                         use_adaptive_thresholds=True, fixed_threshold=0.5,
                         use_mls_v2=False, use_mls_us_enh=False,
                         use_mls_enh=False, use_mls_enh_full=False,
-                        prob_weights=None):
+                        prob_weights=None,
+                        zero_prediction_strategy='reduce_threshold',
+                        heavy_tta=False):
     use_role_prediction = isinstance(model, dict)
     print(f'Use role prediction: {use_role_prediction}')
 
     if prob_weights is not None:
         print(f'Use prob_weights: {prob_weights}')
+
+    print(f'Zero prediction strategy: {zero_prediction_strategy}')
+    print(f'Heavy TTA: {heavy_tta}')
 
     if use_mls_v2:
         print('Load val_df MLS v2')
@@ -422,7 +452,7 @@ def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
     print(f'Thresholds: {thresholds}')
 
     # Prediction
-    zero_prediction_strategy = 'reduce_threshold'
+    #zero_prediction_strategy = 'reduce_threshold'
     zero_label_count = 0
     predicted_labels = []
     with torch.no_grad():
@@ -432,7 +462,8 @@ def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
                                     threshold=None, with_tta=with_tta)
             else:
                 pred = predict(model, x, device=device, use_sigmoid=True,
-                            threshold=None, with_tta=with_tta, prob_weights=prob_weights)
+                               threshold=None, with_tta=with_tta, prob_weights=prob_weights,
+                               heavy_tta=heavy_tta)
 
             for p in pred:
                 wheres = np.argwhere(p > thresholds)
@@ -449,6 +480,15 @@ def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
                                 reduced_thresholds = [th / 2.0 for th in reduced_thresholds]
                             elif isinstance(thresholds, float):
                                 reduced_thresholds = reduced_thresholds / 2.0
+                            wheres = np.argwhere(p > reduced_thresholds)
+                        predicted_labels.append(' '.join(map(str, wheres.flatten())))
+                    elif zero_prediction_strategy == 'reduce_threshold2':
+                        reduced_thresholds = thresholds
+                        while len(wheres) == 0:
+                            if isinstance(thresholds, list):
+                                reduced_thresholds = [th - 0.01 for th in reduced_thresholds]
+                            elif isinstance(thresholds, float):
+                                reduced_thresholds = reduced_thresholds - 0.01
                             wheres = np.argwhere(p > reduced_thresholds)
                         predicted_labels.append(' '.join(map(str, wheres.flatten())))
                     else:
