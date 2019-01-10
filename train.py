@@ -100,7 +100,8 @@ def train(model_keyname, cv, batch_size=24, epoch_break_at=None):
     train_dataset = HPAEnhancedDatasetMP(train_df, size=(512, 512), use_cutout=True, cutout_ratio=0.2, use_augmentation=True)
     val_dataset = HPAEnhancedDatasetMP(val_df, size=(512, 512), use_augmentation=False)
 
-    model = M.ResNet18v4()
+    model = M.ResNet18v2()
+    #model = M.ResNet18v4()
     #weight = torch.load(str(model_dir / 'resnet18v3_mls_enh_full_oversampling_cosanl_rp7_bce_bs32_cutout_size512_cv0_dict.model'))
     #model.load_state_dict(weight)
     model = model.to(device)
