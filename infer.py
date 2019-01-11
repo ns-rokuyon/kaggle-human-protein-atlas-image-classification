@@ -1,4 +1,5 @@
 import torch
+import copy
 import gc
 import numpy as np
 from torchvision import transforms
@@ -440,7 +441,7 @@ def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
     df = get_test_df()
     test_image_db = open_test_images_h5_file()
     dataset = HPATestDataset(df, size=(512, 512), image_db=test_image_db)
-    test_iter = torch.utils.data.DataLoader(dataset, batch_size=8, shuffle=False, pin_memory=True)
+    test_iter = torch.utils.data.DataLoader(dataset, batch_size=16, shuffle=False, pin_memory=True)
 
     # Get thresholds
     if use_adaptive_thresholds:
@@ -474,7 +475,7 @@ def submission_pipeline(model, name, cv=0, device=None, with_tta=False,
                         max_label = p.argmax()
                         predicted_labels.append(str(max_label))
                     elif zero_prediction_strategy == 'reduce_threshold':
-                        reduced_thresholds = thresholds
+                        reduced_thresholds = copy.deepcopy(thresholds)
                         while len(wheres) == 0:
                             if isinstance(thresholds, list):
                                 reduced_thresholds = [th / 2.0 for th in reduced_thresholds]
@@ -594,10 +595,15 @@ def submission_pipeline_ensemble(models, name, cvs, device=None, with_tta=False,
 
 
 def submission_pipeline_ensemble_v2(models, name, cvs, device=None, with_tta=False,
-                                    use_mls_enh_full=False, threshold_computing_v3=False):
+                                    use_mls_enh_full=False, threshold_computing_v3=False,
+                                    zero_prediction_strategy='reduce_threshold',
+                                    precomputed_thresholds=None):
     assert use_mls_enh_full
 
-    if threshold_computing_v3:
+    if precomputed_thresholds:
+        print('Use precomputed thresholds as best ensemble thresholds')
+        best_ensemble_thresholds = precomputed_thresholds
+    elif threshold_computing_v3:
         print('Compute threshold (v3) ...')
         best_ensemble_thresholds = compute_best_thresholds_ensemble_v3(models, cvs, device=device,
                                                                        use_sigmoid=True, threshold=None,
@@ -615,7 +621,7 @@ def submission_pipeline_ensemble_v2(models, name, cvs, device=None, with_tta=Fal
     test_iter = torch.utils.data.DataLoader(dataset, batch_size=8, shuffle=False, pin_memory=True)
 
     # Prediction
-    zero_prediction_strategy = 'reduce_threshold'
+    #zero_prediction_strategy = 'reduce_threshold'
     zero_label_count = 0
     predicted_labels = []
     with torch.no_grad():
@@ -632,12 +638,21 @@ def submission_pipeline_ensemble_v2(models, name, cvs, device=None, with_tta=Fal
                         max_label = p.argmax()
                         predicted_labels.append(str(max_label))
                     elif zero_prediction_strategy == 'reduce_threshold':
-                        reduced_thresholds = best_ensemble_thresholds
+                        reduced_thresholds = copy.deepcopy(best_ensemble_thresholds)
                         while len(wheres) == 0:
                             if isinstance(best_ensemble_thresholds, list):
                                 reduced_thresholds = [th / 2.0 for th in reduced_thresholds]
                             elif isinstance(best_ensemble_thresholds, float):
                                 reduced_thresholds = reduced_thresholds / 2.0
+                            wheres = np.argwhere(p > reduced_thresholds)
+                        predicted_labels.append(' '.join(map(str, wheres.flatten())))
+                    elif zero_prediction_strategy == 'reduce_threshold3':
+                        reduced_thresholds = copy.deepcopy(best_ensemble_thresholds)
+                        while len(wheres) == 0:
+                            if isinstance(best_ensemble_thresholds, list):
+                                reduced_thresholds = [th - 0.05 for th in reduced_thresholds]
+                            elif isinstance(best_ensemble_thresholds, float):
+                                reduced_thresholds = reduced_thresholds - 0.05
                             wheres = np.argwhere(p > reduced_thresholds)
                         predicted_labels.append(' '.join(map(str, wheres.flatten())))
                     else:
@@ -652,3 +667,7 @@ def submission_pipeline_ensemble_v2(models, name, cvs, device=None, with_tta=Fal
     df.to_csv(str(filepath), index=False)
     print(f'Save: {filepath}')
     return df
+
+
+final_thresholds = [0.43, 0.24, 0.34, 0.35, 0.33, 0.35, 0.28, 0.41, 0.55, 0.42, 0.36, 0.34, 0.36,
+                    0.22, 0.29, 0.44, 0.15, 0.41, 0.21, 0.26, 0.35, 0.36, 0.23, 0.33, 0.43, 0.42, 0.27, 0.28]
